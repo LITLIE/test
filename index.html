@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>部署链路验证页 · litlie.zh.kg</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #101216;
+    color: #e9ebef;
+    line-height: 1.6;
+  }
+  .card {
+    width: 100%;
+    max-width: 560px;
+    padding: 32px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.04);
+  }
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    border: 1px solid rgba(120,200,160,.45);
+    color: #7fd8a9;
+  }
+  h1 { font-size: 22px; font-weight: 500; margin: 18px 0 8px; }
+  p { font-size: 14px; opacity: .78; margin: 0 0 24px; }
+  dl { margin: 0; border-top: 1px solid rgba(255,255,255,.1); }
+  dl > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 13px;
+  }
+  dt { opacity: .6; }
+  dd { margin: 0; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; word-break: break-all; text-align: right; }
+  .note { margin: 22px 0 0; padding: 12px 14px; border-radius: 8px; font-size: 13px; background: rgba(120,200,160,.1); border: 1px solid rgba(120,200,160,.25); }
+  @media (prefers-color-scheme: light) {
+    body { background: #f5f6f8; color: #1b1e23; }
+    .card { background: #fff; border-color: rgba(0,0,0,.1); }
+    dl, dl > div { border-color: rgba(0,0,0,.08); }
+    .note { background: rgba(15,110,80,.07); border-color: rgba(15,110,80,.22); }
+  }
+</style>
+</head>
+<body>
+<main class="card">
+  <span class="badge">链路验证</span>
+  <h1>网页已成功加载</h1>
+  <p>这是用于验证「域名 → DNS → 托管 → 网页」全链路的最小页面，单文件、无外部依赖。</p>
+  <dl>
+    <div><dt>当前访问域名</dt><dd id="host">读取中</dd></div>
+    <div><dt>协议</dt><dd id="proto">读取中</dd></div>
+    <div><dt>页面加载时间</dt><dd id="time">读取中</dd></div>
+    <div><dt>构建标记</dt><dd>v1 · 2026-11-09</dd></div>
+  </dl>
+  <p class="note" id="note">正在判断访问入口…</p>
+</main>
+<script>
+  var host = location.hostname;
+  document.getElementById('host').textContent = host;
+  document.getElementById('proto').textContent = location.protocol;
+  document.getElementById('time').textContent = new Date().toLocaleString('zh-CN');
+  var note = document.getElementById('note');
+  if (host === 'litlie.zh.kg' || host === 'www.litlie.zh.kg') {
+    note.textContent = '全链路已打通：浏览器通过自定义域名访问，DNS 与托管均正常。';
+  } else {
+    note.textContent = '当前通过托管平台分配的链接访问。若 DNS 记录已生效，用 litlie.zh.kg 打开本页即表示自定义域名链路打通。';
+  }
+</script>
+</body>
+</html>
