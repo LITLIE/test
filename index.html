@@ -3,83 +3,269 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>部署链路验证页 · litlie.zh.kg</title>
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 24px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: #101216;
-    color: #e9ebef;
-    line-height: 1.6;
-  }
-  .card {
-    width: 100%;
-    max-width: 560px;
-    padding: 32px;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,.12);
-    background: rgba(255,255,255,.04);
-  }
-  .badge {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 999px;
-    font-size: 12px;
-    border: 1px solid rgba(120,200,160,.45);
-    color: #7fd8a9;
-  }
-  h1 { font-size: 22px; font-weight: 500; margin: 18px 0 8px; }
-  p { font-size: 14px; opacity: .78; margin: 0 0 24px; }
-  dl { margin: 0; border-top: 1px solid rgba(255,255,255,.1); }
-  dl > div {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,.1);
-    font-size: 13px;
-  }
-  dt { opacity: .6; }
-  dd { margin: 0; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; word-break: break-all; text-align: right; }
-  .note { margin: 22px 0 0; padding: 12px 14px; border-radius: 8px; font-size: 13px; background: rgba(120,200,160,.1); border: 1px solid rgba(120,200,160,.25); }
-  @media (prefers-color-scheme: light) {
-    body { background: #f5f6f8; color: #1b1e23; }
-    .card { background: #fff; border-color: rgba(0,0,0,.1); }
-    dl, dl > div { border-color: rgba(0,0,0,.08); }
-    .note { background: rgba(15,110,80,.07); border-color: rgba(15,110,80,.22); }
-  }
-</style>
+<meta name="description" content="一款为日常效率而生的手机应用。清爽的界面、恰到好处的功能，让你专注于真正重要的事。">
+<meta name="theme-color" content="#4f46e5">
+<title>Litlie — 把复杂的事，变简单</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main class="card">
-  <span class="badge">链路验证</span>
-  <h1>网页已成功加载</h1>
-  <p>这是用于验证「域名 → DNS → 托管 → 网页」全链路的最小页面，单文件、无外部依赖。</p>
-  <dl>
-    <div><dt>当前访问域名</dt><dd id="host">读取中</dd></div>
-    <div><dt>协议</dt><dd id="proto">读取中</dd></div>
-    <div><dt>页面加载时间</dt><dd id="time">读取中</dd></div>
-    <div><dt>构建标记</dt><dd>v1 · 2026-11-09</dd></div>
-  </dl>
-  <p class="note" id="note">正在判断访问入口…</p>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="18" cy="16" r="2.5" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span data-field="productName">Litlie</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#features">功能</a>
+      <a href="#showcase">界面</a>
+      <a href="#download">下载</a>
+      <a href="#changelog">更新</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="btn btn-sm btn-primary" href="#download">获取应用</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> 现已支持 iOS 与 Android</span>
+        <h1>把复杂的<span class="accent">事</span>，<br>变简单。</h1>
+        <p class="lead" data-field="description">一款为日常效率而生的手机应用。清爽的界面、恰到好处的功能，让你专注于真正重要的事。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" data-download="ios" href="#download">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            App Store 下载
+          </a>
+          <a class="btn btn-ghost btn-lg" data-download="android" href="#download">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M10 18h4"/></svg>
+            Android 下载
+          </a>
+        </div>
+        <p class="hero-meta">当前版本 <span data-field="version">1.0.0</span> · 免费下载 · 无广告</p>
+      </div>
+
+      <div class="hero-art reveal">
+        <svg class="phone" viewBox="0 0 300 600" role="img" aria-label="应用界面示意图，非真实截图">
+          <defs>
+            <linearGradient id="screenBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f8f9fe"/><stop offset="1" stop-color="#eef1fb"/>
+            </linearGradient>
+            <linearGradient id="heroCard" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5b53f0"/><stop offset="1" stop-color="#7c6cf5"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="284" height="584" rx="42" fill="#1a1f30"/>
+          <rect x="16" y="16" width="268" height="568" rx="36" fill="url(#screenBg)"/>
+          <rect x="124" y="26" width="52" height="9" rx="4.5" fill="#1a1f30" opacity=".9"/>
+          <text x="34" y="50" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#4b5368">9:41</text>
+          <circle cx="245" cy="46" r="3" fill="#6b7280"/><circle cx="255" cy="46" r="3" fill="#6b7280"/><rect x="264" y="43" width="12" height="6" rx="2" fill="#6b7280"/>
+          <text x="30" y="94" font-family="system-ui, sans-serif" font-size="21" font-weight="700" fill="#171c2c">早上好</text>
+          <text x="30" y="114" font-family="system-ui, sans-serif" font-size="12" fill="#7a8298">今天也从容一点</text>
+          <circle cx="252" cy="92" r="17" fill="#dfe3ff"/>
+          <text x="252" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#4f46e5">L</text>
+          <rect x="28" y="132" width="244" height="118" rx="20" fill="url(#heroCard)"/>
+          <text x="46" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#e3e0ff">本周完成</text>
+          <text x="46" y="206" font-family="system-ui, sans-serif" font-size="38" font-weight="700" fill="#ffffff">82%</text>
+          <text x="142" y="204" font-family="system-ui, sans-serif" font-size="11" fill="#e3e0ff">较上周 +12%</text>
+          <path d="M46 232 L80 224 L108 227 L140 210 L172 215 L206 192 L252 184" fill="none" stroke="#ffffff" stroke-opacity=".78" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="252" cy="184" r="4" fill="#ffffff"/>
+          <rect x="28" y="266" width="76" height="62" rx="13" fill="#ffffff" stroke="#e6e9f2"/>
+          <rect x="112" y="266" width="76" height="62" rx="13" fill="#ffffff" stroke="#e6e9f2"/>
+          <rect x="196" y="266" width="76" height="62" rx="13" fill="#ffffff" stroke="#e6e9f2"/>
+          <text x="42" y="296" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#4f46e5">12</text>
+          <text x="42" y="314" font-family="system-ui, sans-serif" font-size="10" fill="#8a92a6">进行中</text>
+          <text x="126" y="296" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0e9f7e">36</text>
+          <text x="126" y="314" font-family="system-ui, sans-serif" font-size="10" fill="#8a92a6">已完成</text>
+          <text x="210" y="296" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f0932b">4</text>
+          <text x="210" y="314" font-family="system-ui, sans-serif" font-size="10" fill="#8a92a6">待处理</text>
+          <text x="30" y="360" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#171c2c">最近</text>
+          <g fill="#ffffff" stroke="#e6e9f2">
+            <rect x="28" y="372" width="244" height="46" rx="12"/><rect x="28" y="426" width="244" height="46" rx="12"/><rect x="28" y="480" width="244" height="46" rx="12"/>
+          </g>
+          <g fill="#eef0ff"><rect x="38" y="382" width="26" height="26" rx="8"/><rect x="38" y="436" width="26" height="26" rx="8"/><rect x="38" y="490" width="26" height="26" rx="8"/></g>
+          <g fill="#171c2c" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600"><text x="74" y="393">整理今日清单</text><text x="74" y="447">回顾本周进展</text><text x="74" y="501">设置提醒事项</text></g>
+          <g fill="#9aa1b3" font-family="system-ui, sans-serif" font-size="10"><text x="74" y="409">刚刚更新</text><text x="74" y="463">2 小时前</text><text x="74" y="517">昨天</text></g>
+          <rect x="16" y="528" width="268" height="56" fill="#ffffff"/>
+          <path d="M16 528h268" stroke="#e9ecf4"/>
+          <g fill="#c9cede"><rect x="42" y="546" width="18" height="18" rx="5"/><rect x="102" y="546" width="18" height="18" rx="5"/><rect x="222" y="546" width="18" height="18" rx="5"/></g>
+          <rect x="162" y="546" width="18" height="18" rx="5" fill="#4f46e5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="产品特点">
+    <div class="container strip-inner">
+      <div class="strip-item reveal">
+        <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+        <div><strong>轻快</strong><span>秒开响应，不等待</span></div>
+      </div>
+      <div class="strip-item reveal">
+        <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div><strong>隐私优先</strong><span>数据尽量留在本地</span></div>
+      </div>
+      <div class="strip-item reveal">
+        <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18a4 4 0 0 1 .6-8 6 6 0 0 1 11.5 1.6A3.5 3.5 0 0 1 18 18H6z"/><path d="M12 12v5m0 0-2-2m2 2 2-2"/></svg></span>
+        <div><strong>离线可用</strong><span>没有网络也能继续</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="kicker">核心功能</span>
+        <h2>少一点干扰，多一点专注</h2>
+        <p>每一项功能都为「用得上」而设计，而不是为了填满列表。</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+          <h3>快速启动</h3><p>打开即用，核心操作两步之内完成，减少不必要的等待。</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></span>
+          <h3>清爽界面</h3><p>克制的信息层级与留白，重要内容始终在第一屏。</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>隐私优先</h3><p>默认本地处理，仅在必要时同步，权限申请清晰可查。</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14-4L4 9"/><path d="M4 5v4h4"/><path d="M4 13a8 8 0 0 0 14 4l2-2"/><path d="M20 19v-4h-4"/></svg></span>
+          <h3>多端同步</h3><p>手机与平板之间保持一致，切换设备不打断手上的事。</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <h3>智能提醒</h3><p>在合适的时间给出提醒，不制造多余的通知噪音。</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8L3.5 9.2l5.9-.9L12 3z"/></svg></span>
+          <h3>持续迭代</h3><p>小步快跑地更新，每次改动都聚焦真实反馈。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="showcase">
+    <div class="container showcase-inner">
+      <div class="showcase-art reveal">
+        <svg viewBox="0 0 520 330" role="img" aria-label="数据概览界面示意图，非真实截图">
+          <defs>
+            <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#5b53f0" stop-opacity=".22"/><stop offset="1" stop-color="#5b53f0" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="330" rx="14" fill="#f3f5fc"/>
+          <rect x="22" y="22" width="476" height="286" rx="16" fill="#ffffff" stroke="#e6e9f2"/>
+          <text x="46" y="58" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#171c2c">数据概览</text>
+          <text x="46" y="78" font-family="system-ui, sans-serif" font-size="11" fill="#8a92a6">最近 7 天</text>
+          <circle cx="452" cy="52" r="4" fill="#c9cede"/><circle cx="466" cy="52" r="4" fill="#c9cede"/><circle cx="480" cy="52" r="4" fill="#c9cede"/>
+          <g stroke="#eef0f6" stroke-width="1"><path d="M46 116h428M46 156h428M46 196h428M46 236h428"/></g>
+          <path d="M46 226 L110 206 L174 214 L238 166 L302 182 L366 138 L430 150 L474 116 L474 244 L46 244 Z" fill="url(#areaFill)"/>
+          <path d="M46 226 L110 206 L174 214 L238 166 L302 182 L366 138 L430 150 L474 116" fill="none" stroke="#5b53f0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#ffffff" stroke="#5b53f0" stroke-width="2.5"><circle cx="110" cy="206" r="4"/><circle cx="238" cy="166" r="4"/><circle cx="366" cy="138" r="4"/><circle cx="474" cy="116" r="4"/></g>
+          <g font-family="system-ui, sans-serif"><text x="46" y="278" font-size="11" fill="#8a92a6">周一</text><text x="150" y="278" font-size="11" fill="#8a92a6">周二</text><text x="254" y="278" font-size="11" fill="#8a92a6">周三</text><text x="358" y="278" font-size="11" fill="#8a92a6">周四</text><text x="452" y="278" font-size="11" fill="#8a92a6">周五</text></g>
+        </svg>
+      </div>
+      <div class="showcase-copy reveal">
+        <span class="kicker">界面一览</span>
+        <h2>打开就能用，不需要学习</h2>
+        <p style="color:var(--muted);font-size:15px">没有冗长的引导，也没有藏得很深的功能。三步之内，就能完成一次完整的使用。</p>
+        <ol class="steps">
+          <li><strong>打开应用</strong><span>首屏直接呈现当前状态，不必先配置。</span></li>
+          <li><strong>完成一件事</strong><span>核心操作保持轻量，随手记录、随手结束。</span></li>
+          <li><strong>回头看一眼</strong><span>用清晰的概览回顾进展，不做无意义的数据堆砌。</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="container">
+      <div class="download-card reveal">
+        <div class="download-copy">
+          <span class="kicker">下载应用</span>
+          <h2>现在就开始</h2>
+          <p>支持 iOS 与 Android，安装包轻巧，随时可用。</p>
+          <div class="download-buttons">
+            <a class="store-btn" data-download="ios" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7s1.8.7 3 .7c1.2 0 2-1.1 2.7-2.2.9-1.3 1.2-2.5 1.3-2.6-.1 0-2.4-.9-2.4-3.7z"/><path d="M14.3 5.6c.6-.8 1-1.8.9-2.9-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.8-.9 2.8 1 .1 2-.5 2.6-1.3z"/></svg>
+              <span class="store-text"><small>下载于</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-btn" data-download="android" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10h12v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7z"/><path d="M6 10a6 6 0 0 1 12 0"/><path d="M3 11v5M21 11v5M9 19v2M15 19v2"/><circle cx="9.5" cy="7" r=".8"/><circle cx="14.5" cy="7" r=".8"/></svg>
+              <span class="store-text"><small>下载于</small><strong>Android</strong></span>
+            </a>
+          </div>
+          <p class="version-note">版本 <span data-field="version">1.0.0</span> · 更新于 <span data-field="releaseDate">2026-11-15</span></p>
+        </div>
+        <div class="qr-box">
+          <div id="qr-code" aria-label="示意二维码，请替换为真实下载二维码">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <rect width="100" height="100" fill="#ffffff"/>
+              <g fill="#1a1f30"><rect x="6" y="6" width="26" height="26" rx="3"/><rect x="68" y="6" width="26" height="26" rx="3"/><rect x="6" y="68" width="26" height="26" rx="3"/></g>
+              <g fill="#ffffff"><rect x="11" y="11" width="16" height="16" rx="2"/><rect x="73" y="11" width="16" height="16" rx="2"/><rect x="11" y="73" width="16" height="16" rx="2"/></g>
+              <g fill="#1a1f30"><rect x="15" y="15" width="8" height="8" rx="1"/><rect x="77" y="15" width="8" height="8" rx="1"/><rect x="15" y="77" width="8" height="8" rx="1"/></g>
+              <g fill="#1a1f30"><rect x="38" y="8" width="6" height="6"/><rect x="50" y="8" width="6" height="6"/><rect x="38" y="20" width="6" height="6"/><rect x="56" y="20" width="6" height="6"/><rect x="44" y="32" width="6" height="6"/><rect x="62" y="32" width="6" height="6"/><rect x="38" y="44" width="6" height="6"/><rect x="50" y="44" width="6" height="6"/><rect x="68" y="44" width="6" height="6"/><rect x="80" y="44" width="6" height="6"/><rect x="44" y="56" width="6" height="6"/><rect x="56" y="56" width="6" height="6"/><rect x="74" y="56" width="6" height="6"/><rect x="38" y="68" width="6" height="6"/><rect x="50" y="68" width="6" height="6"/><rect x="68" y="68" width="6" height="6"/><rect x="86" y="68" width="6" height="6"/><rect x="38" y="80" width="6" height="6"/><rect x="56" y="80" width="6" height="6"/><rect x="74" y="80" width="6" height="6"/><rect x="44" y="92" width="6" height="6"/><rect x="62" y="92" width="6" height="6"/><rect x="86" y="92" width="6" height="6"/></g>
+            </svg>
+          </div>
+          <strong>扫码下载</strong>
+          <small>示意图案 · 待替换</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="changelog">
+    <div class="container">
+      <div class="section-head reveal"><span class="kicker">更新日志</span><h2>持续打磨</h2><p>以下为示例版本记录，请按实际发布历史替换。</p></div>
+      <div class="timeline reveal">
+        <div class="timeline-item"><div class="ver">v1.0.0 <span data-field="releaseDate">2026-11-15</span></div><p>首个公开版本：界面与核心流程定稿。</p></div>
+        <div class="timeline-item"><div class="ver">v0.9.0 <span>2026-10-28</span></div><p>优化首屏加载与列表滚动表现。</p></div>
+        <div class="timeline-item"><div class="ver">v0.8.0 <span>2026-10-10</span></div><p>小范围内测，收集初期反馈。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head reveal"><span class="kicker">常见问题</span><h2>你可能想知道</h2><p>以下为示例问答，请按实际产品情况调整。</p></div>
+      <div class="faq-list reveal">
+        <details><summary>支持哪些设备与系统版本？</summary><p>页面示例文案：支持 iOS 与 Android 主流版本。请在正式发布前填写具体的最低系统要求。</p></details>
+        <details><summary>是否需要注册账号才能使用？</summary><p>页面示例文案：基础功能无需账号即可使用。若实际需要登录，请在此说明并同步更新隐私政策。</p></details>
+        <details><summary>我的数据会如何处理？</summary><p>请以正式隐私政策为准。可在 config.js 中配置 privacyUrl，并在本页提供可访问的说明页面。</p></details>
+        <details><summary>遇到问题如何反馈？</summary><p>可通过页脚的「联系我们」发送邮件；请在 config.js 中配置真实的 contactEmail。</p></details>
+      </div>
+    </div>
+  </section>
+
 </main>
-<script>
-  var host = location.hostname;
-  document.getElementById('host').textContent = host;
-  document.getElementById('proto').textContent = location.protocol;
-  document.getElementById('time').textContent = new Date().toLocaleString('zh-CN');
-  var note = document.getElementById('note');
-  if (host === 'litlie.zh.kg' || host === 'www.litlie.zh.kg') {
-    note.textContent = '全链路已打通：浏览器通过自定义域名访问，DNS 与托管均正常。';
-  } else {
-    note.textContent = '当前通过托管平台分配的链接访问。若 DNS 记录已生效，用 litlie.zh.kg 打开本页即表示自定义域名链路打通。';
-  }
-</script>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="18" cy="16" r="2.5" fill="currentColor" stroke="none"/></svg></span>
+      <div><span data-field="productName">Litlie</span><p data-field="tagline">把复杂的事，变简单</p></div>
+    </div>
+    <nav class="footer-links" aria-label="页脚导航">
+      <a href="#features">功能</a><a href="#showcase">界面</a><a href="#download">下载</a>
+      <a href="#changelog">更新日志</a><a href="#faq">常见问题</a>
+      <a href="#" data-link="privacy">隐私政策</a><a href="#" data-link="email">联系我们</a>
+    </nav>
+    <p class="copyright">© <span id="year">2026</span> <span data-field="productName">Litlie</span>. 保留所有权利。<span id="icp-number" hidden></span><br>本页为产品官网示例模板：文案、版本记录与插图均为示意内容，请按实际产品信息替换。</p>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
