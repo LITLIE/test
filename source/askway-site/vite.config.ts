@@ -5,5 +5,8 @@ export default defineConfig({
   plugins: [react()],
   cacheDir: '.agent_cache/vite',
   server: { host: '127.0.0.1', port: 5173 },
-  build: { target: 'es2020', sourcemap: false },
+  build: {
+    target: 'es2020', sourcemap: false,
+    rollupOptions: { output: { manualChunks(id) { if (id.replace(/\\/g, '/').includes('/node_modules/three/')) return 'city-runtime'; } } },
+  },
 });

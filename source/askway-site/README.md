@@ -1,90 +1,82 @@
-# 问途 AskWay 官网前端
+# 问途 AskWay 官网 · 3.0.0
 
-以“海岸城市 × 可信科技”为方向的四页品牌官网，包含海岸首屏、滚动产品叙事、珠海场景切换、行程交互演示和合作需求整理。
+采用“写实海岸 × 沉浸式旅程”方向的独立 React 官网，新增可操作的旅程工作台：表达、条件核对、生成候选、A/B 比较、采用与撤销。
 
-- 当前验证可访问：http://litlie.zh.kg。现有自定义域名的 HTTPS 证书尚未就绪。
-- 合作邮箱：2825947576@qq.com
-- 临时托管仓库：https://github.com/LITLIE/test，沿用 ai 分支的 GitHub Pages 与 CNAME。
-- 技术：React 18.3.1、TypeScript、Vite 5、GSAP、React Router、Lucide SVG。
+当前为 curated 受控资料演示。参考坐标与逐路段估算有来源和状态；开放、费用、入口、无障碍保留未知。网站不提供实时导航或生产服务，软件公开下载仍待开放。
 
-## 本地运行
+## 页面
 
-使用 Node.js 22。在工程目录内执行：
+| 路由 | 任务 |
+| --- | --- |
+| / | 纪实海岸、品牌叙事、同数据旅程预告、合作入口 |
+| /product/ | 产品能力、原三点概念演示、软件获取状态 |
+| /experience/ | 三个可修改任务、规则解析、证据透镜、版本比较、二维地图与按需三维沙盘 |
+| /cooperation/ | 合作方向、前端草稿、复制与真实邮箱 |
+| /about/ | 产品理念、真实阶段与资料范围 |
+
+/product/#demo 和 /product/#download 保持可用。五页各有静态 HTML、标题、canonical、sitemap；刷新、无 JS 基本阅读和子路径均已检查。
+
+## 运行
+
+需要 Node.js 22.19 或更新版本，本轮使用 22.23.1。请在本工程根目录运行以下 PowerShell 命令，临时文件与缓存只写入本工程。
 
 ```powershell
-$taskTmp = Join-Path (Get-Location) '.agent_tmp'
-$taskCache = Join-Path (Get-Location) '.agent_cache/npm'
-New-Item -ItemType Directory -Force -Path $taskTmp,$taskCache | Out-Null
-$env:TEMP = $taskTmp
-$env:TMP = $taskTmp
-npm ci --ignore-scripts --cache $taskCache --no-audit --no-fund
-npm run build
-npm run preview
+$taskRoot = (Get-Location).Path
+$env:TEMP = Join-Path $taskRoot '.agent_tmp'
+$env:TMP = $env:TEMP
+$env:npm_config_cache = Join-Path $taskRoot '.agent_cache/npm'
+New-Item -ItemType Directory -Force -Path $env:TEMP,$env:npm_config_cache | Out-Null
+npm ci --ignore-scripts --no-audit --no-fund
+npm run dev
 ```
 
-静态预览：http://127.0.0.1:4173。开发模式执行 npm run dev，访问 http://127.0.0.1:5173。
-
-安装脚本默认关闭；临时文件、依赖与缓存均设置在工程目录内。不会自动安装浏览器。浏览器测试使用本机现有 Microsoft Edge，测试脚本内的 executablePath 可按实际环境调整。
-
-## 页面与交互
-
-### 软件获取预留
-
-顶部与手机导航、产品页 /product/#download、页脚均提供“软件下载”入口。AskWay 仓库当前为私有，页面显示“公开下载尚未开放”，仓库链接注明授权访问。
-
-用户后续公开仓库并确认实际获取路径后，在 site.config.mjs 更新 software.downloadUrl，并把 software.publicDownloadAvailable 改为 true，再构建与发布。现在未改变 AskWay 可见性，也未公开安装包。
-
-当前版本资料为 0.4.2 Android 验收试用版，最低系统按项目配置为 Android 7.0；公开时重新核实最终包与安装/后端配置说明。
-
-| 路径 | 内容 |
-|---|---|
-| / | 品牌首页、海岸主视觉、四阶段产品舞台、场景与合作方向 |
-| /product/ | 产品介绍、有限珠海示例的交互演示、产品原则与常见问题 |
-| /cooperation/ | 三类合作方向、沟通流程、合作草稿、复制与邮件入口 |
-| /about/ | 产品出发点、品牌理念与阶段进展 |
-
-交互演示使用演示估算，支持时间、节奏和必去点选择。可行结果保留必去点并满足所选时间；冲突会明确说明。它用于解释规划思路，实际旅行应核实实时交通、开放和现场信息。
-
-合作表单在当前页面整理内容，生成可复制的草稿与 mailto 链接，由访客通过邮件客户端确认发送。没有虚构提交成功，也没有新增线索数据库。
-
-## 代码结构
-
-- site.config.mjs：站点名称、公开邮箱、正式 URL 与构建 base。
-- src/pages：四个页面。
-- src/components：导航、页脚、路线绘制、产品舞台与交互演示。
-- src/lib：合作草稿与演示行程逻辑。
-- src/hooks/useMotion.ts：渐进加载动效、媒体偏好与清理。
-- src/styles/site.css：品牌变量、编辑式布局、响应式与动效样式。
-- public/assets：自托管图片、字体、图标与字体许可证。
-- public/asset-credits.json：影像来源、作者、许可与处理记录。
-- scripts/build.mjs：静态预渲染四页、404、站点元信息、sitemap 与 CNAME。
-- tests：真实逻辑测试、浏览器主流程和回归检查。
-
-## 验证
+开发地址 http://127.0.0.1:5173/。构建和预览：
 
 ```powershell
-npm test
 npm run typecheck
 npm run build
 npm run preview
-# 保持预览服务运行，在另一个终端执行：
+```
+
+预览地址 http://127.0.0.1:4173/。请通过 HTTP 预览，不直接双击 dist/index.html。
+
+## 配置与源码
+
+- site.config.mjs：实际域名、base、邮箱与 software 下载配置。
+- src/features/experience/config.ts：受控模式、三维开关、任务模板和演示日期。
+- data/catalog.ts：10 个 OSM 公开参考点，WGS84 [经度, 纬度]，入口未核实。
+- domain/ 与 state/：条件规范化、有限规则解析、规划、差分、请求/会话/草稿/基线围栏、候选有效期、采用与撤销。
+- ui/、map/、scene/：共享方案和选点，二维投影、程序化纸艺城市、生命周期与失败回退。
+- dist/data/catalog.json、dist/build-info.json：构建生成的公开资料与版本记录。
+
+新草稿不改变当前方案。采用需要明确确认；撤销恢复上一版完整内容、条件和资料，并分配新单调版本，例如恢复 V1 内容后当前为 V3。未知费用不当作免费，未知开放不当作全天开放。
+
+三维只在用户开启后加载，静止不连续绘制；视区外/隐藏暂停，手动操作停止预演。加载失败与 context lost 保留二维与文字，不修改业务方案。
+
+官网版本 3.0.0 与软件版本 0.4.2 分别管理。publicDownloadAvailable=false，仓库链接注明授权访问；不包含私有 APK、数据库和认证资料。
+
+## 验证与交付
+
+本轮写实升级见 [3.0验收](docs/upgrade/realism-v3-verification.md)，此前2.0的实际记录见 [验收记录](docs/upgrade/verification.md)、[质量测量](docs/upgrade/quality-audit.md)、[资料来源](docs/upgrade/data-sources.md)、[资源账本](docs/assets/ledger.md)。
+
+```powershell
+npm test
+npm run test:experience
 npm run test:browser
 npm run test:regressions
 npm run test:download
+npm run test:workbench
+npm run test:scene
+npm run test:static
+node tests/experience/subpath.mjs
+node tests/experience/quality.mjs
 ```
 
-浏览器证据默认写入 .agent_tmp。测试包含手机菜单与键盘、360/390px 布局、正常及减弱动画、同页跳转、条件变化后的旧结果处理、地图与行程一致性、邮件草稿和复制。
+浏览器默认使用本机现有 Edge，TEST_BROWSER 可指定兼容 Chromium。测试不下载浏览器，profile/cache/crash 位于工程内。质量检查使用 axe-core/Lighthouse，性能阶段应在其它浏览器任务结束后单独运行。subpath.mjs 需先启动 /askway/ 副本，见 [回退与迁移](docs/upgrade/rollback.md)。
 
-## 迁移到 AskWay 仓库
+交付包括可维护源码、静态产物、JSON/图片证据及回退包。部署包仅含 dist，不含 node_modules、缓存、浏览器配置与私有资料。真实手机、真实 INP、生产 HTTPS/API 与现场核实仍须独立完成。
 
-本仓库的 source/askway-site 是完整源码。可复制到 AskWay 仓库的 dev/askway-site，再使用锁文件安装和构建。
+本地 feat/askway-realistic-3d-v3 分支保留，改造前基线为 baseline/official-site-2026-11-24。迁移时复制完整源码到未来允许的工作区，按锁文件安装并更新 site.config；不要只迁移 dist 或沿用旧缓存。
 
-若改变正式域名，或 HTTPS 证书就绪后切换协议，更新 site.config.mjs 的 url；构建会同步浏览器与静态 HTML 中的 URL，并根据域名生成 CNAME。若使用 GitHub 项目路径，配置 base 为对应路径，同时将 url 设为完整站点 URL。发布服务器应支持四个预渲染目录的直接访问。
 
-当前 GitHub Pages 根目录放置 dist 的静态产物；source/askway-site 放置可迁移源码。源码发布不包含 node_modules、构建临时目录、浏览器配置、运行缓存、认证脚本或凭据。原有 CNAME 与 Pages 发布分支继续沿用。
-
-## 素材与范围
-
-图片与标题字体均为本地资源。Wikimedia 影像按 CC BY-SA 许可署名；Noto Serif SC 子集按 SIL OFL 许可使用；图片详情见 public/asset-credits.json。
-
-网站首版交付品牌展示与可交互的前端示例。真实旅行账号、模型、地图服务和现有 AskWay 后端没有在本官网中初始化；完整产品接入可在独立产品入口中后续完成。
+3.0 新增自然海岸二维图、防重叠地名、比例尺/四向平移，以及透视写实三维、HDR光照/PBR材质、晨暮与海面控制；首页/产品城市展台按视区加载，原生Three渲染的三张1920×1080插图分布在页面。公开位置和建筑/地形模型仍为参考示意，不能用作导航。

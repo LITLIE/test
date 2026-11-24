@@ -1,21 +1,17 @@
-import { chromium } from 'playwright-core';
+import { createBrowserContext, projectRoot, testBase } from './helpers/browser-runtime.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
+process.chdir(projectRoot);
 const evidence=resolve('.agent_tmp/browser');
 await mkdir(evidence,{recursive:true});
 process.env.TEMP=evidence;process.env.TMP=evidence;
 const records=[],errors=[];
-const context=await chromium.launchPersistentContext(resolve(evidence,'profile'),{
-  executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
-  headless:true,viewport:{width:1440,height:1000},reducedMotion:'reduce',
-  permissions:['clipboard-read','clipboard-write'],
-  args:['--no-first-run','--no-default-browser-check','--disable-background-networking','--disable-sync','--disable-breakpad','--disable-crash-reporter','--crash-dumps-dir='+resolve(evidence,'crashes'),'--disk-cache-dir='+resolve('.agent_cache/browser')]
-});
+const context=await createBrowserContext('legacy-main',{permissions:['clipboard-read','clipboard-write']});
 const page=await context.newPage();
 page.on('pageerror',error=>errors.push(error.message));
 const check=async(name,fn)=>{try{await fn();records.push({name,pass:true});}catch(error){records.push({name,pass:false,error:error.message});}};
-const base=process.env.TEST_URL||'http://127.0.0.1:4173';
+const base=testBase;
 await check('home hydrates without losing static heading',async()=>{await page.goto(base,{waitUntil:'networkidle'});assert.equal(await page.locator('h1').count(),1);assert.match(await page.locator('h1').innerText(),/自有方向/);await page.evaluate(()=>document.fonts.ready);});
 await page.screenshot({path:resolve(evidence,'home-desktop.png'),fullPage:true});
 await page.screenshot({path:resolve(evidence,'hero-desktop.png')});
@@ -39,7 +35,7 @@ await check('reduced motion keeps story content readable',async()=>{assert.equal
 await check('normal desktop scroll changes the active journey stage',async()=>{await page.setViewportSize({width:1440,height:1000});await page.emulateMedia({reducedMotion:'no-preference'});await page.goto(base,{waitUntil:'networkidle'});await page.evaluate(()=>{const section=document.querySelector('#journey');window.scrollTo({top:section.offsetTop+section.offsetHeight-700,behavior:'instant'});});await page.waitForFunction(()=>document.querySelectorAll('.stage-tabs button')[3].getAttribute('aria-selected')==='true');assert.equal(await page.getByRole('tab',{name:/带上这段旅程/}).getAttribute('aria-selected'),'true');});
 await check('no browser runtime errors were emitted',async()=>assert.deepEqual(errors,[]));
 await context.close();
-const staticContext=await chromium.launchPersistentContext(resolve(evidence,'nojs-profile'),{executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true,javaScriptEnabled:false,args:['--no-first-run','--no-default-browser-check','--disable-breakpad','--disable-crash-reporter','--crash-dumps-dir='+resolve(evidence,'nojs-crashes')]});
+const staticContext=await createBrowserContext('legacy-nojs',{javaScriptEnabled:false});
 const staticPage=await staticContext.newPage();
 await check('four pages remain readable without JavaScript',async()=>{for(const path of ['/','/product/','/cooperation/','/about/']){await staticPage.goto(base+path);assert.equal(await staticPage.locator('h1').count(),1);assert.ok((await staticPage.locator('main').innerText()).length>300);}});
 await staticContext.close();

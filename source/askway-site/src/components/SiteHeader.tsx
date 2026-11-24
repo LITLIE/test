@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
 import Brand from './Brand';
-const links = [{to:'/product/',label:'产品体验'},{to:'/product/#download',label:'软件下载'},{to:'/cooperation/',label:'一起探索'},{to:'/about/',label:'关于问途'}];
+const links = [{to:'/experience/',label:'旅程体验'},{to:'/product/',label:'产品体验'},{to:'/product/#download',label:'软件下载'},{to:'/cooperation/',label:'一起探索'},{to:'/about/',label:'关于问途'}];
 export default function SiteHeader() {
   const location = useLocation();
   const [scrolled,setScrolled] = useState(false), [open,setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null), buttonRef = useRef<HTMLButtonElement>(null);
   useEffect(()=>{ const onScroll=()=>setScrolled(window.scrollY>40);onScroll();window.addEventListener('scroll',onScroll,{passive:true});return()=>window.removeEventListener('scroll',onScroll); },[]);
   useEffect(()=>setOpen(false),[location.key]);
-  useEffect(()=>{const media=window.matchMedia('(min-width: 900px)');const resize=()=>{if(media.matches)setOpen(false);};media.addEventListener('change',resize);return()=>media.removeEventListener('change',resize);},[]);
+  useEffect(()=>{const media=window.matchMedia('(min-width: 1024px)');const resize=()=>{if(media.matches)setOpen(false);};media.addEventListener('change',resize);return()=>media.removeEventListener('change',resize);},[]);
   useEffect(()=>{
     if(!open)return;
     const previous=document.body.style.overflow;
@@ -35,7 +35,7 @@ export default function SiteHeader() {
     <div className="container header-inner">
       <Brand light={!solid}/>
       <nav className="desktop-nav" aria-label="主导航">
-        {links.map(link=>link.to.includes('#')?<Link key={link.to} to={link.to}>{link.label}</Link>:<NavLink key={link.to} to={link.to}>{link.label}</NavLink>)}
+        {links.map(link=>link.to.includes('#')?<Link key={link.to} to={link.to}>{link.label}</Link>:<NavLink key={link.to} to={link.to} className={link.to==='/experience/'?'nav-experience':undefined}>{link.label}</NavLink>)}
       </nav>
       <Link to="/cooperation/#contact" className="header-cta">探讨合作<ArrowUpRight size={16} aria-hidden="true"/></Link>
       <button ref={buttonRef} className="menu-toggle" type="button" aria-label={open?'关闭导航':'打开导航'} aria-controls="mobile-menu" aria-expanded={open} onClick={()=>setOpen(!open)}>{open?<X aria-hidden="true"/>:<Menu aria-hidden="true"/>}</button>

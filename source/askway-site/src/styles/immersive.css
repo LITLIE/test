@@ -1,0 +1,200 @@
+/* Photography and rendered city windows share one editorial image language. */
+.city-illustration{position:relative;margin:0;min-width:0;--city-depth-x:0px;--city-depth-y:0px}
+.city-illustration__image{position:relative;display:block;overflow:hidden;width:100%;height:100%;background:#8ca7ac}
+.city-illustration__image>img{display:block;width:100%;height:100%;object-fit:cover}
+.city-illustration[data-depth] .city-illustration__image>img{transform:translate(var(--city-depth-x),var(--city-depth-y)) scale(1.025);transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.city-illustration figcaption{display:flex;justify-content:space-between;gap:12px 28px;font-size:14px;line-height:1.75;color:var(--muted);padding-top:15px}
+.city-illustration figcaption>span:first-child{flex-shrink:0;color:var(--ink)}
+
+.immersive-showcase{padding-block:100px 70px;overflow:hidden;background:#082c3b;color:#f8f6ee}
+.immersive-heading{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:80px;align-items:end;padding-bottom:54px}
+.immersive-heading .eyebrow{color:#b9cdd0;letter-spacing:.13em}
+.immersive-heading h2{margin-top:27px;font-size:clamp(40px,4.5vw,65px);line-height:1.35;letter-spacing:.01em}
+.immersive-heading h2 span{color:#edbe76}
+.immersive-heading-copy p{font-size:16px;line-height:1.95;color:#d4e0df;max-width:480px}
+.immersive-heading-copy>div{display:flex;align-items:center;gap:11px;font-size:14px;color:#a3c4c9;margin-top:26px}
+.immersive-heading-copy>div svg{color:#edbe76}
+.immersive-window-wrap{width:min(1440px,calc(100% - 64px));margin-inline:auto}
+.immersive-stage{height:clamp(490px,45vw,680px);min-width:0;position:relative;overflow:hidden;background:#567c87;border:1px solid #97bbc43d;box-shadow:0 30px 70px #00152280}
+.immersive-poster,.immersive-live{position:absolute;inset:0}
+.immersive-poster>.city-illustration{height:100%;width:100%}
+.immersive-poster .city-illustration__image>img{object-position:center 50%}
+.immersive-live{z-index:1}
+.immersive-window-shade{position:absolute;inset:0;background:linear-gradient(180deg,#03233296,transparent 20%,transparent 52%,#031b2ad6);z-index:2;pointer-events:none}
+.immersive-stage-top{position:absolute;inset:27px 30px auto;display:flex;justify-content:space-between;align-items:flex-start;gap:15px;font-size:14px;z-index:3;color:#fff}
+.immersive-stage-top>span{display:flex;align-items:center;gap:10px;background:#062736c9;padding:7px 11px;line-height:1.7}
+.immersive-stage-top>span:first-child{letter-spacing:.07em}
+.immersive-stage-bottom{position:absolute;inset:auto 44px 42px;z-index:3;display:flex;justify-content:space-between;align-items:end;gap:32px;pointer-events:none}
+.immersive-view-copy{max-width:530px}
+.immersive-view-copy>span{font-size:14px;color:#e6cba0;letter-spacing:.13em}
+.immersive-view-copy h3{font-family:var(--serif);font-size:clamp(30px,3.2vw,45px);line-height:1.5;margin-top:12px;color:#fff}
+.immersive-view-copy p{font-size:14px;line-height:1.85;color:#ecf2ee;margin-top:12px}
+.immersive-toggle{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;min-width:160px;padding:13px 20px;border:1px solid #f5dfb6;background:#f7ead3;color:#082d3d;font-size:14px;pointer-events:auto;flex-shrink:0;transition:background .2s,transform .2s}
+.immersive-toggle:hover{background:#fff8e7;transform:translateY(-2px)}
+.immersive-toggle[aria-pressed=true]{background:#072734d6;color:#fff5df;border-color:#e0c89a}
+.immersive-toggle:focus-visible,.immersive-view-button:focus-visible{outline-color:#f4bd65;outline-offset:5px}
+.immersive-edge-mark{position:absolute;right:13px;top:50%;writing-mode:vertical-rl;font-size:12px;letter-spacing:.16em;color:#f8f6eecc;z-index:3;pointer-events:none}
+.immersive-view-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #8baeb43b;border-top:0;background:#0b3342}
+.immersive-view-button{position:relative;display:flex;align-items:center;gap:16px;min-height:112px;min-width:0;padding:22px 25px;text-align:left;background:transparent;border:0;color:#d4e0df;transition:background .25s}
+.immersive-view-button+.immersive-view-button{border-left:1px solid #8baeb43b}
+.immersive-view-button>.city-illustration{width:92px;height:64px;flex-shrink:0;border:1px solid #e6f2e033}
+.immersive-view-number{display:none;color:#93b1b8;font-size:14px}
+.immersive-view-label{min-width:0;display:grid;gap:6px}
+.immersive-view-label strong{font-size:16px;font-weight:500;line-height:1.5}
+.immersive-view-label>span{font-size:14px;letter-spacing:.06em;line-height:1.5;color:#b5cdd0}
+.immersive-view-button>svg{margin-left:auto;color:#b7c9c8}
+.immersive-view-button:hover{background:#174453}
+.immersive-view-button[aria-pressed=true]{background:#154352;color:#fff}
+.immersive-view-button[aria-pressed=true]:after{content:'';position:absolute;inset:auto 0 0;height:3px;background:#e8b66a}
+.immersive-view-button[aria-pressed=true]>svg{color:#edbe76}
+.immersive-footnote{display:flex;justify-content:space-between;align-items:start;gap:50px;padding-top:28px}
+.immersive-footnote>div{max-width:760px;min-width:0}
+.immersive-footnote p{font-size:14px;line-height:1.8;color:#bfd1d3}
+.immersive-footnote .immersive-motion-note{margin-top:7px;color:#b5ced0}
+.immersive-footnote>.text-link{font-size:14px;color:#fff1d7;border-color:#cfb99466;flex-shrink:0}
+.immersive-loading{display:flex;align-items:center;justify-content:center;gap:14px;position:absolute;inset:0;color:white;font-size:14px;background:#05293750}
+.immersive-loading>span{width:17px;height:17px;border:1px solid #f1d19e;border-top-color:transparent;border-radius:50%;animation:city-loading 1s linear infinite}
+@keyframes city-loading{to{transform:rotate(360deg)}}
+.immersive-stage .cinematic-city,.immersive-stage .client-scene,.immersive-stage .city-sandbox{width:100%;height:100%;padding:0;margin:0;background:transparent}
+.immersive-stage .city-sandbox__canvas{margin:0;border-radius:0;aspect-ratio:auto;min-height:0;max-height:none;height:100%;background:transparent}
+.immersive-stage .scene-loading{height:100%;min-height:0;padding:95px 25px;color:#fff;background:#062736b3}
+.immersive-stage .scene-loading p{font-size:14px;color:#fff}
+.immersive-stage .scene-loading .map-control{background:#f7ead3;border-color:#f1d19e;color:#082d3d;min-height:44px;font-size:14px}
+.immersive-stage .cinematic-city__status{top:44%;bottom:auto;left:30px;right:30px;width:fit-content;max-width:calc(100% - 60px);margin:0 auto;padding:12px 17px;color:#fff;font-size:14px}
+.immersive-showcase .immersive-stage .city-sandbox__status{top:85px;bottom:auto;left:30px;right:auto;max-width:calc(100% - 60px);font-size:14px;margin:0}
+.immersive-showcase .immersive-stage .city-sandbox__motion{top:85px;bottom:auto;right:30px;min-height:44px;padding:10px 13px;color:#fff;background:#092d3ecc;border:1px solid #bbced066;border-radius:0;font-size:14px}
+.immersive-showcase--compact{padding-block:80px 55px}
+.immersive-showcase--compact .immersive-stage{height:clamp(440px,40vw,600px)}
+
+/* A wide rendered strip adds city context without changing the four-stage flow. */
+.journey-city-ribbon{position:relative;height:132px;overflow:hidden;border:1px solid #bccdc6;border-bottom:0;border-radius:9px 9px 0 0;background:#76909b}
+.journey-city-ribbon>.city-illustration{height:100%;width:100%}
+.journey-city-ribbon .city-illustration__image>img{object-position:center 52%}
+.journey-city-ribbon:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#052b3cd4,#052b3c10)}
+.journey-city-ribbon>div{position:absolute;inset:21px 23px;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:20px;color:#fff}
+.journey-city-ribbon>div>span{font-family:var(--serif);font-size:23px;line-height:1.55}
+.journey-city-ribbon small{font-size:14px;line-height:1.7;max-width:185px;text-align:right;color:#f8f6ee}
+.journey-city-ribbon+.journey-screen{border-radius:0 0 9px 9px}
+
+.destination-visual>.city-illustration{width:100%;height:100%}
+.destination-visual>.city-illustration .city-illustration__image>img{object-position:center}
+.destination-visual>.city-illustration figcaption{position:absolute;inset:auto 22px 20px;color:#fff;z-index:3;display:grid;gap:3px;max-width:70%;padding:0;pointer-events:none}
+.destination-visual>.city-illustration figcaption>span:first-child{color:#fff}
+.scene-material-note{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px;border-top:1px solid var(--line);margin-top:27px;padding-top:20px;font-size:14px;line-height:1.7;color:var(--muted)}
+.scene-material-note>span{display:flex;align-items:center;gap:7px}
+.scene-material-note i{width:4px;height:4px;background:var(--gold);border-radius:50%}
+
+.product-city-story{padding-block:85px 95px}
+.product-city-story-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;align-items:end;margin-bottom:40px}
+.product-city-story-head h2{font-size:clamp(34px,3.8vw,50px);margin-top:25px;line-height:1.5}
+.product-city-story-head p{font-size:16px;line-height:1.95;max-width:540px}
+.product-city-story>.city-illustration{height:clamp(310px,36vw,490px)}
+.product-city-story>.city-illustration .city-illustration__image{border:1px solid #b9cece}
+.product-city-story>.city-illustration figcaption{padding-top:17px}
+.product-view-details{margin:57px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:35px}
+.product-view-details>li{border-top:1px solid var(--line);padding-top:23px;min-width:0}
+.product-view-details>li>span{font-size:14px;color:var(--blue);letter-spacing:.06em}
+.product-view-details h3{font-family:var(--serif);font-size:24px;line-height:1.6;margin-top:19px}
+.product-view-details p{font-size:14px;line-height:1.9;margin-top:13px;max-width:330px}
+.product-view-details .text-link{font-size:14px;margin-top:20px}
+
+.about-city-layers{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.8fr);gap:65px;align-items:center;padding-block:0 90px}
+.about-city-layers>.city-illustration{height:500px}
+.about-city-layers>.city-illustration .city-illustration__image{height:calc(100% - 65px);box-shadow:0 18px 45px #082d3d15}
+.about-city-layers>.city-illustration figcaption{display:block}
+.about-city-layers>.city-illustration figcaption>span{display:block}
+.about-city-layers h2{font-size:clamp(32px,3.3vw,46px);line-height:1.5;margin-top:25px}
+.about-city-layers p{font-size:16px;line-height:1.95;margin-top:25px}
+.about-city-layers .text-link{font-size:14px;margin-top:28px}
+.about-image small{color:#fff4e1;background:#062c3c9c;padding:6px 10px;align-self:flex-start;font-size:14px}
+
+@media(max-width:1100px){
+  .immersive-heading{gap:45px}
+  .immersive-view-button{gap:13px;padding-inline:19px}
+  .immersive-view-button>.city-illustration{width:68px;height:58px}
+  .immersive-view-label>span{font-size:14px;letter-spacing:0}
+  .immersive-footnote{gap:30px}
+  .about-city-layers{gap:40px}
+}
+@media(max-width:899px){
+  .immersive-showcase{padding-block:75px 50px}
+  .immersive-heading{grid-template-columns:1fr;gap:27px;padding-bottom:35px}
+  .immersive-heading-copy p{max-width:620px}
+  .immersive-heading-copy>div{margin-top:18px}
+  .immersive-window-wrap{width:calc(100% - 40px)}
+  .immersive-stage,.immersive-showcase--compact .immersive-stage{height:500px}
+  .immersive-stage-bottom{inset:auto 27px 32px;gap:22px}
+  .immersive-stage-top{inset:20px 22px auto}
+  .immersive-view-button{gap:12px;padding:19px 17px;min-height:96px}
+  .immersive-view-button>.city-illustration{display:none}
+  .immersive-view-number{display:block}
+  .immersive-view-label>span{font-size:14px}
+  .immersive-footnote{display:block;padding-top:25px}
+  .immersive-footnote>.text-link{margin-top:24px}
+  .product-city-story-head{gap:38px}
+  .product-view-details{gap:25px}
+  .about-city-layers{grid-template-columns:1fr;gap:40px}
+  .about-city-layers>.city-illustration{height:490px}
+  .about-city-layers>div{max-width:660px}
+}
+@media(max-width:599px){
+  .city-illustration figcaption{display:grid;gap:4px;font-size:14px}
+  .city-illustration figcaption>span:first-child{flex-shrink:1}
+  .immersive-showcase{padding-block:60px 42px}
+  .immersive-heading h2{font-size:38px;letter-spacing:0;line-height:1.45}
+  .immersive-heading .eyebrow{font-size:14px;letter-spacing:.05em}
+  .immersive-heading-copy p{font-size:16px;line-height:1.85}
+  .immersive-stage,.immersive-showcase--compact .immersive-stage{height:530px}
+  .immersive-stage-top{inset:16px 16px auto;flex-wrap:wrap;gap:6px;font-size:14px}
+  .immersive-stage-top>span{padding:5px 8px;max-width:100%}
+  .immersive-stage-top>span:first-child{letter-spacing:0}
+  .immersive-stage-bottom{inset:auto 22px 28px;display:block}
+  .immersive-view-copy>span{font-size:14px;letter-spacing:.08em}
+  .immersive-view-copy h3{font-size:31px;line-height:1.5;margin-top:9px}
+  .immersive-view-copy p{font-size:14px;margin-top:10px;max-width:260px}
+  .immersive-toggle{margin-top:23px;min-height:48px;min-width:174px;padding-inline:18px}
+  .immersive-window-shade{background:linear-gradient(180deg,#0323329e,transparent 29%,#031b2a30 48%,#031b2aec)}
+  .immersive-poster .city-illustration__image>img{object-position:60% 50%}
+  .immersive-edge-mark{font-size:12px;right:6px;top:37%}
+  .immersive-view-controls{grid-template-columns:1fr}
+  .immersive-view-button{padding:12px 17px;min-height:73px;gap:14px}
+  .immersive-view-button+.immersive-view-button{border-left:0;border-top:1px solid #8baeb43b}
+  .immersive-view-button>.city-illustration{display:block;width:66px;height:45px}
+  .immersive-view-number{display:none}
+  .immersive-view-label{display:flex;align-items:center;gap:12px;flex:1;flex-wrap:wrap}
+  .immersive-view-label strong{font-size:16px}
+  .immersive-view-label>span{font-size:14px}
+  .immersive-view-button[aria-pressed=true]:after{inset:0 auto 0 0;height:auto;width:3px}
+  .immersive-showcase .immersive-stage .city-sandbox__status{top:95px;left:22px;max-width:calc(100% - 44px)}
+  .immersive-showcase .immersive-stage .city-sandbox__motion{top:139px;right:22px}
+  .immersive-footnote p{font-size:14px;line-height:1.85}
+  .journey-city-ribbon{height:122px}
+  .journey-city-ribbon>div{inset:18px 17px;align-items:start;flex-direction:column;justify-content:space-between;gap:8px}
+  .journey-city-ribbon>div>span{font-size:21px;line-height:1.5}
+  .journey-city-ribbon small{font-size:14px;max-width:none;text-align:left}
+  .destination-visual>.city-illustration figcaption{inset:auto 17px 17px;max-width:75%;font-size:14px}
+  .scene-material-note{font-size:14px;margin-top:23px;padding-top:18px}
+  .product-city-story{padding-block:60px 70px}
+  .product-city-story-head{grid-template-columns:1fr;gap:24px;margin-bottom:27px}
+  .product-city-story-head h2{font-size:32px}
+  .product-city-story-head p{font-size:16px}
+  .product-city-story>.city-illustration{height:auto;margin-bottom:35px}
+  .product-city-story>.city-illustration .city-illustration__image{height:auto;aspect-ratio:16/9}
+  .product-view-details{grid-template-columns:1fr;gap:28px;margin-top:0}
+  .product-view-details>li{display:grid;grid-template-columns:80px minmax(0,1fr);column-gap:18px;padding-top:21px}
+  .product-view-details>li>span{grid-row:1/4;padding-top:3px;font-size:14px}
+  .product-view-details h3{font-size:22px;margin-top:0}
+  .product-view-details p{font-size:14px;margin-top:9px;max-width:none}
+  .product-view-details .text-link{grid-column:2;margin-top:15px}
+  .about-city-layers{padding-bottom:65px;gap:35px}
+  .about-city-layers>.city-illustration{height:410px}
+  .about-city-layers>.city-illustration .city-illustration__image{height:calc(100% - 80px)}
+  .about-city-layers h2{font-size:31px}
+  .about-city-layers p{font-size:16px;margin-top:22px}
+}
+@media(prefers-reduced-motion:reduce){
+  .city-illustration[data-depth] .city-illustration__image>img{transform:none!important}
+  .immersive-toggle:hover{transform:none}
+  .immersive-loading>span{animation:none}
+  .immersive-heading [data-reveal],.about-city-layers [data-reveal],.product-city-story [data-reveal]{opacity:1!important;transform:none!important}
+}

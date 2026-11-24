@@ -1,0 +1,132 @@
+[
+  {
+    "asset": "blouberg_sunrise_2",
+    "kind": "hdri",
+    "file": "coastal-sunrise-1k.hdr",
+    "originalBytes": 1539084,
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/blouberg_sunrise_2_1k.hdr",
+    "sourcePage": "https://polyhaven.com/a/blouberg_sunrise_2",
+    "authors": {
+      "Greg Zaal": "All",
+      "Rico Cilliers": "Backplates"
+    },
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "queriedAt": "2026-11-24",
+    "sha256": "1cb809a131ff3cb7df94b639d5967fc6fc08ecd25b6c43930af3b5d99f1d8855",
+    "changes": "Original 1K HDR; used as lighting, not as a Zhuhai location photograph.",
+    "publicBytes": 1539084,
+    "publicSha256": "1cb809a131ff3cb7df94b639d5967fc6fc08ecd25b6c43930af3b5d99f1d8855"
+  },
+  {
+    "asset": "coast_sand_01",
+    "kind": "Diffuse",
+    "file": "sand-color.webp",
+    "originalBytes": 960614,
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_diff_1k.jpg",
+    "sourcePage": "https://polyhaven.com/a/coast_sand_01",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "queriedAt": "2026-11-24",
+    "sha256": "58af2e40100f7f405703a86d593af64379f822c4786850def23ecfc921450d54",
+    "changes": "Converted verified 1K JPEG to WebP quality90; dimensions retained.",
+    "publicBytes": 387274,
+    "publicSha256": "0ea3e2ad475757b825c9ca462320bdd7155dd20fc5c82902e83d8a3f8b315d54"
+  },
+  {
+    "asset": "coast_sand_01",
+    "kind": "nor_gl",
+    "file": "sand-normal.webp",
+    "originalBytes": 1146826,
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_nor_gl_1k.jpg",
+    "sourcePage": "https://polyhaven.com/a/coast_sand_01",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "queriedAt": "2026-11-24",
+    "sha256": "fe4d045aec99e71e80f682fcf0ad958d2dff1fe614b73178b304d1bac047b54a",
+    "changes": "Converted verified 1K JPEG to WebP quality90; dimensions retained.",
+    "publicBytes": 443932,
+    "publicSha256": "349a2980d03cc93db51cc2301fc38e90d30709a55a396cbbb0eaaf19593bb91d"
+  },
+  {
+    "asset": "coast_sand_01",
+    "kind": "Rough",
+    "file": "sand-roughness.webp",
+    "originalBytes": 383892,
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_rough_1k.jpg",
+    "sourcePage": "https://polyhaven.com/a/coast_sand_01",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "queriedAt": "2026-11-24",
+    "sha256": "cbc3e0bf2214e04318a643c9dc81f50f33cc5f7b935a20016c5d9efd9a6d1696",
+    "changes": "Converted verified 1K JPEG to WebP quality90; dimensions retained.",
+    "publicBytes": 37606,
+    "publicSha256": "1ef5d2e76a50b072269d9b1e3419e576a2f40199b9f4ad0d5964ff99713a9066"
+  },
+  {
+    "asset": "rock_boulder_dry",
+    "kind": "Diffuse",
+    "file": "stone-color.webp",
+    "originalBytes": 859211,
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_dry/rock_boulder_dry_diff_1k.jpg",
+    "sourcePage": "https://polyhaven.com/a/rock_boulder_dry",
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "queriedAt": "2026-11-24",
+    "sha256": "20f653a42fb24f42aa40641663070d578678da49af18cc1049dbdd4ed8679f3c",
+    "changes": "Converted verified 1K JPEG to WebP quality90; dimensions retained.",
+    "publicBytes": 328956,
+    "publicSha256": "8510d4149afceee245963d32cb454eeda0bfb8eed132d445d1a959d312ca298a"
+  },
+  {
+    "asset": "rock_boulder_dry",
+    "kind": "nor_gl",
+    "file": "stone-normal.webp",
+    "originalBytes": 802497,
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_dry/rock_boulder_dry_nor_gl_1k.jpg",
+    "sourcePage": "https://polyhaven.com/a/rock_boulder_dry",
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "queriedAt": "2026-11-24",
+    "sha256": "5915fea28a97357c78a04fb31c2516f1f7ed1b3a9cef4ae25aa93e4655e6c595",
+    "changes": "Converted verified 1K JPEG to WebP quality90; dimensions retained.",
+    "publicBytes": 200778,
+    "publicSha256": "bbc8ac0f80cec8c7b4482adf02686cc65efe24e451ae96d461e191384f0390b9"
+  },
+  {
+    "asset": "rock_boulder_dry",
+    "kind": "Rough",
+    "file": "stone-roughness.webp",
+    "originalBytes": 668127,
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_dry/rock_boulder_dry_rough_1k.jpg",
+    "sourcePage": "https://polyhaven.com/a/rock_boulder_dry",
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "license": "CC0 1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "queriedAt": "2026-11-24",
+    "sha256": "cc5229dd6bbdc4e817cb647e60242224b8e4f0237473ac018861ea243f2e8130",
+    "changes": "Converted verified 1K JPEG to WebP quality90; dimensions retained.",
+    "publicBytes": 241232,
+    "publicSha256": "d5e0a0bc50769e45a9155707eac674577965c6ff46f534c7984a5142da59f82f"
+  }
+]

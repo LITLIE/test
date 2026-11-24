@@ -1,6 +1,6 @@
 {
   "name": "askway-official-site",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,23 +11,34 @@
     "test": "node --test tests/unit.test.mjs",
     "test:browser": "node tests/browser.mjs",
     "test:regressions": "node tests/regressions.mjs",
-    "test:download": "node tests/download.mjs"
+    "test:download": "node tests/download.mjs",
+    "test:experience": "node --experimental-strip-types --test tests/experience/*.test.mjs",
+    "test:workbench": "node tests/experience/workbench-regressions.mjs",
+    "test:scene": "node tests/experience/scene-browser.mjs",
+    "test:quality": "node tests/experience/quality.mjs",
+    "test:static": "node tests/experience/static-site.mjs"
   },
   "dependencies": {
-    "askway-official-site": "file:",
     "gsap": "3.15.1",
     "lucide-react": "0.468.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-router-dom": "6.26.2"
+    "react-router-dom": "6.26.2",
+    "three": "0.170.0"
   },
   "devDependencies": {
     "@types/node": "22.10.2",
     "@types/react": "18.3.11",
     "@types/react-dom": "18.3.0",
+    "@types/three": "0.170.0",
     "@vitejs/plugin-react": "4.3.2",
+    "axe-core": "4.14.1",
+    "lighthouse": "13.6.0",
     "playwright-core": "1.65.1",
     "typescript": "5.5.4",
     "vite": "5.4.21"
+  },
+  "engines": {
+    "node": ">=22.19.0"
   }
 }

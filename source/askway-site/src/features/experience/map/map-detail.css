@@ -1,0 +1,134 @@
+.route-map.route-map--coastal {
+  --map-paper: #fcfaf3;
+  --map-ink: #183e51;
+  --map-muted: #506570;
+  --map-water-shallow: #d9eae7;
+  --map-water-deep: #97c1c4;
+  --map-sand-light: #f3eedc;
+  --map-sand: #dec99b;
+  --map-border: #c3cfc9;
+  --map-route: #ad6026;
+  --map-old-route: #596f7b;
+  --map-park: #b9cba7;
+  margin: 0;
+  padding: 18px 16px 0;
+  color: var(--map-ink);
+  background: var(--map-paper);
+  min-width: 0;
+}
+.route-map--coastal .coastal-map__toolbar { gap: 12px; padding-bottom: 13px; align-items: center; }
+.route-map--coastal .route-map__heading { color: var(--map-ink); font-size: 16px; font-weight: 600; gap: 4px; }
+.route-map--coastal .route-map__heading small { color: var(--map-muted); font-size: 14px; font-weight: 400; }
+.coastal-map__modes { display: flex; gap: 8px; flex-wrap: wrap; }
+.route-map--coastal .coastal-map__modes button {
+  min-height: 44px; padding: 8px 12px; border-radius: 4px; border: 1px solid var(--map-border);
+  color: var(--map-muted); background: transparent; font-size: 14px; line-height: 1.3; cursor: pointer;
+}
+.route-map--coastal .coastal-map__modes button[aria-pressed=true] { background: var(--map-ink); color: var(--map-paper); border-color: var(--map-ink); }
+.route-map--coastal .coastal-map__modes button:hover:not(:disabled) { box-shadow: inset 0 0 0 1px var(--map-ink); }
+.route-map--coastal button:disabled { opacity: .48; cursor: not-allowed; }
+.coastal-map__viewport { width: 100%; min-width: 0; border: 1px solid var(--map-border); border-radius: 8px; overflow: hidden; background: var(--map-water-shallow); }
+.route-map.route-map--coastal .route-map__canvas {
+  width: 100%; display: block; margin: 0; height: auto; aspect-ratio: auto; overflow: hidden;
+  font-family: inherit; outline-offset: -4px; touch-action: pan-y;
+}
+.route-map--coastal .route-map__canvas:focus-visible { outline: 3px solid var(--map-ink); }
+.coastal-map__wave { fill: none; stroke: #5d919b; stroke-width: .75; opacity: .3; }
+.coastal-map__water-contour { fill: none; stroke: #edf7f2; stroke-width: 1.4; opacity: .72; }
+.coastal-map__water-contour:nth-of-type(2n) { stroke-dasharray: 3 8; opacity: .6; }
+.coastal-map__block { fill: #e3dfcf; stroke: #ccc8b8; stroke-width: .65; opacity: .8; }
+.coastal-map__block--1 { fill: #ece6d7; }
+.coastal-map__block--2 { fill: #e0e4d3; }
+.coastal-map__hill { fill: #cad6b8; opacity: .87; }
+.coastal-map__hill-contour { fill: none; stroke: #91a785; stroke-width: .8; opacity: .65; }
+.coastal-map__park { fill: var(--map-park); stroke: #89a881; stroke-width: .8; }
+.coastal-map__park-path { fill: none; stroke: #eef2da; stroke-width: 1.5; stroke-dasharray: 3 3; }
+.coastal-map__street-casing { fill: none; stroke: #c6c9bb; stroke-width: 6; stroke-linejoin: round; stroke-linecap: round; }
+.coastal-map__street { fill: none; stroke: #fffdf6; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+.coastal-map__street--primary { stroke: #fdf7e6; stroke-width: 4.5; }
+.coastal-map__promenade { fill: none; stroke: #f7fbec; stroke-width: 4; }
+.coastal-map__beach { fill: none; stroke: var(--map-sand); stroke-width: 11; stroke-linecap: round; opacity: .94; }
+.coastal-map__beach--south { stroke-width: 8; }
+.coastal-map__coast { fill: none; stroke: #6c999a; stroke-width: 1.25; }
+.coastal-map__island-beach { fill: var(--map-sand); stroke: #e2d3af; stroke-width: 6; }
+.coastal-map__island { fill: #bbcea8; stroke: #739683; stroke-width: 1; }
+.coastal-map__island-path { fill: none; stroke: #eaf0d8; stroke-width: 1.8; stroke-dasharray: 4 3; }
+.coastal-map__bridge { fill: none; stroke: #fcfbf1; stroke-width: 4; stroke-linecap: round; }
+.coastal-map__grain { fill-opacity: .17; pointer-events: none; }
+.coastal-map__grid { fill: none; stroke: #fffdf5; stroke-width: .6; opacity: .25; pointer-events: none; }
+.coastal-map__bay { fill: #326773; font-size: 18px; font-weight: 400; letter-spacing: .12em; }
+.coastal-map__bay-subtitle { fill: #356773; font-size: 14px; }
+.route-map--coastal .route-map__route.coastal-map__route { fill: none; stroke: var(--map-route); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.coastal-map__route-casing { fill: none; stroke: #fffdf5; stroke-width: 8; stroke-linejoin: round; stroke-linecap: round; opacity: .94; }
+.route-map--coastal .route-map__route--previous { fill: none; stroke: var(--map-old-route); stroke-width: 4; stroke-dasharray: 7 7; stroke-linecap: round; opacity: .78; }
+.coastal-map__landmark { fill: #fbfcf4; stroke: #51717b; stroke-width: 1.3; stroke-linejoin: round; stroke-linecap: round; }
+.coastal-map__landmark ellipse { fill: #c2c8bc; stroke: none; opacity: .8; }
+.coastal-map__landmark--shell path:nth-of-type(2), .coastal-map__landmark--museum path:nth-of-type(2) { fill: none; stroke: #8dacae; }
+.coastal-map__landmark--statue { fill: #a6ada2; stroke: #697d73; }
+.coastal-map__landmark--park { fill: #759574; stroke: #50735a; }
+.coastal-map__landmark--coast { fill: #ede2bd; stroke: #7f9690; }
+.route-map--coastal .coastal-map__marker { outline: none; opacity: 1; }
+.route-map--coastal .coastal-map__marker .coastal-map__label-leader { fill: none; stroke: #728889; stroke-width: 1; stroke-linejoin: round; }
+.route-map.route-map--coastal .coastal-map__marker .coastal-map__geo-anchor { fill: var(--map-ink); stroke: var(--map-paper); stroke-width: 1; }
+.route-map.route-map--coastal .coastal-map__marker .coastal-map__hit { fill: transparent; stroke: none; pointer-events: all; }
+.route-map.route-map--coastal .coastal-map__marker .coastal-map__badge { fill: var(--map-paper); stroke: var(--map-ink); stroke-width: 1.5; }
+.route-map--coastal .coastal-map__marker.is-route-stop .coastal-map__badge { fill: var(--map-route); stroke: var(--map-paper); stroke-width: 2; }
+.route-map--coastal .coastal-map__marker.route-map__marker--previous .coastal-map__badge { stroke: var(--map-old-route); stroke-dasharray: 3 3; }
+.route-map.route-map--coastal .coastal-map__marker .coastal-map__selection-ring { fill: none; stroke: var(--map-ink); stroke-width: 2; }
+.route-map--coastal .coastal-map__marker.is-playing .coastal-map__selection-ring { stroke: var(--map-route); stroke-dasharray: 4 4; }
+.route-map--coastal .coastal-map__marker.is-selected .coastal-map__badge,
+.route-map--coastal .coastal-map__marker.is-playing .coastal-map__badge { fill: var(--map-ink); stroke: var(--map-paper); stroke-width: 2; }
+.route-map--coastal .coastal-map__number { font: 600 14px system-ui, sans-serif; fill: var(--map-ink); stroke: none; }
+.route-map--coastal .coastal-map__marker:is(.is-route-stop,.is-selected,.is-playing) .coastal-map__number { fill: var(--map-paper); }
+.coastal-map__name-plate { fill: #fffdf5; fill-opacity: .96; stroke: #c6cec0; stroke-width: .7; }
+.coastal-map__place-name { fill: var(--map-ink); font-size: 14px; font-weight: 500; stroke: none; }
+.coastal-map__marker.is-selected .coastal-map__name-plate { fill: var(--map-ink); stroke: var(--map-ink); }
+.coastal-map__marker.is-selected .coastal-map__place-name { fill: var(--map-paper); }
+.coastal-map__marker:is(:hover,:focus-visible) .coastal-map__name-plate { stroke: var(--map-ink); stroke-width: 2; }
+.coastal-map__marker:focus-visible .coastal-map__badge { stroke: var(--map-route); stroke-width: 3; }
+.coastal-map__north { fill: var(--map-ink); stroke: none; }
+.coastal-map__north path { fill: var(--map-ink); stroke: var(--map-ink); stroke-width: 1.3; stroke-linejoin: round; }
+.coastal-map__north text { font-size: 14px; }
+.coastal-map__scale { fill: var(--map-ink); stroke: none; font-size: 14px; font-variant-numeric: tabular-nums; }
+.coastal-map__scale path { stroke: var(--map-ink); fill: none; stroke-width: 1.5; }
+.coastal-map__navigation { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 12px 8px; }
+.route-map--coastal .map-controls { display: flex; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.route-map--coastal .map-control { min-width: 44px; min-height: 44px; padding: 8px; border: 1px solid var(--map-border); border-radius: 4px; color: var(--map-ink); font-size: 14px; background: var(--map-paper); }
+.route-map--coastal .map-control:hover:not(:disabled) { background: #edf3ec; border-color: var(--map-ink); }
+.route-map--coastal :is(button, [role=button]):focus-visible { outline: 2px solid var(--map-ink); outline-offset: 3px; }
+.coastal-map__view-status { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; color: var(--map-muted); font-size: 14px; line-height: 1.7; }
+.coastal-map__view-status>span:last-child { color: var(--map-ink); }
+.coastal-map__keyboard-hint { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.route-map--coastal figcaption { padding-top: 3px; }
+.route-map--coastal .scene-legend { margin-block: 13px 11px; gap: 8px 16px; color: var(--map-muted); font-size: 14px; }
+.route-map--coastal .legend-line { height: 3px; background: var(--map-route); }
+.route-map--coastal .legend-line--old { height: 0; border-top-color: var(--map-old-route); background: transparent; }
+.route-map--coastal .legend-dot { width: 9px; height: 9px; background: var(--map-muted); }
+.route-map--coastal .legend-dot.is-selected { background: var(--map-ink); }
+.route-map--coastal .scene-places { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: 0 10px; gap: 0 14px; border-top: 1px solid #e0e3d8; }
+.route-map--coastal .scene-places button { min-height: 48px; border: 0; border-bottom: 1px solid #e0e3d8; background: transparent; border-radius: 0; padding: 10px 4px; gap: 9px; color: var(--map-ink); }
+.route-map--coastal .scene-places button.is-selected { background: #e7eef0; box-shadow: inset 3px 0 var(--map-ink); padding-left: 9px; }
+.route-map--coastal .scene-places button:hover { background: #eff3e8; }
+.route-map--coastal .scene-places__name { font-size: 14px; line-height: 1.6; font-weight: 500; }
+.route-map--coastal .scene-places__number { width: 24px; height: 24px; min-width: 24px; font-size: 14px; color: var(--map-ink); border-color: #bdcbc6; }
+.route-map--coastal .scene-places__state { font-size: 14px; color: var(--map-muted); }
+.route-map--coastal :is(.scene-note, .scene-comparison) { color: var(--map-muted); font-size: 14px; line-height: 1.85; margin-block: 12px 16px; }
+.route-map--coastal .scene-note a { color: var(--map-ink); }
+.route-map--coastal.has-reduced-motion * { animation: none !important; transition: none !important; }
+@media (max-width: 599px) {
+  .route-map.route-map--coastal { padding: 15px 10px 0; }
+  .route-map--coastal .coastal-map__toolbar { align-items: flex-start; gap: 10px; }
+  .route-map--coastal .route-map__heading { font-size: 16px; }
+  .coastal-map__modes { gap: 8px; }
+  .route-map--coastal .coastal-map__modes button { padding-inline: 10px; font-size: 14px; }
+  .coastal-map__navigation { gap: 8px; justify-content: flex-start; }
+  .coastal-map__navigation .map-controls { gap: 8px; }
+  .coastal-map__view-status { gap: 4px 10px; }
+  .route-map--coastal .scene-places { gap: 0 8px; }
+  .route-map--coastal .scene-places__state { display: none; }
+  .route-map--coastal .scene-places button { padding-inline: 3px; gap: 7px; }
+}
+@media (min-width: 900px) {
+  .experience-miniature .route-map.route-map--coastal { padding-inline: 20px; }
+}
+.scene-note a{text-decoration:underline;text-underline-offset:3px}

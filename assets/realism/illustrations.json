@@ -1,0 +1,92 @@
+{
+  "records": [
+    {
+      "name": "coastal-overview",
+      "preset": "overview",
+      "mood": "day",
+      "width": 1920,
+      "height": 1080,
+      "source": "Original Three.js render, same public reference catalogue; not a location photograph.",
+      "stats": {
+        "activeRenderer": "1",
+        "renderCount": "6",
+        "sceneReady": "true",
+        "sceneResourcesReady": "true",
+        "sceneResourceFallbacks": "0",
+        "sceneCamera": "perspective",
+        "animationRequested": "false",
+        "sceneQuality": "high",
+        "scenePreset": "overview",
+        "sceneLighting": "day",
+        "scenePaused": "false",
+        "sceneAnimating": "false",
+        "sceneTriangles": "72024",
+        "sceneDrawCalls": "36",
+        "sceneDpr": "1"
+      },
+      "file": "coastal-overview.webp",
+      "bytes": 139528,
+      "sha256": "61c120f6027e5b7ae78df09d5155af27e1d48a146a65b43face349ecc8bd409f",
+      "license": "Original scene rendering; model/graphics delivered with site source. Environment/material sources are CC0, see sources.json."
+    },
+    {
+      "name": "theatre-dusk",
+      "preset": "theatre",
+      "mood": "dusk",
+      "width": 1920,
+      "height": 1080,
+      "source": "Original Three.js render, same public reference catalogue; not a location photograph.",
+      "stats": {
+        "activeRenderer": "1",
+        "renderCount": "7",
+        "sceneReady": "true",
+        "sceneResourcesReady": "true",
+        "sceneResourceFallbacks": "0",
+        "sceneCamera": "perspective",
+        "animationRequested": "false",
+        "sceneQuality": "high",
+        "scenePreset": "theatre",
+        "sceneLighting": "dusk",
+        "scenePaused": "false",
+        "sceneAnimating": "false",
+        "sceneTriangles": "64438",
+        "sceneDrawCalls": "27",
+        "sceneDpr": "1"
+      },
+      "file": "theatre-dusk.webp",
+      "bytes": 144414,
+      "sha256": "130af7ef7122d0827afd71c36b9011dcaba4c92e328811650994ea2a7ae6ed1c",
+      "license": "Original scene rendering; model/graphics delivered with site source. Environment/material sources are CC0, see sources.json."
+    },
+    {
+      "name": "route-landmarks",
+      "preset": "route",
+      "mood": "day",
+      "width": 1920,
+      "height": 1080,
+      "source": "Original Three.js render, same public reference catalogue; not a location photograph.",
+      "stats": {
+        "activeRenderer": "1",
+        "renderCount": "8",
+        "sceneReady": "true",
+        "sceneResourcesReady": "true",
+        "sceneResourceFallbacks": "0",
+        "sceneCamera": "perspective",
+        "animationRequested": "false",
+        "sceneQuality": "high",
+        "scenePreset": "route",
+        "sceneLighting": "day",
+        "scenePaused": "false",
+        "sceneAnimating": "false",
+        "sceneTriangles": "72024",
+        "sceneDrawCalls": "36",
+        "sceneDpr": "1"
+      },
+      "file": "route-landmarks.webp",
+      "bytes": 184064,
+      "sha256": "a58b878e8b455e68158fe10695044b1584a0dd0aa7b951d0e8fea37f86efefc0",
+      "license": "Original scene rendering; model/graphics delivered with site source. Environment/material sources are CC0, see sources.json."
+    }
+  ],
+  "errors": []
+}
