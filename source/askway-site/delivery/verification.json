@@ -43,5 +43,12 @@
     "CLS": 0
   },
   "IndependentReview": "Seven original material findings addressed; no remaining blocker",
-  "Scope": "Local illustrative frontend demo; no existing product backend initialized"
+  "Scope": "Local illustrative frontend demo; no existing product backend initialized",
+  "DownloadReservation": {
+    "Passed": 4,
+    "Total": 4,
+    "PublicDownloadAvailable": false,
+    "Repository": "https://github.com/LITLIE/AskWay",
+    "State": "Reserved; user will make repository public later"
+  }
 }

@@ -28,6 +28,14 @@ npm run preview
 
 ## 页面与交互
 
+### 软件获取预留
+
+顶部与手机导航、产品页 /product/#download、页脚均提供“软件下载”入口。AskWay 仓库当前为私有，页面显示“公开下载尚未开放”，仓库链接注明授权访问。
+
+用户后续公开仓库并确认实际获取路径后，在 site.config.mjs 更新 software.downloadUrl，并把 software.publicDownloadAvailable 改为 true，再构建与发布。现在未改变 AskWay 可见性，也未公开安装包。
+
+当前版本资料为 0.4.2 Android 验收试用版，最低系统按项目配置为 Android 7.0；公开时重新核实最终包与安装/后端配置说明。
+
 | 路径 | 内容 |
 |---|---|
 | / | 品牌首页、海岸主视觉、四阶段产品舞台、场景与合作方向 |
@@ -62,6 +70,7 @@ npm run preview
 # 保持预览服务运行，在另一个终端执行：
 npm run test:browser
 npm run test:regressions
+npm run test:download
 ```
 
 浏览器证据默认写入 .agent_tmp。测试包含手机菜单与键盘、360/390px 布局、正常及减弱动画、同页跳转、条件变化后的旧结果处理、地图与行程一致性、邮件草稿和复制。
