@@ -2,7 +2,7 @@
 
 以“海岸城市 × 可信科技”为方向的四页品牌官网，包含海岸首屏、滚动产品叙事、珠海场景切换、行程交互演示和合作需求整理。
 
-- 正式访问：https://litlie.zh.kg
+- 当前验证可访问：http://litlie.zh.kg。现有自定义域名的 HTTPS 证书尚未就绪。
 - 合作邮箱：2825947576@qq.com
 - 临时托管仓库：https://github.com/LITLIE/test，沿用 ai 分支的 GitHub Pages 与 CNAME。
 - 技术：React 18.3.1、TypeScript、Vite 5、GSAP、React Router、Lucide SVG。
@@ -70,7 +70,7 @@ npm run test:regressions
 
 本仓库的 source/askway-site 是完整源码。可复制到 AskWay 仓库的 dev/askway-site，再使用锁文件安装和构建。
 
-若改变正式域名，更新 site.config.mjs 的 url；构建会同步浏览器与静态 HTML 中的 URL，并根据域名生成 CNAME。若使用 GitHub 项目路径，配置 base 为对应路径，同时将 url 设为完整站点 URL。发布服务器应支持四个预渲染目录的直接访问。
+若改变正式域名，或 HTTPS 证书就绪后切换协议，更新 site.config.mjs 的 url；构建会同步浏览器与静态 HTML 中的 URL，并根据域名生成 CNAME。若使用 GitHub 项目路径，配置 base 为对应路径，同时将 url 设为完整站点 URL。发布服务器应支持四个预渲染目录的直接访问。
 
 当前 GitHub Pages 根目录放置 dist 的静态产物；source/askway-site 放置可迁移源码。源码发布不包含 node_modules、构建临时目录、浏览器配置、运行缓存、认证脚本或凭据。原有 CNAME 与 Pages 发布分支继续沿用。
 

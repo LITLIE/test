@@ -19,8 +19,18 @@ export default function Cooperation(){
   };
   const copy=async()=>{
     if(!result?.ok)return;
-    try{await navigator.clipboard.writeText(result.text);setCopyState('合作意向已复制。');}
-    catch{resultRef.current?.focus();resultRef.current?.select();setCopyState('请选中下方内容复制。');}
+    const fallback=()=>{
+      const previous=document.activeElement as HTMLElement|null;
+      resultRef.current?.focus();resultRef.current?.select();
+      let copied=false;
+      try{copied=document.execCommand('copy');}catch{copied=false;}
+      setCopyState(copied?'合作意向已复制。':'请选中下方内容复制。');
+      if(copied)previous?.focus();
+    };
+    try{
+      if(!navigator.clipboard?.writeText){fallback();return;}
+      await navigator.clipboard.writeText(result.text);setCopyState('合作意向已复制。');
+    }catch{fallback();}
   };
   return <><section className="page-hero cooperation-hero container"><Eyebrow>THE NEXT WAY / 一起探索</Eyebrow><h1>让城市的更多可能，<br/>在一段旅程里相遇。</h1><div className="page-hero-bottom"><p>内容、服务与真实的游览体验。<br/>从一个具体场景开始，<br/>我们一起寻找更连贯的连接。</p><a className="action action-primary" href="#contact"><span>开启合作对话</span><ArrowUpRight size={18} aria-hidden="true"/></a></div></section>
     <section className="cooperation-directions container"><div className="section-head"><Eyebrow>THREE WAYS TO BEGIN</Eyebrow><h2>先从一个场景，<br/>认真地开始。</h2></div>{[
