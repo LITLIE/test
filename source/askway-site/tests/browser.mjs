@@ -1,0 +1,48 @@
+import { chromium } from 'playwright-core';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import assert from 'node:assert/strict';
+const evidence=resolve('.agent_tmp/browser');
+await mkdir(evidence,{recursive:true});
+process.env.TEMP=evidence;process.env.TMP=evidence;
+const records=[],errors=[];
+const context=await chromium.launchPersistentContext(resolve(evidence,'profile'),{
+  executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
+  headless:true,viewport:{width:1440,height:1000},reducedMotion:'reduce',
+  permissions:['clipboard-read','clipboard-write'],
+  args:['--no-first-run','--no-default-browser-check','--disable-background-networking','--disable-sync','--disable-breakpad','--disable-crash-reporter','--crash-dumps-dir='+resolve(evidence,'crashes'),'--disk-cache-dir='+resolve('.agent_cache/browser')]
+});
+const page=await context.newPage();
+page.on('pageerror',error=>errors.push(error.message));
+const check=async(name,fn)=>{try{await fn();records.push({name,pass:true});}catch(error){records.push({name,pass:false,error:error.message});}};
+const base=process.env.TEST_URL||'http://127.0.0.1:4173';
+await check('home hydrates without losing static heading',async()=>{await page.goto(base,{waitUntil:'networkidle'});assert.equal(await page.locator('h1').count(),1);assert.match(await page.locator('h1').innerText(),/自有方向/);await page.evaluate(()=>document.fonts.ready);});
+await page.screenshot({path:resolve(evidence,'home-desktop.png'),fullPage:true});
+await page.screenshot({path:resolve(evidence,'hero-desktop.png')});
+await check('all three manual story stages update the visible panel',async()=>{for(const label of ['让安排可行','看懂每次调整','带上这段旅程']){await page.getByRole('tab',{name:new RegExp(label)}).click();assert.equal(await page.getByRole('tab',{name:new RegExp(label)}).getAttribute('aria-selected'),'true');}assert.equal(await page.locator('.phone-shell').count(),1);});
+await check('city selection updates its heading and highlighted map',async()=>{await page.locator('.scene-tabs').getByRole('button',{name:/海滨公园/}).click();assert.match(await page.locator('.scene-text').innerText(),/一片绿意/);});
+await check('desktop product navigation works',async()=>{await page.getByRole('navigation',{name:'主导航',exact:true}).getByRole('link',{name:'产品体验'}).click();assert.match(page.url(),/\/product\/$/);assert.equal(await page.locator('#demo').count(),1);});
+await check('impossible mandatory stops are explained',async()=>{await page.getByLabel('这一天，有多少时间？').selectOption('120');await page.getByRole('button',{name:'慢慢走走',exact:true}).click();await page.getByLabel('海滨公园',{exact:true}).check();await page.getByLabel('香炉湾',{exact:true}).check();await page.getByRole('button',{name:'形成示例安排'}).click();assert.match(await page.locator('.demo-conflict').innerText(),/冲突/);assert.equal(await page.locator('.demo-itinerary').count(),0);});
+await check('a sufficient time budget keeps all mandatory stops',async()=>{await page.getByLabel('这一天，有多少时间？').selectOption('240');await page.getByRole('button',{name:'形成示例安排'}).click();assert.equal(await page.locator('.demo-itinerary>button').count(),3);assert.match(await page.locator('.demo-remaining').innerText(),/分钟余量/);});
+await page.screenshot({path:resolve(evidence,'product-desktop.png'),fullPage:true});
+await check('cooperation form focuses and reports missing organization',async()=>{await page.goto(base+'/cooperation/',{waitUntil:'networkidle'});await page.getByRole('button',{name:'整理合作意向'}).click();assert.equal(await page.locator('#organization').getAttribute('aria-invalid'),'true');assert.equal(await page.evaluate(()=>document.activeElement.id),'organization');});
+await check('cooperation produces a real draft and a correctly addressed email link',async()=>{await page.getByLabel('机构 / 团队名称',{exact:false}).fill('海湾旅宿');await page.getByLabel('希望共同探索的场景',{exact:false}).fill('希望核实从酒店出发的一日路线。');await page.getByRole('button',{name:'整理合作意向'}).click();assert.match(await page.getByLabel('合作意向草稿').inputValue(),/海湾旅宿/);const href=await page.getByRole('link',{name:'用邮件发送'}).getAttribute('href');assert.ok(href.startsWith('mailto:2825947576@qq.com?'));assert.match(decodeURIComponent(href),/希望核实从酒店出发的一日路线/);});
+await check('draft copy provides feedback and contains the submitted request',async()=>{await page.getByRole('button',{name:'复制内容'}).click();await page.waitForFunction(()=>document.querySelector('.copy-status').textContent.includes('已复制'));assert.match(await page.locator('.copy-status').innerText(),/已复制/);assert.match(await page.evaluate(()=>navigator.clipboard.readText()),/海湾旅宿/);});
+await page.screenshot({path:resolve(evidence,'cooperation-desktop.png'),fullPage:true});
+await check('about route loads with a single heading',async()=>{await page.goto(base+'/about/',{waitUntil:'networkidle'});assert.equal(await page.locator('h1').count(),1);assert.match(await page.locator('h1').innerText(),/值得期待/);});
+await check('desktop pages have no horizontal overflow',async()=>{for(const path of ['/','/product/','/cooperation/','/about/']){await page.goto(base+path,{waitUntil:'networkidle'});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),true,path);}});
+await check('mobile menu opens, traps focus and Escape returns focus',async()=>{await page.setViewportSize({width:390,height:844});await page.goto(base,{waitUntil:'networkidle'});await page.getByRole('button',{name:'打开导航'}).click();assert.equal(await page.getByRole('button',{name:'关闭导航'}).getAttribute('aria-expanded'),'true');await page.keyboard.press('Escape');assert.equal(await page.getByRole('button',{name:'打开导航'}).getAttribute('aria-expanded'),'false');assert.equal(await page.evaluate(()=>document.activeElement.getAttribute('aria-label')),'打开导航');});
+await check('mobile navigation reaches the about page and closes the menu',async()=>{await page.getByRole('button',{name:'打开导航'}).click();await page.getByRole('navigation',{name:'移动主导航'}).getByRole('link',{name:/关于问途/}).click();assert.match(page.url(),/\/about\/$/);assert.equal(await page.locator('.mobile-menu').count(),0);assert.equal(await page.locator('main').getAttribute('inert'),null);});
+await check('all mobile pages at 360 and 390 pixels remain within the viewport',async()=>{for(const width of [360,390]){await page.setViewportSize({width,height:844});for(const path of ['/','/product/','/cooperation/','/about/']){await page.goto(base+path,{waitUntil:'networkidle'});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),true,width+' '+path);}}});
+await page.goto(base,{waitUntil:'networkidle'});await page.screenshot({path:resolve(evidence,'home-mobile.png'),fullPage:true});await page.screenshot({path:resolve(evidence,'hero-mobile.png')});
+await check('reduced motion keeps story content readable',async()=>{assert.equal(await page.evaluate(()=>matchMedia('(prefers-reduced-motion: reduce)').matches),true);assert.equal(await page.locator('.journey-chapter').count(),4);assert.equal(await page.locator('.journey-chapter').first().isVisible(),true);});
+await check('normal desktop scroll changes the active journey stage',async()=>{await page.setViewportSize({width:1440,height:1000});await page.emulateMedia({reducedMotion:'no-preference'});await page.goto(base,{waitUntil:'networkidle'});await page.evaluate(()=>{const section=document.querySelector('#journey');window.scrollTo({top:section.offsetTop+section.offsetHeight-700,behavior:'instant'});});await page.waitForFunction(()=>document.querySelectorAll('.stage-tabs button')[3].getAttribute('aria-selected')==='true');assert.equal(await page.getByRole('tab',{name:/带上这段旅程/}).getAttribute('aria-selected'),'true');});
+await check('no browser runtime errors were emitted',async()=>assert.deepEqual(errors,[]));
+await context.close();
+const staticContext=await chromium.launchPersistentContext(resolve(evidence,'nojs-profile'),{executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true,javaScriptEnabled:false,args:['--no-first-run','--no-default-browser-check','--disable-breakpad','--disable-crash-reporter','--crash-dumps-dir='+resolve(evidence,'nojs-crashes')]});
+const staticPage=await staticContext.newPage();
+await check('four pages remain readable without JavaScript',async()=>{for(const path of ['/','/product/','/cooperation/','/about/']){await staticPage.goto(base+path);assert.equal(await staticPage.locator('h1').count(),1);assert.ok((await staticPage.locator('main').innerText()).length>300);}});
+await staticContext.close();
+await writeFile(resolve(evidence,'results.json'),JSON.stringify({checks:records,errors,passed:records.filter(item=>item.pass).length,total:records.length},null,2));
+console.log(JSON.stringify(records,null,2));
+process.exitCode=records.some(item=>!item.pass)?1:0;

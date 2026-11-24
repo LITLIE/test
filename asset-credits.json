@@ -1,0 +1,11 @@
+{
+  "images": [
+    {"file":"assets/hero.webp","title":"Zhuhai Grand Theatre Exterior Southeast2021","author":"Charlie fong","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_Exterior_Southeast2021.jpg","changes":"resized and converted to WebP; site applies presentation color and crop"},
+    {"file":"assets/architecture.webp","title":"Zhuhai Grand Theatre 13","author":"钉钉","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_13.jpg","changes":"resized and converted to WebP; site crops for layout"},
+    {"file":"assets/theatre.webp","title":"Zhuhai Grand Theatre 23","author":"钉钉","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_23.jpg","changes":"resized and converted to WebP"},
+    {"file":"assets/coast.webp","title":"Zhuhai-seen-from-Yeli-0725","author":"Vmenkov","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Zhuhai-seen-from-Yeli-0725.jpg","changes":"resized and converted to WebP; site applies presentation crop"}
+  ],
+  "font":{"file":"assets/heading.ttf","name":"Noto Serif SC, subset weight 500","license":"SIL Open Font License 1.1","source":"https://github.com/google/fonts/tree/main/ofl/notoserifsc","licenseFile":"assets/FONT-LICENSE.txt"},
+  "brandAndDiagrams":"AskWay site-specific vector artwork",
+  "icons":{"name":"Lucide","license":"ISC","source":"https://lucide.dev"}
+}

@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.agent_tmp/
+.agent_cache/
+.env.local

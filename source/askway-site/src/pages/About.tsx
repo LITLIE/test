@@ -1,0 +1,9 @@
+import { asset } from '../site';
+import { CooperationCallout, Eyebrow } from '../components/Shared';
+export default function About(){
+  return <><section className="page-hero about-hero container"><Eyebrow>OUR WAY / 关于问途</Eyebrow><h1>旅程值得期待。<br/>每一步，也值得被理解。</h1><div className="page-hero-bottom"><p>我们从城市游览中的具体问题出发：<br/>怎样让想去的地方与能用的时间衔接，<br/>怎样让每次改变都有解释，怎样把安排带到现场。</p><span className="about-coordinate">ZHUHAI<br/>22°16′ N / 113°35′ E</span></div></section>
+    <section className="about-image container"><img src={asset('architecture.webp')} alt="珠海大剧院的建筑细节，弧形结构向天空延展" width="1200" height="1600" loading="lazy"/><div><span>从城市的细节里，<br/>发现一段旅程的可能。</span><small>珠海大剧院 · 日月贝</small></div></section>
+    <section className="about-story container"><div><Eyebrow>A CLEARER WAY TO GO</Eyebrow><h2>先理解一个想法，<br/>再认真地安排它。</h2></div><div><p>问途是一项围绕商讨式行程规划与城市游览展开的产品探索。它连接出游偏好、可行行程、地图调整与手机现场执行。</p><p>我们相信，旅行中的决定应该是清楚的。重要条件需要确认，方案变化需要解释，已保存的安排与最新查询也需要明确区分。</p><p>从珠海的城市场景出发，问途持续完善产品闭环与跨端体验，也期待与更多内容和场景伙伴一起，探索更连贯的城市体验。</p></div></section>
+    <section className="about-values container"><Eyebrow>WHAT WE CARE ABOUT</Eyebrow><div className="values-grid">{[{n:'01',title:'认真理解',text:'把想法与条件放在一起考虑，给重要的偏好以清晰表达。'},{n:'02',title:'清楚决定',text:'用可解释的安排与变化说明，支持每一次由用户作出的选择。'},{n:'03',title:'连贯体验',text:'让规划与现场衔接，让电脑与手机围绕同一段旅程工作。'}].map(item=><article key={item.n}><span>{item.n}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div></section>
+    <section className="about-progress container"><Eyebrow>OUR JOURNEY SO FAR</Eyebrow><h2>从产品闭环，<br/>走向更真实的城市场景。</h2><div className="timeline">{[{date:'2026.10',title:'建立产品闭环',text:'围绕商讨、可行行程、地图调整、跨端保存与到点讲解，形成三端工程原型。'},{date:'2026.11',title:'持续打磨跨端体验',text:'完善路线与调整、现场执行、版本与离线状态，以及界面阅读与操作体验。'},{date:'下一步',title:'内容与场景，共同核实',text:'在明确范围的试点中，继续验证真实路线、城市内容与游客体验。'}].map(item=><article key={item.date} data-reveal><span>{item.date}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div></section><CooperationCallout/></>;
+}
