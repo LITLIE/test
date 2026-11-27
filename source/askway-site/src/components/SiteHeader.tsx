@@ -35,7 +35,7 @@ export default function SiteHeader() {
     <div className="container header-inner">
       <Brand light={!solid}/>
       <nav className="desktop-nav" aria-label="主导航">
-        {links.map(link=>link.to.includes('#')?<Link key={link.to} to={link.to}>{link.label}</Link>:<NavLink key={link.to} to={link.to} className={link.to==='/experience/'?'nav-experience':undefined}>{link.label}</NavLink>)}
+        {links.map(link=>link.to.includes('#')?<Link key={link.to} to={link.to}>{link.label}</Link>:<NavLink key={link.to} to={link.to}>{link.label}</NavLink>)}
       </nav>
       <Link to="/cooperation/#contact" className="header-cta">探讨合作<ArrowUpRight size={16} aria-hidden="true"/></Link>
       <button ref={buttonRef} className="menu-toggle" type="button" aria-label={open?'关闭导航':'打开导航'} aria-controls="mobile-menu" aria-expanded={open} onClick={()=>setOpen(!open)}>{open?<X aria-hidden="true"/>:<Menu aria-hidden="true"/>}</button>

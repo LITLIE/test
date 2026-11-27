@@ -1,15 +1,20 @@
 import {
-  ACESFilmicToneMapping, Color, DataTexture, DirectionalLight, EquirectangularReflectionMapping,
+  ACESFilmicToneMapping, Color, DataTexture, DataUtils, DirectionalLight, EquirectangularReflectionMapping,
   Float32BufferAttribute, FogExp2, Group, HemisphereLight, LinearFilter, LinearSRGBColorSpace, Mesh, PlaneGeometry,
-  PMREMGenerator, RGBAFormat, SRGBColorSpace,
+  PMREMGenerator, RGBAFormat, Scene, SRGBColorSpace,
 } from 'three';
-import type { Scene, WebGLRenderer, WebGLRenderTarget } from 'three';
+import type { WebGLRenderer, WebGLRenderTarget } from 'three';
 import { Sky } from 'three/examples/jsm/objects/Sky.js';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 import type { CoastalFrame } from './paperTerrain.ts';
 import type { CoastalMaterials } from './realisticMaterials.ts';
 
 export type CoastalLighting = 'day' | 'dusk';
+
+/** Three's PBR sampler negates the scene Euler to accommodate its left-handed environment frame. */
+export function panoramaRotationForSun(sourceAzimuth: number, sun: { x: number; z: number }) {
+  return sourceAzimuth - Math.atan2(sun.z, sun.x);
+}
 
 /** Two seamless water patches reach the horizon without a rectangular model plinth. */
 export function buildOcean(frame: CoastalFrame, materials: CoastalMaterials, quality: 'high' | 'low' = 'high') {
@@ -93,10 +98,17 @@ export function createCoastalEnvironment(scene: Scene, renderer: WebGLRenderer, 
   generator.compileEquirectangularShader();
   let environment: WebGLRenderTarget | null = null;
   let source: DataTexture | null = null;
+  const fallbackScene = new Scene();
+  fallbackScene.add(sky.clone());
+  const fallbackEnvironments = new Map<CoastalLighting, WebGLRenderTarget>();
+  let currentLighting: CoastalLighting = 'day';
+  let hdrLoaded = false;
+  let hdrSunAzimuth = 0;
   const abort = new AbortController();
   let disposed = false;
   const setLighting = (lighting: CoastalLighting) => {
     if (disposed) return;
+    currentLighting = lighting;
     const dusk = lighting === 'dusk';
     sun.position.set(dusk ? -95 : 65, dusk ? 15 : 88, dusk ? -74 : 45);
     sun.color.set(dusk ? '#ffc58f' : '#fff3df');
@@ -115,12 +127,21 @@ export function createCoastalEnvironment(scene: Scene, renderer: WebGLRenderer, 
     renderer.toneMappingExposure = dusk ? 0.78 : 0.72;
     (scene.fog as FogExp2).color.set(dusk ? '#d1bca3' : '#bfd1d3');
     scene.background = new Color(dusk ? '#d1bca3' : '#bfd1d3');
+    if (!hdrLoaded) {
+      let fallback = fallbackEnvironments.get(lighting);
+      if (!fallback) {
+        fallback = generator.fromScene(fallbackScene, 0.04, 0.1, 2500);
+        fallbackEnvironments.set(lighting, fallback);
+      }
+      environment = fallback;
+      scene.environment = fallback.texture;
+    }
+    // Rotate only the panorama; procedural fallback already follows the actual sun direction.
+    scene.environmentRotation.set(0, hdrLoaded ? panoramaRotationForSun(hdrSunAzimuth, sun.position) : 0, 0);
     onChange();
   };
   setLighting('day');
   // A physically generated sky is also the complete offline/failed-asset environment.
-  environment = generator.fromScene(scene, 0.04, 0.1, 2500);
-  scene.environment = environment.texture;
   const load = async () => {
     try {
       const base = import.meta.env?.BASE_URL ?? '/';
@@ -128,6 +149,15 @@ export function createCoastalEnvironment(scene: Scene, renderer: WebGLRenderer, 
       if (!response.ok) throw new Error(`Environment status ${response.status}`);
       const parsed = new RGBELoader().parse(await response.arrayBuffer());
       if (disposed) return 0;
+      let brightest = -1;
+      const valueAt = (index: number) => parsed.data instanceof Uint16Array ? DataUtils.fromHalfFloat(parsed.data[index]) : parsed.data[index];
+      for (let pixel = 0; pixel < parsed.width * parsed.height; pixel += 1) {
+        const luminance = valueAt(pixel * 4) * 0.2126 + valueAt(pixel * 4 + 1) * 0.7152 + valueAt(pixel * 4 + 2) * 0.0722;
+        if (luminance > brightest) {
+          brightest = luminance;
+          hdrSunAzimuth = ((pixel % parsed.width + 0.5) / parsed.width - 0.5) * Math.PI * 2;
+        }
+      }
       source = new DataTexture(parsed.data, parsed.width, parsed.height, RGBAFormat, parsed.type);
       source.name = 'CC0-PolyHaven-coastal-sunrise-1k';
       source.colorSpace = LinearSRGBColorSpace;
@@ -137,10 +167,12 @@ export function createCoastalEnvironment(scene: Scene, renderer: WebGLRenderer, 
       source.generateMipmaps = false;
       source.needsUpdate = true;
       const next = generator.fromEquirectangular(source);
-      environment?.dispose();
+      for (const fallback of fallbackEnvironments.values()) fallback.dispose();
+      fallbackEnvironments.clear();
       environment = next;
       scene.environment = environment.texture;
-      onChange();
+      hdrLoaded = true;
+      setLighting(currentLighting);
       return 0;
     } catch {
       return disposed ? 0 : 1;
@@ -157,7 +189,11 @@ export function createCoastalEnvironment(scene: Scene, renderer: WebGLRenderer, 
       scene.environment = null;
       sky.geometry.dispose();
       sky.material.dispose();
-      environment?.dispose();
+      const targets = new Set(fallbackEnvironments.values());
+      if (environment) targets.add(environment);
+      for (const target of targets) target.dispose();
+      fallbackEnvironments.clear();
+      fallbackScene.clear();
       source?.dispose();
       generator.dispose();
       sun.shadow.map?.dispose();

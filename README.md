@@ -1,11 +1,12 @@
-# 问途 AskWay 官网 · 3.0.0
+# 问途 AskWay 官网 · 3.1.0
 
-访问：http://litlie.zh.kg。GitHub Pages 沿用 ai 分支根目录和现有 CNAME；当前 HTTPS 证书尚未就绪。
+域名配置：http://litlie.zh.kg。GitHub Pages 沿用发布分支根目录和现有 CNAME。本轮结果已在本地构建，外部站点需按发布流程同步。
 
-新版包含五页官网、10个可溯源参考地点、条件核对/生成/版本比较/采用/撤销，以及二维海图、写实风格三维海岸和三个可控制的城市展台视角。新增插图由同一Three.js场景实际渲染。
+3.1 基于 `262872a`：首页以珠海实景和品牌标题开场，海面光点随正反向滚动收成三站路线；产品、关于、合作各有独立构图，普通页面尊重共享暂停与系统减少动态效果。日月贝使用独立表面材质、玻璃、台阶、栏杆和贴水护岸，新静帧由同一 Three.js 场景渲染。
 
 - [完整可维护源码](source/askway-site)
 - [运行说明](source/askway-site/README.md)
+- [3.1美化与验收](source/askway-site/docs/upgrade/visual-refresh-verification.md)
 - [3.0本地验收](source/askway-site/docs/upgrade/realism-v3-verification.md)
 - [资料/资源署名](asset-credits.json)
 - [公开参考点清单](data/catalog.json)

@@ -47,11 +47,11 @@
     "source": "https://lucide.dev"
   },
   "scene": {
-    "notes": "风格化参考位置；非测绘和导航资料；不含外部模型或纹理",
+    "notes": "自制参考建筑与海岸；非测绘和导航资料；使用已记录的 CC0 环境/岩砂材质及原创程序建筑纹理",
     "license": "自制几何随官网源码交付",
     "author": "AskWay site",
-    "name": "程序化纸艺城市",
-    "version": "procedural-paper-city-v1"
+    "name": "问途写实风格海岸场景示意",
+    "version": "coastal-visual-refresh-v4"
   },
   "renderer": {
     "license": "MIT",
@@ -69,9 +69,32 @@
   },
   "libraryLicenses": "assets/THIRD-PARTY-LICENSES.txt",
   "realism": {
-    "version": "coastal-realism-v3",
+    "version": "coastal-visual-refresh-v4",
     "materials": "assets/realism/sources.json",
     "illustrations": "assets/realism/illustrations.json",
-    "notes": "Original Three.js scene renders; reference architecture/terrain, not photography or navigation. CC0 textures and IBL are credited per source."
+    "notes": "Original Three.js scene renders; reference architecture/terrain, not photography or navigation. CC0 textures and IBL are credited per source.",
+    "proceduralTextures": {
+      "author": "AskWay site",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "src/features/experience/scene/architecturalTextures.ts",
+      "files": [
+        "shell-normal.webp",
+        "shell-roughness.webp",
+        "paving-normal.webp",
+        "paving-roughness.webp",
+        "asphalt-normal.webp",
+        "asphalt-roughness.webp"
+      ],
+      "changes": "Original analytic height fields, tangent-space OpenGL normals and linear roughness; lossless 1024px WebP baked with Pillow 12.3.0. No photographic input."
+    },
+    "capture": {
+      "generatedAt": "2026-11-27",
+      "baselineCommit": "262872ae7f6baac08ab7b6efe30765ef5e1e79a3",
+      "resolution": "1920x1080",
+      "renderer": "Three.js / Edge SwiftShader",
+      "processing": "Pillow 12.3.0 WebP quality90 method6",
+      "evidence": "delivery/visual-refresh/scene/illustration-renders.json"
+    }
   }
 }

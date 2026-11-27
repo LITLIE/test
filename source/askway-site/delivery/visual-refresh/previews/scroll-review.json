@@ -1,0 +1,12 @@
+{
+  "file": "scroll-review.gif",
+  "frames": 84,
+  "size": [
+    640,
+    445
+  ],
+  "durationMs": 8400,
+  "bytes": 6190188,
+  "original": "performance/home-scroll-forward-reverse.gif",
+  "note": "Compressed visual review; original capture and performance measurements are retained separately."
+}

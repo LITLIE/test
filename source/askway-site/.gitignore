@@ -3,3 +3,8 @@ dist/
 .agent_tmp/
 .agent_cache/
 .env.local
+
+# Reproducible local QA output; curated 3.1 evidence is staged explicitly.
+delivery/experience/
+delivery/realism-v3/
+delivery/visual-refresh/

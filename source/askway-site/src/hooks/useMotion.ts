@@ -1,6 +1,15 @@
 import { useEffect, type RefObject } from 'react';
-export default function useMotion(root:RefObject<HTMLElement>,key:string) {
+export default function useMotion(root:RefObject<HTMLElement>,key:string,enabled=true) {
   useEffect(()=>{
+    if(!enabled || !root.current || !('IntersectionObserver' in window))return;
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{if(entry.isIntersecting){(entry.target as HTMLElement).dataset.lightSweep='seen';observer.unobserve(entry.target);}});
+    },{threshold:.2});
+    root.current.querySelectorAll('[data-light-sweep]:not([data-light-sweep="seen"])').forEach(element=>observer.observe(element));
+    return()=>observer.disconnect();
+  },[root,key,enabled]);
+  useEffect(()=>{
+    if(!enabled)return;
     let stopped=false;
     let cleanup:(()=>void)|undefined;
     Promise.all([import('gsap'),import('gsap/ScrollTrigger')]).then(([{gsap},{ScrollTrigger}])=>{
@@ -16,7 +25,6 @@ export default function useMotion(root:RefObject<HTMLElement>,key:string) {
         const hero=root.current?.querySelector<HTMLElement>('.hero');
         if(hero){
           gsap.from('[data-hero-title]',{y:22,duration:1.15,ease:'power3.out',stagger:.12});
-          gsap.fromTo('.hero .route-line',{strokeDashoffset:100},{strokeDashoffset:0,duration:2,ease:'power2.inOut'});
           if(context.conditions?.desktop){
             gsap.to('[data-hero-image]',{yPercent:9,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:.7}});
           }
@@ -28,5 +36,5 @@ export default function useMotion(root:RefObject<HTMLElement>,key:string) {
       document.fonts?.ready.then(()=>{if(!stopped)ScrollTrigger.refresh();});
     }).catch(()=>{cleanup?.();});
     return()=>{stopped=true;cleanup?.();};
-  },[root,key]);
+  },[root,key,enabled]);
 }

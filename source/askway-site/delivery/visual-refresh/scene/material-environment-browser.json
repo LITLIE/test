@@ -1,0 +1,75 @@
+{
+  "materialAudit": {
+    "fallbacks": 0,
+    "maps": [
+      {
+        "kind": "shell",
+        "slot": "normalMap",
+        "name": "AskWay-original-shell-normal.webp",
+        "colorSpace": "",
+        "width": 1024,
+        "height": 1024,
+        "uuid": "632b131e-f0e8-4a2b-87d5-e6bca00bf208"
+      },
+      {
+        "kind": "shell",
+        "slot": "roughnessMap",
+        "name": "AskWay-original-shell-roughness.webp",
+        "colorSpace": "",
+        "width": 1024,
+        "height": 1024,
+        "uuid": "3ba9da9c-ba7c-45f8-9b05-86be34a324ec"
+      },
+      {
+        "kind": "paving",
+        "slot": "normalMap",
+        "name": "AskWay-original-paving-normal.webp",
+        "colorSpace": "",
+        "width": 1024,
+        "height": 1024,
+        "uuid": "97549aae-bac5-4546-b77f-53db38dbabf2"
+      },
+      {
+        "kind": "paving",
+        "slot": "roughnessMap",
+        "name": "AskWay-original-paving-roughness.webp",
+        "colorSpace": "",
+        "width": 1024,
+        "height": 1024,
+        "uuid": "764bb146-7a41-478e-82fb-c103d5d5e6b8"
+      },
+      {
+        "kind": "asphalt",
+        "slot": "normalMap",
+        "name": "AskWay-original-asphalt-normal.webp",
+        "colorSpace": "",
+        "width": 1024,
+        "height": 1024,
+        "uuid": "7152b15b-bba5-4eaf-9366-649bc33238cd"
+      },
+      {
+        "kind": "asphalt",
+        "slot": "roughnessMap",
+        "name": "AskWay-original-asphalt-roughness.webp",
+        "colorSpace": "",
+        "width": 1024,
+        "height": 1024,
+        "uuid": "c092ff20-54fa-42e0-9fc3-b61e150e4407"
+      }
+    ],
+    "ownedTextures": 25,
+    "releasedExactlyOnce": true,
+    "bitmapsClosed": true
+  },
+  "environmentAudit": {
+    "day": "09fefa1c-5a29-4fba-8346-f8a024a7e239",
+    "dusk": "58ecd840-9bc9-4732-b506-f404334c2521",
+    "restoredDay": "09fefa1c-5a29-4fba-8346-f8a024a7e239",
+    "fallbacks": 0,
+    "dayRotation": -3.394321735981066,
+    "duskRotation": -0.30895591962765057,
+    "released": true
+  },
+  "errors": [],
+  "environment": "Edge SwiftShader, Vite 5190; not real mobile GPU"
+}

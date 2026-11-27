@@ -1,5 +1,5 @@
 import {
-  BoxGeometry, BufferGeometry, CatmullRomCurve3, CylinderGeometry, DoubleSide, Float32BufferAttribute,
+  BoxGeometry, BufferGeometry, CatmullRomCurve3, CylinderGeometry, Float32BufferAttribute,
   Group, LineBasicMaterial, LineSegments, Mesh, TubeGeometry, Vector3,
 } from 'three';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
@@ -7,6 +7,17 @@ import type { CoastalMaterials } from './realisticMaterials.ts';
 
 interface Shell { x: number; z: number; width: number; height: number; gap: number; bulge: number }
 const fanWidth = (t: number) => Math.sqrt(Math.max(0, 1 - ((t - 0.25) / 0.75) ** 2));
+
+function pavingUv(geometry: BufferGeometry) {
+  const position = geometry.getAttribute('position'), normal = geometry.getAttribute('normal'), uv = geometry.getAttribute('uv');
+  for (let index = 0; index < position.count; index += 1) {
+    const x = position.getX(index), y = position.getY(index), z = position.getZ(index);
+    if (Math.abs(normal.getY(index)) > 0.5) uv.setXY(index, x / 9, -z / 9);
+    else if (Math.abs(normal.getX(index)) > 0.5) uv.setXY(index, z / 9, y / 9);
+    else uv.setXY(index, x / 9, y / 9);
+  }
+  return geometry;
+}
 
 /** Two thin, gently convex walls frame a glazed interior: a fan profile with a level base. */
 function shellWall(shell: Shell, side: number, high: boolean) {
@@ -48,7 +59,7 @@ function glassSurface(shell: Shell, roof = false) {
   for (let row = 0; row <= rows; row += 1) for (let column = 0; column <= columns; column += 1) {
     const u = column / columns, v = row / rows;
     const x = shell.x + (u * 2 - 1) * (shell.gap - 0.12);
-    const y = roof ? 0.85 + shell.height * (0.59 + 0.08 * (v * 2 - 1) ** 2) : 0.85 + v * shell.height * 0.67;
+    const y = roof ? 0.85 + shell.height * (0.59 + 0.08 * (v * 2 - 1) ** 2) : glassHeight(shell, u, v);
     const z = roof ? shell.z + (v * 2 - 1) * shell.width * 0.93
       : shell.z + shell.width * fanWidth(v * 0.67) - 0.20 * Math.sin(Math.PI * v);
     positions.push(x, y, z);
@@ -66,6 +77,8 @@ function glassSurface(shell: Shell, roof = false) {
   return geometry;
 }
 
+const glassHeight = (shell: Shell, u: number, v: number) => 0.85 + v * shell.height * (0.68 - 0.045 * Math.cos((u - 0.5) * Math.PI));
+
 export function buildOperaArchitecture(materials: CoastalMaterials, quality: 'high' | 'low') {
   const group = new Group();
   group.name = 'double-fan-shell-opera-reference';
@@ -78,7 +91,7 @@ export function buildOperaArchitecture(materials: CoastalMaterials, quality: 'hi
   }
   const stepGeometry = mergeGeometries(steps)!;
   steps.forEach(part => part.dispose());
-  const podium = new Mesh(stepGeometry, materials.paving);
+  const podium = new Mesh(pavingUv(stepGeometry), materials.paving);
   podium.receiveShadow = true;
   group.add(podium);
   const ribbons: BufferGeometry[] = [], glazing: BufferGeometry[] = [], frameLines: number[] = [];
@@ -104,32 +117,32 @@ export function buildOperaArchitecture(materials: CoastalMaterials, quality: 'hi
     for (let column = 0; column <= 7; column += 1) {
       const u = column / 7, x = shell.x + (u * 2 - 1) * (shell.gap - 0.115);
       for (let row = 0; row < 12; row += 1) for (const v of [row / 12, (row + 1) / 12]) {
-        frameLines.push(x, 0.86 + v * shell.height * 0.67, shell.z + shell.width * fanWidth(v * 0.67) - 0.20 * Math.sin(Math.PI * v) + 0.012);
+        frameLines.push(x, glassHeight(shell, u, v) + 0.012, shell.z + shell.width * fanWidth(v * 0.67) - 0.20 * Math.sin(Math.PI * v) + 0.012);
       }
     }
     for (let row = 0; row <= 12; row += 1) {
       const v = row / 12;
-      const y = 0.86 + v * shell.height * 0.67;
       const z = shell.z + shell.width * fanWidth(v * 0.67) - 0.20 * Math.sin(Math.PI * v) + 0.012;
-      frameLines.push(shell.x - shell.gap + 0.12, y, z, shell.x + shell.gap - 0.12, y, z);
+      for (let column = 0; column < 7; column += 1) for (const u of [column / 7, (column + 1) / 7]) {
+        frameLines.push(shell.x + (u * 2 - 1) * (shell.gap - 0.12), glassHeight(shell, u, v) + 0.012, z);
+      }
     }
   }
   const rim = new Mesh(mergeGeometries(ribbons)!, materials.metal);
   rim.castShadow = true;
   ribbons.forEach(part => part.dispose());
-  materials.glass.side = DoubleSide;
-  const interior = new Mesh(mergeGeometries(glazing)!, materials.glass);
+  const interior = new Mesh(mergeGeometries(glazing)!, materials.operaGlass);
   interior.castShadow = interior.receiveShadow = true;
   glazing.forEach(part => part.dispose());
   const mullions = new BufferGeometry();
   mullions.setAttribute('position', new Float32BufferAttribute(frameLines, 3));
   group.add(rim, interior, new LineSegments(mullions, new LineBasicMaterial({ color: '#98a7a7', transparent: true, opacity: 0.65 })));
-  const stage = new Mesh(new BoxGeometry(18.2, 0.9, 12.9), materials.roof);
+  const stage = new Mesh(pavingUv(new BoxGeometry(18.2, 0.72, 12.9)), materials.paving);
   stage.position.set(-0.5, 0.85, -0.5);
   stage.receiveShadow = true;
   group.add(stage);
   // Low curved public-space wings complete the building's horizontal base.
-  const wing = new Mesh(new CylinderGeometry(1, 1, 1.2, high ? 48 : 28), materials.glass);
+  const wing = new Mesh(new CylinderGeometry(1, 1, 1.2, high ? 48 : 28), materials.operaGlass);
   wing.scale.set(6.2, 1, 2.55);
   wing.position.set(-4.4, 1.33, 7.1);
   wing.castShadow = wing.receiveShadow = true;
@@ -138,6 +151,27 @@ export function buildOperaArchitecture(materials: CoastalMaterials, quality: 'hi
   roof.position.set(-4.4, 2.04, 7.1);
   roof.castShadow = roof.receiveShadow = true;
   group.add(wing, roof);
+  // One merged batch makes public-space scale readable without per-post draw calls.
+  const rails: BufferGeometry[] = [];
+  const box = (width: number, height: number, depth: number, x: number, y: number, z: number) => {
+    const part = new BoxGeometry(width, height, depth);
+    part.translate(x, y, z);
+    rails.push(part);
+  };
+  for (const x of [-10.05, 9.25]) {
+    box(0.055, 0.055, 16.8, x, 1.63, 0.55);
+    box(0.04, 0.04, 16.8, x, 1.23, 0.55);
+    for (let z = -7.85; z <= 8.95; z += 1.4) box(0.065, 0.9, 0.065, x, 1.19, z);
+  }
+  const promenadeRails = new Mesh(mergeGeometries(rails)!, materials.metal);
+  promenadeRails.name = 'opera-promenade-rails';
+  promenadeRails.castShadow = true;
+  rails.forEach(part => part.dispose());
+  group.add(promenadeRails);
+  const entrance = new Mesh(new BoxGeometry(8.2, 0.48, 0.045), materials.operaGlass);
+  entrance.position.set(3.6, 0.94, 5.97);
+  entrance.name = 'opera-glazed-entrance';
+  group.add(entrance);
   group.rotation.y = -0.13;
   return group;
 }

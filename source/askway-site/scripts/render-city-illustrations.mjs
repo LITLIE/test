@@ -17,8 +17,9 @@ try {
       import('/src/features/experience/domain/curated-planner.ts'), import('/src/features/experience/map/projection.ts'),
       import('/src/features/experience/scene/SceneText.tsx'), import('/src/features/experience/scene/cityRuntime.ts'),
     ]);
-    const result = proposeCuratedPlan(catalog, makeDefaultDraft(), null, { requestId: 'illustration', sessionEpoch: 0, draftRevision: 0, nowMs: 0 });
-    const plan = result.kind === 'proposal' ? result.proposal.candidate : null;
+    const result = proposeCuratedPlan(catalog, makeDefaultDraft(), null, { requestId: 'illustration', sessionEpoch: 1, draftRevision: 1, nowMs: 0 });
+    if (result.kind !== 'proposal') throw new Error(`Illustration route requires a valid curated proposal: ${result.kind}`);
+    const plan = result.proposal.candidate;
     const layout = buildSceneLayout(catalog, plan, null);
     const host = document.createElement('div');
     host.id = 'render-studio'; host.style.cssText = 'position:fixed;inset:0;z-index:999999;width:100vw;height:100vh;overflow:hidden';
@@ -29,6 +30,8 @@ try {
   const captureError = await page.locator('#render-studio').getAttribute('data-capture-error');
   if (captureError) { console.log(JSON.stringify({captureError,errors})); throw new Error(captureError); }
   await page.waitForFunction(() => document.querySelector('#render-studio')?.dataset.sceneResourcesReady === 'true', null, { timeout: 60000 });
+  const resourceFallbacks = await page.locator('#render-studio').getAttribute('data-scene-resource-fallbacks');
+  if (resourceFallbacks !== '0') throw new Error(`Static capture requires all material/HDR assets; fallbacks: ${resourceFallbacks}`);
   const shots = [
     { name: 'coastal-overview', preset: 'overview', mood: 'day' },
     { name: 'theatre-dusk', preset: 'theatre', mood: 'dusk' },

@@ -1,6 +1,6 @@
 {
   "name": "askway-official-site",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -16,7 +16,9 @@
     "test:workbench": "node tests/experience/workbench-regressions.mjs",
     "test:scene": "node tests/experience/scene-browser.mjs",
     "test:quality": "node tests/experience/quality.mjs",
-    "test:static": "node tests/experience/static-site.mjs"
+    "test:static": "node tests/experience/static-site.mjs",
+    "test:visual": "node tests/experience/visual-refresh-browser.mjs",
+    "sync:publication": "node scripts/sync-publication.mjs"
   },
   "dependencies": {
     "gsap": "3.15.1",

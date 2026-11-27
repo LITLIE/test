@@ -1,7 +1,8 @@
 import {
-  Color, DataTexture, LinearFilter, LinearMipmapLinearFilter, MeshPhysicalMaterial,
+  Color, DataTexture, DoubleSide, LinearFilter, LinearMipmapLinearFilter, MeshPhysicalMaterial,
   MeshStandardMaterial, RepeatWrapping, RGBAFormat, SRGBColorSpace, Texture, Vector2,
 } from 'three';
+import { architecturalTexture } from './architecturalTextures.ts';
 
 /** Small, deterministic GPU textures provide a complete material before local CC0 assets arrive. */
 function surfaceTexture(kind: 'sand' | 'stone' | 'grass' | 'water', normal = false) {
@@ -50,9 +51,11 @@ export interface CoastalMaterials {
   wetSand: MeshStandardMaterial;
   grass: MeshStandardMaterial;
   rock: MeshStandardMaterial;
+  wetRock: MeshStandardMaterial;
   paving: MeshStandardMaterial;
   shell: MeshPhysicalMaterial;
   glass: MeshPhysicalMaterial;
+  operaGlass: MeshPhysicalMaterial;
   metal: MeshStandardMaterial;
   facade: MeshStandardMaterial;
   roof: MeshStandardMaterial;
@@ -77,24 +80,46 @@ export function createCoastalMaterials(): CoastalMaterials {
   const waterNormal = surfaceTexture('water', true);
   waterNormal.repeat.set(32, 32);
   const ownedTextures = new Set<Texture>([sandMap, sandNormal, stoneMap, stoneNormal, grassMap, grassNormal, waterNormal]);
+  const detail = (kind: 'shell' | 'paving' | 'asphalt') => {
+    const normalMap = architecturalTexture(kind, 'normal');
+    const roughnessMap = architecturalTexture(kind, 'roughness');
+    ownedTextures.add(normalMap);
+    ownedTextures.add(roughnessMap);
+    return { normalMap, roughnessMap };
+  };
   const sand = new MeshStandardMaterial({ map: sandMap, normalMap: sandNormal, normalScale: new Vector2(0.25, 0.25), roughness: 0.93 });
   const wetSand = new MeshStandardMaterial({ map: sandMap, normalMap: sandNormal, color: '#a9a694', roughness: 0.36, metalness: 0.04, normalScale: new Vector2(0.17, 0.17) });
   const grass = new MeshStandardMaterial({ map: grassMap, normalMap: grassNormal, color: '#d2d8c4', roughness: 0.98, normalScale: new Vector2(0.6, 0.6), vertexColors: true });
   const rock = new MeshStandardMaterial({ map: stoneMap, normalMap: stoneNormal, color: '#929a90', roughness: 0.88, normalScale: new Vector2(0.6, 0.6) });
-  const paving = new MeshStandardMaterial({ map: stoneMap, normalMap: stoneNormal, color: '#c4c0ac', roughness: 0.8, normalScale: new Vector2(0.13, 0.13) });
-  const shell = new MeshPhysicalMaterial({ color: '#e8e7dc', roughness: 0.48, metalness: 0.09, clearcoat: 0.1, clearcoatRoughness: 0.5, normalMap: stoneNormal, normalScale: new Vector2(0.045, 0.045) });
+  const wetRock = new MeshStandardMaterial({ map: stoneMap, normalMap: stoneNormal, color: '#4b5855', roughness: 0.34, metalness: 0, normalScale: new Vector2(0.35, 0.35) });
+  const paving = new MeshStandardMaterial({ ...detail('paving'), color: '#b9b7ad', roughness: 0.92, normalScale: new Vector2(0.48, 0.48) });
+  paving.onBeforeCompile = shader => {
+    shader.fragmentShader = shader.fragmentShader.replace('#include <color_fragment>', `#include <color_fragment>
+      vec2 pavingUv = vNormalMapUv * 4.0;
+      vec2 pavingDistance = 0.5 - abs(fract(pavingUv) - 0.5);
+      vec2 pavingAA = max(fwidth(pavingUv), vec2(0.001));
+      vec2 pavingEdges = 1.0 - smoothstep(vec2(0.008), vec2(0.008) + pavingAA, pavingDistance);
+      float pavingJoint = max(pavingEdges.x, pavingEdges.y) * (1.0 - smoothstep(0.18, 0.8, max(pavingAA.x, pavingAA.y)));
+      diffuseColor.rgb *= 1.0 - pavingJoint * 0.075;`);
+  };
+  paving.customProgramCacheKey = () => 'askway-paving-aa-v1';
+  const shell = new MeshPhysicalMaterial({ ...detail('shell'), color: '#efeee4', roughness: 0.65, metalness: 0.035, clearcoat: 0.16, clearcoatRoughness: 0.42, normalScale: new Vector2(0.36, 0.36) });
   shell.onBeforeCompile = shader => {
     shader.fragmentShader = shader.fragmentShader.replace('#include <color_fragment>', `#include <color_fragment>
-      vec2 panel = abs(fract(vec2(vNormalMapUv.x * 31.0 + vNormalMapUv.y * 8.0, vNormalMapUv.y * 22.0)) - 0.5);
-      float panelJoint = max(smoothstep(0.476, 0.498, panel.x), smoothstep(0.478, 0.498, panel.y));
-      diffuseColor.rgb *= 1.0 - panelJoint * 0.075;`);
+      vec2 panelUv = vec2(vNormalMapUv.x * 26.0 + vNormalMapUv.y * 5.0, vNormalMapUv.y * 19.0);
+      vec2 panelDistance = 0.5 - abs(fract(panelUv) - 0.5);
+      vec2 panelAA = max(fwidth(panelUv), vec2(0.001));
+      vec2 panelEdges = 1.0 - smoothstep(vec2(0.013), vec2(0.013) + panelAA, panelDistance);
+      float panelJoint = max(panelEdges.x, panelEdges.y) * (1.0 - smoothstep(0.18, 0.8, max(panelAA.x, panelAA.y)));
+      diffuseColor.rgb *= 1.0 - panelJoint * 0.12;`);
   };
-  shell.customProgramCacheKey = () => 'askway-clad-shell-v2';
+  shell.customProgramCacheKey = () => 'askway-clad-shell-aa-v3';
   const glass = new MeshPhysicalMaterial({ color: '#5c777d', metalness: 0.22, roughness: 0.2, clearcoat: 0.75, clearcoatRoughness: 0.15, envMapIntensity: 1.35 });
-  const metal = new MeshStandardMaterial({ color: '#aab7b5', metalness: 0.78, roughness: 0.32 });
+  const operaGlass = new MeshPhysicalMaterial({ color: '#60818d', metalness: 0.12, roughness: 0.14, clearcoat: 0.9, clearcoatRoughness: 0.1, envMapIntensity: 1.6, ior: 1.5, side: DoubleSide });
+  const metal = new MeshStandardMaterial({ color: '#b6bfbd', metalness: 0.85, roughness: 0.24 });
   const facade = new MeshStandardMaterial({ color: '#c6bfb1', roughness: 0.77, normalMap: stoneNormal, normalScale: new Vector2(0.035, 0.035) });
   const roof = new MeshStandardMaterial({ color: '#778482', roughness: 0.72, metalness: 0.16 });
-  const asphalt = new MeshStandardMaterial({ color: '#6d7777', roughness: 0.95, normalMap: stoneNormal, normalScale: new Vector2(0.08, 0.08) });
+  const asphalt = new MeshStandardMaterial({ ...detail('asphalt'), color: '#485455', roughness: 1, normalScale: new Vector2(0.32, 0.32) });
   const foliage = new MeshStandardMaterial({ color: '#ffffff', roughness: 0.97 });
   const urbanGround = new MeshStandardMaterial({ map: stoneMap, normalMap: stoneNormal, color: '#9caaa7', roughness: 0.91, normalScale: new Vector2(0.16, 0.16) });
   const bark = new MeshStandardMaterial({ color: '#777260', roughness: 1 });
@@ -152,9 +177,13 @@ export function createCoastalMaterials(): CoastalMaterials {
       { path: 'sand-color.webp', color: true, materials: [sand, wetSand], slot: 'map' },
       { path: 'sand-normal.webp', color: false, materials: [sand, wetSand], slot: 'normalMap' },
       { path: 'sand-roughness.webp', color: false, materials: [sand, wetSand], slot: 'roughnessMap' },
-      { path: 'stone-color.webp', color: true, materials: [rock, paving, urbanGround], slot: 'map' },
-      { path: 'stone-normal.webp', color: false, materials: [rock, paving, facade, asphalt, urbanGround, shell], slot: 'normalMap' },
-      { path: 'stone-roughness.webp', color: false, materials: [rock, paving, urbanGround], slot: 'roughnessMap' },
+      { path: 'stone-color.webp', color: true, materials: [rock, wetRock, urbanGround], slot: 'map' },
+      { path: 'stone-normal.webp', color: false, materials: [rock, wetRock, facade, urbanGround], slot: 'normalMap' },
+      { path: 'stone-roughness.webp', color: false, materials: [rock, urbanGround], slot: 'roughnessMap' },
+      ...(['shell', 'paving', 'asphalt'] as const).flatMap(kind => [
+        { path: `${kind}-normal.webp`, color: false, materials: [{ shell, paving, asphalt }[kind]], slot: 'normalMap' as const },
+        { path: `${kind}-roughness.webp`, color: false, materials: [{ shell, paving, asphalt }[kind]], slot: 'roughnessMap' as const },
+      ]),
     ];
     const results = await Promise.allSettled(jobs.map(async job => {
       const response = await fetch(`${base}assets/realism/${job.path}`, { signal: abort.signal });
@@ -162,49 +191,22 @@ export function createCoastalMaterials(): CoastalMaterials {
       const bitmap = await createImageBitmap(await response.blob(), { imageOrientation: 'flipY', premultiplyAlpha: 'none' });
       if (cancelled) { bitmap.close(); return; }
       const texture = new Texture(bitmap);
-      texture.name = `CC0-${job.path}`;
+      texture.name = `${/^(shell|paving|asphalt)-/.test(job.path) ? 'AskWay-original' : 'CC0'}-${job.path}`;
       texture.wrapS = texture.wrapT = RepeatWrapping;
       texture.minFilter = LinearMipmapLinearFilter;
       texture.magFilter = LinearFilter;
+      if (/^(paving|asphalt)-/.test(job.path)) texture.repeat.setScalar(2.25);
       if (job.color) texture.colorSpace = SRGBColorSpace;
       texture.needsUpdate = true;
       ownedTextures.add(texture);
       for (const material of job.materials) { material[job.slot] = texture; material.needsUpdate = true; }
       if (job.path === 'sand-color.webp') sand.color.set('#e0d7c5');
-      if (job.path === 'stone-color.webp' && typeof OffscreenCanvas !== 'undefined') {
-        const canvas = new OffscreenCanvas(256, 256);
-        const context = canvas.getContext('2d');
-        if (context) {
-          context.drawImage(bitmap, 0, 0, 256, 256);
-          const pixels = context.getImageData(0, 0, 256, 256).data;
-          const cladding = new Uint8Array(pixels.length);
-          for (let pixel = 0; pixel < pixels.length; pixel += 4) {
-            const grain = (pixels[pixel] * 0.25 + pixels[pixel + 1] * 0.6 + pixels[pixel + 2] * 0.15) / 255;
-            cladding[pixel] = 222 + grain * 31;
-            cladding[pixel + 1] = 220 + grain * 31;
-            cladding[pixel + 2] = 212 + grain * 30;
-            cladding[pixel + 3] = 255;
-          }
-          const claddingMap = new DataTexture(cladding, 256, 256, RGBAFormat);
-          claddingMap.name = 'CC0-stone-derived-ivory-cladding';
-          claddingMap.colorSpace = SRGBColorSpace;
-          claddingMap.wrapS = claddingMap.wrapT = RepeatWrapping;
-          claddingMap.repeat.set(2, 2);
-          claddingMap.magFilter = LinearFilter;
-          claddingMap.minFilter = LinearMipmapLinearFilter;
-          claddingMap.generateMipmaps = true;
-          claddingMap.needsUpdate = true;
-          ownedTextures.add(claddingMap);
-          shell.map = claddingMap;
-          shell.needsUpdate = true;
-        }
-      }
       onChange();
     }));
     return results.filter(result => result.status === 'rejected').length;
   };
   return {
-    sand, wetSand, grass, rock, paving, shell, glass, metal, facade, roof, asphalt, foliage, urbanGround, bark, water,
+    sand, wetSand, grass, rock, wetRock, paving, shell, glass, operaGlass, metal, facade, roof, asphalt, foliage, urbanGround, bark, water,
     ownedTextures, waterTime,
     cancelLoads: () => { cancelled = true; abort.abort(); },
     load,

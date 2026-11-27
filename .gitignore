@@ -1,0 +1,4 @@
+.agent_tmp/
+.agent_cache/
+node_modules/
+.superpowers/

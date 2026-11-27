@@ -112,6 +112,42 @@ function buildGround(group: Group, frame: CoastalFrame, materials: CoastalMateri
   group.add(buildOcean(frame, materials, quality));
 }
 
+function buildOperaSeawall(group: Group, frame: CoastalFrame, materials: CoastalMaterials, opera: WorldPoint | null) {
+  if (!opera) return;
+  const island = frame.islands.find(item => Math.hypot((opera.x - item.x) / item.radiusX, (opera.z - item.z) / item.radiusZ) < 1);
+  if (!island) return;
+  const band = (bottom: number, top: number, radius: number, material: Material, name: string) => {
+    const wall = surface(48, 1, (u, v) => {
+      const progress = v * 48, index = Math.floor(progress) % 48, next = (index + 1) % 48, fraction = progress - Math.floor(progress);
+      const a = island.outline[index], b = island.outline[next];
+      const x = a.x + (b.x - a.x) * fraction, z = a.z + (b.z - a.z) * fraction;
+      return [island.x + (x - island.x) * radius, bottom + (top - bottom) * u, island.z + (z - island.z) * radius];
+    }, material);
+    // Projection reverses the island winding; these upright faces must point out toward the sea.
+    const indices = wall.geometry.index!;
+    for (let index = 0; index < indices.count; index += 3) {
+      const second = indices.getX(index + 1);
+      indices.setX(index + 1, indices.getX(index + 2));
+      indices.setX(index + 2, second);
+    }
+    wall.geometry.computeVertexNormals();
+    const uv = wall.geometry.getAttribute('uv');
+    let distance = 0;
+    for (let row = 0; row <= 48; row += 1) {
+      if (row > 0) {
+        const previous = island.outline[(row - 1) % 48], current = island.outline[row % 48];
+        distance += Math.hypot(current.x - previous.x, current.z - previous.z);
+      }
+      for (let column = 0; column <= 1; column += 1) uv.setXY(row * 2 + column, distance / 4, column * (top - bottom) / 4);
+    }
+    wall.name = name;
+    group.add(wall);
+  };
+  band(-0.39, 0.18, 1.045, materials.rock, 'opera-seawall');
+  // A lower roughness, dark belt hugs the physical ocean level (-0.17); no animated foam layer.
+  band(-0.3, -0.075, 1.046, materials.wetRock, 'opera-wet-waterline');
+}
+
 function roadGeometry(frame: CoastalFrame, paths: { points: WorldPoint[]; width: number; dashed?: boolean }[]) {
   const positions: number[] = [], uvs: number[] = [];
   const segment = (a: WorldPoint, b: WorldPoint, width: number) => {
@@ -345,6 +381,7 @@ export function buildCoastalCity(layout: SceneLayout, materials = createCoastalM
   }
   const operaPoint = layout.points.find(point => /日月|大剧院/.test(point.place.name));
   const operaPosition = operaPoint ? project(operaPoint.local) : null;
+  buildOperaSeawall(group, frame, materials, operaPosition);
   for (const island of frame.islands) for (let index = 0; index < 27; index += 1) {
     const angle = index * 2.399963;
     const radius = 0.24 + index % 6 * 0.105;

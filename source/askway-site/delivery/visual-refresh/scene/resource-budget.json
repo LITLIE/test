@@ -1,0 +1,50 @@
+{
+  "budgets": [
+    {
+      "quality": "high",
+      "triangles": 74268,
+      "drawCalls": 46,
+      "ownedTextures": 13
+    },
+    {
+      "quality": "low",
+      "triangles": 41772,
+      "drawCalls": 46,
+      "ownedTextures": 13
+    }
+  ],
+  "assets": [
+    {
+      "file": "shell-normal.webp",
+      "bytes": 171276,
+      "verified": true
+    },
+    {
+      "file": "shell-roughness.webp",
+      "bytes": 46456,
+      "verified": true
+    },
+    {
+      "file": "paving-normal.webp",
+      "bytes": 135722,
+      "verified": true
+    },
+    {
+      "file": "paving-roughness.webp",
+      "bytes": 21340,
+      "verified": true
+    },
+    {
+      "file": "asphalt-normal.webp",
+      "bytes": 306978,
+      "verified": true
+    },
+    {
+      "file": "asphalt-roughness.webp",
+      "bytes": 64454,
+      "verified": true
+    }
+  ],
+  "addedBytes": 746226,
+  "browserVerified": false
+}
