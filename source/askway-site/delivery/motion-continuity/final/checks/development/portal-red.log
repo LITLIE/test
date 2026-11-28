@@ -1,0 +1,93 @@
+TAP version 13
+# Subtest: one ordinary wheel event moves toward its target instead of cutting to it
+ok 1 - one ordinary wheel event moves toward its target instead of cutting to it
+  ---
+  duration_ms: 1.8886
+  type: 'test'
+  ...
+# Subtest: tracking reaches a late product target monotonically and releases its RAF
+ok 2 - tracking reaches a late product target monotonically and releases its RAF
+  ---
+  duration_ms: 1.6988
+  type: 'test'
+  ...
+# Subtest: rapid reverse input follows the latest target without drifting toward an obsolete one
+ok 3 - rapid reverse input follows the latest target without drifting toward an obsolete one
+  ---
+  duration_ms: 0.6118
+  type: 'test'
+  ...
+# Subtest: pausing or leaving the surface cancels tracking and discards the hidden interval
+ok 4 - pausing or leaving the surface cancels tracking and discards the hidden interval
+  ---
+  duration_ms: 0.3043
+  type: 'test'
+  ...
+# Subtest: explicit anchor navigation snaps immediately and cancels an unfinished follow
+ok 5 - explicit anchor navigation snaps immediately and cancels an unfinished follow
+  ---
+  duration_ms: 0.4079
+  type: 'test'
+  ...
+# Subtest: initial geometry and mode changes never publish an unrelated opening composition
+ok 6 - initial geometry and mode changes never publish an unrelated opening composition
+  ---
+  duration_ms: 0.2572
+  type: 'test'
+  ...
+# Subtest: the coastal photograph remains opaque while the near scene enters
+ok 7 - the coastal photograph remains opaque while the near scene enters
+  ---
+  duration_ms: 0.0833
+  type: 'test'
+  ...
+# Subtest: the near photograph opens from the route landmark before becoming a full scene
+not ok 8 - the near photograph opens from the route landmark before becoming a full scene
+  ---
+  duration_ms: 0.3704
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:186:1'
+  failureType: 'testCodeFailure'
+  error: 'The new scene begins at the chosen landmark: expected 80, received 0'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    close (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:8:53)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:190:3)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: the near copy exits before shrinking and the settled card precedes map and text
+ok 9 - the near copy exits before shrinking and the settled card precedes map and text
+  ---
+  duration_ms: 0.1505
+  type: 'test'
+  ...
+# Subtest: chapter phases and destination anchors agree with their readable compositions
+ok 10 - chapter phases and destination anchors agree with their readable compositions
+  ---
+  duration_ms: 0.2051
+  type: 'test'
+  ...
+# Subtest: all opacity and camera poses remain finite and reversible across the full story
+ok 11 - all opacity and camera poses remain finite and reversible across the full story
+  ---
+  duration_ms: 3.8608
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 10
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 129.582

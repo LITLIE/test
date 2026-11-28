@@ -1,0 +1,49 @@
+{
+  "build": {
+    "measuredAt": "2026-11-27T15:11:29.093Z",
+    "base": "http://127.0.0.1:4173",
+    "servedHomeSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+    "servedMatchesLocalDist": true,
+    "hashes": {
+      "package.json": "dc49ef3aa05e57bc5ee2ae75e5cd82425ba9497c6d9e4a4907defa8d7bebca90",
+      "dist/index.html": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+      "src/pages/Home.tsx": "586794fa60f1db50a5949ac487fba71ca29bb0bb3de6885f845e73a47ecf15cf",
+      "src/features/cinematic/StoryStage.tsx": "a38c268981f20755d3b64cc78c23fd5077dd93c084629e3283c71bdeea13ebf4",
+      "src/features/cinematic/useStoryProgress.ts": "9519ae4b7b59b27bf50551ce54cf25dcac6c876634cedb3d5913d55d134c0d62",
+      "src/features/cinematic/progress.ts": "a7cfb4a31204d6578e11f715f6cdc137f275515c41f2d640a80128751941e5a2",
+      "src/features/cinematic/cinematic.css": "1c4fbf0b1402dfd90acde4329ecb5b2de6e5932822ca50017c07241bc99550c7",
+      "src/components/SeaRouteParticles.tsx": "f57cfbea5af4fcb56fdb690864ff6a76083616d625afb728382c2d21e5cc9ccc",
+      "src/motion/PresentationMotion.tsx": "a5524bb8ae06ce3e8b766a3311fcda7b3827a8f057879d0794dff150babcfca3",
+      "src/components/SiteHeader.tsx": "0d9fc2678871bbba0721e1ccbea6c0d3422089b13d7fbce1db96e129c287d49d",
+      "src/features/experience/ui/ExperiencePreview.tsx": "bf6560de22a920ba206284b55b9b31a57e8827e0c169b96c60b51cc38752193a",
+      "src/features/experience/ui/JourneyPreview.tsx": "64c581c411ac4d51e13d88eda6243e0bd522b70df1dc6a8ad40a3e4d66923450",
+      "src/features/experience/ui/JourneyPreview.css": "38fed6bdd9581908f1f426642051b28783dce188018f9ef452cab4f73fe3b350",
+      "dist/assets/index-CkT8MVk5.js": "bd2a8baf03380d4d2e094ab8aa2f8ddbe3e336c8c05b20fcfa6c48bf19a8d85c",
+      "dist/assets/index-DQLgXoNL.css": "e45896e98c076af2c76917c2967066144473b175c9400dbff48b1d2bb7f55e3d"
+    }
+  },
+  "checks": [
+    {
+      "name": "a failed decorative chunk retains the city heading, route and navigation",
+      "pass": true
+    },
+    {
+      "name": "native scroll forms the route and reverse scroll restores the sea transition",
+      "pass": true
+    },
+    {
+      "name": "pausing remains in force through product navigation and returning home",
+      "pass": true
+    },
+    {
+      "name": "reduced motion stops actual continuous drawing while retaining the full route",
+      "pass": true
+    },
+    {
+      "name": "the experience route contains no website decorative layer or motion control",
+      "pass": true
+    }
+  ],
+  "passed": 5,
+  "total": 5
+}

@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "name": "confirming an unchanged draft preserves an adoptable candidate",
+      "pass": true
+    },
+    {
+      "name": "editing an unresolved idea cannot bypass its clarification gate",
+      "pass": true
+    },
+    {
+      "name": "a ready candidate can be discarded before undoing the current adoption",
+      "pass": true
+    },
+    {
+      "name": "mobile time conflicts display their detailed cause and focus the recovery panel",
+      "pass": true
+    },
+    {
+      "name": "returning from an empty mobile plan focuses the now visible idea input",
+      "pass": true
+    },
+    {
+      "name": "manual map controls immediately pause timed playback",
+      "pass": true
+    },
+    {
+      "name": "a Chinese half-hour expression remains editable as a custom form duration",
+      "pass": true
+    }
+  ],
+  "passed": 7,
+  "total": 7
+}

@@ -1,0 +1,11 @@
+/* Shared reading labels and attribution controls follow the same size contract. */
+.cooperation-callout .eyebrow,.cooperation-callout .eyebrow>span{font-size:12px;line-height:1.8}
+.cinematic-page.editorial-product .legacy-demo-note>p,
+.cinematic-page.editorial-product .product-demo .section-head>p,
+.cinematic-page.editorial-product .software-intro>p{font-size:16px;line-height:1.9}
+.site-footer .asset-credits a{display:inline-flex;align-items:center;min-height:44px;gap:8px}
+@media(min-width:600px) and (max-width:899px){
+  .cinematic-page.editorial-product .product-editorial-hero{grid-template-columns:1fr;gap:32px;padding-top:140px}
+  .cinematic-page.editorial-product .product-editorial-copy h1{font-size:44px;line-height:1.45}
+  .cinematic-page.editorial-product .product-route-sheet{max-width:680px;width:100%;justify-self:center}
+}

@@ -1,0 +1,2727 @@
+{
+  "metadata": {
+    "measuredAt": "2026-11-27T17:27:48.934Z",
+    "baseUrl": "http://127.0.0.1:4173",
+    "siteVersion": "3.2.1",
+    "homeDocumentSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+    "entryScripts": [
+      "/assets/index-CowwplVD.js"
+    ],
+    "nodeVersion": "v22.23.1",
+    "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "outputDirectory": "delivery/motion-continuity/final/accessibility",
+    "writesConfinedToProject": true,
+    "packageLifecycleScriptsInvoked": false,
+    "browserVersion": "158.0.4370.45"
+  },
+  "limitations": [
+    "axe-core scans automatically test applicable WCAG 2.2 A/AA rules; zero violations does not establish full WCAG conformance.",
+    "Incomplete axe results need manual review. Keyboard usability, meaningful reading order, zoom, screen readers, and real touch use require separate review.",
+    "Screenshots use local headless Edge screen simulation at 390×844 and 1440×1000 CSS pixels; they are not real-device tests.",
+    "44×44 CSS pixels is a touch-usability recommendation; the WCAG 2.2 AA target-size minimum is 24×24 with specified exceptions.",
+    "Lighthouse performance uses a local build and simulated mobile CPU/network throttling. LCP/CLS/TBT are lab results, not field Core Web Vitals or measured real-device INP.",
+    "The current build is measured directly. Historical baseline scores are not used as current results."
+  ],
+  "accessibility": {
+    "metadata": {
+      "measuredAt": "2026-11-27T17:27:48.934Z",
+      "baseUrl": "http://127.0.0.1:4173",
+      "siteVersion": "3.2.1",
+      "homeDocumentSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+      "entryScripts": [
+        "/assets/index-CowwplVD.js"
+      ],
+      "nodeVersion": "v22.23.1",
+      "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+      "outputDirectory": "delivery/motion-continuity/final/accessibility",
+      "writesConfinedToProject": true,
+      "packageLifecycleScriptsInvoked": false,
+      "browserVersion": "158.0.4370.45"
+    },
+    "wcagTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "limitations": [
+      "axe-core scans automatically test applicable WCAG 2.2 A/AA rules; zero violations does not establish full WCAG conformance.",
+      "Incomplete axe results need manual review. Keyboard usability, meaningful reading order, zoom, screen readers, and real touch use require separate review.",
+      "Screenshots use local headless Edge screen simulation at 390×844 and 1440×1000 CSS pixels; they are not real-device tests.",
+      "44×44 CSS pixels is a touch-usability recommendation; the WCAG 2.2 AA target-size minimum is 24×24 with specified exceptions.",
+      "Lighthouse performance uses a local build and simulated mobile CPU/network throttling. LCP/CLS/TBT are lab results, not field Core Web Vitals or measured real-device INP.",
+      "The current build is measured directly. Historical baseline scores are not used as current results."
+    ],
+    "scans": [
+      {
+        "route": "/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-home-mobile-initial.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".brand-light > .brand-name"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".brand-light > .brand-name > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".header-cta"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-kicker"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#home-title > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-gold"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-description"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-city-link"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-coordinates > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-coordinates > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".scroll-cue > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-skip"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".route-place--park > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--park > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "tspan[x=\"146\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"154.0326215453978\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"207.37507102045643\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"174.37507102045643\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"226.9673784546022\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "tspan[dy=\"19\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"193.9673784546022\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-edge-mark"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#stage-tab-0"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#stage-tab-0 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#stage-tab-1"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#stage-tab-1 > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".city-illustration--theatre[data-depth=\"true\"][data-illustration-source=\"render\"] > figcaption > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "figcaption > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "text[x=\"92\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"370\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"548\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".scene-diagram"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              }
+            ]
+          }
+        ],
+        "passes": 30,
+        "inapplicable": 34,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 390,
+          "viewportWidthPx": 390,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [
+            {
+              "selector": "p",
+              "text": "180 分钟预算 · 规则估算。路线示意，不用于导航。 点位 ©OpenStreetMap 贡献者 · ODbL",
+              "fontSizePx": 12
+            }
+          ],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/product/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-product-mobile-initial.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".route-place--park > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--park > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-edge-mark"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "text[x=\"92\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"548\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"-4\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  ".demo-map-caption"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              }
+            ]
+          }
+        ],
+        "passes": 32,
+        "inapplicable": 32,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 390,
+          "viewportWidthPx": 390,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#demo-time",
+              "text": "2 小时 · 短暂漫游3 小时 · 轻松探索4 小时 · 留更多余量",
+              "fontSizePx": 16,
+              "type": "select-one"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-experience-mobile-initial.json",
+        "violations": [],
+        "incomplete": [],
+        "passes": 28,
+        "inapplicable": 36,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 390,
+          "viewportWidthPx": 390,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#experience-idea",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "textarea"
+            },
+            {
+              "selector": "input",
+              "text": "演示日期",
+              "fontSizePx": 16,
+              "type": "date"
+            },
+            {
+              "selector": "input",
+              "text": "出发时刻",
+              "fontSizePx": 16,
+              "type": "time"
+            },
+            {
+              "selector": "#experience-time",
+              "text": "60 分钟 · 1 小时90 分钟 · 1.5 小时120 分钟 · 2 小时150 分钟 · 2.5 小时180 分钟 · 3 小时240 分钟 · 4 小时300 分钟 · 5 小时360 分钟 · 6 小时480 分钟 · 8 小时",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "参考起点",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "交通偏好",
+              "fontSizePx": 16,
+              "type": "select-one"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [
+            {
+              "selector": "a",
+              "text": "问途 AskWay",
+              "fontSizePx": 11,
+              "effectiveTarget": "element",
+              "widthPx": 66.7,
+              "heightPx": 28
+            },
+            {
+              "selector": "a",
+              "text": "查看软件获取状态",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 358,
+              "heightPx": 35
+            }
+          ],
+          "taskText": [
+            {
+              "selector": "span",
+              "text": "三个小时，留一点给海风。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "日月贝必去 · 轻松探索",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "两小时，三个地方都想去。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "体验条件冲突与取舍",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "少走一点，多停留一会儿。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "减少步行 · 增加休息",
+              "fontSizePx": 14
+            }
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "candidate",
+        "axeVersion": "4.14.1",
+        "report": "axe-experience-mobile-candidate.json",
+        "violations": [],
+        "incomplete": [],
+        "passes": 27,
+        "inapplicable": 37,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 390,
+          "viewportWidthPx": 390,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [
+            {
+              "selector": "a",
+              "text": "问途 AskWay",
+              "fontSizePx": 11,
+              "effectiveTarget": "element",
+              "widthPx": 66.7,
+              "heightPx": 28
+            },
+            {
+              "selector": "a",
+              "text": "查看软件获取状态",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 358,
+              "heightPx": 35
+            }
+          ],
+          "taskText": [
+            {
+              "selector": "span",
+              "text": "三个小时，留一点给海风。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "日月贝必去 · 轻松探索",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "两小时，三个地方都想去。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "体验条件冲突与取舍",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "少走一点，多停留一会儿。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "减少步行 · 增加休息",
+              "fontSizePx": 14
+            }
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "evidence",
+        "axeVersion": "4.14.1",
+        "report": "axe-experience-mobile-evidence.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".exp-map-toolbar > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".exp-view-switch > button[type=\"button\"]:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".exp-view-switch > button[type=\"button\"]:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\:"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\: > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__modes > button[type=\"button\"]:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__modes > button[type=\"button\"]:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[x=\"135.66066942405962\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"102.6606694240596\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"128.3393305759404\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[dy=\"19\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"231.3393305759404\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"79.20856217702632\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"168.20856217702632\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[y=\"49\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"0\"][y=\"23\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[x=\"74.19155060110498\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"放大二维地图\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"二维地图缩放控制\"] > .map-control[type=\"button\"]:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 31,
+        "inapplicable": 33,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 390,
+          "viewportWidthPx": 390,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [
+            {
+              "selector": "a",
+              "text": "问途 AskWay",
+              "fontSizePx": 11,
+              "effectiveTarget": "element",
+              "widthPx": 66.7,
+              "heightPx": 28
+            },
+            {
+              "selector": "a",
+              "text": "查看软件获取状态",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 358,
+              "heightPx": 35
+            }
+          ],
+          "taskText": [
+            {
+              "selector": "span",
+              "text": "三个小时，留一点给海风。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "日月贝必去 · 轻松探索",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "两小时，三个地方都想去。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "体验条件冲突与取舍",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "少走一点，多停留一会儿。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "减少步行 · 增加休息",
+              "fontSizePx": 14
+            }
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/cooperation/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-cooperation-mobile-initial.json",
+        "violations": [],
+        "incomplete": [],
+        "passes": 25,
+        "inapplicable": 39,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 390,
+          "viewportWidthPx": 390,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#organization",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "text"
+            },
+            {
+              "selector": "#focus",
+              "text": "城市体验试点目的地服务衔接城市内容共建",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "#contact-info",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "text"
+            },
+            {
+              "selector": "#details",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "textarea"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/about/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-about-mobile-initial.json",
+        "violations": [],
+        "incomplete": [],
+        "passes": 23,
+        "inapplicable": 41,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 390,
+          "viewportWidthPx": 390,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-home-desktop-initial.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".brand-light > .brand-name"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".brand-light > .brand-name > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".desktop-nav > a[href$=\"experience/\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".desktop-nav > a[href$=\"product/\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".desktop-nav > a[href$=\"product/#download\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".desktop-nav > a[href$=\"cooperation/\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".desktop-nav > a[href$=\"about/\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".header-cta"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-kicker"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#home-title > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-gold"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-description"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-city-link"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-coordinates > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".hero-coordinates > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".scroll-cue > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-skip"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".route-place--park > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--park > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".story-theatre-copy > .eyebrow > .section-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-theatre-copy > .eyebrow > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#story-theatre-title"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#story-theatre-title > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-theatre-copy > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".text-link[href$=\"about/\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-detail-frame > figcaption > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "figcaption > a[target=\"_blank\"][rel=\"noreferrer\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-theatre-caption > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".story-theatre-caption > a[target=\"_blank\"][rel=\"noreferrer\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "tspan[x=\"299.3727510340224\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"266.3727510340224\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"323.95321081638485\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"290.95321081638485\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"255.5\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[dy=\"19\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"314.6272489659776\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-edge-mark"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-button:nth-child(2) > .immersive-view-label > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".immersive-view-button:nth-child(2) > .immersive-view-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".city-illustration--theatre[data-depth=\"true\"][data-illustration-source=\"render\"] > figcaption > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "figcaption > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "text[x=\"92\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"370\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"548\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".scene-diagram"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              }
+            ]
+          }
+        ],
+        "passes": 30,
+        "inapplicable": 34,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 1440,
+          "viewportWidthPx": 1440,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [
+            {
+              "selector": "p",
+              "text": "180 分钟预算 · 规则估算。路线示意，不用于导航。 点位 ©OpenStreetMap 贡献者 · ODbL",
+              "fontSizePx": 12
+            }
+          ],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/product/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-product-desktop-initial.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".route-place--park > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--park > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--bay > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > .route-place-number"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".route-place--theatre > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-stage-top > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > h3"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-copy > p"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-edge-mark"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".immersive-view-button[type=\"button\"]:nth-child(2) > .immersive-view-label > strong"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".immersive-view-button[type=\"button\"]:nth-child(2) > .immersive-view-label > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "text[x=\"92\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"548\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"-4\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  ".demo-map-caption"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              }
+            ]
+          }
+        ],
+        "passes": 32,
+        "inapplicable": 32,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 1440,
+          "viewportWidthPx": 1440,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#demo-time",
+              "text": "2 小时 · 短暂漫游3 小时 · 轻松探索4 小时 · 留更多余量",
+              "fontSizePx": 16,
+              "type": "select-one"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-experience-desktop-initial.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".is-active > .task-index"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\:"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\: > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__modes > button[type=\"button\"]:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[x=\"395.86759925461814\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"362.86759925461814\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[y=\"225\"] > tspan[x=\"232.5\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"301.06351321735036\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"227.21256370857589\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"316.2125637085759\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"378.24416828339935\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[dy=\"19\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"345.24416828339935\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"422.1586192299005\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"389.1586192299005\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"415.2391470865242\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"382.2391470865242\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"376.96803933785327\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"343.96803933785327\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"204.29722489281514\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"171.29722489281514\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[y=\"153\"] > tspan[x=\"232.5\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"289.3564513531367\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"300.43728379784596\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"267.43728379784596\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"49\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"0\"][y=\"23\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[x=\"62.83105949318472\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"放大二维地图\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"二维地图缩放控制\"] > .map-control[type=\"button\"]:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 33,
+        "inapplicable": 31,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 1440,
+          "viewportWidthPx": 1440,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#experience-idea",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "textarea"
+            },
+            {
+              "selector": "input",
+              "text": "演示日期",
+              "fontSizePx": 16,
+              "type": "date"
+            },
+            {
+              "selector": "input",
+              "text": "出发时刻",
+              "fontSizePx": 16,
+              "type": "time"
+            },
+            {
+              "selector": "#experience-time",
+              "text": "60 分钟 · 1 小时90 分钟 · 1.5 小时120 分钟 · 2 小时150 分钟 · 2.5 小时180 分钟 · 3 小时240 分钟 · 4 小时300 分钟 · 5 小时360 分钟 · 6 小时480 分钟 · 8 小时",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "参考起点",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "交通偏好",
+              "fontSizePx": 16,
+              "type": "select-one"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [
+            {
+              "selector": "a",
+              "text": "问途 AskWay",
+              "fontSizePx": 12,
+              "effectiveTarget": "element",
+              "widthPx": 72.8,
+              "heightPx": 28
+            },
+            {
+              "selector": "a",
+              "text": "© OpenStreetMap 贡献者 · ODbL",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 219.9,
+              "heightPx": 19
+            },
+            {
+              "selector": "a",
+              "text": "查看软件获取状态",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 653.5,
+              "heightPx": 35
+            }
+          ],
+          "taskText": [
+            {
+              "selector": "span",
+              "text": "三个小时，留一点给海风。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "日月贝必去 · 轻松探索",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "两小时，三个地方都想去。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "体验条件冲突与取舍",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "少走一点，多停留一会儿。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "减少步行 · 增加休息",
+              "fontSizePx": 14
+            }
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "candidate",
+        "axeVersion": "4.14.1",
+        "report": "axe-experience-desktop-candidate.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".is-active > .task-index"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".exp-map-toolbar > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".exp-view-switch > button[type=\"button\"]:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".exp-view-switch > button[type=\"button\"]:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\:"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\: > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__modes > button[type=\"button\"]:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__modes > button[type=\"button\"]:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[x=\"122.48041044681054\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"211.48041044681054\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"356.51958955318946\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[dy=\"19\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"323.51958955318946\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"179.55228258516945\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"268.55228258516945\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[y=\"49\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"0\"][y=\"23\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[x=\"64.59781560958278\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"放大二维地图\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"二维地图缩放控制\"] > .map-control[type=\"button\"]:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__view-status > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__view-status > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".scene-legend > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".scene-legend > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 33,
+        "inapplicable": 31,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 1440,
+          "viewportWidthPx": 1440,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#experience-idea",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "textarea"
+            },
+            {
+              "selector": "input",
+              "text": "演示日期",
+              "fontSizePx": 16,
+              "type": "date"
+            },
+            {
+              "selector": "input",
+              "text": "出发时刻",
+              "fontSizePx": 16,
+              "type": "time"
+            },
+            {
+              "selector": "#experience-time",
+              "text": "60 分钟 · 1 小时90 分钟 · 1.5 小时120 分钟 · 2 小时150 分钟 · 2.5 小时180 分钟 · 3 小时240 分钟 · 4 小时300 分钟 · 5 小时360 分钟 · 6 小时480 分钟 · 8 小时",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "参考起点",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "交通偏好",
+              "fontSizePx": 16,
+              "type": "select-one"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [
+            {
+              "selector": "a",
+              "text": "问途 AskWay",
+              "fontSizePx": 12,
+              "effectiveTarget": "element",
+              "widthPx": 72.8,
+              "heightPx": 28
+            },
+            {
+              "selector": "a",
+              "text": "© OpenStreetMap 贡献者 · ODbL",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 219.9,
+              "heightPx": 19
+            },
+            {
+              "selector": "a",
+              "text": "查看软件获取状态",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 653.5,
+              "heightPx": 35
+            }
+          ],
+          "taskText": [
+            {
+              "selector": "span",
+              "text": "三个小时，留一点给海风。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "日月贝必去 · 轻松探索",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "两小时，三个地方都想去。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "体验条件冲突与取舍",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "少走一点，多停留一会儿。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "减少步行 · 增加休息",
+              "fontSizePx": 14
+            }
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "evidence",
+        "axeVersion": "4.14.1",
+        "report": "axe-experience-desktop-evidence.json",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": [
+              {
+                "target": [
+                  ".is-active > .task-index"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".exp-map-toolbar > span"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".exp-view-switch > button[type=\"button\"]:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".exp-view-switch > button[type=\"button\"]:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\:"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#\\:Rimr\\: > small"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__modes > button[type=\"button\"]:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__modes > button[type=\"button\"]:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__bay-subtitle"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[x=\"122.48041044681054\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"211.48041044681054\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"356.51958955318946\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "tspan[dy=\"19\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"323.51958955318946\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "tspan[x=\"179.55228258516945\"][dy=\"0\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"268.55228258516945\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[y=\"49\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "text[x=\"0\"][y=\"23\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+              },
+              {
+                "target": [
+                  "text[x=\"64.59781560958278\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"放大二维地图\"]"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"二维地图缩放控制\"] > .map-control[type=\"button\"]:nth-child(3)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__view-status > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".coastal-map__view-status > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".scene-legend > span:nth-child(1)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".scene-legend > span:nth-child(2)"
+                ],
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 34,
+        "inapplicable": 30,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 1440,
+          "viewportWidthPx": 1440,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#experience-idea",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "textarea"
+            },
+            {
+              "selector": "input",
+              "text": "演示日期",
+              "fontSizePx": 16,
+              "type": "date"
+            },
+            {
+              "selector": "input",
+              "text": "出发时刻",
+              "fontSizePx": 16,
+              "type": "time"
+            },
+            {
+              "selector": "#experience-time",
+              "text": "60 分钟 · 1 小时90 分钟 · 1.5 小时120 分钟 · 2 小时150 分钟 · 2.5 小时180 分钟 · 3 小时240 分钟 · 4 小时300 分钟 · 5 小时360 分钟 · 6 小时480 分钟 · 8 小时",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "参考起点",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "select",
+              "text": "交通偏好",
+              "fontSizePx": 16,
+              "type": "select-one"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [
+            {
+              "selector": "a",
+              "text": "问途 AskWay",
+              "fontSizePx": 12,
+              "effectiveTarget": "element",
+              "widthPx": 72.8,
+              "heightPx": 28
+            },
+            {
+              "selector": "a",
+              "text": "© OpenStreetMap 贡献者 · ODbL",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 219.9,
+              "heightPx": 19
+            },
+            {
+              "selector": "a",
+              "text": "查看软件获取状态",
+              "fontSizePx": 14,
+              "effectiveTarget": "element",
+              "widthPx": 653.5,
+              "heightPx": 35
+            }
+          ],
+          "taskText": [
+            {
+              "selector": "span",
+              "text": "三个小时，留一点给海风。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "日月贝必去 · 轻松探索",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "两小时，三个地方都想去。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "体验条件冲突与取舍",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "span",
+              "text": "少走一点，多停留一会儿。",
+              "fontSizePx": 14
+            },
+            {
+              "selector": "small",
+              "text": "减少步行 · 增加休息",
+              "fontSizePx": 14
+            }
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/cooperation/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-cooperation-desktop-initial.json",
+        "violations": [],
+        "incomplete": [],
+        "passes": 25,
+        "inapplicable": 39,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 1440,
+          "viewportWidthPx": 1440,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [
+            {
+              "selector": "#organization",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "text"
+            },
+            {
+              "selector": "#focus",
+              "text": "城市体验试点目的地服务衔接城市内容共建",
+              "fontSizePx": 16,
+              "type": "select-one"
+            },
+            {
+              "selector": "#contact-info",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "text"
+            },
+            {
+              "selector": "#details",
+              "text": "",
+              "fontSizePx": 16,
+              "type": "textarea"
+            }
+          ],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      },
+      {
+        "route": "/about/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "axeVersion": "4.14.1",
+        "report": "axe-about-desktop-initial.json",
+        "violations": [],
+        "incomplete": [],
+        "passes": 23,
+        "inapplicable": 41,
+        "pageErrors": [],
+        "renderedChecks": {
+          "documentWidthPx": 1440,
+          "viewportWidthPx": 1440,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "mainCount": 1,
+          "editableControls": [],
+          "editableControlsBelow16Px": [],
+          "readingTextBelow14Px": [],
+          "compactTouchTargetsBelow44Px": [],
+          "taskText": [],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+        }
+      }
+    ],
+    "screenshots": [
+      {
+        "route": "/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "fullPage": "home-mobile-full.png",
+        "firstViewport": "home-mobile-first.png"
+      },
+      {
+        "route": "/product/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "fullPage": "product-mobile-full.png",
+        "firstViewport": "product-mobile-first.png"
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "fullPage": "experience-mobile-full.png",
+        "firstViewport": "experience-mobile-first.png"
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "candidate",
+        "fullPage": "experience-mobile-candidate-full.png",
+        "firstViewport": "experience-mobile-candidate-first.png"
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "evidence",
+        "fullPage": "experience-mobile-evidence-full.png",
+        "firstViewport": "experience-mobile-evidence-first.png"
+      },
+      {
+        "route": "/cooperation/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "fullPage": "cooperation-mobile-full.png",
+        "firstViewport": "cooperation-mobile-first.png"
+      },
+      {
+        "route": "/about/",
+        "viewport": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "state": "initial",
+        "fullPage": "about-mobile-full.png",
+        "firstViewport": "about-mobile-first.png"
+      },
+      {
+        "route": "/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "fullPage": "home-desktop-full.png",
+        "firstViewport": "home-desktop-first.png"
+      },
+      {
+        "route": "/product/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "fullPage": "product-desktop-full.png",
+        "firstViewport": "product-desktop-first.png"
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "fullPage": "experience-desktop-full.png",
+        "firstViewport": "experience-desktop-first.png"
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "candidate",
+        "fullPage": "experience-desktop-candidate-full.png",
+        "firstViewport": "experience-desktop-candidate-first.png"
+      },
+      {
+        "route": "/experience/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "evidence",
+        "fullPage": "experience-desktop-evidence-full.png",
+        "firstViewport": "experience-desktop-evidence-first.png"
+      },
+      {
+        "route": "/cooperation/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "fullPage": "cooperation-desktop-full.png",
+        "firstViewport": "cooperation-desktop-first.png"
+      },
+      {
+        "route": "/about/",
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 1000,
+          "isMobile": false,
+          "hasTouch": false
+        },
+        "state": "initial",
+        "fullPage": "about-desktop-full.png",
+        "firstViewport": "about-desktop-first.png"
+      }
+    ],
+    "errors": []
+  },
+  "lighthouse": null,
+  "stageStatus": {
+    "accessibility": "available",
+    "lighthouse": "not_measured"
+  }
+}

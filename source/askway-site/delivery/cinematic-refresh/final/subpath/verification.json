@@ -1,0 +1,202 @@
+{
+  "recordedAt": "2026-11-27T13:50:08.122Z",
+  "base": "http://127.0.0.1:4175/askway",
+  "expectedCanonicalPrefix": "http://litlie.zh.kg/askway",
+  "copyRoot": "D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\.agent_tmp\\cinematic-subpath-site",
+  "copiedInputs": [
+    "src",
+    "public",
+    "scripts",
+    "index.html",
+    "site.config.mjs",
+    "package.json",
+    "tsconfig.json",
+    "vite.config.ts"
+  ],
+  "verifiedCopiedInputFilesBeforeBuild": 121,
+  "dependencyResolution": "Existing siteRoot/node_modules resolved through ancestors; no installation, copy, junction or symlink.",
+  "copyHomepageSha256": "1ffc43f674112dcfe7369c238a525e42ad436a1c8c0fec1a4d5724b1cbc24d71",
+  "copyHomepageBytes": 42373,
+  "copyBuildInfoSha256": "44390e2d9119f5c836f3678285d37126c115983c059955de14002839bacca73f",
+  "copyBuildInfo": {
+    "siteVersion": "3.2.0",
+    "catalogVersion": "zhuhai-public-reference-2026-11-24-v1",
+    "mode": "curated",
+    "scene": "coastal-realism-v3",
+    "presentation": "city-story-photographic-prototype-v1",
+    "builtAt": "2026-11-27T13:47:46.832Z",
+    "base": "/askway/"
+  },
+  "mainHomepageSha256Before": "603b363ddfc5950e236cf4c06319e5fdc2431dc1b87ebcfd56199874dfb209ba",
+  "mainHomepageSha256After": "603b363ddfc5950e236cf4c06319e5fdc2431dc1b87ebcfd56199874dfb209ba",
+  "mainDistHomepageUntouched": true,
+  "suite": {
+    "passed": 8,
+    "total": 8,
+    "errors": []
+  },
+  "pageReferences": [
+    {
+      "route": "/",
+      "requestUrl": "http://127.0.0.1:4175/askway/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway/",
+      "assetReferences": [
+        "/askway/assets/favicon.svg",
+        "/askway/assets/index-Rx0ArOOI.js",
+        "/askway/assets/index-BM_d42Ay.css",
+        "/askway/assets/hero.webp",
+        "/askway/assets/cinematic/hero-mobile.webp",
+        "/askway/assets/hero.webp",
+        "/askway/assets/theatre.webp",
+        "/askway/assets/architecture.webp",
+        "/askway/assets/realism/theatre-dusk.webp",
+        "/askway/assets/realism/coastal-overview.webp",
+        "/askway/assets/realism/theatre-dusk.webp",
+        "/askway/assets/realism/route-landmarks.webp",
+        "/askway/assets/realism/coastal-overview.webp",
+        "/askway/assets/realism/theatre-dusk.webp"
+      ],
+      "allAssetReferencesPrefixed": true
+    },
+    {
+      "route": "/product/",
+      "requestUrl": "http://127.0.0.1:4175/askway/product/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway/product/",
+      "assetReferences": [
+        "/askway/assets/favicon.svg",
+        "/askway/assets/index-Rx0ArOOI.js",
+        "/askway/assets/index-BM_d42Ay.css",
+        "/askway/assets/theatre.webp",
+        "/askway/assets/realism/theatre-dusk.webp",
+        "/askway/assets/realism/coastal-overview.webp",
+        "/askway/assets/realism/theatre-dusk.webp",
+        "/askway/assets/realism/route-landmarks.webp"
+      ],
+      "allAssetReferencesPrefixed": true
+    },
+    {
+      "route": "/about/",
+      "requestUrl": "http://127.0.0.1:4175/askway/about/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway/about/",
+      "assetReferences": [
+        "/askway/assets/favicon.svg",
+        "/askway/assets/index-Rx0ArOOI.js",
+        "/askway/assets/index-BM_d42Ay.css",
+        "/askway/assets/architecture.webp"
+      ],
+      "allAssetReferencesPrefixed": true
+    },
+    {
+      "route": "/cooperation/",
+      "requestUrl": "http://127.0.0.1:4175/askway/cooperation/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway/cooperation/",
+      "assetReferences": [
+        "/askway/assets/favicon.svg",
+        "/askway/assets/index-Rx0ArOOI.js",
+        "/askway/assets/index-BM_d42Ay.css"
+      ],
+      "allAssetReferencesPrefixed": true
+    },
+    {
+      "route": "/experience/",
+      "requestUrl": "http://127.0.0.1:4175/askway/experience/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway/experience/",
+      "assetReferences": [
+        "/askway/assets/favicon.svg",
+        "/askway/assets/index-Rx0ArOOI.js",
+        "/askway/assets/index-BM_d42Ay.css"
+      ],
+      "allAssetReferencesPrefixed": true
+    }
+  ],
+  "requests": [
+    {
+      "requestUrl": "http://127.0.0.1:4175/askway/assets/hero.webp",
+      "finalUrl": "http://127.0.0.1:4175/askway/assets/hero.webp",
+      "pathname": "/askway/assets/hero.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 222362,
+      "sha256": "3504f8eac73cb0568c1ba32dd2d8060be015bfcf2feb44d661af93e3554d039b",
+      "expectedPrefix": "/askway/",
+      "prefixed": true
+    },
+    {
+      "requestUrl": "http://127.0.0.1:4175/askway/assets/cinematic/hero-mobile.webp",
+      "finalUrl": "http://127.0.0.1:4175/askway/assets/cinematic/hero-mobile.webp",
+      "pathname": "/askway/assets/cinematic/hero-mobile.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 85322,
+      "sha256": "df1075fd287e26528942e77ab2dda88abda25f8f2eb669181fadad6400aa4b30",
+      "expectedPrefix": "/askway/",
+      "prefixed": true
+    },
+    {
+      "requestUrl": "http://127.0.0.1:4175/askway/assets/theatre.webp",
+      "finalUrl": "http://127.0.0.1:4175/askway/assets/theatre.webp",
+      "pathname": "/askway/assets/theatre.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 109654,
+      "sha256": "654b537927bf5b12f9df2564dc46685338c7578d110b31f7099eb32ba487d15c",
+      "expectedPrefix": "/askway/",
+      "prefixed": true
+    },
+    {
+      "requestUrl": "http://127.0.0.1:4175/askway/assets/architecture.webp",
+      "finalUrl": "http://127.0.0.1:4175/askway/assets/architecture.webp",
+      "pathname": "/askway/assets/architecture.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 159116,
+      "sha256": "a47ff66f7c411cd81150f1bf8b73ece871ffd35473b2b3448ca8a25cf0d37ddc",
+      "expectedPrefix": "/askway/",
+      "prefixed": true
+    },
+    {
+      "requestUrl": "http://127.0.0.1:4175/askway/assets/realism/theatre-dusk.webp",
+      "finalUrl": "http://127.0.0.1:4175/askway/assets/realism/theatre-dusk.webp",
+      "pathname": "/askway/assets/realism/theatre-dusk.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 159824,
+      "sha256": "d11f84c95d0f460b17d1503fdf2bb98fc414bc20fa2138ca3bb9b3161cd7fd60",
+      "expectedPrefix": "/askway/",
+      "prefixed": true
+    },
+    {
+      "requestUrl": "http://127.0.0.1:4175/askway/assets/cinematic/manifest.json",
+      "finalUrl": "http://127.0.0.1:4175/askway/assets/cinematic/manifest.json",
+      "pathname": "/askway/assets/cinematic/manifest.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 3535,
+      "sha256": "340c02d7eb507dc6fdb0ab709f76ca934cab0aa13ffb27f72b2589e12fa1ceef",
+      "expectedPrefix": "/askway/",
+      "prefixed": true
+    },
+    {
+      "requestUrl": "http://127.0.0.1:4175/askway/data/catalog.json",
+      "finalUrl": "http://127.0.0.1:4175/askway/data/catalog.json",
+      "pathname": "/askway/data/catalog.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 22501,
+      "sha256": "0e5133d1b9323aaa5a6be9dc4300a36c23d18c94e63c2334482f952178ceab10",
+      "expectedPrefix": "/askway/",
+      "prefixed": true
+    }
+  ],
+  "limitations": [
+    "Local Edge/SwiftShader browser integration, not real hardware or a phone.",
+    "720x500 is a CSS viewport equivalent; actual browser 200% zoom was not tested.",
+    "No performance measurement, external deployment, dependency installation or modification of main dist.",
+    "The isolated source/build/cache directory is deliberately retained for root cleanup."
+  ]
+}

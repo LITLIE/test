@@ -79,7 +79,7 @@ const template = await readFile(resolve(out, 'index.html'), 'utf8');
 await outputDirectory('dist/data');
 await writeFile(safe('dist/data/catalog.json'), JSON.stringify(catalog, null, 2) + '\n');
 const packageInfo = JSON.parse(await readFile(safe('package.json'), 'utf8'));
-await writeFile(safe('dist/build-info.json'), JSON.stringify({ siteVersion: packageInfo.version, catalogVersion: catalog.version, mode: 'curated', scene: 'coastal-realism-v3', builtAt: new Date().toISOString(), base }, null, 2) + '\n');
+await writeFile(safe('dist/build-info.json'), JSON.stringify({ siteVersion: packageInfo.version, catalogVersion: catalog.version, mode: 'curated', scene: 'coastal-realism-v3', presentation: 'city-story-spatial-photo-v2', builtAt: new Date().toISOString(), base }, null, 2) + '\n');
 if (!template.includes('<div id="root"></div>')) throw new Error('The static root placeholder is missing.');
 const escape = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const documentFor = (path, { title, description }, extraMeta = '') => template
@@ -95,7 +95,8 @@ for (const [path, page] of Object.entries(pages)) {
     + '<meta property="og:url" content="' + escape(url) + '"/>'
     + '<meta property="og:type" content="website"/>'
     + '<meta property="og:image" content="' + escape(siteUrl + '/assets/hero.webp') + '"/>'
-    + (path === '/' ? '<link rel="preload" as="image" href="' + escape(base + 'assets/hero.webp') + '"/>' : '');
+    + (path === '/' ? '<link rel="preload" as="image" media="(min-width: 900px), (orientation: landscape)" href="' + escape(base + 'assets/hero.webp') + '"/>'
+      + '<link rel="preload" as="image" media="(max-width: 899px) and (orientation: portrait)" href="' + escape(base + 'assets/cinematic/hero-mobile.webp') + '"/>' : '');
   const destination = path === '/' ? out : await outputDirectory('dist/' + path.slice(1));
   await writeFile(resolve(destination, 'index.html'), documentFor(path, page, meta));
 }

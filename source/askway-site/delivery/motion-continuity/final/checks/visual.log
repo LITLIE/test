@@ -1,0 +1,22 @@
+[
+  {
+    "name": "a failed decorative chunk retains the city heading, route and navigation",
+    "pass": true
+  },
+  {
+    "name": "native scroll forms the route and reverse scroll restores the sea transition",
+    "pass": true
+  },
+  {
+    "name": "pausing remains in force through product navigation and returning home",
+    "pass": true
+  },
+  {
+    "name": "reduced motion stops actual continuous drawing while retaining the full route",
+    "pass": true
+  },
+  {
+    "name": "the experience route contains no website decorative layer or motion control",
+    "pass": true
+  }
+]

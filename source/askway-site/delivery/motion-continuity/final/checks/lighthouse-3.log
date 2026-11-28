@@ -1,0 +1,3 @@
+{"stage":"lighthouse","route":"/","performance":98,"accessibility":100,"bestPractices":100,"seo":100,"lcp":1801.5412000000001,"cls":0,"tbt":0,"runtimeError":null}
+{"stage":"lighthouse","route":"/experience/","performance":96,"accessibility":100,"bestPractices":100,"seo":100,"lcp":2251.6747161239946,"cls":0,"tbt":2.5,"runtimeError":null}
+{"stage":"complete","scans":0,"screenshotStates":0,"screenshotFiles":0,"lighthouseRuns":2,"errors":0,"exitCode":0,"report":"D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\delivery\\motion-continuity\\final\\performance\\run-3\\quality-report.json"}

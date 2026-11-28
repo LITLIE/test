@@ -1,0 +1,1753 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "build": {
+    "measuredAt": "2026-11-27T17:26:23.035Z",
+    "base": "http://127.0.0.1:4173",
+    "servedHomeSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+    "servedMatchesLocalDist": true,
+    "hashes": {
+      "package.json": "44790980abaeb72b8b8fa21eb80aca147a168c1bdc0cb99e673a1040917b22b9",
+      "dist/index.html": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+      "src/pages/Home.tsx": "586794fa60f1db50a5949ac487fba71ca29bb0bb3de6885f845e73a47ecf15cf",
+      "src/features/cinematic/StoryStage.tsx": "292d2873c3dcb444373c9822c7bf4765f99ecb87bfe31ab08c5e99889af68028",
+      "src/features/cinematic/useStoryProgress.ts": "a488b141fa2978cf161c9c0dda07b3ee81aea76820fcfa299a2ee8207c409183",
+      "src/features/cinematic/progress.ts": "6da82a9e417adf17aef95ca81ba20ed09cea30e9f26f43c48bf32f8aee0ecea4",
+      "src/features/cinematic/cinematic.css": "c54b199c28b86b7f3bbfbb10965d5c165ff0b12633c9aba0a3d6b630075591f6",
+      "src/components/SeaRouteParticles.tsx": "db4f758d9926090cb195c0a03026e91b3eb2de2a96ba61d6f21c6804af8775f4",
+      "src/motion/PresentationMotion.tsx": "a5524bb8ae06ce3e8b766a3311fcda7b3827a8f057879d0794dff150babcfca3",
+      "src/components/SiteHeader.tsx": "0d9fc2678871bbba0721e1ccbea6c0d3422089b13d7fbce1db96e129c287d49d",
+      "src/features/experience/ui/ExperiencePreview.tsx": "bf6560de22a920ba206284b55b9b31a57e8827e0c169b96c60b51cc38752193a",
+      "src/features/experience/ui/JourneyPreview.tsx": "64c581c411ac4d51e13d88eda6243e0bd522b70df1dc6a8ad40a3e4d66923450",
+      "src/features/experience/ui/JourneyPreview.css": "38fed6bdd9581908f1f426642051b28783dce188018f9ef452cab4f73fe3b350",
+      "dist/assets/index-CowwplVD.js": "2d26679762b80f0c6241b5f7be6166bd2d81ddf45cf473658300ab9c6e8129cb",
+      "dist/assets/index-CAyw3f2q.css": "632da3c1bff278345e14bcb625d0e5b6071bb271efa4c8e7189a2b80409b3fad"
+    }
+  },
+  "checks": [
+    {
+      "name": "one native desktop stage presents all four HTML phases in both directions",
+      "pass": true
+    },
+    {
+      "name": "latest reverse scroll returns to the same deterministic composition",
+      "pass": true
+    },
+    {
+      "name": "pause freezes actual work without changing stage height or scroll position",
+      "pass": true
+    },
+    {
+      "name": "the pause preference survives route navigation, home return and reduced-motion changes",
+      "pass": true
+    },
+    {
+      "name": "live reduced motion stops drawing while all four phases and manual tabs remain usable",
+      "pass": true
+    },
+    {
+      "name": "leaving the stage stops work and returning resumes without replaying the elapsed pause",
+      "pass": true
+    },
+    {
+      "name": "document visibility suspension stops actual work and resumes at the current target",
+      "pass": true
+    },
+    {
+      "name": "mobile reading and repeated resizes keep the native geometry correct",
+      "pass": true
+    },
+    {
+      "name": "direct story, city-detail and product-intro anchors focus a visible HTML heading",
+      "pass": true
+    },
+    {
+      "name": "the experience route releases website decoration and retains its working map",
+      "pass": true
+    },
+    {
+      "name": "normal story navigation produces no unhandled browser errors",
+      "pass": true
+    },
+    {
+      "name": "the near-scene handoff suppresses competing copy and aligns its actual clip with the final card",
+      "pass": true
+    },
+    {
+      "name": "a genuine readonly candidate, its map and focused CTAs fit the product panel at desktop limits",
+      "pass": true
+    },
+    {
+      "name": "save-data disables automatic presentation and keeps semantic story content",
+      "pass": true
+    },
+    {
+      "name": "an actually failed decorative chunk leaves four HTML panels and usable navigation",
+      "pass": true
+    },
+    {
+      "name": "the local sea switch and camera selection cannot bypass a global presentation pause",
+      "pass": true
+    },
+    {
+      "name": "a failed city-showcase chunk preserves its photograph, view choices and the HTML story",
+      "pass": true
+    },
+    {
+      "name": "without JavaScript all four panels, stops and native destination anchors remain readable",
+      "pass": true
+    },
+    {
+      "name": "without JavaScript real decoded photographs fill their visible media frames",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "previewLayouts": [
+    {
+      "mode": "static",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "panel": {
+        "top": -98.25,
+        "bottom": 1208,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 1306.25
+      },
+      "card": {
+        "top": 309.875,
+        "bottom": 726.859375,
+        "left": 746.5,
+        "right": 1329.984375,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "candidate": {
+        "top": 309.875,
+        "bottom": 726.859375,
+        "left": 746.5,
+        "right": 1329.984375,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "map": {
+        "top": 380.265625,
+        "bottom": 630.265625,
+        "left": 747.5,
+        "right": 1328.984375,
+        "width": 581.484375,
+        "height": 250
+      },
+      "ctas": [
+        {
+          "top": 651.109375,
+          "bottom": 704.90625,
+          "left": 110,
+          "right": 286,
+          "width": 176,
+          "height": 53.796875
+        },
+        {
+          "top": 651.109375,
+          "bottom": 695.109375,
+          "left": 306,
+          "right": 464,
+          "width": 158,
+          "height": 44
+        }
+      ],
+      "status": "proposal",
+      "placeIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapNodes": [
+        {
+          "id": "ZS-003",
+          "rect": {
+            "top": 544.1307373046875,
+            "bottom": 574.1307373046875,
+            "left": 1001.1149291992188,
+            "right": 1112.114990234375,
+            "width": 111.00006103515625,
+            "height": 30
+          }
+        },
+        {
+          "id": "ZS-007",
+          "rect": {
+            "top": 575.9944458007812,
+            "bottom": 619.265625,
+            "left": 1025.6954345703125,
+            "right": 1136.6954345703125,
+            "width": 111,
+            "height": 43.27117919921875
+          }
+        },
+        {
+          "id": "ZS-004",
+          "rect": {
+            "top": 418.53680419921875,
+            "bottom": 513.265625,
+            "left": 994.2421875,
+            "right": 1082.2421875,
+            "width": 88,
+            "height": 94.72882080078125
+          }
+        }
+      ],
+      "htmlIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "focus": [
+        {
+          "box": {
+            "top": 644.109375,
+            "bottom": 711.90625,
+            "left": 103,
+            "right": 293,
+            "width": 190,
+            "height": 67.796875
+          },
+          "outline": "solid",
+          "panel": {
+            "top": -98.25,
+            "bottom": 1208,
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 1306.25
+          },
+          "clipping": []
+        },
+        {
+          "box": {
+            "top": 644.109375,
+            "bottom": 702.109375,
+            "left": 299,
+            "right": 471,
+            "width": 172,
+            "height": 58
+          },
+          "outline": "solid",
+          "panel": {
+            "top": -98.25,
+            "bottom": 1208,
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 1306.25
+          },
+          "clipping": []
+        }
+      ]
+    },
+    {
+      "mode": "static",
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "panel": {
+        "top": -93.875,
+        "bottom": 903,
+        "left": 0,
+        "right": 900,
+        "width": 900,
+        "height": 996.875
+      },
+      "card": {
+        "top": 152.265625,
+        "bottom": 583.84375,
+        "left": 463.15625,
+        "right": 864,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "candidate": {
+        "top": 152.265625,
+        "bottom": 583.84375,
+        "left": 463.15625,
+        "right": 864,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "map": {
+        "top": 222.65625,
+        "bottom": 442.65625,
+        "left": 464.15625,
+        "right": 863,
+        "width": 398.84375,
+        "height": 220
+      },
+      "ctas": [
+        {
+          "top": 484.84375,
+          "bottom": 538.640625,
+          "left": 36,
+          "right": 212,
+          "width": 176,
+          "height": 53.796875
+        },
+        {
+          "top": 484.84375,
+          "bottom": 528.84375,
+          "left": 224,
+          "right": 382,
+          "width": 158,
+          "height": 44
+        }
+      ],
+      "status": "proposal",
+      "placeIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapNodes": [
+        {
+          "id": "ZS-003",
+          "rect": {
+            "top": 318.6617431640625,
+            "bottom": 390.21173095703125,
+            "left": 626.5926513671875,
+            "right": 700.5635986328125,
+            "width": 73.970947265625,
+            "height": 71.54998779296875
+          }
+        },
+        {
+          "id": "ZS-007",
+          "rect": {
+            "top": 390.6504821777344,
+            "bottom": 431.61749267578125,
+            "left": 650.9581298828125,
+            "right": 761.9146728515625,
+            "width": 110.95654296875,
+            "height": 40.967010498046875
+          }
+        },
+        {
+          "id": "ZS-004",
+          "rect": {
+            "top": 247.17279052734375,
+            "bottom": 296.1535949707031,
+            "left": 670.5427856445312,
+            "right": 795.4938354492188,
+            "width": 124.9510498046875,
+            "height": 48.980804443359375
+          }
+        }
+      ],
+      "htmlIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "focus": [
+        {
+          "box": {
+            "top": 477.84375,
+            "bottom": 545.640625,
+            "left": 29,
+            "right": 219,
+            "width": 190,
+            "height": 67.796875
+          },
+          "outline": "solid",
+          "panel": {
+            "top": -93.875,
+            "bottom": 903,
+            "left": 0,
+            "right": 900,
+            "width": 900,
+            "height": 996.875
+          },
+          "clipping": []
+        },
+        {
+          "box": {
+            "top": 477.84375,
+            "bottom": 535.84375,
+            "left": 217,
+            "right": 389,
+            "width": 172,
+            "height": 58
+          },
+          "outline": "solid",
+          "panel": {
+            "top": -93.875,
+            "bottom": 903,
+            "left": 0,
+            "right": 900,
+            "width": 900,
+            "height": 996.875
+          },
+          "clipping": []
+        }
+      ]
+    },
+    {
+      "mode": "sticky",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "panel": {
+        "top": 0,
+        "bottom": 1000,
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "height": 1000
+      },
+      "card": {
+        "top": 249.5,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "right": 1329.984375,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "candidate": {
+        "top": 249.5,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "right": 1329.984375,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "map": {
+        "top": 319.890625,
+        "bottom": 569.890625,
+        "left": 747.5,
+        "right": 1328.984375,
+        "width": 581.484375,
+        "height": 250
+      },
+      "ctas": [
+        {
+          "top": 614.3125,
+          "bottom": 668.109375,
+          "left": 110,
+          "right": 286,
+          "width": 176,
+          "height": 53.796875
+        },
+        {
+          "top": 614.3125,
+          "bottom": 658.3125,
+          "left": 306,
+          "right": 464,
+          "width": 158,
+          "height": 44
+        }
+      ],
+      "status": "proposal",
+      "placeIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapNodes": [
+        {
+          "id": "ZS-003",
+          "rect": {
+            "top": 483.7557373046875,
+            "bottom": 513.7557373046875,
+            "left": 1001.1149291992188,
+            "right": 1112.114990234375,
+            "width": 111.00006103515625,
+            "height": 30
+          }
+        },
+        {
+          "id": "ZS-007",
+          "rect": {
+            "top": 515.6194458007812,
+            "bottom": 558.890625,
+            "left": 1025.6954345703125,
+            "right": 1136.6954345703125,
+            "width": 111,
+            "height": 43.27117919921875
+          }
+        },
+        {
+          "id": "ZS-004",
+          "rect": {
+            "top": 358.16180419921875,
+            "bottom": 452.890625,
+            "left": 994.2421875,
+            "right": 1082.2421875,
+            "width": 88,
+            "height": 94.72882080078125
+          }
+        }
+      ],
+      "htmlIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "focus": [
+        {
+          "box": {
+            "top": 607.3125,
+            "bottom": 675.109375,
+            "left": 103,
+            "right": 293,
+            "width": 190,
+            "height": 67.796875
+          },
+          "outline": "solid",
+          "panel": {
+            "top": 0,
+            "bottom": 1000,
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 1000
+          },
+          "clipping": []
+        },
+        {
+          "box": {
+            "top": 607.3125,
+            "bottom": 665.3125,
+            "left": 299,
+            "right": 471,
+            "width": 172,
+            "height": 58
+          },
+          "outline": "solid",
+          "panel": {
+            "top": 0,
+            "bottom": 1000,
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 1000
+          },
+          "clipping": []
+        }
+      ]
+    },
+    {
+      "mode": "sticky",
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "panel": {
+        "top": 0,
+        "bottom": 700,
+        "left": 0,
+        "right": 900,
+        "width": 900,
+        "height": 700
+      },
+      "card": {
+        "top": 94.96875,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "right": 864,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "candidate": {
+        "top": 94.96875,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "right": 864,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "map": {
+        "top": 165.359375,
+        "bottom": 385.359375,
+        "left": 464.15625,
+        "right": 863,
+        "width": 398.84375,
+        "height": 220
+      },
+      "ctas": [
+        {
+          "top": 452.546875,
+          "bottom": 506.34375,
+          "left": 36,
+          "right": 212,
+          "width": 176,
+          "height": 53.796875
+        },
+        {
+          "top": 452.546875,
+          "bottom": 496.546875,
+          "left": 224,
+          "right": 382,
+          "width": 158,
+          "height": 44
+        }
+      ],
+      "status": "proposal",
+      "placeIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "mapNodes": [
+        {
+          "id": "ZS-003",
+          "rect": {
+            "top": 261.3648681640625,
+            "bottom": 332.91485595703125,
+            "left": 626.5926513671875,
+            "right": 700.5635986328125,
+            "width": 73.970947265625,
+            "height": 71.54998779296875
+          }
+        },
+        {
+          "id": "ZS-007",
+          "rect": {
+            "top": 333.3536071777344,
+            "bottom": 374.32061767578125,
+            "left": 650.9581298828125,
+            "right": 761.9146728515625,
+            "width": 110.95654296875,
+            "height": 40.967010498046875
+          }
+        },
+        {
+          "id": "ZS-004",
+          "rect": {
+            "top": 189.87591552734375,
+            "bottom": 238.85671997070312,
+            "left": 670.5427856445312,
+            "right": 795.4938354492188,
+            "width": 124.9510498046875,
+            "height": 48.980804443359375
+          }
+        }
+      ],
+      "htmlIds": [
+        "ZS-003",
+        "ZS-007",
+        "ZS-004"
+      ],
+      "focus": [
+        {
+          "box": {
+            "top": 445.546875,
+            "bottom": 513.34375,
+            "left": 29,
+            "right": 219,
+            "width": 190,
+            "height": 67.796875
+          },
+          "outline": "solid",
+          "panel": {
+            "top": 0,
+            "bottom": 700,
+            "left": 0,
+            "right": 900,
+            "width": 900,
+            "height": 700
+          },
+          "clipping": []
+        },
+        {
+          "box": {
+            "top": 445.546875,
+            "bottom": 503.546875,
+            "left": 217,
+            "right": 389,
+            "width": 172,
+            "height": 58
+          },
+          "outline": "solid",
+          "panel": {
+            "top": 0,
+            "bottom": 700,
+            "left": 0,
+            "right": 900,
+            "width": 900,
+            "height": 700
+          },
+          "clipping": []
+        }
+      ]
+    }
+  ],
+  "photoCoverage": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "frame": {
+        "top": 110.25,
+        "bottom": 1297.75,
+        "width": 1440,
+        "height": 1187.5
+      },
+      "image": {
+        "top": 110.25,
+        "bottom": 1297.75,
+        "width": 1440,
+        "height": 1187.5,
+        "src": "/assets/theatre.webp",
+        "naturalWidth": 1200
+      },
+      "coverage": 1
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "frame": {
+        "top": 477.453125,
+        "bottom": 807.453125,
+        "width": 260,
+        "height": 330
+      },
+      "image": {
+        "top": 478.453125,
+        "bottom": 806.453125,
+        "width": 258,
+        "height": 328,
+        "src": "/assets/architecture.webp",
+        "naturalWidth": 850
+      },
+      "coverage": 0.9862937062937063
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "frame": {
+        "top": 154.640625,
+        "bottom": 524.640625,
+        "width": 350,
+        "height": 370
+      },
+      "image": {
+        "top": 155.640625,
+        "bottom": 523.640625,
+        "width": 348,
+        "height": 368,
+        "src": "/assets/architecture.webp",
+        "naturalWidth": 850
+      },
+      "coverage": 0.9889111969111969
+    }
+  ],
+  "handoffMeasurements": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "progress": 0.78,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(0%)",
+      "clipRect": {
+        "top": 0,
+        "right": 1440,
+        "bottom": 1000,
+        "left": 0
+      },
+      "targetRect": {
+        "top": 319.890625,
+        "right": 1328.984375,
+        "bottom": 569.890625,
+        "left": 747.5,
+        "width": 581.484375,
+        "height": 250
+      },
+      "previewRect": {
+        "top": 249.5,
+        "right": 1329.984375,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "copyrightRects": [
+        {
+          "top": 609.484375,
+          "right": 1254.21875,
+          "bottom": 653.484375,
+          "left": 1041.71875,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "progress": 0.84,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(8.80363% 2.12169% 11.8369% 14.2859%)",
+      "clipRect": {
+        "top": 88.0363,
+        "right": 1409.447664,
+        "bottom": 881.631,
+        "left": 205.71696
+      },
+      "targetRect": {
+        "top": 319.890625,
+        "right": 1328.984375,
+        "bottom": 569.890625,
+        "left": 747.5,
+        "width": 581.484375,
+        "height": 250
+      },
+      "previewRect": {
+        "top": 249.5,
+        "right": 1329.984375,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "copyrightRects": [
+        {
+          "top": 609.484375,
+          "right": 1254.21875,
+          "bottom": 653.484375,
+          "left": 1041.71875,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "progress": 0.94,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(31.9891% 7.70942% 43.0109% 51.9097%)",
+      "clipRect": {
+        "top": 319.891,
+        "right": 1328.984352,
+        "bottom": 569.8910000000001,
+        "left": 747.49968
+      },
+      "targetRect": {
+        "top": 319.890625,
+        "right": 1328.984375,
+        "bottom": 569.890625,
+        "left": 747.5,
+        "width": 581.484375,
+        "height": 250
+      },
+      "previewRect": {
+        "top": 249.5,
+        "right": 1329.984375,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "copyrightRects": [
+        {
+          "top": 609.484375,
+          "right": 1254.21875,
+          "bottom": 653.484375,
+          "left": 1041.71875,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "progress": 0.985,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 2,
+        "allInert": false
+      },
+      "map": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": false
+      },
+      "mediaOpacity": 0,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(31.9891% 7.70942% 43.0109% 51.9097%)",
+      "clipRect": {
+        "top": 319.891,
+        "right": 1328.984352,
+        "bottom": 569.8910000000001,
+        "left": 747.49968
+      },
+      "targetRect": {
+        "top": 319.890625,
+        "right": 1328.984375,
+        "bottom": 569.890625,
+        "left": 747.5,
+        "width": 581.484375,
+        "height": 250
+      },
+      "previewRect": {
+        "top": 249.5,
+        "right": 1329.984375,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "copyrightRects": [
+        {
+          "top": 609.484375,
+          "right": 1254.21875,
+          "bottom": 653.484375,
+          "left": 1041.71875,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "progress": 0.985,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 2,
+        "allInert": false
+      },
+      "map": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": false
+      },
+      "mediaOpacity": 0,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(31.9891% 7.70942% 43.0109% 51.9097%)",
+      "clipRect": {
+        "top": 319.891,
+        "right": 1328.984352,
+        "bottom": 569.8910000000001,
+        "left": 747.49968
+      },
+      "targetRect": {
+        "top": 319.890625,
+        "right": 1328.984375,
+        "bottom": 569.890625,
+        "left": 747.5,
+        "width": 581.484375,
+        "height": 250
+      },
+      "previewRect": {
+        "top": 249.5,
+        "right": 1329.984375,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "copyrightRects": [
+        {
+          "top": 609.484375,
+          "right": 1254.21875,
+          "bottom": 653.484375,
+          "left": 1041.71875,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "progress": 0.94,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(31.9891% 7.70942% 43.0109% 51.9097%)",
+      "clipRect": {
+        "top": 319.891,
+        "right": 1328.984352,
+        "bottom": 569.8910000000001,
+        "left": 747.49968
+      },
+      "targetRect": {
+        "top": 319.890625,
+        "right": 1328.984375,
+        "bottom": 569.890625,
+        "left": 747.5,
+        "width": 581.484375,
+        "height": 250
+      },
+      "previewRect": {
+        "top": 249.5,
+        "right": 1329.984375,
+        "bottom": 666.484375,
+        "left": 746.5,
+        "width": 583.484375,
+        "height": 416.984375
+      },
+      "copyrightRects": [
+        {
+          "top": 609.484375,
+          "right": 1254.21875,
+          "bottom": 653.484375,
+          "left": 1041.71875,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "progress": 0.78,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(0%)",
+      "clipRect": {
+        "top": 0,
+        "right": 900,
+        "bottom": 700,
+        "left": 0
+      },
+      "targetRect": {
+        "top": 165.359375,
+        "right": 863,
+        "bottom": 385.359375,
+        "left": 464.15625,
+        "width": 398.84375,
+        "height": 220
+      },
+      "previewRect": {
+        "top": 94.96875,
+        "right": 864,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "copyrightRects": [
+        {
+          "top": 469.546875,
+          "right": 692.65625,
+          "bottom": 513.546875,
+          "left": 480.15625,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "progress": 0.84,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(6.50116% 1.13141% 12.3702% 14.1933%)",
+      "clipRect": {
+        "top": 45.50812,
+        "right": 889.81731,
+        "bottom": 613.4086,
+        "left": 127.7397
+      },
+      "targetRect": {
+        "top": 165.359375,
+        "right": 863,
+        "bottom": 385.359375,
+        "left": 464.15625,
+        "width": 398.84375,
+        "height": 220
+      },
+      "previewRect": {
+        "top": 94.96875,
+        "right": 864,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "copyrightRects": [
+        {
+          "top": 469.546875,
+          "right": 692.65625,
+          "bottom": 513.546875,
+          "left": 480.15625,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "progress": 0.94,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(23.6228% 4.11111% 44.9487% 51.5729%)",
+      "clipRect": {
+        "top": 165.3596,
+        "right": 863.00001,
+        "bottom": 385.3591,
+        "left": 464.1561
+      },
+      "targetRect": {
+        "top": 165.359375,
+        "right": 863,
+        "bottom": 385.359375,
+        "left": 464.15625,
+        "width": 398.84375,
+        "height": 220
+      },
+      "previewRect": {
+        "top": 94.96875,
+        "right": 864,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "copyrightRects": [
+        {
+          "top": 469.546875,
+          "right": 692.65625,
+          "bottom": 513.546875,
+          "left": 480.15625,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "progress": 0.9852,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 2,
+        "allInert": false
+      },
+      "map": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": false
+      },
+      "mediaOpacity": 0,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(23.6228% 4.11111% 44.9487% 51.5729%)",
+      "clipRect": {
+        "top": 165.3596,
+        "right": 863.00001,
+        "bottom": 385.3591,
+        "left": 464.1561
+      },
+      "targetRect": {
+        "top": 165.359375,
+        "right": 863,
+        "bottom": 385.359375,
+        "left": 464.15625,
+        "width": 398.84375,
+        "height": 220
+      },
+      "previewRect": {
+        "top": 94.96875,
+        "right": 864,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "copyrightRects": [
+        {
+          "top": 469.546875,
+          "right": 692.65625,
+          "bottom": 513.546875,
+          "left": 480.15625,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "progress": 0.9852,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 2,
+        "allInert": false
+      },
+      "map": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": false
+      },
+      "mediaOpacity": 0,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(23.6228% 4.11111% 44.9487% 51.5729%)",
+      "clipRect": {
+        "top": 165.3596,
+        "right": 863.00001,
+        "bottom": 385.3591,
+        "left": 464.1561
+      },
+      "targetRect": {
+        "top": 165.359375,
+        "right": 863,
+        "bottom": 385.359375,
+        "left": 464.15625,
+        "width": 398.84375,
+        "height": 220
+      },
+      "previewRect": {
+        "top": 94.96875,
+        "right": 864,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "copyrightRects": [
+        {
+          "top": 469.546875,
+          "right": 692.65625,
+          "bottom": 513.546875,
+          "left": 480.15625,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 900,
+        "height": 700
+      },
+      "progress": 0.94,
+      "near": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 1,
+        "allInert": true
+      },
+      "product": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 2,
+        "allInert": true
+      },
+      "map": {
+        "opacity": 0,
+        "effectiveOpacity": 0,
+        "controls": 0,
+        "allInert": true
+      },
+      "preview": {
+        "opacity": 1,
+        "effectiveOpacity": 1,
+        "controls": 1,
+        "allInert": true
+      },
+      "mediaOpacity": 1,
+      "photograph": {
+        "source": "/assets/theatre.webp",
+        "complete": true,
+        "width": 1200
+      },
+      "clip": "inset(23.6228% 4.11111% 44.9487% 51.5729%)",
+      "clipRect": {
+        "top": 165.3596,
+        "right": 863.00001,
+        "bottom": 385.3591,
+        "left": 464.1561
+      },
+      "targetRect": {
+        "top": 165.359375,
+        "right": 863,
+        "bottom": 385.359375,
+        "left": 464.15625,
+        "width": 398.84375,
+        "height": 220
+      },
+      "previewRect": {
+        "top": 94.96875,
+        "right": 864,
+        "bottom": 526.546875,
+        "left": 463.15625,
+        "width": 400.84375,
+        "height": 431.578125
+      },
+      "copyrightRects": [
+        {
+          "top": 469.546875,
+          "right": 692.65625,
+          "bottom": 513.546875,
+          "left": 480.15625,
+          "width": 212.5,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "headerContrasts": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": 3644,
+      "headerBackground": "rgb(250, 249, 246)",
+      "headerAlpha": 1,
+      "paperBackground": "rgb(250, 249, 246)",
+      "text": [
+        {
+          "text": "问途ASKWAY",
+          "color": "rgb(8, 45, 61)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 13.726746473855659
+        },
+        {
+          "text": "ASKWAY",
+          "color": "rgb(8, 45, 61)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 13.726746473855659
+        },
+        {
+          "text": "旅程体验",
+          "color": "rgb(23, 52, 65)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 12.435377144803452
+        },
+        {
+          "text": "产品体验",
+          "color": "rgb(23, 52, 65)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 12.435377144803452
+        },
+        {
+          "text": "软件下载",
+          "color": "rgb(23, 52, 65)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 12.435377144803452
+        },
+        {
+          "text": "一起探索",
+          "color": "rgb(23, 52, 65)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 12.435377144803452
+        },
+        {
+          "text": "关于问途",
+          "color": "rgb(23, 52, 65)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 12.435377144803452
+        },
+        {
+          "text": "探讨合作",
+          "color": "rgb(23, 52, 65)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 12.435377144803452
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll": 2749,
+      "headerBackground": "rgb(250, 249, 246)",
+      "headerAlpha": 1,
+      "paperBackground": "rgb(250, 249, 246)",
+      "text": [
+        {
+          "text": "问途ASKWAY",
+          "color": "rgb(8, 45, 61)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 13.726746473855659
+        },
+        {
+          "text": "ASKWAY",
+          "color": "rgb(8, 45, 61)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 13.726746473855659
+        },
+        {
+          "text": "探讨合作",
+          "color": "rgb(23, 52, 65)",
+          "background": [
+            250,
+            249,
+            246
+          ],
+          "contrast": 12.435377144803452
+        }
+      ]
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "environment": "Local headless Edge; simulated CSS viewports, media and visibility APIs"
+}

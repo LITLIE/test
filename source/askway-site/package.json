@@ -1,6 +1,6 @@
 {
   "name": "askway-official-site",
-  "version": "3.1.0",
+  "version": "3.2.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -18,6 +18,9 @@
     "test:quality": "node tests/experience/quality.mjs",
     "test:static": "node tests/experience/static-site.mjs",
     "test:visual": "node tests/experience/visual-refresh-browser.mjs",
+    "test:cinematic": "node --experimental-strip-types --test tests/cinematic/*.test.mjs",
+    "test:cinematic:browser": "node tests/cinematic/browser.mjs",
+    "capture:cinematic": "node scripts/capture-cinematic.mjs",
     "sync:publication": "node scripts/sync-publication.mjs"
   },
   "dependencies": {

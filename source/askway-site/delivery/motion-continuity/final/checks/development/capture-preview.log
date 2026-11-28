@@ -1,0 +1,72 @@
+[
+  {
+    "p": 0,
+    "phase": "city",
+    "ready": "false",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.22,
+    "phase": "city",
+    "ready": "false",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.36,
+    "phase": "route",
+    "ready": "false",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.51,
+    "phase": "route",
+    "ready": "true",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.66,
+    "phase": "theatre",
+    "ready": "true",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.8,
+    "phase": "theatre",
+    "ready": "true",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.9,
+    "phase": "theatre",
+    "ready": "true",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.94,
+    "phase": "product",
+    "ready": "true",
+    "map": "0",
+    "copy": "0"
+  },
+  {
+    "p": 0.96,
+    "phase": "product",
+    "ready": "true",
+    "map": "0.615037",
+    "copy": "0"
+  },
+  {
+    "p": 0.985,
+    "phase": "product",
+    "ready": "true",
+    "map": "1",
+    "copy": "0.999975"
+  }
+]

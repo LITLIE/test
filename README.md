@@ -1,11 +1,16 @@
-# 问途 AskWay 官网 · 3.1.0
+# 问途 AskWay 官网 · 3.2.1
 
 域名配置：http://litlie.zh.kg。GitHub Pages 沿用发布分支根目录和现有 CNAME。本轮结果已在本地构建，外部站点需按发布流程同步。
 
-3.1 基于 `262872a`：首页以珠海实景和品牌标题开场，海面光点随正反向滚动收成三站路线；产品、关于、合作各有独立构图，普通页面尊重共享暂停与系统减少动态效果。日月贝使用独立表面材质、玻璃、台阶、栏杆和贴水护岸，新静帧由同一 Three.js 场景渲染。
+3.2 基于 `d79fc5c`：首页形成城市开场 → 三站示意 → 日月贝摄影近景 → 纸白产品决定的一条原生滚动叙事；手机使用竖版海报与正常阅读。真实候选、文字、媒体各有清楚边界，暂停、省流、后台和展示 owner 停止自动效果。当前交付为摄影转场原型，正式离线运镜母版与完整序列另行制作。
+
+3.2.1 将转场细化为连续摄影景深、有限镜头缓动与空间粒子。近景从路线落点展开，再退入产品卡片；地图和说明按顺序出现，快速反向滚动及重复锚点均经过验证。
 
 - [完整可维护源码](source/askway-site)
 - [运行说明](source/askway-site/README.md)
+- [3.2.1空间转场验收](source/askway-site/docs/upgrade/motion-continuity-verification.md)
+- [3.2历史验收](source/askway-site/docs/upgrade/cinematic-refresh-verification.md)
+- [3.1回退说明](source/askway-site/docs/upgrade/cinematic-refresh-rollback.md)
 - [3.1美化与验收](source/askway-site/docs/upgrade/visual-refresh-verification.md)
 - [3.0本地验收](source/askway-site/docs/upgrade/realism-v3-verification.md)
 - [资料/资源署名](asset-credits.json)

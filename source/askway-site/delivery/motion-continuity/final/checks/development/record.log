@@ -1,0 +1,55 @@
+{
+  "mode": "timestamped-still-sequence",
+  "output": "D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\delivery\\motion-continuity\\final\\story",
+  "records": 12,
+  "comparisons": [
+    {
+      "phase": "city",
+      "forwardProgress": 0.08,
+      "reverseProgress": 0.08,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    },
+    {
+      "phase": "route",
+      "forwardProgress": 0.36,
+      "reverseProgress": 0.36,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    },
+    {
+      "phase": "theatre",
+      "forwardProgress": 0.66,
+      "reverseProgress": 0.66,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    },
+    {
+      "phase": "product",
+      "forwardProgress": 0.985,
+      "reverseProgress": 0.985,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    }
+  ],
+  "sessions": [
+    {
+      "viewportName": "desktop",
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "viewportName": "mobile",
+      "errors": [],
+      "failedRequests": []
+    }
+  ]
+}

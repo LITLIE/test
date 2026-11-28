@@ -5,9 +5,9 @@ import Brand from './Brand';
 const links = [{to:'/experience/',label:'旅程体验'},{to:'/product/',label:'产品体验'},{to:'/product/#download',label:'软件下载'},{to:'/cooperation/',label:'一起探索'},{to:'/about/',label:'关于问途'}];
 export default function SiteHeader() {
   const location = useLocation();
-  const [scrolled,setScrolled] = useState(false), [open,setOpen] = useState(false);
+  const [scrolled,setScrolled] = useState(false), [open,setOpen] = useState(false), [hydrated,setHydrated] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null), buttonRef = useRef<HTMLButtonElement>(null);
-  useEffect(()=>{ const onScroll=()=>setScrolled(window.scrollY>40);onScroll();window.addEventListener('scroll',onScroll,{passive:true});return()=>window.removeEventListener('scroll',onScroll); },[]);
+  useEffect(()=>{ const onScroll=()=>setScrolled(window.scrollY>40);setHydrated(true);onScroll();window.addEventListener('scroll',onScroll,{passive:true});return()=>window.removeEventListener('scroll',onScroll); },[]);
   useEffect(()=>setOpen(false),[location.key]);
   useEffect(()=>{const media=window.matchMedia('(min-width: 1024px)');const resize=()=>{if(media.matches)setOpen(false);};media.addEventListener('change',resize);return()=>media.removeEventListener('change',resize);},[]);
   useEffect(()=>{
@@ -30,7 +30,7 @@ export default function SiteHeader() {
     document.addEventListener('keydown',handle);
     return()=>{document.body.style.overflow=previous;content.forEach(el=>el?.removeAttribute('inert'));document.removeEventListener('keydown',handle);};
   },[open]);
-  const solid=scrolled || location.pathname!=='/' || open;
+  const solid=!hydrated || scrolled || location.pathname!=='/' || open;
   return <header className={'site-header '+(solid?'header-solid':'header-clear')}>
     <div className="container header-inner">
       <Brand light={!solid}/>

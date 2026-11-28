@@ -1,0 +1,637 @@
+TAP version 13
+# Subtest: one ordinary wheel event moves toward its target instead of cutting to it
+ok 1 - one ordinary wheel event moves toward its target instead of cutting to it
+  ---
+  duration_ms: 2.1426
+  type: 'test'
+  ...
+# Subtest: tracking reaches a late product target monotonically and releases its RAF
+ok 2 - tracking reaches a late product target monotonically and releases its RAF
+  ---
+  duration_ms: 1.7617
+  type: 'test'
+  ...
+# Subtest: rapid reverse input follows the latest target without drifting toward an obsolete one
+ok 3 - rapid reverse input follows the latest target without drifting toward an obsolete one
+  ---
+  duration_ms: 0.6397
+  type: 'test'
+  ...
+# Subtest: pausing or leaving the surface cancels tracking and discards the hidden interval
+ok 4 - pausing or leaving the surface cancels tracking and discards the hidden interval
+  ---
+  duration_ms: 0.3688
+  type: 'test'
+  ...
+# Subtest: explicit anchor navigation snaps immediately and cancels an unfinished follow
+ok 5 - explicit anchor navigation snaps immediately and cancels an unfinished follow
+  ---
+  duration_ms: 0.4522
+  type: 'test'
+  ...
+# Subtest: initial geometry and mode changes never publish an unrelated opening composition
+ok 6 - initial geometry and mode changes never publish an unrelated opening composition
+  ---
+  duration_ms: 0.2763
+  type: 'test'
+  ...
+# Subtest: the coastal photograph remains opaque while the near scene enters
+ok 7 - the coastal photograph remains opaque while the near scene enters
+  ---
+  duration_ms: 0.092
+  type: 'test'
+  ...
+# Subtest: the near copy exits before shrinking and the settled card precedes map and text
+ok 8 - the near copy exits before shrinking and the settled card precedes map and text
+  ---
+  duration_ms: 0.0865
+  type: 'test'
+  ...
+# Subtest: chapter phases and destination anchors agree with their readable compositions
+ok 9 - chapter phases and destination anchors agree with their readable compositions
+  ---
+  duration_ms: 0.195
+  type: 'test'
+  ...
+# Subtest: all opacity and camera poses remain finite and reversible across the full story
+ok 10 - all opacity and camera poses remain finite and reversible across the full story
+  ---
+  duration_ms: 4.0613
+  type: 'test'
+  ...
+# Subtest: scroll and geometry invalidations share one frame and do not create an idle loop
+not ok 11 - scroll and geometry invalidations share one frame and do not create an idle loop
+  ---
+  duration_ms: 2.0119
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:28:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 0.029677468283612826
+    - 0.3
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0.3
+  actual: 0.029677468283612826
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:36:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: pausing cancels continuous drawing immediately and resuming never catches up hidden time
+ok 12 - pausing cancels continuous drawing immediately and resuming never catches up hidden time
+  ---
+  duration_ms: 0.5357
+  type: 'test'
+  ...
+# Subtest: the formed route stops continuous frames and reverse scrolling restarts only when needed
+not ok 13 - the formed route stops continuous frames and reverse scrolling restarts only when needed
+  ---
+  duration_ms: 0.2429
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:59:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 0.04748394925378052
+    - 0.48
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0.48
+  actual: 0.04748394925378052
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:65:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: paused native scrolling still updates the target and phase without advancing the clock
+not ok 14 - paused native scrolling still updates the target and phase without advancing the clock
+  ---
+  duration_ms: 0.1453
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:75:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The story may have only one pending animation frame
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    Object.tick (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:21:12)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:78:29)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: remeasuring and reversing restores the same composition without accumulating state
+not ok 15 - remeasuring and reversing restores the same composition without accumulating state
+  ---
+  duration_ms: 0.1268
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:87:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The story may have only one pending animation frame
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    Object.tick (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:21:12)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:90:29)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: removing a canvas does not discard a separately queued native scroll update
+ok 16 - removing a canvas does not discard a separately queued native scroll update
+  ---
+  duration_ms: 0.1623
+  type: 'test'
+  ...
+# Subtest: effect cleanup cancels pending layout work while allowing a strict-mode reattachment
+not ok 17 - effect cleanup cancels pending layout work while allowing a strict-mode reattachment
+  ---
+  duration_ms: 0.1712
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:112:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:115:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: enabling at an existing scroll target never publishes a temporary opening composition
+ok 18 - enabling at an existing scroll target never publishes a temporary opening composition
+  ---
+  duration_ms: 0.0981
+  type: 'test'
+  ...
+# Subtest: only the first hydrated sticky activation may rebase an initial hash
+ok 19 - only the first hydrated sticky activation may rebase an initial hash
+  ---
+  duration_ms: 0.2079
+  type: 'test'
+  ...
+# Subtest: a readable static anchor receives focus even when normalized animation progress names another phase
+not ok 20 - a readable static anchor receives focus even when normalized animation progress names another phase
+  ---
+  duration_ms: 0.4158
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:147:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:152:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: native interaction or a resize before first activation cancels hydration navigation
+ok 21 - native interaction or a resize before first activation cancels hydration navigation
+  ---
+  duration_ms: 0.1198
+  type: 'test'
+  ...
+# Subtest: a geometry update retargets the shared media card without changing the active clock
+not ok 22 - a geometry update retargets the shared media card without changing the active clock
+  ---
+  duration_ms: 0.2512
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:165:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The story may have only one pending animation frame
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    Object.tick (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:21:12)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:169:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: a navigation heading must fit between the fixed header and the viewport bottom
+ok 23 - a navigation heading must fit between the fixed header and the viewport bottom
+  ---
+  duration_ms: 0.0728
+  type: 'test'
+  ...
+# Subtest: a smooth-scroll focus request survives the product phase until its copy is actually readable
+not ok 24 - a smooth-scroll focus request survives the product phase until its copy is actually readable
+  ---
+  duration_ms: 0.1609
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\controller.test.mjs:185:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The story may have only one pending animation frame
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    Object.tick (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:21:12)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/controller.test.mjs:193:29)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: native progress measures the sticky travel distance and clamps overscroll
+ok 25 - native progress measures the sticky travel distance and clamps overscroll
+  ---
+  duration_ms: 0.6506
+  type: 'test'
+  ...
+# Subtest: the four chapter boundaries are explicit and retain finite visual parameters
+not ok 26 - the four chapter boundaries are explicit and retain finite visual parameters
+  ---
+  duration_ms: 2.0177
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\progress.test.mjs:14:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        'city',
+        'city',
+    +   'city',
+        'route',
+        'route',
+        'theatre',
+        'theatre',
+        'product',
+    -   'product'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'city'
+    1: 'city'
+    2: 'route'
+    3: 'route'
+    4: 'theatre'
+    5: 'theatre'
+    6: 'product'
+    7: 'product'
+  actual:
+    0: 'city'
+    1: 'city'
+    2: 'city'
+    3: 'route'
+    4: 'route'
+    5: 'theatre'
+    6: 'theatre'
+    7: 'product'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/progress.test.mjs:15:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: returning to the same progress restores the exact composition in either direction
+ok 27 - returning to the same progress restores the exact composition in either direction
+  ---
+  duration_ms: 0.2804
+  type: 'test'
+  ...
+# Subtest: changing viewport geometry derives the current target instead of accumulating frames
+ok 28 - changing viewport geometry derives the current target instead of accumulating frames
+  ---
+  duration_ms: 0.0705
+  type: 'test'
+  ...
+# Subtest: paused active time does not advance or catch up the hidden interval on resume
+ok 29 - paused active time does not advance or catch up the hidden interval on resume
+  ---
+  duration_ms: 0.1003
+  type: 'test'
+  ...
+# Subtest: late and nonfinite clock samples cannot rewind active time or add a long catch-up
+ok 30 - late and nonfinite clock samples cannot rewind active time or add a long catch-up
+  ---
+  duration_ms: 0.1321
+  type: 'test'
+  ...
+# Subtest: the theatre copy is gone before its media enters the paper handoff and product copy waits
+not ok 31 - the theatre copy is gone before its media enters the paper handoff and product copy waits
+  ---
+  duration_ms: 3.0366
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\progress.test.mjs:59:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(storyFrame(.96, .84).productCopyOpacity > .99)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/progress.test.mjs:64:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: the media reaches the measured product rectangle before the product heading starts to enter
+not ok 32 - the media reaches the measured product rectangle before the product heading starts to enter
+  ---
+  duration_ms: 0.3403
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\progress.test.mjs:67:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(Math.abs(frame.cardInsetTop - 24) < 1e-6)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/progress.test.mjs:70:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: measured media geometry and independent copy fades are identical on reverse scroll
+ok 33 - measured media geometry and independent copy fades are identical on reverse scroll
+  ---
+  duration_ms: 0.3465
+  type: 'test'
+  ...
+# Subtest: sticky panels keep invisible or partially hidden controls out of the readable surface
+not ok 34 - sticky panels keep invisible or partially hidden controls out of the readable surface
+  ---
+  duration_ms: 0.3747
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\progress.test.mjs:87:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/progress.test.mjs:91:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: the final media transform covers and centres on the measured card rectangle
+not ok 35 - the final media transform covers and centres on the measured card rectangle
+  ---
+  duration_ms: 0.2853
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\progress.test.mjs:98:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(Math.abs(frame.mediaFitScale - .56) < 1e-6)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/progress.test.mjs:101:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: media scale and translation recover the same intermediate composition on reverse scroll
+not ok 36 - media scale and translation recover the same intermediate composition on reverse scroll
+  ---
+  duration_ms: 0.2198
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\progress.test.mjs:106:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(Math.abs(forward.mediaFitScale - .78) < 1e-6)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/progress.test.mjs:109:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: the product entry anchor displays fully opaque copy at ninety-four percent
+not ok 37 - the product entry anchor displays fully opaque copy at ninety-four percent
+  ---
+  duration_ms: 0.1121
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\progress.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/progress.test.mjs:116:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: near particles project larger and farther from the optical centre than distant particles
+ok 38 - near particles project larger and farther from the optical centre than distant particles
+  ---
+  duration_ms: 0.9031
+  type: 'test'
+  ...
+# Subtest: completed particles land on literal SVG endpoints and stop reacting to the clock or camera
+ok 39 - completed particles land on literal SVG endpoints and stop reacting to the clock or camera
+  ---
+  duration_ms: 0.674
+  type: 'test'
+  ...
+# Subtest: reverse scrolling reconstructs the same seeded spatial field without accumulated transforms
+ok 40 - reverse scrolling reconstructs the same seeded spatial field without accumulated transforms
+  ---
+  duration_ms: 0.467
+  type: 'test'
+  ...
+# Subtest: holding active time freezes the sea while a later active clock moves the unfinished field
+ok 41 - holding active time freezes the sea while a later active clock moves the unfinished field
+  ---
+  duration_ms: 0.1044
+  type: 'test'
+  ...
+# Subtest: the presentation camera travels continuously through every chapter boundary within gentle limits
+ok 42 - the presentation camera travels continuously through every chapter boundary within gentle limits
+  ---
+  duration_ms: 2.4788
+  type: 'test'
+  ...
+# Subtest: particle colour converges smoothly into the route instead of switching at a story threshold
+ok 43 - particle colour converges smoothly into the route instead of switching at a story threshold
+  ---
+  duration_ms: 0.1246
+  type: 'test'
+  ...
+# Subtest: nonfinite inputs and invalid viewport dimensions stay finite with bounded perspective
+ok 44 - nonfinite inputs and invalid viewport dimensions stay finite with bounded perspective
+  ---
+  duration_ms: 0.2336
+  type: 'test'
+  ...
+# Subtest: the renderer paints cached soft glows without allocating gradients on successive frames
+ok 45 - the renderer paints cached soft glows without allocating gradients on successive frames
+  ---
+  duration_ms: 54.2871
+  type: 'test'
+  ...
+# Subtest: frame caps spare repeated clock frames while navigation and reverse scroll redraw immediately
+ok 46 - frame caps spare repeated clock frames while navigation and reverse scroll redraw immediately
+  ---
+  duration_ms: 42.2987
+  type: 'test'
+  ...
+# Subtest: paused and disposed renderers draw nothing and clear the finished field once
+ok 47 - paused and disposed renderers draw nothing and clear the finished field once
+  ---
+  duration_ms: 10.9212
+  type: 'test'
+  ...
+# Subtest: continuously changing follower progress stays inside the desktop and mobile frame budgets
+ok 48 - continuously changing follower progress stays inside the desktop and mobile frame budgets
+  ---
+  duration_ms: 22.4716
+  type: 'test'
+  ...
+# Subtest: a settled target or explicit snap paints its endpoint without waiting for another clock frame
+ok 49 - a settled target or explicit snap paints its endpoint without waiting for another clock frame
+  ---
+  duration_ms: 11.0463
+  type: 'test'
+  ...
+1..49
+# tests 49
+# suites 0
+# pass 34
+# fail 15
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 451.37

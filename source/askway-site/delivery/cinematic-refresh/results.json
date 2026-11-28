@@ -1,0 +1,2364 @@
+{
+  "generatedAt": "2026-11-27T15:24:27.584Z",
+  "status": "verified-local-photographic-prototype",
+  "gitHead": "d79fc5ce7e528a54464223e39ddeaf33f83a9ca9",
+  "sourceFingerprintSha256": "4fe57d9a5039e3fb0ec5bfed5c51ed88771f50b9745e3f69c2cd453bff5617fa",
+  "sourceHashes": [
+    {
+      "file": "index.html",
+      "sha256": "d7dd996259ecab2956c73e967ec485d9e7a58bb0c7569ade3c1e841c01505335"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "33702c003cf52d4ddd576cc9cfacb687f3e55fc9cf7cd35efd16f6af7202a5d4"
+    },
+    {
+      "file": "package.json",
+      "sha256": "dc49ef3aa05e57bc5ee2ae75e5cd82425ba9497c6d9e4a4907defa8d7bebca90"
+    },
+    {
+      "file": "public/asset-credits.json",
+      "sha256": "c491e569634b78ddae6fc3a828efd4a79b726df3c8cd3b432d09f1306bf9ed17"
+    },
+    {
+      "file": "public/assets/FONT-LICENSE.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+    },
+    {
+      "file": "public/assets/THIRD-PARTY-LICENSES.txt",
+      "sha256": "e67cc7afe9badc780936a28b128b2f2e73ac4d2eb201e2400e6e8622d282bb3d"
+    },
+    {
+      "file": "public/assets/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "file": "public/assets/architecture.webp",
+      "sha256": "a47ff66f7c411cd81150f1bf8b73ece871ffd35473b2b3448ca8a25cf0d37ddc"
+    },
+    {
+      "file": "public/assets/cinematic/hero-mobile.webp",
+      "sha256": "df1075fd287e26528942e77ab2dda88abda25f8f2eb669181fadad6400aa4b30"
+    },
+    {
+      "file": "public/assets/cinematic/manifest.json",
+      "sha256": "bc08786cbb4fa06befdbfea9fd73d5cdc9d3692c82a4a38b84aeaf0780b1dc89"
+    },
+    {
+      "file": "public/assets/coast.webp",
+      "sha256": "9438940422162ca0ece5d9b4b5f1c85defef38121b4763d555bfdfb931833e67"
+    },
+    {
+      "file": "public/assets/favicon.svg",
+      "sha256": "7253f9fccac33c265472f6443aa4a21de2c25588b7692c0bed3081f9300a793c"
+    },
+    {
+      "file": "public/assets/heading.ttf",
+      "sha256": "9fae11a4d7d88af358f73fd31f6ccf6ba7cd76657ba84e9571a55d00664fcc1f"
+    },
+    {
+      "file": "public/assets/hero.webp",
+      "sha256": "3504f8eac73cb0568c1ba32dd2d8060be015bfcf2feb44d661af93e3554d039b"
+    },
+    {
+      "file": "public/assets/realism/architectural-textures.md",
+      "sha256": "9a94147dcde1f0c89a838a4b9d81fa479bcb7f50b6db71222baf68a285071ca4"
+    },
+    {
+      "file": "public/assets/realism/asphalt-normal.webp",
+      "sha256": "e630f24ed4c613b170a6f85daaabfe59932d375bcad74131f791ae3a17ce10c9"
+    },
+    {
+      "file": "public/assets/realism/asphalt-roughness.webp",
+      "sha256": "bf9f59220d7a2782703f7ce445f1a6de31cc4d23f2b57eb0fa155a6fa2a834b7"
+    },
+    {
+      "file": "public/assets/realism/coastal-overview.webp",
+      "sha256": "7601f6ef28f0b7bcee5989e6f92905069499a3e4213c84a220e3d799758861e1"
+    },
+    {
+      "file": "public/assets/realism/coastal-sunrise-1k.hdr",
+      "sha256": "1cb809a131ff3cb7df94b639d5967fc6fc08ecd25b6c43930af3b5d99f1d8855"
+    },
+    {
+      "file": "public/assets/realism/illustrations.json",
+      "sha256": "97ab666eefb37a532151d862ca6c0aa40a55616e2fca8c489684c49b511f24f9"
+    },
+    {
+      "file": "public/assets/realism/paving-normal.webp",
+      "sha256": "2dab4407f3d9c53a57ec48497ae39fffdd8e889dc16506acbea35308ea375c8a"
+    },
+    {
+      "file": "public/assets/realism/paving-roughness.webp",
+      "sha256": "71262a4fd9cb58c4b37cef646b05dc063d3ccecdfb24b28cb7a7ba44f6b72693"
+    },
+    {
+      "file": "public/assets/realism/route-landmarks.webp",
+      "sha256": "014d4c9b161176f8d5a2d2b6580b441dec67516596a46239db0c68375bcf938f"
+    },
+    {
+      "file": "public/assets/realism/sand-color.webp",
+      "sha256": "0ea3e2ad475757b825c9ca462320bdd7155dd20fc5c82902e83d8a3f8b315d54"
+    },
+    {
+      "file": "public/assets/realism/sand-normal.webp",
+      "sha256": "349a2980d03cc93db51cc2301fc38e90d30709a55a396cbbb0eaaf19593bb91d"
+    },
+    {
+      "file": "public/assets/realism/sand-roughness.webp",
+      "sha256": "1ef5d2e76a50b072269d9b1e3419e576a2f40199b9f4ad0d5964ff99713a9066"
+    },
+    {
+      "file": "public/assets/realism/shell-normal.webp",
+      "sha256": "07c3804836cd20f1ac97a3478137196e01ba3355b94635149375bab8290edbe3"
+    },
+    {
+      "file": "public/assets/realism/shell-roughness.webp",
+      "sha256": "8720d87e062927452aedd1bbf2a49285451a42758b0270106329f0ddd4d89548"
+    },
+    {
+      "file": "public/assets/realism/sources.json",
+      "sha256": "a5b1c2579d4884298fae3bcf3eed3cca3fc308b15f6454246c1621c5fd4e8d39"
+    },
+    {
+      "file": "public/assets/realism/stone-color.webp",
+      "sha256": "8510d4149afceee245963d32cb454eeda0bfb8eed132d445d1a959d312ca298a"
+    },
+    {
+      "file": "public/assets/realism/stone-normal.webp",
+      "sha256": "bbc8ac0f80cec8c7b4482adf02686cc65efe24e451ae96d461e191384f0390b9"
+    },
+    {
+      "file": "public/assets/realism/stone-roughness.webp",
+      "sha256": "d5e0a0bc50769e45a9155707eac674577965c6ff46f534c7984a5142da59f82f"
+    },
+    {
+      "file": "public/assets/realism/theatre-dusk.webp",
+      "sha256": "d11f84c95d0f460b17d1503fdf2bb98fc414bc20fa2138ca3bb9b3161cd7fd60"
+    },
+    {
+      "file": "public/assets/theatre.webp",
+      "sha256": "654b537927bf5b12f9df2564dc46685338c7578d110b31f7099eb32ba487d15c"
+    },
+    {
+      "file": "scripts/build.mjs",
+      "sha256": "ea9453109c21f57252015b5c8bb1fc12df41a0f7d632ffe4ff4f3ef8adb16703"
+    },
+    {
+      "file": "scripts/capture-cinematic.mjs",
+      "sha256": "9044484fe5085be35efe2ed29278edee807ccbae7c6a73f86b5156a0b19219d3"
+    },
+    {
+      "file": "scripts/export-cinematic-posters.py",
+      "sha256": "95b39d9eea40720cd32f22728d7de25cbf52bc4c17e334f680b8c952a3e45c5f"
+    },
+    {
+      "file": "scripts/measure-presentation-scene.mjs",
+      "sha256": "cfd2600505c39d354c1e6c667bb5d8dff5393cf754252a2ac0224a1934c0b7e2"
+    },
+    {
+      "file": "scripts/record-cinematic.mjs",
+      "sha256": "6efc506e8095931ca52680c52d4af9a7d3fd995b61ce56079e8f1d61d0dadabf"
+    },
+    {
+      "file": "scripts/render-city-illustrations.mjs",
+      "sha256": "5bde4573264d0271937112ea19d1e84bf3f905f23302ca6de10de757c8923fe7"
+    },
+    {
+      "file": "scripts/serve.mjs",
+      "sha256": "5ae75afa843bc9d96f881c2dc4b533a47e6583c3c1f35f96fa30d0ee3ba301c1"
+    },
+    {
+      "file": "scripts/sync-publication.mjs",
+      "sha256": "04ace925456ca295a60a13437cade71fbbe1e1e68da8b6cd1ef74fc879f7135b"
+    },
+    {
+      "file": "site.config.mjs",
+      "sha256": "bbab63689b7d4eb18ed4f325d6e8107876b707e5fc3c28b0404b2b1ec5025e7d"
+    },
+    {
+      "file": "src/App.tsx",
+      "sha256": "229764fb4c89d793f6750ebed35b1f4106ea7ed742b6fe46b22dd3a203c359b5"
+    },
+    {
+      "file": "src/components/Brand.tsx",
+      "sha256": "5110d434aa1b81ccb19a16c69a001448a0fb8b52ef60a91b8723615688eec843"
+    },
+    {
+      "file": "src/components/CityIllustrations.tsx",
+      "sha256": "4d84ed9c04db9febc2a3d71fc756d88c45caa8b14c1737b5751b5c5d660b073e"
+    },
+    {
+      "file": "src/components/CoastalOpening.tsx",
+      "sha256": "8716ef46dee142296565fb6a6a61953fd19cdb4000e1e8d4b85b780cfb971cea"
+    },
+    {
+      "file": "src/components/ImmersiveShowcase.tsx",
+      "sha256": "eae45ca6f4550c3b9327a14f4843d60605234fdaa3305eb286278a11c42e7b3d"
+    },
+    {
+      "file": "src/components/JourneyStage.tsx",
+      "sha256": "5f8623666c3009d1933038226247be6bff3378545754f3488bba6ccb601227c5"
+    },
+    {
+      "file": "src/components/ProductDemo.tsx",
+      "sha256": "583d9c7a031d15725a1678810aca5674809765aa4c034c702bf1c82a256ce45a"
+    },
+    {
+      "file": "src/components/RouteArt.tsx",
+      "sha256": "a20f20495c88049ecf4ef66b7355f3623d22b6b376aa3ca686b8e63ddb2d70e4"
+    },
+    {
+      "file": "src/components/RouteDiagram.tsx",
+      "sha256": "53cf92156d71eecd1893c1005a0814c4ef3623558c10bb6010b4bf0cb88ed335"
+    },
+    {
+      "file": "src/components/SeaRouteParticles.tsx",
+      "sha256": "f57cfbea5af4fcb56fdb690864ff6a76083616d625afb728382c2d21e5cc9ccc"
+    },
+    {
+      "file": "src/components/Shared.tsx",
+      "sha256": "35e6dca95dffa847af12b6a83d012efcc73871ae84aa64e71fa587cb8f8cf379"
+    },
+    {
+      "file": "src/components/SiteFooter.tsx",
+      "sha256": "d51a08ed836077e28271b5df54bcaf80931e5413087a6bdcf22bfe4a3bf1c1b1"
+    },
+    {
+      "file": "src/components/SiteHeader.tsx",
+      "sha256": "0d9fc2678871bbba0721e1ccbea6c0d3422089b13d7fbce1db96e129c287d49d"
+    },
+    {
+      "file": "src/components/SoftwareDownload.tsx",
+      "sha256": "b4316d85500b05c9309e2b4b6a973533c5f2c548b6226392edc4f91a2ffb0f67"
+    },
+    {
+      "file": "src/entry-server.tsx",
+      "sha256": "c2e466a6cab5f5aba1131ce6e9753c87d8bc211067ec056a83735505d5bdd4f9"
+    },
+    {
+      "file": "src/features/cinematic/StoryStage.tsx",
+      "sha256": "a38c268981f20755d3b64cc78c23fd5077dd93c084629e3283c71bdeea13ebf4"
+    },
+    {
+      "file": "src/features/cinematic/cinematic.css",
+      "sha256": "1c4fbf0b1402dfd90acde4329ecb5b2de6e5932822ca50017c07241bc99550c7"
+    },
+    {
+      "file": "src/features/cinematic/progress.ts",
+      "sha256": "a7cfb4a31204d6578e11f715f6cdc137f275515c41f2d640a80128751941e5a2"
+    },
+    {
+      "file": "src/features/cinematic/storyConfig.ts",
+      "sha256": "3994170af3dee54743c852629dd4ed6332684bccf36764d88a622bde9beaee36"
+    },
+    {
+      "file": "src/features/cinematic/useStoryProgress.ts",
+      "sha256": "9519ae4b7b59b27bf50551ce54cf25dcac6c876634cedb3d5913d55d134c0d62"
+    },
+    {
+      "file": "src/features/experience/config.ts",
+      "sha256": "0669510d3988dd33b8fc193ead47311c4c95f5b68a81984101e9bf907ca3f704"
+    },
+    {
+      "file": "src/features/experience/contracts.ts",
+      "sha256": "522cf5ca69d634bc0afafbc901b138c1779d64d161304286925588fff154d031"
+    },
+    {
+      "file": "src/features/experience/data/catalog.schema.ts",
+      "sha256": "c87ae9ff9e5b6a5d91582fb4731e4ca0b93ba3dfe94081d140ae06889984660f"
+    },
+    {
+      "file": "src/features/experience/data/catalog.ts",
+      "sha256": "3b01e87d7e30f71a5cd64dfa54a2292d80b9efbec11175eb13d7ddbabdbfc072"
+    },
+    {
+      "file": "src/features/experience/domain/conditions.ts",
+      "sha256": "d85e9ab2e510ae4ce3a66000f32be975267509ab96903f19f1470d08598f08a3"
+    },
+    {
+      "file": "src/features/experience/domain/curated-planner.ts",
+      "sha256": "748f697a619310145be2b2d82ccc13622bc42cdea85ea10c236fcc4d3e71cad7"
+    },
+    {
+      "file": "src/features/experience/domain/plan-delta.ts",
+      "sha256": "781cedd7894648c5b0ff12e7cdd1fa1dbe16410bdebdfac59ed12f630a73cac0"
+    },
+    {
+      "file": "src/features/experience/gateways/curated.gateway.ts",
+      "sha256": "d5d1b605f624af26b4201710469db5309db5c8ebb22b45efffb35610d023cd1a"
+    },
+    {
+      "file": "src/features/experience/map/MapLandmarkPreview.tsx",
+      "sha256": "0f2fab927416ce2c52e13e2a0a7c807fb94329e48ceed2f9f3aaddfa31d1d421"
+    },
+    {
+      "file": "src/features/experience/map/RouteMap2D.tsx",
+      "sha256": "946b5c55eb2a47d5c8c9742d4181030dd3e880e2c45ad48092a4be41deea7b1e"
+    },
+    {
+      "file": "src/features/experience/map/map-detail.css",
+      "sha256": "3be81199c1b3d7584bfedc0cde75fbe4026d75ef6046129048e9b0abb41cb51d"
+    },
+    {
+      "file": "src/features/experience/map/projection.ts",
+      "sha256": "5fe957c7c3ae206db6c22b5f37554a6f968e0e89c969939813d8b340c051938e"
+    },
+    {
+      "file": "src/features/experience/motion/useExperienceMotion.ts",
+      "sha256": "c53a72f9a504ef1ac63e27062ce0e067263d0aec05d1b7835e415e8c0582eea0"
+    },
+    {
+      "file": "src/features/experience/scene/CinematicCity.tsx",
+      "sha256": "ef3fb6c9f74ce601729f94eef51ad88bed2a96f7b74aee486e164c7fec4ed477"
+    },
+    {
+      "file": "src/features/experience/scene/CitySandbox.tsx",
+      "sha256": "3c760a3e7117e2e60ae5df4fc21aea89f91aaff14f1e46cb84302c5fc674cf54"
+    },
+    {
+      "file": "src/features/experience/scene/ClientScene.tsx",
+      "sha256": "4770b8cb8bf4e227494d38babd74b20c8ed9a8286720dc5f7b39162c3b83e5c6"
+    },
+    {
+      "file": "src/features/experience/scene/SceneText.tsx",
+      "sha256": "8fd9c5fd7f9a6d2a77cf3e6cb1f5febca548f8421c34b68924dd2af39f5a8790"
+    },
+    {
+      "file": "src/features/experience/scene/architecturalTextures.ts",
+      "sha256": "58a2a0ef04b8688d46b685a8e55da04134a9355589adcde721bc42ebc1a9092f"
+    },
+    {
+      "file": "src/features/experience/scene/cinematic-city.css",
+      "sha256": "f42f27e6f7b1d1d2755817657cefa8fe14470cf4f78e60e8cf9e94113dc363f6"
+    },
+    {
+      "file": "src/features/experience/scene/cityRuntime.ts",
+      "sha256": "9ac3860a16c156b54abf5b27fd4ed0f72dd642099d1d603bac1083ce550bf809"
+    },
+    {
+      "file": "src/features/experience/scene/coastalCityModel.ts",
+      "sha256": "3e52e86fed69236dd2d9011ed90e68c47ea23752d11b4cd1515007b4d99ac337"
+    },
+    {
+      "file": "src/features/experience/scene/coastalEnvironment.ts",
+      "sha256": "b5528ecdd6bd64b91dae9e1e6d808b2eef6b1b60e1a7e0263d1fcde41e226a99"
+    },
+    {
+      "file": "src/features/experience/scene/operaArchitecture.ts",
+      "sha256": "a4fad864cf6ab6a3051cdb0b20a0254d9c33222caff9beda4528dfc6bdc37174"
+    },
+    {
+      "file": "src/features/experience/scene/paperCityModel.ts",
+      "sha256": "fdc41deeec7751a09e37054cb9f6b174cb490c44860524e84f456fd37fa1cad7"
+    },
+    {
+      "file": "src/features/experience/scene/paperTerrain.ts",
+      "sha256": "030978ed25be0bac539edcae4d0ffefebcd68d3e410e2d097e62b4b6829c7d18"
+    },
+    {
+      "file": "src/features/experience/scene/realisticMaterials.ts",
+      "sha256": "c49feb88ff33f51e141f6c3ae28f950621f2d283ebd8f1e2e02ab9ae22a156c6"
+    },
+    {
+      "file": "src/features/experience/state/experience.reducer.ts",
+      "sha256": "c5b548fefd1ce07b11296c0da83ecd134b9335b954475a9a0d025a442aeba831"
+    },
+    {
+      "file": "src/features/experience/state/useExperienceController.ts",
+      "sha256": "3c7d7033121a9a36d38899f005805762def0c6e6708b3e16033cb2ee05009c10"
+    },
+    {
+      "file": "src/features/experience/styles/experience.css",
+      "sha256": "5b7d640bf38eb9aec3e60b102972cee25090321bfe6b9a06864a3a1a424e813e"
+    },
+    {
+      "file": "src/features/experience/ui/ConstraintWeave.tsx",
+      "sha256": "c629d77b24dca5092e368af1f09a315fbc1659db307fed22d4085d265fb9dcc2"
+    },
+    {
+      "file": "src/features/experience/ui/ExperiencePreview.tsx",
+      "sha256": "bf6560de22a920ba206284b55b9b31a57e8827e0c169b96c60b51cc38752193a"
+    },
+    {
+      "file": "src/features/experience/ui/ExperienceWorkbench.tsx",
+      "sha256": "dbb4ebc703bbaf71c067ff8ed0c369b6988e1b0787281a799913bc0681d02cd0"
+    },
+    {
+      "file": "src/features/experience/ui/JourneyPreview.css",
+      "sha256": "38fed6bdd9581908f1f426642051b28783dce188018f9ef452cab4f73fe3b350"
+    },
+    {
+      "file": "src/features/experience/ui/JourneyPreview.tsx",
+      "sha256": "64c581c411ac4d51e13d88eda6243e0bd522b70df1dc6a8ad40a3e4d66923450"
+    },
+    {
+      "file": "src/features/experience/ui/PlaceDetails.tsx",
+      "sha256": "8c0b691cf55c029b275bf68b91852cb2b8e4bb4a30c7a042560eed89840f03aa"
+    },
+    {
+      "file": "src/features/experience/ui/PlanComparison.tsx",
+      "sha256": "1cdd41b07e3fc642553beacc872aa1e4dfe48a480f38c01a210c406dbf8b8bb1"
+    },
+    {
+      "file": "src/features/experience/ui/PlanTimeline.tsx",
+      "sha256": "4d2483ab42557ff584708afe4e4418f5bbba7c051d0eac905e9aa7f0924502cd"
+    },
+    {
+      "file": "src/features/experience/ui/format.ts",
+      "sha256": "c5df1b45b7bba86dde34742fae638a1a7155c80b82b7439f57b1a56a42c48b2c"
+    },
+    {
+      "file": "src/hooks/useMotion.ts",
+      "sha256": "aa6d55163e23d5cfd69f3e0f468d4bf6d13ce170891e6bca2596edec1d889070"
+    },
+    {
+      "file": "src/lib/brief.mjs",
+      "sha256": "9915b12462ed8beb7a6c7ea64554d62403756ca3cdf266d3a26fb990fcb350b6"
+    },
+    {
+      "file": "src/lib/demo.mjs",
+      "sha256": "9cfdce895627e5be5537a0e86c5002c4dc359f55ee50bc2c10536c94740e68a8"
+    },
+    {
+      "file": "src/lib/journey.mjs",
+      "sha256": "0c131fef4ccc15199af16d8dfe884e487f195a56598c0d620c5cf505ced4db77"
+    },
+    {
+      "file": "src/main.tsx",
+      "sha256": "61c8130a87e5667ce02b38ebcc7238b7c41326fc6f1a06ecfeb3429288fb22a8"
+    },
+    {
+      "file": "src/motion/PresentationMotion.tsx",
+      "sha256": "a5524bb8ae06ce3e8b766a3311fcda7b3827a8f057879d0794dff150babcfca3"
+    },
+    {
+      "file": "src/motion/presentationPolicy.ts",
+      "sha256": "bb5b4276633898b6c8f9ea989c9418a97a24f06340e85b134541a0f0ad4860b9"
+    },
+    {
+      "file": "src/motion/seaRouteMath.ts",
+      "sha256": "85ce53886df22a166fc734577434b7904b8d7d7d123c67bd32e05e21bbdca37b"
+    },
+    {
+      "file": "src/pages/About.tsx",
+      "sha256": "9abb0576b17b004de92d815f54a7699abeb113dedbe2ff2b5912e8e0e15d98aa"
+    },
+    {
+      "file": "src/pages/Cooperation.tsx",
+      "sha256": "bf15b05fdcd05d8d51f682cfa78a1803be42ba8207414c9c6c173252cb8f1bc0"
+    },
+    {
+      "file": "src/pages/Experience.tsx",
+      "sha256": "44f3dc2fd415b328c54848658b802d4ad2efd4e1d19c78cf8cd3e275fd7dc7bb"
+    },
+    {
+      "file": "src/pages/Home.tsx",
+      "sha256": "586794fa60f1db50a5949ac487fba71ca29bb0bb3de6885f845e73a47ecf15cf"
+    },
+    {
+      "file": "src/pages/Product.tsx",
+      "sha256": "8e68c5f2f5ff19d51b83db12a70ca9ab480e32fd5023cccc9450a2bcc399d106"
+    },
+    {
+      "file": "src/site.ts",
+      "sha256": "f09dfc91a1575ae8de373c13c25b33899547911fe8771292a3e43d1edfa6a880"
+    },
+    {
+      "file": "src/styles/cinematic-common.css",
+      "sha256": "68f2cd1638b0cb0c4cae413ea182206ef09203acf583d1d3c49b82f3b270af96"
+    },
+    {
+      "file": "src/styles/cinematic-pages.css",
+      "sha256": "bce33d77f39f663f5debf0be895c96c17a90c8ac2d208c2e85f8102c3439eab8"
+    },
+    {
+      "file": "src/styles/editorial-pages.css",
+      "sha256": "fb346962159c3a0683b021063773ae21e4e222e731f1202ac7d8126726efe0c8"
+    },
+    {
+      "file": "src/styles/immersive.css",
+      "sha256": "3449ef9c25a3f6bcde37a74d638c5e5c55eef76ee8b01105c92952bd5b276341"
+    },
+    {
+      "file": "src/styles/site.css",
+      "sha256": "b9675cb7b25b208722022ed3b345038a13a43c606f46e8058bc474dd2872c6e1"
+    },
+    {
+      "file": "src/styles/visual-refresh.css",
+      "sha256": "c2fa5a4ccf6f9a6df903e5115a743551526475defc2e00babb7e1b7a554545f3"
+    },
+    {
+      "file": "tests/browser.mjs",
+      "sha256": "3a06c48faa1d31344f563b2653836561ad7dbbc47fda6c802e709c4174d62982"
+    },
+    {
+      "file": "tests/cinematic/browser.mjs",
+      "sha256": "43c2b80a1d3dcb82160c2c9094f1f490e83996fc703819c67cc9218c5e239646"
+    },
+    {
+      "file": "tests/cinematic/controller.test.mjs",
+      "sha256": "69dd99a192392f7c96ebd798963af279c68d828ab08d541d7f7b10645c19a430"
+    },
+    {
+      "file": "tests/cinematic/progress.test.mjs",
+      "sha256": "ea94e9b20bc565e1e13b44822595929e033cfb00d3b19e5d9396a5c6d03e84c4"
+    },
+    {
+      "file": "tests/download.mjs",
+      "sha256": "2484530447c0326b4607a26e7e7c25838ea46a77f7713e3fdaf9e98e6f3cda6a"
+    },
+    {
+      "file": "tests/experience/browser-flow.mjs",
+      "sha256": "67264de24dc3dbada6289213e912640536e0fca6db57276f70e31acb13631718"
+    },
+    {
+      "file": "tests/experience/cinematic-pause.mjs",
+      "sha256": "017311a0eff238f8516dc3f7451b7da3fb853bbc1b2bb08ea657e01bb98711e9"
+    },
+    {
+      "file": "tests/experience/coastal-runtime.mjs",
+      "sha256": "31ac55cea83210025f8739fe53758fd6898498f58793f748021e7ed5ba779516"
+    },
+    {
+      "file": "tests/experience/coastal-scene.test.mjs",
+      "sha256": "aea7ddf5343c7dbfe128f681c96b102ac0e3e7bf5184b214f779b17f35699c75"
+    },
+    {
+      "file": "tests/experience/domain.test.mjs",
+      "sha256": "5f74eef20e130ff3ef1f68546631d1b030f846bc7b7f61e76d42c25485101f0f"
+    },
+    {
+      "file": "tests/experience/presentation-policy.test.mjs",
+      "sha256": "da67a559fff89bddb246976ef7d16d355b2c4d5d9506830b70b2073790fc4cb8"
+    },
+    {
+      "file": "tests/experience/projection.test.mjs",
+      "sha256": "0517356340c535055297cb167d60fcc0d893bb11a26ed3f259f1faa6acc594d7"
+    },
+    {
+      "file": "tests/experience/quality.mjs",
+      "sha256": "c4b2af733ebb2fcb553b5151e327c8f5cef7b9c1a6f0744ec229ee83ea4916a1"
+    },
+    {
+      "file": "tests/experience/realism-browser.mjs",
+      "sha256": "ddc3a4d2301b91175474d18eaccccd7826abfa26f5ac0d6e90ad8526bce9289c"
+    },
+    {
+      "file": "tests/experience/scene-browser.mjs",
+      "sha256": "d48f15f9afe89185997bd1aad9e1a2f5765f114773cb35844bad7a33682f421b"
+    },
+    {
+      "file": "tests/experience/sea-route.test.mjs",
+      "sha256": "703f39046dccfb42857cc71d9164a3cc1b659244ba7ae69f2746b02c6f934757"
+    },
+    {
+      "file": "tests/experience/state.test.mjs",
+      "sha256": "099a5a2a561935022d5a2e18b68a58ba44cf60d0e32425dfbc7369f1a47006d3"
+    },
+    {
+      "file": "tests/experience/static-site.mjs",
+      "sha256": "4f0ec77416fd4199fa035dc9709912fb88f0528bcefc90ec7facaaed0382ed59"
+    },
+    {
+      "file": "tests/experience/subpath.mjs",
+      "sha256": "701643eda86c13247a67a8ea1d55a1db2d2e872ed8ac34dcad660762914fa850"
+    },
+    {
+      "file": "tests/experience/visual-refresh-browser.mjs",
+      "sha256": "cd338c560cd41ca00247fdc06c7d017ba6caba688b092c0a61c594c70fb7efc9"
+    },
+    {
+      "file": "tests/experience/workbench-regressions.mjs",
+      "sha256": "11a03ef9a66acc4ecfc0dbf2d61307659a633e253a7b8c206b0c39c81ed08a30"
+    },
+    {
+      "file": "tests/helpers/browser-runtime.mjs",
+      "sha256": "24099006565e3a361140eea20d502a5dc74bb51f8d743591dc848fa9de44750c"
+    },
+    {
+      "file": "tests/regressions.mjs",
+      "sha256": "d3a1f8cbfad530186223639c0ec2040c54bd8d5899c6b99969dbd540847061dc"
+    },
+    {
+      "file": "tests/unit.test.mjs",
+      "sha256": "708a639f2032210d841e71f81d773272999db96ae396802284946804d0afb6a8"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "f948ea878c406fa1104fe3286a5faf46085c30d11c4e5da23454e47c5e5dd9fa"
+    },
+    {
+      "file": "vite.config.ts",
+      "sha256": "4e874e74f1ca51b9340bfe9c450a4e38793aff9fac8ea7feaf56cd7e57ba9592"
+    }
+  ],
+  "build": {
+    "siteVersion": "3.2.0",
+    "catalogVersion": "zhuhai-public-reference-2026-11-24-v1",
+    "mode": "curated",
+    "scene": "coastal-realism-v3",
+    "presentation": "city-story-photographic-prototype-v1",
+    "builtAt": "2026-11-27T15:11:04.689Z",
+    "base": "/"
+  },
+  "homepageSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+  "manifestVersion": "1.0.0",
+  "logic": [
+    {
+      "name": "unit",
+      "passed": 9,
+      "total": 9
+    },
+    {
+      "name": "domain",
+      "passed": 98,
+      "total": 98
+    }
+  ],
+  "behavioral": [
+    {
+      "name": "static",
+      "passed": 5,
+      "total": 5,
+      "file": "final/checks/results/static.json"
+    },
+    {
+      "name": "browser",
+      "passed": 18,
+      "total": 18,
+      "file": "final/checks/results/browser.json"
+    },
+    {
+      "name": "regressions",
+      "passed": 11,
+      "total": 11,
+      "file": "final/checks/results/regressions.json"
+    },
+    {
+      "name": "visual",
+      "passed": 5,
+      "total": 5,
+      "file": "final/checks/results/visual.json"
+    },
+    {
+      "name": "cinematic",
+      "passed": 19,
+      "total": 19,
+      "file": "final/checks/results/cinematic.json"
+    },
+    {
+      "name": "download",
+      "passed": 4,
+      "total": 4,
+      "file": "final/checks/results/download.json"
+    },
+    {
+      "name": "workbench",
+      "passed": 7,
+      "total": 7,
+      "file": "final/checks/results/workbench.json"
+    },
+    {
+      "name": "scene",
+      "passed": 13,
+      "total": 13,
+      "file": "final/checks/results/scene.json"
+    },
+    {
+      "name": "realism",
+      "passed": 5,
+      "total": 5,
+      "file": "final/checks/results/realism.json"
+    }
+  ],
+  "quality": [
+    {
+      "phase": "baseline",
+      "run": 1,
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2103.2786501394266,
+      "cls": 0,
+      "tbtMs": 3.5,
+      "metadata": {
+        "measuredAt": "2026-11-27T09:43:42.305Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.1.0",
+        "homeDocumentSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+        "entryScripts": [
+          "/assets/index-DDlIkNFA.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/baseline/performance/run-1",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4487,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "baseline/performance/run-1/lighthouse-summary.json"
+    },
+    {
+      "phase": "baseline",
+      "run": 1,
+      "route": "/experience/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2102.719769142379,
+      "cls": 0,
+      "tbtMs": 4,
+      "metadata": {
+        "measuredAt": "2026-11-27T09:43:42.305Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.1.0",
+        "homeDocumentSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+        "entryScripts": [
+          "/assets/index-DDlIkNFA.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/baseline/performance/run-1",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4417,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "baseline/performance/run-1/lighthouse-summary.json"
+    },
+    {
+      "phase": "baseline",
+      "run": 2,
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2104.2592,
+      "cls": 0,
+      "tbtMs": 4,
+      "metadata": {
+        "measuredAt": "2026-11-27T09:44:09.449Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.1.0",
+        "homeDocumentSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+        "entryScripts": [
+          "/assets/index-DDlIkNFA.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/baseline/performance/run-2",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4347,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "baseline/performance/run-2/lighthouse-summary.json"
+    },
+    {
+      "phase": "baseline",
+      "run": 2,
+      "route": "/experience/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2102.485808747698,
+      "cls": 0,
+      "tbtMs": 1.5,
+      "metadata": {
+        "measuredAt": "2026-11-27T09:44:09.449Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.1.0",
+        "homeDocumentSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+        "entryScripts": [
+          "/assets/index-DDlIkNFA.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/baseline/performance/run-2",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4413.5,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "baseline/performance/run-2/lighthouse-summary.json"
+    },
+    {
+      "phase": "baseline",
+      "run": 3,
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2102.4178,
+      "cls": 0,
+      "tbtMs": 22.5,
+      "metadata": {
+        "measuredAt": "2026-11-27T09:44:36.407Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.1.0",
+        "homeDocumentSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+        "entryScripts": [
+          "/assets/index-DDlIkNFA.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/baseline/performance/run-3",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4364,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "baseline/performance/run-3/lighthouse-summary.json"
+    },
+    {
+      "phase": "baseline",
+      "run": 3,
+      "route": "/experience/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2102.3143,
+      "cls": 0,
+      "tbtMs": 8,
+      "metadata": {
+        "measuredAt": "2026-11-27T09:44:36.407Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.1.0",
+        "homeDocumentSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+        "entryScripts": [
+          "/assets/index-DDlIkNFA.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/baseline/performance/run-3",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4385.5,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "baseline/performance/run-3/lighthouse-summary.json"
+    },
+    {
+      "phase": "final",
+      "run": 1,
+      "route": "/",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1801.9125232865017,
+      "cls": 0,
+      "tbtMs": 6.5,
+      "metadata": {
+        "measuredAt": "2026-11-27T15:17:26.860Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.2.0",
+        "homeDocumentSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+        "entryScripts": [
+          "/assets/index-CkT8MVk5.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/final/performance/run-1",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4598,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "final/performance/run-1/lighthouse-summary.json"
+    },
+    {
+      "phase": "final",
+      "run": 1,
+      "route": "/experience/",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2252.7068,
+      "cls": 0,
+      "tbtMs": 59,
+      "metadata": {
+        "measuredAt": "2026-11-27T15:17:26.860Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.2.0",
+        "homeDocumentSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+        "entryScripts": [
+          "/assets/index-CkT8MVk5.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/final/performance/run-1",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4364.5,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "final/performance/run-1/lighthouse-summary.json"
+    },
+    {
+      "phase": "final",
+      "run": 2,
+      "route": "/",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1802.0775,
+      "cls": 0,
+      "tbtMs": 0,
+      "metadata": {
+        "measuredAt": "2026-11-27T15:17:53.485Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.2.0",
+        "homeDocumentSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+        "entryScripts": [
+          "/assets/index-CkT8MVk5.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/final/performance/run-2",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 3980,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "final/performance/run-2/lighthouse-summary.json"
+    },
+    {
+      "phase": "final",
+      "run": 2,
+      "route": "/experience/",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2252.5438,
+      "cls": 0,
+      "tbtMs": 67.5,
+      "metadata": {
+        "measuredAt": "2026-11-27T15:17:53.485Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.2.0",
+        "homeDocumentSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+        "entryScripts": [
+          "/assets/index-CkT8MVk5.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/final/performance/run-2",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4266.5,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "final/performance/run-2/lighthouse-summary.json"
+    },
+    {
+      "phase": "final",
+      "run": 3,
+      "route": "/",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1801.781,
+      "cls": 0,
+      "tbtMs": 0,
+      "metadata": {
+        "measuredAt": "2026-11-27T15:18:20.503Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.2.0",
+        "homeDocumentSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+        "entryScripts": [
+          "/assets/index-CkT8MVk5.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/final/performance/run-3",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4290,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "final/performance/run-3/lighthouse-summary.json"
+    },
+    {
+      "phase": "final",
+      "run": 3,
+      "route": "/experience/",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2252.582096831924,
+      "cls": 0,
+      "tbtMs": 33,
+      "metadata": {
+        "measuredAt": "2026-11-27T15:18:20.503Z",
+        "baseUrl": "http://127.0.0.1:4173",
+        "siteVersion": "3.2.0",
+        "homeDocumentSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+        "entryScripts": [
+          "/assets/index-CkT8MVk5.js"
+        ],
+        "nodeVersion": "v22.23.1",
+        "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "outputDirectory": "delivery/cinematic-refresh/final/performance/run-3",
+        "writesConfinedToProject": true,
+        "packageLifecycleScriptsInvoked": false
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "zh",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+        "benchmarkIndex": 4211,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "warnings": [],
+      "source": "final/performance/run-3/lighthouse-summary.json"
+    }
+  ],
+  "medians": [
+    {
+      "route": "/",
+      "phase": "baseline",
+      "performance": 97,
+      "lcpMs": 2103.2786501394266,
+      "cls": 0,
+      "tbtMs": 4
+    },
+    {
+      "route": "/",
+      "phase": "final",
+      "performance": 98,
+      "lcpMs": 1801.9125232865017,
+      "cls": 0,
+      "tbtMs": 0
+    },
+    {
+      "route": "/experience/",
+      "phase": "baseline",
+      "performance": 97,
+      "lcpMs": 2102.485808747698,
+      "cls": 0,
+      "tbtMs": 4
+    },
+    {
+      "route": "/experience/",
+      "phase": "final",
+      "performance": 96,
+      "lcpMs": 2252.582096831924,
+      "cls": 0,
+      "tbtMs": 59
+    }
+  ],
+  "scheduling": {
+    "desktop": {
+      "requestedDurationMs": 10000,
+      "observedDurationMs": 10015.5,
+      "intervalCount": 2375,
+      "p50Ms": 4.199999999999818,
+      "p95Ms": 4.300000000001091,
+      "maximumMs": 49.80000000000018,
+      "over16_7Ms": 2,
+      "over33Ms": 2,
+      "over50Ms": 0,
+      "longTasks": 0,
+      "longTaskTotalMs": 0,
+      "drawCountDelta": 1155,
+      "activeTimeDelta": 4861.799999999999,
+      "wheelEventsObserved": 132
+    },
+    "mobile": {
+      "requestedDurationMs": 10000,
+      "observedDurationMs": 10010.099999964237,
+      "intervalCount": 2381,
+      "p50Ms": 4.199999999999818,
+      "p95Ms": 4.300000000000182,
+      "maximumMs": 33.399999999999636,
+      "over16_7Ms": 2,
+      "over33Ms": 1,
+      "over50Ms": 0,
+      "longTasks": 0,
+      "longTaskTotalMs": 0,
+      "drawCountDelta": 1150,
+      "activeTimeDelta": 4786.700000000001,
+      "wheelEventsObserved": 133
+    },
+    "showcase": {
+      "durationMs": 10003.399999976158,
+      "renderCountDelta": 35,
+      "observedRenderCallsPerSecond": 3.4988104044708215,
+      "observerSamples": 35,
+      "intervalCount": 34,
+      "p50Ms": 277.19999998807907,
+      "p95Ms": 291.60000002384186,
+      "maximumMs": 294.30000001192093,
+      "over16_7Ms": 34,
+      "over33Ms": 34,
+      "over50Ms": 34,
+      "coalescedUpdates": 0,
+      "longTasks": 0,
+      "longTaskTotalMs": 0,
+      "sceneActiveTimeDelta": null,
+      "sceneActiveTimeAvailability": "not exposed by cityRuntime",
+      "homepageStoryActiveTimeDelta": 0,
+      "homepageStoryDrawCountDelta": 0,
+      "ownerRemainedAllowed": true
+    }
+  },
+  "accessibility": {
+    "scans": 14,
+    "violations": 0,
+    "incompleteRules": [
+      "color-contrast"
+    ]
+  },
+  "layout": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "documentWidth": 1440,
+      "documentHeight": 8124,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "documentWidth": 390,
+      "documentHeight": 9663,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    },
+    {
+      "name": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "viewportWidth": 320,
+      "viewportHeight": 740,
+      "documentWidth": 320,
+      "documentHeight": 9909,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    },
+    {
+      "name": "zoom-css-equivalent",
+      "viewport": {
+        "width": 720,
+        "height": 500
+      },
+      "viewportWidth": 720,
+      "viewportHeight": 500,
+      "documentWidth": 720,
+      "documentHeight": 8523,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Equivalent CSS viewport only; not an actual browser 200% zoom test."
+    },
+    {
+      "name": "landscape",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "viewportWidth": 844,
+      "viewportHeight": 390,
+      "documentWidth": 844,
+      "documentHeight": 8472,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    }
+  ],
+  "story": {
+    "records": 12,
+    "comparisons": [
+      {
+        "phase": "city",
+        "forwardProgress": 0.08,
+        "reverseProgress": 0.08,
+        "progressDifference": 0,
+        "exactCssMatch": true,
+        "differences": [],
+        "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+      },
+      {
+        "phase": "route",
+        "forwardProgress": 0.34,
+        "reverseProgress": 0.34,
+        "progressDifference": 0,
+        "exactCssMatch": true,
+        "differences": [],
+        "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+      },
+      {
+        "phase": "theatre",
+        "forwardProgress": 0.64,
+        "reverseProgress": 0.64,
+        "progressDifference": 0,
+        "exactCssMatch": true,
+        "differences": [],
+        "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+      },
+      {
+        "phase": "product",
+        "forwardProgress": 0.94,
+        "reverseProgress": 0.94,
+        "progressDifference": 0,
+        "exactCssMatch": true,
+        "differences": [],
+        "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+      }
+    ]
+  },
+  "resourceBudget": [
+    {
+      "variant": "desktop",
+      "initialBytes": 1001699,
+      "completeReadingBytes": 1752793
+    },
+    {
+      "variant": "mobile",
+      "initialBytes": 1024075,
+      "completeReadingBytes": 1505799
+    }
+  ],
+  "publication": {
+    "root": "D:\\AAA大三上\\软件工程\\askway-web",
+    "files": [
+      {
+        "file": ".nojekyll",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "file": "404.html",
+        "bytes": 5871,
+        "sha256": "7cd9803902fcdfde72cad551d64cb7d89b1fbabe268d013c40ef687d13b46210"
+      },
+      {
+        "file": "CNAME",
+        "bytes": 13,
+        "sha256": "e69b215a40f3aa9884f43158c2678c1c69a6eff91df5a92050012abafb8b398e"
+      },
+      {
+        "file": "about/index.html",
+        "bytes": 13761,
+        "sha256": "ae771a39c785b80033643debe9bd0ca59715e89a9ca28c730f743737b3fc3dcc"
+      },
+      {
+        "file": "asset-credits.json",
+        "bytes": 4489,
+        "sha256": "c491e569634b78ddae6fc3a828efd4a79b726df3c8cd3b432d09f1306bf9ed17"
+      },
+      {
+        "file": "assets/CinematicCity-BPvDP1h6.css",
+        "bytes": 939,
+        "sha256": "2f0f6fe224454a09140c20e6a068b50ce2686ad6c32278bdefe1d6b2a7bccdc3"
+      },
+      {
+        "file": "assets/CinematicCity-CoHlMZ9c.js",
+        "bytes": 1954,
+        "sha256": "1109873dabd8687f12b2ffeebc14a4c2889c08d6c7036d092260a79f22d933f2"
+      },
+      {
+        "file": "assets/CitySandbox-DD14vKXr.js",
+        "bytes": 46418,
+        "sha256": "62ce978e584af96d8548fa78808a3c9dc2b16257be32415d32ba43efb4b88df2"
+      },
+      {
+        "file": "assets/FONT-LICENSE.txt",
+        "bytes": 4350,
+        "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+      },
+      {
+        "file": "assets/ScrollTrigger-CyD2wTOc.js",
+        "bytes": 44087,
+        "sha256": "e7329ca214b1547d4f968f636e4a70bcf856ff185db2b94eb00672a436ef083b"
+      },
+      {
+        "file": "assets/SeaRouteParticles-TPqJoUJv.js",
+        "bytes": 3923,
+        "sha256": "c360dc250169de83fa2e519de00c861a4e213243a6edb4d4554ed18d4494c38a"
+      },
+      {
+        "file": "assets/THIRD-PARTY-LICENSES.txt",
+        "bytes": 6815,
+        "sha256": "e67cc7afe9badc780936a28b128b2f2e73ac4d2eb201e2400e6e8622d282bb3d"
+      },
+      {
+        "file": "assets/THREE-LICENSE.txt",
+        "bytes": 1081,
+        "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+      },
+      {
+        "file": "assets/architecture.webp",
+        "bytes": 159116,
+        "sha256": "a47ff66f7c411cd81150f1bf8b73ece871ffd35473b2b3448ca8a25cf0d37ddc"
+      },
+      {
+        "file": "assets/cinematic/hero-mobile.webp",
+        "bytes": 85322,
+        "sha256": "df1075fd287e26528942e77ab2dda88abda25f8f2eb669181fadad6400aa4b30"
+      },
+      {
+        "file": "assets/cinematic/manifest.json",
+        "bytes": 3656,
+        "sha256": "bc08786cbb4fa06befdbfea9fd73d5cdc9d3692c82a4a38b84aeaf0780b1dc89"
+      },
+      {
+        "file": "assets/city-runtime-8EEazRhK.js",
+        "bytes": 515033,
+        "sha256": "c8df13b10bc594a496633427e3d8f8ffbba58b6f391c4595129ba005e8693252"
+      },
+      {
+        "file": "assets/coast.webp",
+        "bytes": 116260,
+        "sha256": "9438940422162ca0ece5d9b4b5f1c85defef38121b4763d555bfdfb931833e67"
+      },
+      {
+        "file": "assets/favicon.svg",
+        "bytes": 344,
+        "sha256": "7253f9fccac33c265472f6443aa4a21de2c25588b7692c0bed3081f9300a793c"
+      },
+      {
+        "file": "assets/gsap-BqEcbG5D.js",
+        "bytes": 71263,
+        "sha256": "619f43dceedf3175e41b9fdc35118088853060cb929d0a22336ba27bcad6841c"
+      },
+      {
+        "file": "assets/heading.ttf",
+        "bytes": 38400,
+        "sha256": "9fae11a4d7d88af358f73fd31f6ccf6ba7cd76657ba84e9571a55d00664fcc1f"
+      },
+      {
+        "file": "assets/hero.webp",
+        "bytes": 222362,
+        "sha256": "3504f8eac73cb0568c1ba32dd2d8060be015bfcf2feb44d661af93e3554d039b"
+      },
+      {
+        "file": "assets/index-CkT8MVk5.js",
+        "bytes": 371979,
+        "sha256": "bd2a8baf03380d4d2e094ab8aa2f8ddbe3e336c8c05b20fcfa6c48bf19a8d85c"
+      },
+      {
+        "file": "assets/index-DQLgXoNL.css",
+        "bytes": 204594,
+        "sha256": "e45896e98c076af2c76917c2967066144473b175c9400dbff48b1d2bb7f55e3d"
+      },
+      {
+        "file": "assets/realism/architectural-textures.md",
+        "bytes": 1243,
+        "sha256": "9a94147dcde1f0c89a838a4b9d81fa479bcb7f50b6db71222baf68a285071ca4"
+      },
+      {
+        "file": "assets/realism/asphalt-normal.webp",
+        "bytes": 306978,
+        "sha256": "e630f24ed4c613b170a6f85daaabfe59932d375bcad74131f791ae3a17ce10c9"
+      },
+      {
+        "file": "assets/realism/asphalt-roughness.webp",
+        "bytes": 64454,
+        "sha256": "bf9f59220d7a2782703f7ce445f1a6de31cc4d23f2b57eb0fa155a6fa2a834b7"
+      },
+      {
+        "file": "assets/realism/coastal-overview.webp",
+        "bytes": 147398,
+        "sha256": "7601f6ef28f0b7bcee5989e6f92905069499a3e4213c84a220e3d799758861e1"
+      },
+      {
+        "file": "assets/realism/coastal-sunrise-1k.hdr",
+        "bytes": 1539084,
+        "sha256": "1cb809a131ff3cb7df94b639d5967fc6fc08ecd25b6c43930af3b5d99f1d8855"
+      },
+      {
+        "file": "assets/realism/illustrations.json",
+        "bytes": 4590,
+        "sha256": "97ab666eefb37a532151d862ca6c0aa40a55616e2fca8c489684c49b511f24f9"
+      },
+      {
+        "file": "assets/realism/paving-normal.webp",
+        "bytes": 135722,
+        "sha256": "2dab4407f3d9c53a57ec48497ae39fffdd8e889dc16506acbea35308ea375c8a"
+      },
+      {
+        "file": "assets/realism/paving-roughness.webp",
+        "bytes": 21340,
+        "sha256": "71262a4fd9cb58c4b37cef646b05dc063d3ccecdfb24b28cb7a7ba44f6b72693"
+      },
+      {
+        "file": "assets/realism/route-landmarks.webp",
+        "bytes": 173602,
+        "sha256": "014d4c9b161176f8d5a2d2b6580b441dec67516596a46239db0c68375bcf938f"
+      },
+      {
+        "file": "assets/realism/sand-color.webp",
+        "bytes": 387274,
+        "sha256": "0ea3e2ad475757b825c9ca462320bdd7155dd20fc5c82902e83d8a3f8b315d54"
+      },
+      {
+        "file": "assets/realism/sand-normal.webp",
+        "bytes": 443932,
+        "sha256": "349a2980d03cc93db51cc2301fc38e90d30709a55a396cbbb0eaaf19593bb91d"
+      },
+      {
+        "file": "assets/realism/sand-roughness.webp",
+        "bytes": 37606,
+        "sha256": "1ef5d2e76a50b072269d9b1e3419e576a2f40199b9f4ad0d5964ff99713a9066"
+      },
+      {
+        "file": "assets/realism/shell-normal.webp",
+        "bytes": 171276,
+        "sha256": "07c3804836cd20f1ac97a3478137196e01ba3355b94635149375bab8290edbe3"
+      },
+      {
+        "file": "assets/realism/shell-roughness.webp",
+        "bytes": 46456,
+        "sha256": "8720d87e062927452aedd1bbf2a49285451a42758b0270106329f0ddd4d89548"
+      },
+      {
+        "file": "assets/realism/sources.json",
+        "bytes": 10482,
+        "sha256": "a5b1c2579d4884298fae3bcf3eed3cca3fc308b15f6454246c1621c5fd4e8d39"
+      },
+      {
+        "file": "assets/realism/stone-color.webp",
+        "bytes": 328956,
+        "sha256": "8510d4149afceee245963d32cb454eeda0bfb8eed132d445d1a959d312ca298a"
+      },
+      {
+        "file": "assets/realism/stone-normal.webp",
+        "bytes": 200778,
+        "sha256": "bbc8ac0f80cec8c7b4482adf02686cc65efe24e451ae96d461e191384f0390b9"
+      },
+      {
+        "file": "assets/realism/stone-roughness.webp",
+        "bytes": 241232,
+        "sha256": "d5e0a0bc50769e45a9155707eac674577965c6ff46f534c7984a5142da59f82f"
+      },
+      {
+        "file": "assets/realism/theatre-dusk.webp",
+        "bytes": 159824,
+        "sha256": "d11f84c95d0f460b17d1503fdf2bb98fc414bc20fa2138ca3bb9b3161cd7fd60"
+      },
+      {
+        "file": "assets/theatre.webp",
+        "bytes": 109654,
+        "sha256": "654b537927bf5b12f9df2564dc46685338c7578d110b31f7099eb32ba487d15c"
+      },
+      {
+        "file": "build-info.json",
+        "bytes": 258,
+        "sha256": "19c4386a6e9cf7ff4e7281969aa98230525a8c75cd26df82908eb58f011d5049"
+      },
+      {
+        "file": "cooperation/index.html",
+        "bytes": 18106,
+        "sha256": "8d909eb9f51f66e945aa39058823a7bdc77c9ab19cc4d98c119aa8f797840b6a"
+      },
+      {
+        "file": "data/catalog.json",
+        "bytes": 22501,
+        "sha256": "0e5133d1b9323aaa5a6be9dc4300a36c23d18c94e63c2334482f952178ceab10"
+      },
+      {
+        "file": "experience/index.html",
+        "bytes": 108954,
+        "sha256": "a7bf10bb5ff81433cbfd4a1daa8fa463e802c4184e7627d6d5c04bf7468c1006"
+      },
+      {
+        "file": "index.html",
+        "bytes": 42047,
+        "sha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40"
+      },
+      {
+        "file": "product/index.html",
+        "bytes": 30524,
+        "sha256": "f6a1e4da878498954f82f9cf9b18b7907503910546be4a0698f947b70835cfe5"
+      },
+      {
+        "file": "robots.txt",
+        "bytes": 64,
+        "sha256": "2a042070b7f87f02be121ed8acaf3ceccbaf6f774fe1819f0294634c7e4e10d0"
+      },
+      {
+        "file": "sitemap.xml",
+        "bytes": 354,
+        "sha256": "911613396101e0bc4110dfc9012a90ae7d2644eb2e851168ee69ea8e20bff3cd"
+      }
+    ],
+    "totalBytes": 6676719
+  },
+  "rollback": {
+    "file": "rollback/askway-3.1-d79fc5c.zip",
+    "bytes": 16850737,
+    "sha256": "23a38db857b653ec67e41fd5c29d1a451a4bc78b5e167359be49a86fe4a241e4",
+    "verification": {
+      "verifiedAt": "2026-11-27",
+      "gitCommit": "d79fc5ce7e528a54464223e39ddeaf33f83a9ca9",
+      "archiveEntries": 263,
+      "siteVersion": "3.1.0",
+      "archivedHomepageSha256": "fe5773cc60bb89bd03546db4cd7a6b098e2e2e209bbc0d6c1a3db4f5c33421b2",
+      "normalizedHomepageSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+      "matchesGitContentIgnoringOnlyCrlf": true,
+      "allZipCrcsValid": true,
+      "homepageAssetReferences": 11,
+      "note": "git archive applied Windows CRLF to 14 homepage line endings; normalized content exactly matches the Git blob and measured 3.1 baseline."
+    }
+  },
+  "limitations": [
+    "No real phone, hardware GPU FPS, real INP, Safari, actual 200 percent browser zoom, screen-reader or soft-keyboard validation.",
+    "Full frame sequences, a measured decoded LRU and an offline camera master belong to later P2/P4 work.",
+    "All publishing was local. No commit, push or external deployment."
+  ],
+  "cleanup": {
+    "removed": 57,
+    "retained": []
+  }
+}

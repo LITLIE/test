@@ -1,0 +1,82 @@
+[
+  {
+    "name": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "viewportWidth": 1440,
+    "viewportHeight": 1000,
+    "documentWidth": 1440,
+    "documentHeight": 10324,
+    "h1Count": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+    "dpr": 1,
+    "actualBrowserZoom": false,
+    "note": "Desktop Edge viewport simulation; not a real phone."
+  },
+  {
+    "name": "mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentWidth": 390,
+    "documentHeight": 9663,
+    "h1Count": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+    "dpr": 1,
+    "actualBrowserZoom": false,
+    "note": "Desktop Edge viewport simulation; not a real phone."
+  },
+  {
+    "name": "narrow",
+    "viewport": {
+      "width": 320,
+      "height": 740
+    },
+    "viewportWidth": 320,
+    "viewportHeight": 740,
+    "documentWidth": 320,
+    "documentHeight": 9909,
+    "h1Count": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+    "dpr": 1,
+    "actualBrowserZoom": false,
+    "note": "Desktop Edge viewport simulation; not a real phone."
+  },
+  {
+    "name": "zoom-css-equivalent",
+    "viewport": {
+      "width": 720,
+      "height": 500
+    },
+    "viewportWidth": 720,
+    "viewportHeight": 500,
+    "documentWidth": 720,
+    "documentHeight": 8523,
+    "h1Count": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+    "dpr": 1,
+    "actualBrowserZoom": false,
+    "note": "Equivalent CSS viewport only; not an actual browser 200% zoom test."
+  },
+  {
+    "name": "landscape",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "viewportWidth": 844,
+    "viewportHeight": 390,
+    "documentWidth": 844,
+    "documentHeight": 8472,
+    "h1Count": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+    "dpr": 1,
+    "actualBrowserZoom": false,
+    "note": "Desktop Edge viewport simulation; not a real phone."
+  }
+]

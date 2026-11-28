@@ -1,0 +1,22 @@
+{
+  "mode": "screenshot-free-browser-scheduling",
+  "file": "D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\delivery\\motion-continuity\\final\\performance/story-scheduling.json",
+  "summary": {
+    "requestedDurationMs": 10000,
+    "observedDurationMs": 10033.5,
+    "intervalCount": 1683,
+    "p50Ms": 5.799999999999272,
+    "p95Ms": 6.2999999999999545,
+    "maximumMs": 174.19999999999982,
+    "over16_7Ms": 9,
+    "over33Ms": 4,
+    "over50Ms": 1,
+    "longTasks": 0,
+    "longTaskTotalMs": 0,
+    "drawCountDelta": 249,
+    "activeTimeDelta": 8959.900000000001,
+    "wheelEventsObserved": 101
+  },
+  "errors": [],
+  "failedRequests": []
+}

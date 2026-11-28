@@ -1,10 +1,11 @@
-import { Component, lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
+import { Component, lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { ArrowUpRight, Camera, Pause, Play, RotateCw, Waves } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import CityIllustration, { CityThumbnail, cityIllustrationSource } from './CityIllustrations';
 import type { CityIllustrationKind, CityIllustrationSource } from './CityIllustrations';
 import { Eyebrow } from './Shared';
+import { usePresentationMotion, usePresentationSurface } from '../motion/PresentationMotion';
 import '../styles/immersive.css';
 
 const CinematicCity = lazy(() => import('../features/experience/scene/CinematicCity'));
@@ -36,23 +37,21 @@ export default function ImmersiveShowcase({ compact = false }: { compact?: boole
   const [visible, setVisible] = useState(false);
   const [desktop, setDesktop] = useState(false);
   const [waterAnimation, setWaterAnimation] = useState(true);
-  const [reducedMotion, setReducedMotion] = useState(true);
+  const { ready, reducedMotion, documentVisible, saveData, motionAllowed } = usePresentationMotion();
+  const surfaceId = `city-showcase-${useId()}`;
   const [failed, setFailed] = useState<'resource' | 'scene' | null>(null);
   const [imageSources, setImageSources] = useState<Partial<Record<CityIllustrationKind, CityIllustrationSource>>>({});
   const current = views[active];
-  const live = enabled && visible;
+  const live = ready && enabled && visible && documentVisible;
+  const ownsSurface = usePresentationSurface(surfaceId, live && motionAllowed && waterAnimation, 20);
   const illustration = imageSources[current.kind] ?? cityIllustrationSource(current.kind);
   const observeSource = useCallback((source: CityIllustrationSource) => {
     setImageSources(previous => previous[source.kind]?.src === source.src ? previous : { ...previous, [source.kind]: source });
   }, []);
 
   useEffect(() => {
-    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const update = () => { setReducedMotion(media.matches); if (media.matches) setEnabled(false); };
-    update();
-    media.addEventListener('change', update);
-    return () => media.removeEventListener('change', update);
-  }, []);
+    if ((reducedMotion || saveData) && !autoLocked.current) setEnabled(false);
+  }, [reducedMotion, saveData]);
 
   useEffect(() => {
     const media = window.matchMedia('(min-width: 900px) and (hover: hover) and (pointer: fine)');
@@ -74,10 +73,9 @@ export default function ImmersiveShowcase({ compact = false }: { compact?: boole
   }, []);
 
   useEffect(() => {
-    if (!visible || reducedMotion || autoLocked.current || failed || !desktop) return;
-    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
-    if (!connection?.saveData) setEnabled(true);
-  }, [visible, reducedMotion, failed, desktop]);
+    if (!visible || !motionAllowed || autoLocked.current || failed || !desktop) return;
+    setEnabled(true);
+  }, [visible, motionAllowed, failed, desktop]);
 
   const toggle = () => {
     if (failed === 'resource') { window.location.reload(); return; }
@@ -102,11 +100,11 @@ export default function ImmersiveShowcase({ compact = false }: { compact?: boole
       </div>
     </div>
     <div className="immersive-window-wrap">
-      <div className="immersive-stage" ref={stageRef} data-live={live ? 'true' : 'false'}>
+      <div className="immersive-stage" ref={stageRef} data-live={live ? 'true' : 'false'} data-presentation-owner={ownsSurface ? surfaceId : undefined}>
         <div className="immersive-poster" aria-hidden={live || undefined}><CityIllustration kind={current.kind} caption={false} depth={!live} onSourceChange={observeSource}/></div>
         {live && <div className="immersive-live"><ShowcaseBoundary onFailure={() => fallback('resource')}><Suspense fallback={<div className="immersive-loading" role="status"><span/>正在展开立体城市…</div>}>
           <CinematicCity view={current.view} lighting={current.lighting} reducedMotion={reducedMotion}
-            animationEnabled={waterAnimation} onAnimationChange={setWaterAnimation} onFailure={() => fallback('scene')}/>
+            animationEnabled={waterAnimation} animationAllowed={motionAllowed && ownsSurface} onAnimationChange={setWaterAnimation} onFailure={() => fallback('scene')}/>
         </Suspense></ShowcaseBoundary></div>}
         <div className="immersive-window-shade" aria-hidden="true"/>
         <div className="immersive-stage-top"><span><Camera size={16} aria-hidden="true"/>CITY WINDOW / 0{active + 1}</span>

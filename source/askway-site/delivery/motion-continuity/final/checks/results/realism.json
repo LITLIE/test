@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "name": "city render illustrations exist and are consumed by the website",
+      "pass": true
+    },
+    {
+      "name": "the immersive exhibition exposes a controllable real WebGL scene",
+      "pass": true
+    },
+    {
+      "name": "the improved map names all ten points with readable labels and real controls",
+      "pass": true
+    },
+    {
+      "name": "mobile website and workspace preserve reference status and fit the viewport",
+      "pass": true
+    },
+    {
+      "name": "no unhandled runtime errors occurred",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "passed": 5,
+  "total": 5
+}

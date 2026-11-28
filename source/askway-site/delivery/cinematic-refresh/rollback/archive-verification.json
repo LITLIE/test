@@ -1,0 +1,12 @@
+{
+  "verifiedAt": "2026-11-27",
+  "gitCommit": "d79fc5ce7e528a54464223e39ddeaf33f83a9ca9",
+  "archiveEntries": 263,
+  "siteVersion": "3.1.0",
+  "archivedHomepageSha256": "fe5773cc60bb89bd03546db4cd7a6b098e2e2e209bbc0d6c1a3db4f5c33421b2",
+  "normalizedHomepageSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+  "matchesGitContentIgnoringOnlyCrlf": true,
+  "allZipCrcsValid": true,
+  "homepageAssetReferences": 11,
+  "note": "git archive applied Windows CRLF to 14 homepage line endings; normalized content exactly matches the Git blob and measured 3.1 baseline."
+}

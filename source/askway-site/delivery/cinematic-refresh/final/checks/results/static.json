@@ -1,0 +1,26 @@
+{
+  "records": [
+    {
+      "name": "all five routes have their own pre-rendered body and canonical",
+      "pass": true
+    },
+    {
+      "name": "public catalog has only attributed reference points and unknown operational facts",
+      "pass": true
+    },
+    {
+      "name": "404 is a real missing-route response with noindex",
+      "pass": true
+    },
+    {
+      "name": "sitemap includes the independent experience route and correct base",
+      "pass": true
+    },
+    {
+      "name": "all five pages remain readable and navigable without JavaScript",
+      "pass": true
+    }
+  ],
+  "passed": 5,
+  "total": 5
+}

@@ -1,0 +1,252 @@
+TAP version 13
+# Subtest: one ordinary wheel event moves toward its target instead of cutting to it
+not ok 1 - one ordinary wheel event moves toward its target instead of cutting to it
+  ---
+  duration_ms: 1.7091
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:71:1'
+  failureType: 'testCodeFailure'
+  error: 'A wheel event must produce an intermediate composition, not an immediate scene cut'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:78:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: tracking reaches a late product target monotonically and releases its RAF
+not ok 2 - tracking reaches a late product target monotonically and releases its RAF
+  ---
+  duration_ms: 0.3341
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:84:1'
+  failureType: 'testCodeFailure'
+  error: 'Product entry must not skip the camera approach'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:89:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: rapid reverse input follows the latest target without drifting toward an obsolete one
+not ok 3 - rapid reverse input follows the latest target without drifting toward an obsolete one
+  ---
+  duration_ms: 0.5641
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:95:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    There must be exactly one scheduled production frame
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    Object.step (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:38:14)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:99:37)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: pausing or leaving the surface cancels tracking and discards the hidden interval
+not ok 4 - pausing or leaving the surface cancels tracking and discards the hidden interval
+  ---
+  duration_ms: 0.4472
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:112:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    There must be exactly one scheduled production frame
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    Object.step (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:38:14)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:116:37)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: explicit anchor navigation snaps immediately and cancels an unfinished follow
+not ok 5 - explicit anchor navigation snaps immediately and cancels an unfinished follow
+  ---
+  duration_ms: 0.5317
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:141:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Explicit anchors require a synchronous snap API
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:147:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: initial geometry and mode changes never publish an unrelated opening composition
+not ok 6 - initial geometry and mode changes never publish an unrelated opening composition
+  ---
+  duration_ms: 0.2877
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:159:1'
+  failureType: 'testCodeFailure'
+  error: 'Initial measurement must align before the next frame: expected 0.985, received 0'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    close (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:8:53)
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:163:3)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: the coastal photograph remains opaque while the near scene enters
+not ok 7 - the coastal photograph remains opaque while the near scene enters
+  ---
+  duration_ms: 0.1336
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:177:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The shared environment must cover progress 0.45
+    
+    undefined !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:180:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: the near copy exits before shrinking and the settled card precedes map and text
+not ok 8 - the near copy exits before shrinking and the settled card precedes map and text
+  ---
+  duration_ms: 0.1023
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:186:1'
+  failureType: 'testCodeFailure'
+  error: 'The camera retreat must still be moving instead of completing by ninety percent'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:190:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: chapter phases and destination anchors agree with their readable compositions
+not ok 9 - chapter phases and destination anchors agree with their readable compositions
+  ---
+  duration_ms: 0.3051
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:206:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    phase at 0.2399
+    
+    'route' !== 'city'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'city'
+  actual: 'route'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:211:44)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: all opacity and camera poses remain finite and reversible across the full story
+not ok 10 - all opacity and camera poses remain finite and reversible across the full story
+  ---
+  duration_ms: 0.216
+  type: 'test'
+  location: 'D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\tests\\cinematic\\continuity.test.mjs:220:1'
+  failureType: 'testCodeFailure'
+  error: 'coastMediaOpacity must exist and be finite at 0'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/tests/cinematic/continuity.test.mjs:226:14)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 0
+# fail 10
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 114.7707

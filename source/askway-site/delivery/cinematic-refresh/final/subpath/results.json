@@ -1,0 +1,40 @@
+{
+  "base": "http://127.0.0.1:4175/askway",
+  "records": [
+    {
+      "name": "preview root redirects to the configured subpath",
+      "pass": true
+    },
+    {
+      "name": "five subpath routes have correct canonical and static status",
+      "pass": true
+    },
+    {
+      "name": "static assets load exclusively under the subpath",
+      "pass": true
+    },
+    {
+      "name": "experience reload hydrates the independent subpath page",
+      "pass": true
+    },
+    {
+      "name": "the curated proposal and adoption work at a non-root base",
+      "pass": true
+    },
+    {
+      "name": "the lazy 3D runtime uses the correct subpath and renders",
+      "pass": true
+    },
+    {
+      "name": "a 720px CSS viewport equivalent to 1440px at 200 percent fits its controls",
+      "pass": true
+    },
+    {
+      "name": "subpath information and navigation remain available without JavaScript",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "passed": 8,
+  "total": 8
+}

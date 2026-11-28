@@ -4,9 +4,11 @@ import { buildSceneLayout } from '../map/projection';
 import { createCityRuntime } from './cityRuntime';
 import type { CityRuntime, CitySnapshot, CityStats } from './cityRuntime';
 import { orderedScenePoints, visibleScenePoints, SceneComparison, SceneLegend, ScenePlaceList, SceneReferenceNote } from './SceneText';
+import { allowsSurfaceAnimation } from '../../../motion/presentationPolicy';
 
 export interface CitySandboxProps extends SceneProps {
   onFailure: (message: string) => void;
+  animationAllowed?: boolean;
 }
 
 export default function CitySandbox(props: CitySandboxProps) {
@@ -19,6 +21,8 @@ export default function CitySandbox(props: CitySandboxProps) {
   const [stats, setStats] = useState<CityStats | null>(null);
   const [viewDescription, setViewDescription] = useState('全览当前方案');
   const [animationEnabled, setAnimationEnabled] = useState(props.animationEnabled ?? cinematic);
+  const animationAllowed = props.animationAllowed ?? true;
+  const effectiveAnimation = allowsSurfaceAnimation(animationEnabled, animationAllowed, reducedMotion);
   const [lighting, setLighting] = useState(props.lighting ?? 'day');
   const layout = useMemo(() => buildSceneLayout(catalog, plan, previousPlan), [catalog, plan, previousPlan]);
   const playbackPlaceId = plan && playbackIndex != null ? plan.orderedPlaceIds[playbackIndex] ?? null : null;
@@ -45,7 +49,7 @@ export default function CitySandbox(props: CitySandboxProps) {
         onViewChange: description => { if (active) setViewDescription(description); },
       });
       runtimeRef.current = ownedRuntime;
-      ownedRuntime.setAnimation(animationEnabled);
+      ownedRuntime.setAnimation(effectiveAnimation);
     } catch {
       callbacksRef.current.onFailure('这台设备暂时无法开启三维沙盘。可以重试，或返回二维地图继续查看当前方案。');
     }
@@ -61,7 +65,7 @@ export default function CitySandbox(props: CitySandboxProps) {
   useEffect(() => { runtimeRef.current?.setPreset(props.scenePreset ?? 'overview'); }, [props.scenePreset]);
   useEffect(() => { if (props.lighting) setLighting(props.lighting); }, [props.lighting]);
   useEffect(() => { runtimeRef.current?.setLighting(lighting); }, [lighting]);
-  useEffect(() => { runtimeRef.current?.setAnimation(animationEnabled); }, [animationEnabled]);
+  useEffect(() => { runtimeRef.current?.setAnimation(effectiveAnimation); }, [effectiveAnimation]);
   useEffect(() => { if (props.animationEnabled !== undefined) setAnimationEnabled(props.animationEnabled); }, [props.animationEnabled]);
   const toggleAnimation = () => {
     const next = !animationEnabled;

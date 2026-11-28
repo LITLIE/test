@@ -1,47 +1,68 @@
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Pause, Play, Waves } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
+import { allowsPresentationMotion, releasePresentationSurface, selectPresentationSurface, updatePresentationSurface, type PresentationSurface } from './presentationPolicy';
 
 type PresentationMotion = {
-  ready: boolean; paused: boolean; reducedMotion: boolean; motionAllowed: boolean; togglePaused: () => void;
+  ready: boolean; paused: boolean; reducedMotion: boolean; documentVisible: boolean; saveData: boolean; motionAllowed: boolean; togglePaused: () => void;
 };
-const MotionContext = createContext<PresentationMotion>({ ready: false, paused: false, reducedMotion: true, motionAllowed: false, togglePaused() {} });
+const MotionContext = createContext<PresentationMotion>({ ready: false, paused: false, reducedMotion: true, documentVisible: false, saveData: true, motionAllowed: false, togglePaused() {} });
+type SurfaceRegistry = { owner: string | null; register: (surface: PresentationSurface) => void; release: (id: string) => void };
+const SurfaceContext = createContext<SurfaceRegistry>({ owner: null, register() {}, release() {} });
 const preferenceKey = 'askway.presentation.paused';
 
 export function PresentationMotionProvider({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
   const [paused, setPaused] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(true);
-  const [documentVisible, setDocumentVisible] = useState(true);
+  const [documentVisible, setDocumentVisible] = useState(false);
+  const [saveData, setSaveData] = useState(true);
+  const [surfaces, setSurfaces] = useState<readonly PresentationSurface[]>([]);
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)');
     const updateMedia = () => setReducedMotion(media.matches);
     const updateVisibility = () => setDocumentVisible(document.visibilityState === 'visible');
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean; addEventListener?: (type: string, listener: () => void) => void; removeEventListener?: (type: string, listener: () => void) => void } }).connection;
+    const updateConnection = () => setSaveData(Boolean(connection?.saveData));
     try { setPaused(sessionStorage.getItem(preferenceKey) === 'true'); } catch { /* A memory-only preference remains usable. */ }
-    updateMedia(); updateVisibility(); setReady(true);
+    updateMedia(); updateVisibility(); updateConnection(); setReady(true);
     media.addEventListener('change', updateMedia);
     document.addEventListener('visibilitychange', updateVisibility);
-    return () => { media.removeEventListener('change', updateMedia); document.removeEventListener('visibilitychange', updateVisibility); };
+    connection?.addEventListener?.('change', updateConnection);
+    return () => { media.removeEventListener('change', updateMedia); document.removeEventListener('visibilitychange', updateVisibility); connection?.removeEventListener?.('change', updateConnection); };
   }, []);
 
-  const motionAllowed = ready && !paused && !reducedMotion;
+  const motionAllowed = allowsPresentationMotion({ ready, paused, reducedMotion, documentVisible, saveData });
   useEffect(() => {
-    document.documentElement.dataset.presentationMotion = motionAllowed && documentVisible ? 'running' : 'paused';
+    document.documentElement.dataset.presentationMotion = motionAllowed ? 'running' : 'paused';
     return () => { delete document.documentElement.dataset.presentationMotion; };
-  }, [motionAllowed, documentVisible]);
+  }, [motionAllowed]);
 
-  const value = useMemo(() => ({ ready, paused, reducedMotion, motionAllowed, togglePaused: () => {
+  const togglePaused = useCallback(() => {
     setPaused(previous => {
       const next = !previous;
       try { sessionStorage.setItem(preferenceKey, String(next)); } catch { /* Do not make storage a prerequisite for a pause. */ }
       return next;
     });
-  } }), [ready, paused, reducedMotion, motionAllowed]);
-  return <MotionContext.Provider value={value}>{children}</MotionContext.Provider>;
+  }, []);
+  const register = useCallback((surface: PresentationSurface) => setSurfaces(previous => updatePresentationSurface(previous, surface)), []);
+  const release = useCallback((id: string) => setSurfaces(previous => releasePresentationSurface(previous, id)), []);
+  const owner = motionAllowed ? selectPresentationSurface(surfaces) : null;
+  const registry = useMemo(() => ({ owner, register, release }), [owner, register, release]);
+  const value = useMemo(() => ({ ready, paused, reducedMotion, documentVisible, saveData, motionAllowed, togglePaused }), [ready, paused, reducedMotion, documentVisible, saveData, motionAllowed, togglePaused]);
+  return <MotionContext.Provider value={value}><SurfaceContext.Provider value={registry}>{children}</SurfaceContext.Provider></MotionContext.Provider>;
 }
 
 export const usePresentationMotion = () => useContext(MotionContext);
+
+export function usePresentationSurface(id: string, visible: boolean, priority: number): boolean {
+  const { motionAllowed } = usePresentationMotion();
+  const { owner, register, release } = useContext(SurfaceContext);
+  useEffect(() => { register({ id, visible: visible && motionAllowed, priority }); }, [id, visible, priority, motionAllowed, register]);
+  useEffect(() => () => release(id), [id, release]);
+  return motionAllowed && visible && owner === id;
+}
 
 export function PresentationMotionControl() {
   const { pathname } = useLocation();

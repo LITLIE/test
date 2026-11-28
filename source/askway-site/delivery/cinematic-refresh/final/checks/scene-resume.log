@@ -1,0 +1,95 @@
+{
+  "records": [
+    {
+      "name": "home and the initial experience do not load the Three runtime",
+      "pass": true
+    },
+    {
+      "name": "enabling 3D creates one on-demand renderer and retains the same plan",
+      "pass": true
+    },
+    {
+      "name": "DOM selection and visible camera controls work without changing the plan",
+      "pass": true
+    },
+    {
+      "name": "a resting demand renderer stops drawing frames",
+      "pass": true
+    },
+    {
+      "name": "moving the scene outside the viewport pauses rendering",
+      "pass": true
+    },
+    {
+      "name": "a simulated document visibility event suspends and restores the renderer",
+      "pass": true
+    },
+    {
+      "name": "manual 3D rotation interrupts preview and retains camera ownership",
+      "pass": true
+    },
+    {
+      "name": "live reduced motion stops timed preview and automatic cameras",
+      "pass": true
+    },
+    {
+      "name": "context loss keeps the active version and a working 2D fallback",
+      "pass": true
+    },
+    {
+      "name": "three successive 2D/3D cycles retain exactly one owned canvas",
+      "pass": true
+    },
+    {
+      "name": "mobile starts in 2D and explicitly enables a smaller-DPR scene",
+      "pass": true
+    },
+    {
+      "name": "unavailable scene chunks retain a complete working 2D view",
+      "pass": true
+    },
+    {
+      "name": "no unhandled browser runtime errors occurred",
+      "pass": true
+    }
+  ],
+  "metrics": [
+    {
+      "name": "desktop software WebGL",
+      "activeRenderer": "1",
+      "renderCount": "4",
+      "sceneReady": "true",
+      "sceneResourcesReady": "true",
+      "sceneResourceFallbacks": "0",
+      "sceneCamera": "perspective",
+      "animationRequested": "false",
+      "sceneQuality": "high",
+      "scenePreset": "overview",
+      "sceneLighting": "day",
+      "scenePaused": "false",
+      "sceneAnimating": "false",
+      "sceneTriangles": "73184",
+      "sceneDrawCalls": "45",
+      "sceneDpr": "1"
+    },
+    {
+      "name": "390px mobile simulation, software WebGL",
+      "activeRenderer": "1",
+      "renderCount": "5",
+      "sceneReady": "true",
+      "sceneResourcesReady": "true",
+      "sceneResourceFallbacks": "0",
+      "sceneCamera": "perspective",
+      "animationRequested": "false",
+      "sceneQuality": "low",
+      "scenePreset": "overview",
+      "sceneLighting": "day",
+      "scenePaused": "false",
+      "sceneAnimating": "false",
+      "sceneTriangles": "40688",
+      "sceneDrawCalls": "45",
+      "sceneDpr": "1"
+    }
+  ],
+  "errors": []
+}

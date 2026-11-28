@@ -1,0 +1,122 @@
+{
+  "id": "askway-city-story-photographic-prototype",
+  "version": "1.1.0",
+  "scope": "Photographic planes with a continuous CSS 3D camera pose and XYZ perspective particles; not a surveyed 3D city or rendered camera sequence.",
+  "editableMaster": "scripts/export-cinematic-posters.py",
+  "assets": [
+    {
+      "file": "assets/hero.webp",
+      "kind": "photography",
+      "width": 1600,
+      "height": 900,
+      "bytes": 222362,
+      "sha256": "3504f8eac73cb0568c1ba32dd2d8060be015bfcf2feb44d661af93e3554d039b",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_Exterior_Southeast2021.jpg",
+      "changes": "resized and converted to WebP; site applies presentation color and crop"
+    },
+    {
+      "file": "assets/theatre.webp",
+      "kind": "photography",
+      "width": 1200,
+      "height": 851,
+      "bytes": 109654,
+      "sha256": "654b537927bf5b12f9df2564dc46685338c7578d110b31f7099eb32ba487d15c",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_23.jpg",
+      "changes": "resized and converted to WebP; 3.2 story applies responsive crop, restrained saturation/brightness, shade and reversible CSS framing; original file retained"
+    },
+    {
+      "file": "assets/architecture.webp",
+      "kind": "photography",
+      "width": 850,
+      "height": 1133,
+      "bytes": 159116,
+      "sha256": "a47ff66f7c411cd81150f1bf8b73ece871ffd35473b2b3448ca8a25cf0d37ddc",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_13.jpg",
+      "changes": "resized and converted to WebP; site crops for layout"
+    },
+    {
+      "file": "assets/cinematic/hero-mobile.webp",
+      "kind": "photography",
+      "width": 720,
+      "height": 1280,
+      "bytes": 85322,
+      "sha256": "df1075fd287e26528942e77ab2dda88abda25f8f2eb669181fadad6400aa4b30",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_Exterior_Southeast2021.jpg",
+      "changes": "Dedicated crop [600,0,1550,900], 720x682 photograph, navy presentation extension and water fade on 720x1280 canvas"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "city",
+      "progress": [
+        0,
+        0.24
+      ],
+      "desktop": "assets/hero.webp",
+      "mobile": "assets/cinematic/hero-mobile.webp",
+      "kind": "photography"
+    },
+    {
+      "id": "route",
+      "progress": [
+        0.24,
+        0.56
+      ],
+      "source": "src/components/RouteDiagram.tsx",
+      "kind": "diagram",
+      "places": [
+        "海滨公园",
+        "香炉湾",
+        "日月贝"
+      ]
+    },
+    {
+      "id": "theatre",
+      "progress": [
+        0.56,
+        0.9
+      ],
+      "desktop": "assets/theatre.webp",
+      "detail": "assets/architecture.webp",
+      "kind": "photography"
+    },
+    {
+      "id": "product",
+      "progress": [
+        0.9,
+        1
+      ],
+      "source": "src/features/experience/ui/JourneyPreview.tsx",
+      "kind": "curated-readonly-preview"
+    }
+  ],
+  "safeAreas": {
+    "desktopTitle": [
+      0.06,
+      0.25,
+      0.43,
+      0.6
+    ],
+    "mobileLandmark": [
+      0.06,
+      0.16,
+      0.94,
+      0.48
+    ],
+    "mobileTitle": [
+      0.06,
+      0.59,
+      0.94,
+      0.84
+    ]
+  },
+  "derivativeLicense": "CC BY-SA 4.0; original authors and source URLs retained per asset."
+}

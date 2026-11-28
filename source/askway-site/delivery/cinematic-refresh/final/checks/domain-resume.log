@@ -1,0 +1,598 @@
+TAP version 13
+# Subtest: scroll and geometry invalidations share one frame and do not create an idle loop
+ok 1 - scroll and geometry invalidations share one frame and do not create an idle loop
+  ---
+  duration_ms: 1.2646
+  type: 'test'
+  ...
+# Subtest: pausing cancels continuous drawing immediately and resuming never catches up hidden time
+ok 2 - pausing cancels continuous drawing immediately and resuming never catches up hidden time
+  ---
+  duration_ms: 0.3772
+  type: 'test'
+  ...
+# Subtest: the formed route stops continuous frames and reverse scrolling restarts only when needed
+ok 3 - the formed route stops continuous frames and reverse scrolling restarts only when needed
+  ---
+  duration_ms: 0.2111
+  type: 'test'
+  ...
+# Subtest: paused native scrolling still updates the target and phase without advancing the clock
+ok 4 - paused native scrolling still updates the target and phase without advancing the clock
+  ---
+  duration_ms: 0.2825
+  type: 'test'
+  ...
+# Subtest: remeasuring and reversing restores the same composition without accumulating state
+ok 5 - remeasuring and reversing restores the same composition without accumulating state
+  ---
+  duration_ms: 1.132
+  type: 'test'
+  ...
+# Subtest: removing a canvas does not discard a separately queued native scroll update
+ok 6 - removing a canvas does not discard a separately queued native scroll update
+  ---
+  duration_ms: 0.1348
+  type: 'test'
+  ...
+# Subtest: effect cleanup cancels pending layout work while allowing a strict-mode reattachment
+ok 7 - effect cleanup cancels pending layout work while allowing a strict-mode reattachment
+  ---
+  duration_ms: 0.1793
+  type: 'test'
+  ...
+# Subtest: enabling at an existing scroll target never publishes a temporary opening composition
+ok 8 - enabling at an existing scroll target never publishes a temporary opening composition
+  ---
+  duration_ms: 0.094
+  type: 'test'
+  ...
+# Subtest: only the first hydrated sticky activation may rebase an initial hash
+ok 9 - only the first hydrated sticky activation may rebase an initial hash
+  ---
+  duration_ms: 0.2792
+  type: 'test'
+  ...
+# Subtest: a readable static anchor receives focus even when normalized animation progress names another phase
+ok 10 - a readable static anchor receives focus even when normalized animation progress names another phase
+  ---
+  duration_ms: 0.3332
+  type: 'test'
+  ...
+# Subtest: native interaction or a resize before first activation cancels hydration navigation
+ok 11 - native interaction or a resize before first activation cancels hydration navigation
+  ---
+  duration_ms: 0.1267
+  type: 'test'
+  ...
+# Subtest: a geometry update retargets the shared media card without changing the active clock
+ok 12 - a geometry update retargets the shared media card without changing the active clock
+  ---
+  duration_ms: 0.191
+  type: 'test'
+  ...
+# Subtest: a navigation heading must fit between the fixed header and the viewport bottom
+ok 13 - a navigation heading must fit between the fixed header and the viewport bottom
+  ---
+  duration_ms: 0.0713
+  type: 'test'
+  ...
+# Subtest: a smooth-scroll focus request survives the product phase until its copy is actually readable
+ok 14 - a smooth-scroll focus request survives the product phase until its copy is actually readable
+  ---
+  duration_ms: 0.1477
+  type: 'test'
+  ...
+# Subtest: native progress measures the sticky travel distance and clamps overscroll
+ok 15 - native progress measures the sticky travel distance and clamps overscroll
+  ---
+  duration_ms: 0.837
+  type: 'test'
+  ...
+# Subtest: the four chapter boundaries are explicit and retain finite visual parameters
+ok 16 - the four chapter boundaries are explicit and retain finite visual parameters
+  ---
+  duration_ms: 1.3294
+  type: 'test'
+  ...
+# Subtest: returning to the same progress restores the exact composition in either direction
+ok 17 - returning to the same progress restores the exact composition in either direction
+  ---
+  duration_ms: 0.2139
+  type: 'test'
+  ...
+# Subtest: changing viewport geometry derives the current target instead of accumulating frames
+ok 18 - changing viewport geometry derives the current target instead of accumulating frames
+  ---
+  duration_ms: 0.0824
+  type: 'test'
+  ...
+# Subtest: paused active time does not advance or catch up the hidden interval on resume
+ok 19 - paused active time does not advance or catch up the hidden interval on resume
+  ---
+  duration_ms: 0.1671
+  type: 'test'
+  ...
+# Subtest: late and nonfinite clock samples cannot rewind active time or add a long catch-up
+ok 20 - late and nonfinite clock samples cannot rewind active time or add a long catch-up
+  ---
+  duration_ms: 0.0727
+  type: 'test'
+  ...
+# Subtest: the theatre copy is gone before its media enters the paper handoff and product copy waits
+ok 21 - the theatre copy is gone before its media enters the paper handoff and product copy waits
+  ---
+  duration_ms: 0.1276
+  type: 'test'
+  ...
+# Subtest: the media reaches the measured product rectangle before the product heading starts to enter
+ok 22 - the media reaches the measured product rectangle before the product heading starts to enter
+  ---
+  duration_ms: 0.0823
+  type: 'test'
+  ...
+# Subtest: measured media geometry and independent copy fades are identical on reverse scroll
+ok 23 - measured media geometry and independent copy fades are identical on reverse scroll
+  ---
+  duration_ms: 1.4953
+  type: 'test'
+  ...
+# Subtest: sticky panels keep invisible or partially hidden controls out of the readable surface
+ok 24 - sticky panels keep invisible or partially hidden controls out of the readable surface
+  ---
+  duration_ms: 0.6645
+  type: 'test'
+  ...
+# Subtest: the final media transform covers and centres on the measured card rectangle
+ok 25 - the final media transform covers and centres on the measured card rectangle
+  ---
+  duration_ms: 0.2287
+  type: 'test'
+  ...
+# Subtest: media scale and translation recover the same intermediate composition on reverse scroll
+ok 26 - media scale and translation recover the same intermediate composition on reverse scroll
+  ---
+  duration_ms: 0.1625
+  type: 'test'
+  ...
+# Subtest: the product entry anchor displays fully opaque copy at ninety-four percent
+ok 27 - the product entry anchor displays fully opaque copy at ninety-four percent
+  ---
+  duration_ms: 0.1218
+  type: 'test'
+  ...
+# Subtest: panorama rotation samples the HDR sun in the direction of the direct light
+ok 28 - panorama rotation samples the HDR sun in the direction of the direct light
+  ---
+  duration_ms: 0.6528
+  type: 'test'
+  ...
+# Subtest: the opera and Yeli Island references sit on one connected island
+ok 29 - the opera and Yeli Island references sit on one connected island
+  ---
+  duration_ms: 1.119
+  type: 'test'
+  ...
+# Subtest: the coastal model stays within the mobile geometry and draw budget
+ok 30 - the coastal model stays within the mobile geometry and draw budget
+  ---
+  duration_ms: 182.7626
+  type: 'test'
+  ...
+# Subtest: all textures owned by a mounted model are released exactly once
+ok 31 - all textures owned by a mounted model are released exactly once
+  ---
+  duration_ms: 54.2999
+  type: 'test'
+  ...
+# Subtest: shell, paving and asphalt keep distinct normal and roughness details in non-colour space
+ok 32 - shell, paving and asphalt keep distinct normal and roughness details in non-colour space
+  ---
+  duration_ms: 37.6805
+  type: 'test'
+  ...
+# Subtest: the theatre promenade has human-scale rails and a seawall spanning the water line
+ok 33 - the theatre promenade has human-scale rails and a seawall spanning the water line
+  ---
+  duration_ms: 40.1503
+  type: 'test'
+  ...
+# Subtest: every vertex-colour surface provides the colour data required by its shader
+ok 34 - every vertex-colour surface provides the colour data required by its shader
+  ---
+  duration_ms: 36.4158
+  type: 'test'
+  ...
+# Subtest: public catalog keeps ten attributed reference points and unknown operational facts
+ok 35 - public catalog keeps ten attributed reference points and unknown operational facts
+  ---
+  duration_ms: 17.1724
+  type: 'test'
+  ...
+# Subtest: catalog validation rejects non-finite coordinates and unsupported provenance
+ok 36 - catalog validation rejects non-finite coordinates and unsupported provenance
+  ---
+  duration_ms: 0.3999
+  type: 'test'
+  ...
+# Subtest: catalog validation rejects a null estimate instead of silently treating it as zero
+ok 37 - catalog validation rejects a null estimate instead of silently treating it as zero
+  ---
+  duration_ms: 0.1805
+  type: 'test'
+  ...
+# Subtest: malformed text metadata is reported as a catalog issue without a validator crash
+ok 38 - malformed text metadata is reported as a catalog issue without a validator crash
+  ---
+  duration_ms: 0.3317
+  type: 'test'
+  ...
+# Subtest: conditions validate real calendar dates and allow leap days
+ok 39 - conditions validate real calendar dates and allow leap days
+  ---
+  duration_ms: 0.5799
+  type: 'test'
+  ...
+# Subtest: conditions preserve a required/excluded conflict and reject an excluded origin
+ok 40 - conditions preserve a required/excluded conflict and reject an excluded origin
+  ---
+  duration_ms: 0.1301
+  type: 'test'
+  ...
+# Subtest: conditions deduplicate ids without mutating the input
+ok 41 - conditions deduplicate ids without mutating the input
+  ---
+  duration_ms: 0.2583
+  type: 'test'
+  ...
+# Subtest: controlled language applies duration, exact named places, and pace
+ok 42 - controlled language applies duration, exact named places, and pace
+  ---
+  duration_ms: 1.1781
+  type: 'test'
+  ...
+# Subtest: controlled language does not claim reservation or contextual pronoun support
+ok 43 - controlled language does not claim reservation or contextual pronoun support
+  ---
+  duration_ms: 0.4147
+  type: 'test'
+  ...
+# Subtest: a partly recognized required-place phrase keeps its unknown place unresolved
+ok 44 - a partly recognized required-place phrase keeps its unknown place unresolved
+  ---
+  duration_ms: 0.3818
+  type: 'test'
+  ...
+# Subtest: Chinese hour expressions with optional 个 and 半 produce literal 90 and 120 minute limits
+ok 45 - Chinese hour expressions with optional 个 and 半 produce literal 90 and 120 minute limits
+  ---
+  duration_ms: 0.3517
+  type: 'test'
+  ...
+# Subtest: conflicting total durations request clarification without choosing the first duration
+ok 46 - conflicting total durations request clarification without choosing the first duration
+  ---
+  duration_ms: 0.1209
+  type: 'test'
+  ...
+# Subtest: recognized duration never hides unsupported lodging, live crowds, congestion, or other requests
+ok 47 - recognized duration never hides unsupported lodging, live crowds, congestion, or other requests
+  ---
+  duration_ms: 0.0972
+  type: 'test'
+  ...
+# Subtest: manual fixture totals are 15 travel + 50 stay + 10 buffer = 75 minutes
+ok 48 - manual fixture totals are 15 travel + 50 stay + 10 buffer = 75 minutes
+  ---
+  duration_ms: 1.1509
+  type: 'test'
+  ...
+# Subtest: manual fixture returns a hard time conflict at 70 minutes
+ok 49 - manual fixture returns a hard time conflict at 70 minutes
+  ---
+  duration_ms: 0.6723
+  type: 'test'
+  ...
+# Subtest: a midnight crossing keeps destination-local date and honest next-day offsets
+ok 50 - a midnight crossing keeps destination-local date and honest next-day offsets
+  ---
+  duration_ms: 0.3105
+  type: 'test'
+  ...
+# Subtest: unknown admission stays unknown even when the known subtotal is zero
+ok 51 - unknown admission stays unknown even when the known subtotal is zero
+  ---
+  duration_ms: 0.2638
+  type: 'test'
+  ...
+# Subtest: missing required stay information requests clarification instead of zero-minute visits
+ok 52 - missing required stay information requests clarification instead of zero-minute visits
+  ---
+  duration_ms: 0.1703
+  type: 'test'
+  ...
+# Subtest: different distances produce different leg costs, never a shared twenty-minute constant
+ok 53 - different distances produce different leg costs, never a shared twenty-minute constant
+  ---
+  duration_ms: 1.1888
+  type: 'test'
+  ...
+# Subtest: the three real tasks generate modifiable proposals or a concrete conflict
+ok 54 - the three real tasks generate modifiable proposals or a concrete conflict
+  ---
+  duration_ms: 13.9531
+  type: 'test'
+  ...
+# Subtest: extra time does not keep adding optional stops to fill the day
+ok 55 - extra time does not keep adding optional stops to fill the day
+  ---
+  duration_ms: 2.9476
+  type: 'test'
+  ...
+# Subtest: less-walking changes actual walking distance and explains its tradeoff
+ok 56 - less-walking changes actual walking distance and explains its tradeoff
+  ---
+  duration_ms: 5.9516
+  type: 'test'
+  ...
+# Subtest: proposals bind a concrete request, session, draft, baseline, and expiry
+ok 57 - proposals bind a concrete request, session, draft, baseline, and expiry
+  ---
+  duration_ms: 0.4177
+  type: 'test'
+  ...
+# Subtest: plan delta preserves unknown fee differences and identifies only a true reorder
+ok 58 - plan delta preserves unknown fee differences and identifies only a true reorder
+  ---
+  duration_ms: 0.3824
+  type: 'test'
+  ...
+# Subtest: automatic presentation requires ready resources and every user and document permission
+ok 59 - automatic presentation requires ready resources and every user and document permission
+  ---
+  duration_ms: 0.7508
+  type: 'test'
+  ...
+# Subtest: the server and initial client state cannot start heavy presentation before preferences are known
+ok 60 - the server and initial client state cannot start heavy presentation before preferences are known
+  ---
+  duration_ms: 0.1105
+  type: 'test'
+  ...
+# Subtest: a visible exploration surface takes continuous rendering ownership from the story
+ok 61 - a visible exploration surface takes continuous rendering ownership from the story
+  ---
+  duration_ms: 0.1336
+  type: 'test'
+  ...
+# Subtest: equal priorities have one deterministic owner independent of registration order
+ok 62 - equal priorities have one deterministic owner independent of registration order
+  ---
+  duration_ms: 0.6778
+  type: 'test'
+  ...
+# Subtest: invalid priorities and unnamed surfaces cannot monopolize continuous rendering
+ok 63 - invalid priorities and unnamed surfaces cannot monopolize continuous rendering
+  ---
+  duration_ms: 0.1136
+  type: 'test'
+  ...
+# Subtest: unchanged surface registrations preserve registry identity instead of scheduling another render
+ok 64 - unchanged surface registrations preserve registry identity instead of scheduling another render
+  ---
+  duration_ms: 0.1245
+  type: 'test'
+  ...
+# Subtest: visibility changes and unmounts release the owner without changing other surfaces
+ok 65 - visibility changes and unmounts release the owner without changing other surfaces
+  ---
+  duration_ms: 0.172
+  type: 'test'
+  ...
+# Subtest: changing the local sea preference cannot bypass a suspended shared animation permission
+ok 66 - changing the local sea preference cannot bypass a suspended shared animation permission
+  ---
+  duration_ms: 0.108
+  type: 'test'
+  ...
+# Subtest: WGS84 control points use longitude first and preserve east/north in metres
+ok 67 - WGS84 control points use longitude first and preserve east/north in metres
+  ---
+  duration_ms: 1.3174
+  type: 'test'
+  ...
+# Subtest: the SVG and Three world adapters share one projected frame and preserve aspect
+ok 68 - the SVG and Three world adapters share one projected frame and preserve aspect
+  ---
+  duration_ms: 0.623
+  type: 'test'
+  ...
+# Subtest: route legs are drawn in orderedPlaceIds order even when the legs array is shuffled
+ok 69 - route legs are drawn in orderedPlaceIds order even when the legs array is shuffled
+  ---
+  duration_ms: 0.327
+  type: 'test'
+  ...
+# Subtest: previous routes remain separate and share the current coordinate frame
+ok 70 - previous routes remain separate and share the current coordinate frame
+  ---
+  duration_ms: 0.2746
+  type: 'test'
+  ...
+# Subtest: invalid and non-WGS84 catalogue points are excluded without drawing a false zero coordinate
+ok 71 - invalid and non-WGS84 catalogue points are excluded without drawing a false zero coordinate
+  ---
+  duration_ms: 0.1875
+  type: 'test'
+  ...
+# Subtest: invalid route geometry and absent legs are reported rather than replaced with invented routes
+ok 72 - invalid route geometry and absent legs are reported rather than replaced with invented routes
+  ---
+  duration_ms: 0.1049
+  type: 'test'
+  ...
+# Subtest: coordinate validation rejects missing, swapped out-of-range and nonfinite controls
+ok 73 - coordinate validation rejects missing, swapped out-of-range and nonfinite controls
+  ---
+  duration_ms: 0.3812
+  type: 'test'
+  ...
+# Subtest: empty catalogues still provide finite shared map and scene bounds
+ok 74 - empty catalogues still provide finite shared map and scene bounds
+  ---
+  duration_ms: 0.1151
+  type: 'test'
+  ...
+# Subtest: route fitting includes every supplied reference and intermediate vertex on a narrow map
+ok 75 - route fitting includes every supplied reference and intermediate vertex on a narrow map
+  ---
+  duration_ms: 0.9072
+  type: 'test'
+  ...
+# Subtest: zooming preserves metre scale while pan can reach and stops at catalogue edges
+ok 76 - zooming preserves metre scale while pan can reach and stops at catalogue edges
+  ---
+  duration_ms: 0.3671
+  type: 'test'
+  ...
+# Subtest: dense map names remain inside a phone-sized frame without overlapping each other
+ok 77 - dense map names remain inside a phone-sized frame without overlapping each other
+  ---
+  duration_ms: 5.1497
+  type: 'test'
+  ...
+# Subtest: sea particles keep the same starting coordinates on revisiting a page
+ok 78 - sea particles keep the same starting coordinates on revisiting a page
+  ---
+  duration_ms: 2.5492
+  type: 'test'
+  ...
+# Subtest: a formed route lands exactly on its curve and stays still while time passes
+ok 79 - a formed route lands exactly on its curve and stays still while time passes
+  ---
+  duration_ms: 1.4107
+  type: 'test'
+  ...
+# Subtest: reverse scroll recovers the same intermediate shape without accumulated state
+ok 80 - reverse scroll recovers the same intermediate shape without accumulated state
+  ---
+  duration_ms: 0.2014
+  type: 'test'
+  ...
+# Subtest: overscroll and nonfinite progress retain finite positions in a narrow mobile frame
+ok 81 - overscroll and nonfinite progress retain finite positions in a narrow mobile frame
+  ---
+  duration_ms: 1.71
+  type: 'test'
+  ...
+# Subtest: continuous drawing stops for every presentation suspension condition
+ok 82 - continuous drawing stops for every presentation suspension condition
+  ---
+  duration_ms: 0.3092
+  type: 'test'
+  ...
+# Subtest: generation must follow explicit condition review
+ok 83 - generation must follow explicit condition review
+  ---
+  duration_ms: 1.1634
+  type: 'test'
+  ...
+# Subtest: reviewing an unchanged confirmed draft is idempotent for an adoptable proposal and pending planning
+ok 84 - reviewing an unchanged confirmed draft is idempotent for an adoptable proposal and pending planning
+  ---
+  duration_ms: 0.584
+  type: 'test'
+  ...
+# Subtest: a new draft keeps the active version while invalidating a proposal and in-flight request
+ok 85 - a new draft keeps the active version while invalidating a proposal and in-flight request
+  ---
+  duration_ms: 0.2378
+  type: 'test'
+  ...
+# Subtest: a late response for the previous request cannot replace the current proposal
+ok 86 - a late response for the previous request cannot replace the current proposal
+  ---
+  duration_ms: 0.1322
+  type: 'test'
+  ...
+# Subtest: draft changes discard late success and failure responses
+ok 87 - draft changes discard late success and failure responses
+  ---
+  duration_ms: 0.1274
+  type: 'test'
+  ...
+# Subtest: a request from a previous session is ignored after reset
+ok 88 - a request from a previous session is ignored after reset
+  ---
+  duration_ms: 0.1657
+  type: 'test'
+  ...
+# Subtest: response payload must agree with its request envelope
+ok 89 - response payload must agree with its request envelope
+  ---
+  duration_ms: 0.2767
+  type: 'test'
+  ...
+# Subtest: a proposal can be adopted only before its TTL and with its current baseline
+ok 90 - a proposal can be adopted only before its TTL and with its current baseline
+  ---
+  duration_ms: 0.7548
+  type: 'test'
+  ...
+# Subtest: adopting a second version saves the previous snapshot and increments once
+ok 91 - adopting a second version saves the previous snapshot and increments once
+  ---
+  duration_ms: 0.4384
+  type: 'test'
+  ...
+# Subtest: undo restores earlier content with a new monotonic version and invalidates old candidates
+ok 92 - undo restores earlier content with a new monotonic version and invalidates old candidates
+  ---
+  duration_ms: 0.3992
+  type: 'test'
+  ...
+# Subtest: selection and view switches never mutate confirmed plan or version counters
+ok 93 - selection and view switches never mutate confirmed plan or version counters
+  ---
+  duration_ms: 0.2162
+  type: 'test'
+  ...
+# Subtest: a current failure keeps recoverable confirmed content
+ok 94 - a current failure keeps recoverable confirmed content
+  ---
+  duration_ms: 0.121
+  type: 'test'
+  ...
+# Subtest: reset clears content without rewinding the version counter
+ok 95 - reset clears content without rewinding the version counter
+  ---
+  duration_ms: 0.1244
+  type: 'test'
+  ...
+# Subtest: a new proposal reconciles a removed selection while comparison accepts points from both plans
+ok 96 - a new proposal reconciles a removed selection while comparison accepts points from both plans
+  ---
+  duration_ms: 0.1378
+  type: 'test'
+  ...
+# Subtest: golden selection case reconciles edits, cancellation, adoption, and undo against displayed content
+ok 97 - golden selection case reconciles edits, cancellation, adoption, and undo against displayed content
+  ---
+  duration_ms: 0.8207
+  type: 'test'
+  ...
+# Subtest: without a displayed plan, editing preserves a previously validated catalog selection
+ok 98 - without a displayed plan, editing preserves a previously validated catalog selection
+  ---
+  duration_ms: 0.0866
+  type: 'test'
+  ...
+1..98
+# tests 98
+# suites 0
+# pass 98
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 539.7038

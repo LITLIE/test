@@ -1,0 +1,22 @@
+{
+  "mode": "screenshot-free-browser-scheduling",
+  "file": "D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\delivery\\cinematic-refresh\\performance/story-scheduling-mobile.json",
+  "summary": {
+    "requestedDurationMs": 10000,
+    "observedDurationMs": 10010.099999964237,
+    "intervalCount": 2381,
+    "p50Ms": 4.199999999999818,
+    "p95Ms": 4.300000000000182,
+    "maximumMs": 33.399999999999636,
+    "over16_7Ms": 2,
+    "over33Ms": 1,
+    "over50Ms": 0,
+    "longTasks": 0,
+    "longTaskTotalMs": 0,
+    "drawCountDelta": 1150,
+    "activeTimeDelta": 4786.700000000001,
+    "wheelEventsObserved": 133
+  },
+  "errors": [],
+  "failedRequests": []
+}

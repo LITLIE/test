@@ -1,0 +1,15 @@
+{"stage":"axe","route":"/","width":390,"state":"initial","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":1}
+{"stage":"axe","route":"/product/","width":390,"state":"initial","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/experience/","width":390,"state":"initial","violations":0,"affectedNodes":0,"incomplete":0,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/experience/","width":390,"state":"candidate","violations":0,"affectedNodes":0,"incomplete":0,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/experience/","width":390,"state":"evidence","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/cooperation/","width":390,"state":"initial","violations":0,"affectedNodes":0,"incomplete":0,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/about/","width":390,"state":"initial","violations":0,"affectedNodes":0,"incomplete":0,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/","width":1440,"state":"initial","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":1}
+{"stage":"axe","route":"/product/","width":1440,"state":"initial","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/experience/","width":1440,"state":"initial","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/experience/","width":1440,"state":"candidate","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/experience/","width":1440,"state":"evidence","violations":0,"affectedNodes":0,"incomplete":1,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/cooperation/","width":1440,"state":"initial","violations":0,"affectedNodes":0,"incomplete":0,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"axe","route":"/about/","width":1440,"state":"initial","violations":0,"affectedNodes":0,"incomplete":0,"horizontalOverflow":false,"inputsBelow16Px":0,"readingTextBelow14Px":0}
+{"stage":"complete","scans":14,"screenshotStates":14,"screenshotFiles":28,"lighthouseRuns":0,"errors":0,"exitCode":0,"report":"D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\delivery\\cinematic-refresh\\final\\accessibility\\quality-report.json"}

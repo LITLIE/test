@@ -1,0 +1,78 @@
+[
+  {
+    "name": "one native desktop stage presents all four HTML phases in both directions",
+    "pass": true
+  },
+  {
+    "name": "latest reverse scroll returns to the same deterministic composition",
+    "pass": true
+  },
+  {
+    "name": "pause freezes actual work without changing stage height or scroll position",
+    "pass": true
+  },
+  {
+    "name": "the pause preference survives route navigation, home return and reduced-motion changes",
+    "pass": true
+  },
+  {
+    "name": "live reduced motion stops drawing while all four phases and manual tabs remain usable",
+    "pass": true
+  },
+  {
+    "name": "leaving the stage stops work and returning resumes without replaying the elapsed pause",
+    "pass": true
+  },
+  {
+    "name": "document visibility suspension stops actual work and resumes at the current target",
+    "pass": true
+  },
+  {
+    "name": "mobile reading and repeated resizes keep the native geometry correct",
+    "pass": true
+  },
+  {
+    "name": "direct story, city-detail and product-intro anchors focus a visible HTML heading",
+    "pass": true
+  },
+  {
+    "name": "the experience route releases website decoration and retains its working map",
+    "pass": true
+  },
+  {
+    "name": "normal story navigation produces no unhandled browser errors",
+    "pass": true
+  },
+  {
+    "name": "the near-scene handoff suppresses competing copy and aligns its actual clip with the final card",
+    "pass": true
+  },
+  {
+    "name": "a genuine readonly candidate, its map and focused CTAs fit the product panel at desktop limits",
+    "pass": true
+  },
+  {
+    "name": "save-data disables automatic presentation and keeps semantic story content",
+    "pass": true
+  },
+  {
+    "name": "an actually failed decorative chunk leaves four HTML panels and usable navigation",
+    "pass": true
+  },
+  {
+    "name": "the local sea switch and camera selection cannot bypass a global presentation pause",
+    "pass": true
+  },
+  {
+    "name": "a failed city-showcase chunk preserves its photograph, view choices and the HTML story",
+    "pass": true
+  },
+  {
+    "name": "without JavaScript all four panels, stops and native destination anchors remain readable",
+    "pass": true
+  },
+  {
+    "name": "without JavaScript real decoded photographs fill their visible media frames",
+    "pass": true
+  }
+]

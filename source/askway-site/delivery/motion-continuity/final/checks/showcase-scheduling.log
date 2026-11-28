@@ -1,0 +1,37 @@
+{
+  "file": "D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site\\delivery\\motion-continuity\\final\\performance\\showcase-scheduling.json",
+  "status": "completed",
+  "activation": "automatic visible desktop showcase",
+  "renderer": {
+    "available": true,
+    "debugRendererInfoAvailable": true,
+    "vendor": "WebKit",
+    "renderer": "WebKit WebGL",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "unmaskedVendor": "Google Inc. (Google)",
+    "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "actualRendererMentionsSwiftShader": true
+  },
+  "summary": {
+    "durationMs": 10001.100000023842,
+    "renderCountDelta": 44,
+    "observedRenderCallsPerSecond": 4.399516053223656,
+    "observerSamples": 44,
+    "intervalCount": 43,
+    "p50Ms": 225.5999999642372,
+    "p95Ms": 232.19999998807907,
+    "maximumMs": 233.60000002384186,
+    "over16_7Ms": 43,
+    "over33Ms": 43,
+    "over50Ms": 43,
+    "coalescedUpdates": 0,
+    "longTasks": 0,
+    "longTaskTotalMs": 0,
+    "sceneActiveTimeDelta": null,
+    "sceneActiveTimeAvailability": "not exposed by cityRuntime",
+    "homepageStoryActiveTimeDelta": 0,
+    "homepageStoryDrawCountDelta": 0,
+    "ownerRemainedAllowed": true
+  },
+  "contextClosed": true
+}

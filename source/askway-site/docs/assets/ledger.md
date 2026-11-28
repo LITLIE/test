@@ -1,5 +1,21 @@
 # 问途官网资源账本 · 2026-11-24
 
+3.2（2026-11-27）的摄影转场追加记录见以下表格；后续章节保留原阶段的来源与处理记录。
+
+## 3.2 摄影转场追加 · 2026-11-27
+
+| 实际资源 / 可编辑来源 | 作者与许可 | 处理及用途 |
+| --- | --- | --- |
+| `assets/cinematic/hero-mobile.webp` · 720×1280 · 85,322 B | Charlie fong；沿用 hero 的 Commons 原图；CC BY-SA 4.0 | 独立裁图保留双贝，顶部只延展原图边缘，海面渐变到深蓝文字底；不生成新的建筑或摄影细节 |
+| `scripts/export-cinematic-posters.py` | 本项目可编辑处理代码；Pillow 12.3.0 已有运行时 | 记录裁切区域 `[600,0,1550,900]`、720×682 摄影区域、背景延展及 WebP 编码；输出始终在工程 public/assets/cinematic |
+| `assets/hero.webp` · 1600×900 | Charlie fong；CC BY-SA 4.0 | 原文件保留；桌面开场和稳定 OG 图，网页施加裁切与色彩呈现 |
+| `assets/theatre.webp` · 1200×851 | 钉钉；CC BY-SA 4.0 | 原文件保留；日月贝正面摄影，CSS 限定饱和度、明度、遮罩与可逆媒体构图；不称作离线三维或连续运镜 |
+| `assets/architecture.webp` · 850×1133 | 钉钉；CC BY-SA 4.0 | 原文件保留；手机近景及桌面建筑细节，图注对应实际摄影 |
+| `src/features/cinematic/storyConfig.ts` / `progress.ts` | 本项目代码与文案 | 四个 HTML 关键构图及可逆进度；标签不烧入位图 |
+| `src/features/experience/ui/JourneyPreview.tsx` | 本项目 SVG 与公开 OSM 点位（ODbL） | 只读图与 HTML 读取同一份合法规则候选；实际例子是城市阳台、海滨公园、日月贝，余量为估算 |
+
+横竖关键构图与正倒滚取证在 `delivery/cinematic-refresh/final/`；详细尺寸、字节、作者、原图 URL、处理和 SHA-256 在 `public/assets/cinematic/manifest.json`。原摄影作者与许可没有替换。既有 Three.js 城市与材质记录保留；本轮没有交付高精度离线相机母版、完整帧序列或现场导航资料。
+
 本轮版本：`experience-v2 / paper-city-2026-11-24-v1`。资源均在 `askway-site` 工程内；既有图片与字体的原始来源记录见 [asset-credits.json](<../../public/asset-credits.json>)。本轮沿用既有署名，未重新下载或加工这些媒体。
 
 ## 程序化地图与三维资源
@@ -23,7 +39,7 @@
 | --- | --- | --- | --- |
 | `public/assets/hero.webp` · 222,362 B | Charlie fong；[Zhuhai Grand Theatre Exterior Southeast2021](https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_Exterior_Southeast2021.jpg) | CC BY-SA 4.0 | 缩放转 WebP，页面裁切 / 调色；首页主视觉、日月贝故事、社交分享图 |
 | `public/assets/architecture.webp` · 159,116 B | 钉钉；[Zhuhai Grand Theatre 13](https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_13.jpg) | CC BY-SA 4.0 | 缩放转 WebP、页面裁切；关于页建筑照片 |
-| `public/assets/theatre.webp` · 109,654 B | 钉钉；[Zhuhai Grand Theatre 23](https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_23.jpg) | CC BY-SA 4.0 | 缩放转 WebP；保留的既有媒体，当前源码没有直接引用 |
+| `public/assets/theatre.webp` · 109,654 B | 钉钉；[Zhuhai Grand Theatre 23](https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_23.jpg) | CC BY-SA 4.0 | 缩放转 WebP；3.2 首页桌面近景与产品媒体交接，手机使用独立竖版建筑细节照片 |
 | `public/assets/coast.webp` · 116,260 B | Vmenkov；[Zhuhai-seen-from-Yeli-0725](https://commons.wikimedia.org/wiki/File:Zhuhai-seen-from-Yeli-0725.jpg) | CC BY-SA 3.0 | 缩放转 WebP、页面裁切；首页海岸故事视觉参考。原图为从野狸岛观察的城市海岸景，不能标为某个公园 / 沙滩入口实拍 |
 | `public/assets/heading.ttf` · 38,400 B | Noto Serif SC / Google Fonts；[字体来源](https://github.com/google/fonts/tree/main/ofl/notoserifsc) | SIL OFL 1.1；随工程 `FONT-LICENSE.txt` | 500 字重中文标题子集；本地 CSS font-face，font-display: swap；三维不另外请求字体 |
 | `public/assets/favicon.svg` · 344 B；Brand / RouteArt 等源码向量 | AskWay 官网自制向量 | 项目授权范围 | 品牌与示意图；无新增外部资源 |

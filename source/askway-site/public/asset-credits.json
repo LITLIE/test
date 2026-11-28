@@ -1,6 +1,14 @@
 {
   "images": [
     {
+      "file": "assets/cinematic/hero-mobile.webp",
+      "title": "Dedicated mobile composition of Zhuhai Grand Theatre Exterior Southeast2021",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_Exterior_Southeast2021.jpg",
+      "changes": "dedicated portrait crop, sky-edge extension and navy presentation fade; editable source scripts/export-cinematic-posters.py, detailed hashes assets/cinematic/manifest.json"
+    },
+    {
       "file": "assets/hero.webp",
       "title": "Zhuhai Grand Theatre Exterior Southeast2021",
       "author": "Charlie fong",
@@ -22,7 +30,7 @@
       "author": "钉钉",
       "license": "CC BY-SA 4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Zhuhai_Grand_Theatre_23.jpg",
-      "changes": "resized and converted to WebP"
+      "changes": "resized and converted to WebP; 3.2 story applies responsive crop, restrained saturation/brightness, shade and reversible CSS framing; original file retained"
     },
     {
       "file": "assets/coast.webp",

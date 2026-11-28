@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "measuredAt": "2026-11-27T17:27:48.934Z",
+    "baseUrl": "http://127.0.0.1:4173",
+    "siteVersion": "3.2.1",
+    "homeDocumentSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+    "entryScripts": [
+      "/assets/index-CowwplVD.js"
+    ],
+    "nodeVersion": "v22.23.1",
+    "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "outputDirectory": "delivery/motion-continuity/final/accessibility",
+    "writesConfinedToProject": true,
+    "packageLifecycleScriptsInvoked": false,
+    "browserVersion": "158.0.4370.45"
+  },
+  "screenshots": [
+    {
+      "route": "/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "state": "initial",
+      "fullPage": "home-mobile-full.png",
+      "firstViewport": "home-mobile-first.png"
+    },
+    {
+      "route": "/product/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "state": "initial",
+      "fullPage": "product-mobile-full.png",
+      "firstViewport": "product-mobile-first.png"
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "state": "initial",
+      "fullPage": "experience-mobile-full.png",
+      "firstViewport": "experience-mobile-first.png"
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "state": "candidate",
+      "fullPage": "experience-mobile-candidate-full.png",
+      "firstViewport": "experience-mobile-candidate-first.png"
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "state": "evidence",
+      "fullPage": "experience-mobile-evidence-full.png",
+      "firstViewport": "experience-mobile-evidence-first.png"
+    },
+    {
+      "route": "/cooperation/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "state": "initial",
+      "fullPage": "cooperation-mobile-full.png",
+      "firstViewport": "cooperation-mobile-first.png"
+    },
+    {
+      "route": "/about/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "state": "initial",
+      "fullPage": "about-mobile-full.png",
+      "firstViewport": "about-mobile-first.png"
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "state": "initial",
+      "fullPage": "home-desktop-full.png",
+      "firstViewport": "home-desktop-first.png"
+    },
+    {
+      "route": "/product/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "state": "initial",
+      "fullPage": "product-desktop-full.png",
+      "firstViewport": "product-desktop-first.png"
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "state": "initial",
+      "fullPage": "experience-desktop-full.png",
+      "firstViewport": "experience-desktop-first.png"
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "state": "candidate",
+      "fullPage": "experience-desktop-candidate-full.png",
+      "firstViewport": "experience-desktop-candidate-first.png"
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "state": "evidence",
+      "fullPage": "experience-desktop-evidence-full.png",
+      "firstViewport": "experience-desktop-evidence-first.png"
+    },
+    {
+      "route": "/cooperation/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "state": "initial",
+      "fullPage": "cooperation-desktop-full.png",
+      "firstViewport": "cooperation-desktop-first.png"
+    },
+    {
+      "route": "/about/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "state": "initial",
+      "fullPage": "about-desktop-full.png",
+      "firstViewport": "about-desktop-first.png"
+    }
+  ]
+}

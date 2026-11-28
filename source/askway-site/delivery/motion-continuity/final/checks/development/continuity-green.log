@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: one ordinary wheel event moves toward its target instead of cutting to it
+ok 1 - one ordinary wheel event moves toward its target instead of cutting to it
+  ---
+  duration_ms: 2.2773
+  type: 'test'
+  ...
+# Subtest: tracking reaches a late product target monotonically and releases its RAF
+ok 2 - tracking reaches a late product target monotonically and releases its RAF
+  ---
+  duration_ms: 1.7645
+  type: 'test'
+  ...
+# Subtest: rapid reverse input follows the latest target without drifting toward an obsolete one
+ok 3 - rapid reverse input follows the latest target without drifting toward an obsolete one
+  ---
+  duration_ms: 0.6272
+  type: 'test'
+  ...
+# Subtest: pausing or leaving the surface cancels tracking and discards the hidden interval
+ok 4 - pausing or leaving the surface cancels tracking and discards the hidden interval
+  ---
+  duration_ms: 0.3321
+  type: 'test'
+  ...
+# Subtest: explicit anchor navigation snaps immediately and cancels an unfinished follow
+ok 5 - explicit anchor navigation snaps immediately and cancels an unfinished follow
+  ---
+  duration_ms: 0.4155
+  type: 'test'
+  ...
+# Subtest: initial geometry and mode changes never publish an unrelated opening composition
+ok 6 - initial geometry and mode changes never publish an unrelated opening composition
+  ---
+  duration_ms: 0.2536
+  type: 'test'
+  ...
+# Subtest: the coastal photograph remains opaque while the near scene enters
+ok 7 - the coastal photograph remains opaque while the near scene enters
+  ---
+  duration_ms: 0.084
+  type: 'test'
+  ...
+# Subtest: the near copy exits before shrinking and the settled card precedes map and text
+ok 8 - the near copy exits before shrinking and the settled card precedes map and text
+  ---
+  duration_ms: 0.0847
+  type: 'test'
+  ...
+# Subtest: chapter phases and destination anchors agree with their readable compositions
+ok 9 - chapter phases and destination anchors agree with their readable compositions
+  ---
+  duration_ms: 0.1802
+  type: 'test'
+  ...
+# Subtest: all opacity and camera poses remain finite and reversible across the full story
+ok 10 - all opacity and camera poses remain finite and reversible across the full story
+  ---
+  duration_ms: 3.8276
+  type: 'test'
+  ...
+# Subtest: near particles project larger and farther from the optical centre than distant particles
+ok 11 - near particles project larger and farther from the optical centre than distant particles
+  ---
+  duration_ms: 0.9337
+  type: 'test'
+  ...
+# Subtest: completed particles land on literal SVG endpoints and stop reacting to the clock or camera
+ok 12 - completed particles land on literal SVG endpoints and stop reacting to the clock or camera
+  ---
+  duration_ms: 0.8208
+  type: 'test'
+  ...
+# Subtest: reverse scrolling reconstructs the same seeded spatial field without accumulated transforms
+ok 13 - reverse scrolling reconstructs the same seeded spatial field without accumulated transforms
+  ---
+  duration_ms: 0.4649
+  type: 'test'
+  ...
+# Subtest: holding active time freezes the sea while a later active clock moves the unfinished field
+ok 14 - holding active time freezes the sea while a later active clock moves the unfinished field
+  ---
+  duration_ms: 0.1023
+  type: 'test'
+  ...
+# Subtest: the presentation camera travels continuously through every chapter boundary within gentle limits
+ok 15 - the presentation camera travels continuously through every chapter boundary within gentle limits
+  ---
+  duration_ms: 2.3638
+  type: 'test'
+  ...
+# Subtest: particle colour converges smoothly into the route instead of switching at a story threshold
+ok 16 - particle colour converges smoothly into the route instead of switching at a story threshold
+  ---
+  duration_ms: 0.119
+  type: 'test'
+  ...
+# Subtest: nonfinite inputs and invalid viewport dimensions stay finite with bounded perspective
+ok 17 - nonfinite inputs and invalid viewport dimensions stay finite with bounded perspective
+  ---
+  duration_ms: 0.2333
+  type: 'test'
+  ...
+# Subtest: the renderer paints cached soft glows without allocating gradients on successive frames
+ok 18 - the renderer paints cached soft glows without allocating gradients on successive frames
+  ---
+  duration_ms: 51.4522
+  type: 'test'
+  ...
+# Subtest: frame caps spare repeated clock frames while navigation and reverse scroll redraw immediately
+ok 19 - frame caps spare repeated clock frames while navigation and reverse scroll redraw immediately
+  ---
+  duration_ms: 39.1863
+  type: 'test'
+  ...
+# Subtest: paused and disposed renderers draw nothing and clear the finished field once
+ok 20 - paused and disposed renderers draw nothing and clear the finished field once
+  ---
+  duration_ms: 12.2303
+  type: 'test'
+  ...
+# Subtest: continuously changing follower progress stays inside the desktop and mobile frame budgets
+ok 21 - continuously changing follower progress stays inside the desktop and mobile frame budgets
+  ---
+  duration_ms: 20.3261
+  type: 'test'
+  ...
+# Subtest: a settled target or explicit snap paints its endpoint without waiting for another clock frame
+ok 22 - a settled target or explicit snap paints its endpoint without waiting for another clock frame
+  ---
+  duration_ms: 10.4576
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 442.0661

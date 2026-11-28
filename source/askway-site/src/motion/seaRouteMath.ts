@@ -54,6 +54,71 @@ export function projectSeaRouteParticle(seed: SeaRouteSeed, progress: number, ge
   };
 }
 
+export type PresentationCameraPose = {
+  panX: number; panY: number; rotateX: number; rotateY: number;
+  coastZ: number; theatreZ: number; detailZ: number;
+};
+
+/** One eased camera arc for the entire story; percentages, degrees and CSS pixels. */
+export function presentationCameraPose(storyProgress: number): PresentationCameraPose {
+  const p = clamp(storyProgress);
+  if (p === 0 || p === 1) return { panX: 0, panY: 0, rotateX: 0, rotateY: 0, coastZ: 0, theatreZ: 0, detailZ: 0 };
+  const travel = smooth(p);
+  const arc = Math.sin(Math.PI * travel);
+  return {
+    panX: -2.3 * arc * Math.sin(Math.PI * travel * 1.25),
+    panY: -.8 * arc * Math.sin(Math.PI * travel),
+    rotateX: .6 * arc * Math.sin(Math.PI * travel),
+    rotateY: -1.6 * arc * Math.cos(Math.PI * travel * .65),
+    coastZ: 110 * arc,
+    theatreZ: 85 * arc * (.35 + .65 * travel),
+    detailZ: 120 * arc * (.25 + .75 * travel),
+  };
+}
+
+/** XYZ particles share the photograph camera, then settle exactly onto the original SVG. */
+export function projectSpatialSeaRouteParticle(seed: SeaRouteSeed, particleProgress: number, geometry: SeaRouteGeometry,
+  activeTime: number, storyProgress = .1 + clamp(particleProgress) * .55) {
+  const finite = (value: number, minimum = -40000, maximum = 40000) => Number.isFinite(value)
+    ? Math.max(minimum, Math.min(maximum, value)) : 0;
+  const safeSeed: SeaRouteSeed = {
+    x: clamp(seed.x), depth: clamp(seed.depth), phase: finite(seed.phase, -Math.PI * 2, Math.PI * 2),
+    routeT: clamp(seed.routeT), warmth: clamp(seed.warmth),
+  };
+  const safeGeometry: SeaRouteGeometry = {
+    width: finite(geometry.width, 0), heroHeight: finite(geometry.heroHeight, 0), waterline: finite(geometry.waterline),
+    routeLeft: finite(geometry.routeLeft), routeTop: finite(geometry.routeTop),
+    routeWidth: finite(geometry.routeWidth, 0), routeHeight: finite(geometry.routeHeight, 0), mobile: Boolean(geometry.mobile),
+  };
+  const p = clamp(particleProgress), morph = smooth((p - .25) / .45), remaining = 1 - morph;
+  const base = projectSeaRouteParticle(safeSeed, p, safeGeometry, finite(activeTime, 0, 1e12));
+  const colour = {
+    routeBlend: morph,
+    colorR: (255 - 12 * safeSeed.warmth) * remaining + 173 * morph,
+    colorG: (244 - 43 * safeSeed.warmth) * remaining + 117 * morph,
+    colorB: (216 - 97 * safeSeed.warmth) * remaining + 37 * morph,
+  };
+  if (remaining === 0) return { ...base, z: 0, perspectiveScale: 1, glowRadius: 3.15, stretch: 1, ...colour };
+  const camera = presentationCameraPose(storyProgress);
+  const centreX = safeGeometry.width / 2, centreY = safeGeometry.heroHeight / 2;
+  const worldX = base.x - centreX + camera.panX * safeGeometry.width / 100 * remaining;
+  const worldY = base.y - centreY + camera.panY * safeGeometry.heroHeight / 100 * remaining;
+  const worldZ = (safeSeed.depth - .5) * 320 * remaining + camera.coastZ * .1 * remaining;
+  const yaw = camera.rotateY * Math.PI / 180 * remaining, pitch = camera.rotateX * Math.PI / 180 * remaining;
+  const rotatedX = worldX * Math.cos(yaw) + worldZ * Math.sin(yaw);
+  const yawZ = worldZ * Math.cos(yaw) - worldX * Math.sin(yaw);
+  const rotatedY = worldY * Math.cos(pitch) - yawZ * Math.sin(pitch);
+  const focalLength = Math.max(720, Math.min(1600, safeGeometry.width * .8));
+  const z = finite(yawZ * Math.cos(pitch) + worldY * Math.sin(pitch), -focalLength * .7, focalLength * .45);
+  const perspectiveScale = focalLength / (focalLength - z);
+  const radius = base.radius * perspectiveScale;
+  return {
+    ...base, x: centreX + rotatedX * perspectiveScale, y: centreY + rotatedY * perspectiveScale,
+    radius, z, perspectiveScale, glowRadius: radius * (3 + 2.2 * safeSeed.depth * remaining),
+    stretch: 1 + .8 * remaining, ...colour,
+  };
+}
+
 export function shouldAnimatePresentation(state: {
   paused: boolean; reducedMotion: boolean; visible: boolean; documentVisible: boolean; sceneActive: boolean;
 }) {

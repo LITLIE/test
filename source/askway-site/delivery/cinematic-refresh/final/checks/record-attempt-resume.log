@@ -1,0 +1,13 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 10000ms exceeded.
+    at waitForPhaseImages (D:\AAA大三上\软件工程\askway-web\source\askway-site\scripts\record-cinematic.mjs:133:14)
+    at capture (D:\AAA大三上\软件工程\askway-web\source\askway-site\scripts\record-cinematic.mjs:187:17)
+    at async file:///D:/AAA%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/askway-web/source/askway-site/scripts/record-cinematic.mjs:280:8 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.1

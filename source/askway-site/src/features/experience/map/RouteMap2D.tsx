@@ -312,7 +312,7 @@ export default function RouteMap2D(props: SceneProps) {
             <path d="M0 30 L0 1 M-6 11 L0 1 L6 11 M0 1 L5 22 L0 19 L-5 22 Z" />
             <text x="0" y="49" textAnchor="middle">北 N</text>
           </g>
-          <g className="coastal-map__scale" transform={`translate(24 ${size.height - 40})`} aria-label={`参考点位比例尺，${scaleLabel}`}>
+          <g className="coastal-map__scale" transform={`translate(24 ${size.height - 40})`} role="img" aria-label={`参考点位比例尺，${scaleLabel}`}>
             <path d={`M0-4 V4 H${scaleWidth} V-4 M${scaleWidth / 2} 0 V4`} />
             <text x="0" y="23">0</text><text x={scaleWidth} y="23" textAnchor="end">{scaleLabel}</text>
           </g>

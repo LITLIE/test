@@ -1,0 +1,32 @@
+vite v5.4.21 building for production...
+transforming...
+✓ 1668 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                              0.59 kB │ gzip:   0.49 kB
+dist/assets/CinematicCity-BPvDP1h6.css       0.94 kB │ gzip:   0.39 kB
+dist/assets/index-DQLgXoNL.css             204.59 kB │ gzip:  37.07 kB
+dist/assets/CinematicCity-CoHlMZ9c.js        1.87 kB │ gzip:   1.14 kB
+dist/assets/SeaRouteParticles-TPqJoUJv.js    3.92 kB │ gzip:   2.01 kB
+dist/assets/ScrollTrigger-CyD2wTOc.js       44.09 kB │ gzip:  18.29 kB
+dist/assets/CitySandbox-DD14vKXr.js         45.58 kB │ gzip:  17.97 kB
+dist/assets/gsap-BqEcbG5D.js                71.26 kB │ gzip:  28.10 kB
+dist/assets/index-CkT8MVk5.js              348.98 kB │ gzip: 121.83 kB
+dist/assets/city-runtime-8EEazRhK.js       515.03 kB │ gzip: 132.38 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.48s
+vite v5.4.21 building SSR bundle for production...
+transforming...
+✓ 72 modules transformed.
+rendering chunks...
+.agent_tmp/ssr/site.js                                 1.33 kB
+.agent_tmp/ssr/assets/CinematicCity-DYm6CmP2.js        2.80 kB
+.agent_tmp/ssr/assets/SeaRouteParticles-Bn1fIva7.js    7.49 kB
+.agent_tmp/ssr/assets/CitySandbox-DpL2Wf52.js         86.66 kB
+.agent_tmp/ssr/entry-server.js                       291.98 kB
+✓ built in 252ms
+Prerendered 5 pages, 404 and sitemap with base /.

@@ -6,6 +6,7 @@ import CityIllustration, { cityIllustrationSource } from './CityIllustrations';
 import type { CityIllustrationKind, CityIllustrationSource } from './CityIllustrations';
 import { Eyebrow } from './Shared';
 import { stepFromProgress } from '../lib/journey.mjs';
+import { usePresentationMotion } from '../motion/PresentationMotion';
 export const journeySteps=[
   {title:'说出想法',english:'A CONVERSATION',description:'想去哪里，想怎样度过一天？先从一次自然的商讨开始，让偏好有被认真理解的空间。'},
   {title:'让安排可行',english:'A CLEAR PLAN',description:'把时间、必去点与出游条件放在一起考虑。可行性有依据，发生冲突时，也有清楚的解释。'},
@@ -24,6 +25,9 @@ function Screen({active}:{active:number}){
   </div>;
 }
 export default function JourneyStage({compact=false}:{compact?:boolean}){
+  const { motionAllowed } = usePresentationMotion();
+  const motionAllowedRef = useRef(motionAllowed);
+  motionAllowedRef.current = motionAllowed;
   const [active,setActive]=useState(0),sectionRef=useRef<HTMLElement>(null),manualY=useRef<number|null>(null),tabsRef=useRef<HTMLDivElement>(null);
   const [imageSources,setImageSources]=useState<Partial<Record<CityIllustrationKind,CityIllustrationSource>>>({});
   const observeSource=useCallback((source:CityIllustrationSource)=>{
@@ -31,27 +35,27 @@ export default function JourneyStage({compact=false}:{compact?:boolean}){
   },[]);
   useEffect(()=>{
     let dead=false,dispose:(()=>void)|undefined;
-    if(compact)return;
+    if(compact || !motionAllowed)return;
     Promise.all([import('gsap'),import('gsap/ScrollTrigger')]).then(([{gsap},{ScrollTrigger}])=>{
-      if(dead || !sectionRef.current)return;
+      if(dead || !sectionRef.current || !motionAllowedRef.current)return;
       gsap.registerPlugin(ScrollTrigger);
       const media=gsap.matchMedia();
       const allowed=window.matchMedia('(min-width: 900px) and (prefers-reduced-motion: no-preference)');
       media.add(allowed.media,()=>{
       manualY.current=null;
       const instance=ScrollTrigger.create({trigger:sectionRef.current,start:'top 25%',end:'bottom 65%',onUpdate:self=>{
-        if(dead || !allowed.matches)return;
+        if(dead || !allowed.matches || !motionAllowedRef.current)return;
         if(manualY.current!==null && Math.abs(window.scrollY-manualY.current)<40)return;
         manualY.current=null;setActive(stepFromProgress(self.progress));
       }});
       setActive(stepFromProgress(instance.progress));
       let refreshFrame:number|null=null;
       const refreshLayout=()=>{
-        if(dead || !allowed.matches)return;
+        if(dead || !allowed.matches || !motionAllowedRef.current)return;
         if(refreshFrame!==null)cancelAnimationFrame(refreshFrame);
         refreshFrame=requestAnimationFrame(()=>{
           refreshFrame=null;
-          if(dead || !allowed.matches)return;
+          if(dead || !allowed.matches || !motionAllowedRef.current)return;
           instance.refresh();instance.update();
           if(manualY.current===null || Math.abs(window.scrollY-manualY.current)>=40){
             manualY.current=null;setActive(stepFromProgress(instance.progress));
@@ -69,7 +73,7 @@ export default function JourneyStage({compact=false}:{compact?:boolean}){
       dispose=()=>media.revert();
     }).catch(()=>{dispose?.();});
     return()=>{dead=true;dispose?.();};
-  },[compact]);
+  },[compact,motionAllowed]);
   const select=(i:number)=>{manualY.current=window.scrollY;setActive(i);};
   const keyboard=(event:React.KeyboardEvent<HTMLButtonElement>,i:number)=>{
     const target=event.key==='End'?3:event.key==='Home'?0:event.key==='ArrowRight'?(i+1)%4:event.key==='ArrowLeft'?(i+3)%4:null;
@@ -79,15 +83,16 @@ export default function JourneyStage({compact=false}:{compact?:boolean}){
   const illustrationKinds:CityIllustrationKind[]=['coast','landmarks','landmarks','theatre'];
   const cityCaptions=['从一阵海风，开始这一天。','让地点，在城市里相遇。','换一种安排，仍有风景。','带着期待，走向城市。'];
   const ribbonKind=illustrationKinds[active],ribbonSource=imageSources[ribbonKind]??cityIllustrationSource(ribbonKind);
+  const chapters=<div className="journey-chapters">{journeySteps.map((step,i)=><div className={'journey-chapter '+(active===i?'chapter-active':'')} key={i} id={'journey-step-'+i}><span className="chapter-index">0{i+1}</span><div><span className="chapter-english">{step.english}</span><h3>{step.title}</h3><p>{step.description}</p></div></div>)}</div>;
   return <section className={'journey-section '+(compact?'journey-compact':'')} ref={sectionRef} id="journey" aria-describedby="journey-concept-note">
     <div className="container"><div className="journey-heading" data-reveal><Eyebrow number="02">FROM AN IDEA TO A JOURNEY</Eyebrow><h2>一段旅程，<br/>从被理解开始。</h2><p>商讨、规划、调整、执行。<br/>把每一步，连成一条清晰的线。</p></div>
     <p className="journey-concept-note" id="journey-concept-note">以下四阶段为受控产品概念，展示规划到现场的设计思路。可操作的条件核对与版本比较，请进入旅程体验。</p>
-    <div className="journey-layout"><div className="journey-sticky">
+    <div className="journey-layout"><div className="journey-sticky" style={compact ? { position: 'relative', top: 'auto' } : undefined}>
       <div className="journey-city-ribbon"><CityIllustration kind={ribbonKind} caption={false} decorative onSourceChange={observeSource}/><div><span>{cityCaptions[active]}</span><small>{ribbonSource.label}</small></div></div>
       <Screen active={active}/>
       <div className="stage-tabs" role="tablist" aria-label="产品演示阶段" ref={tabsRef}>{journeySteps.map((step,i)=><button key={i} id={'stage-tab-'+i} type="button" role="tab" tabIndex={active===i?0:-1} aria-selected={active===i} aria-controls="stage-description" onKeyDown={event=>keyboard(event,i)} onClick={()=>select(i)}><span>0{i+1}</span>{step.title}</button>)}</div>
       <div className="stage-caption" id="stage-description" role="tabpanel" aria-labelledby={'stage-tab-'+active} aria-live="polite">{journeySteps[active].description}</div>
       <Link to="/experience/" className="journey-experience-link">亲自核对一段旅程<ArrowRight size={18} aria-hidden="true"/></Link>
-    </div><div className="journey-chapters">{journeySteps.map((step,i)=><div className={'journey-chapter '+(active===i?'chapter-active':'')} key={i} id={'journey-step-'+i}><span className="chapter-index">0{i+1}</span><div><span className="chapter-english">{step.english}</span><h3>{step.title}</h3><p>{step.description}</p></div></div>)}</div></div></div>
+    </div>{compact ? <details className="journey-notes"><summary>阅读四阶段说明<span>商讨 · 规划 · 调整 · 执行</span></summary>{chapters}</details> : chapters}</div></div>
   </section>;
 }

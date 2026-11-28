@@ -1,0 +1,59 @@
+[
+  {
+    "scroll": 0,
+    "className": "site-header header-clear",
+    "brandClass": "brand brand-light",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "linear-gradient(rgba(7, 35, 52, 0.208), rgba(0, 0, 0, 0))",
+    "brandColour": "rgb(250, 249, 246)",
+    "transition": "color 0.2s, border-color 0.2s",
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "top": 0,
+      "right": 1440,
+      "bottom": 1000,
+      "left": 0
+    }
+  },
+  {
+    "scroll": 0,
+    "className": "site-header header-clear",
+    "brandClass": "brand brand-light",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "linear-gradient(rgba(7, 35, 52, 0.208), rgba(0, 0, 0, 0))",
+    "brandColour": "rgb(250, 249, 246)",
+    "transition": "color 0.2s, border-color 0.2s",
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "top": 0,
+      "right": 1440,
+      "bottom": 1000,
+      "left": 0
+    }
+  },
+  {
+    "scroll": 0,
+    "className": "site-header header-clear",
+    "brandClass": "brand brand-light",
+    "background": "rgba(0, 0, 0, 0)",
+    "backgroundImage": "linear-gradient(rgba(7, 35, 52, 0.208), rgba(0, 0, 0, 0))",
+    "brandColour": "rgb(250, 249, 246)",
+    "transition": "color 0.2s, border-color 0.2s",
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "top": 0,
+      "right": 1440,
+      "bottom": 1000,
+      "left": 0
+    }
+  }
+]

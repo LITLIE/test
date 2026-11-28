@@ -1,0 +1,81 @@
+{
+  "capturedAt": "2026-11-27T14:53:53.016Z",
+  "testBase": "http://127.0.0.1:4173",
+  "kind": "failure-diagnostics",
+  "mobileImages": [
+    {
+      "className": "story-theatre-photo",
+      "src": "/assets/theatre.webp",
+      "currentSrc": "",
+      "complete": false,
+      "naturalWidth": 0,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "visibility": "visible",
+      "failed": null,
+      "hiddenAncestors": [
+        "story-theatre-media"
+      ]
+    },
+    {
+      "className": "story-detail-photo",
+      "src": "/assets/architecture.webp",
+      "currentSrc": "http://127.0.0.1:4173/assets/architecture.webp",
+      "complete": true,
+      "naturalWidth": 850,
+      "rect": {
+        "x": 21,
+        "y": 78.640625,
+        "width": 348,
+        "height": 368,
+        "top": 78.640625,
+        "right": 369,
+        "bottom": 446.640625,
+        "left": 21
+      },
+      "visibility": "visible",
+      "failed": null,
+      "hiddenAncestors": []
+    }
+  ],
+  "loadingAnimation": {
+    "before": {
+      "globalState": "running",
+      "cssPlayState": "running",
+      "animations": [
+        {
+          "playState": "running",
+          "currentTime": 0
+        }
+      ]
+    },
+    "pausedBefore": {
+      "globalState": "paused",
+      "cssPlayState": "paused",
+      "animations": [
+        {
+          "playState": "paused",
+          "currentTime": 29.158000044990306
+        }
+      ]
+    },
+    "pausedAfter": {
+      "globalState": "paused",
+      "cssPlayState": "paused",
+      "animations": [
+        {
+          "playState": "paused",
+          "currentTime": 29.158000044990306
+        }
+      ]
+    }
+  }
+}

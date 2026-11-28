@@ -4,15 +4,17 @@ import { catalog } from '../data/catalog.ts';
 import { makeDefaultDraft } from '../config';
 import { proposeCuratedPlan } from '../domain/curated-planner.ts';
 import RouteMap2D from '../map/RouteMap2D';
+import JourneyPreview from './JourneyPreview';
 import '../styles/experience.css';
 
 const example = proposeCuratedPlan(catalog, makeDefaultDraft(), null, {
-  requestId: 'public-home-example', sessionEpoch: 0, draftRevision: 0, nowMs: 0,
+  requestId: 'public-home-example', sessionEpoch: 1, draftRevision: 1, nowMs: 0,
 });
 const plan = example.kind === 'proposal' ? example.proposal.candidate : null;
 
-export default function ExperiencePreview() {
+export default function ExperiencePreview({ compact = false }: { compact?: boolean }) {
   const [selected, setSelected] = useState<string | null>('ZS-004');
+  if (compact) return <JourneyPreview catalog={catalog} plan={plan}/>;
   return <figure className="experience-miniature">
     <div className="miniature-top"><span><span/>CURATED CITY JOURNEY</span><small>珠海 · 海岸慢游</small></div>
     <RouteMap2D catalog={catalog} plan={plan} selectedPlaceId={selected} onSelectPlace={setSelected} reducedMotion/>

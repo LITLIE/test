@@ -1,0 +1,43 @@
+[
+  {
+    "name": "desktop chapters have at least three and a half screens of camera travel",
+    "pass": true
+  },
+  {
+    "name": "a single wheel event produces intermediate frames and settles without overshoot",
+    "pass": true
+  },
+  {
+    "name": "a rapid reverse wheel event follows the latest destination immediately",
+    "pass": true
+  },
+  {
+    "name": "the chapter bar keeps a continuous background when the active chapter changes",
+    "pass": true
+  },
+  {
+    "name": "photographs use real CSS depth and the spatial canvas paints within its clock budget",
+    "pass": true
+  },
+  {
+    "name": "the photograph docks before the map and readable product controls enter",
+    "pass": true
+  },
+  {
+    "name": "repeating the current chapter hash immediately aligns its camera and focus",
+    "pass": false,
+    "error": "The same hash must snap without waiting for native smooth scroll or visual following"
+  },
+  {
+    "name": "pausing stops particles and active time while preserving page geometry and scroll",
+    "pass": true
+  },
+  {
+    "name": "direct product and theatre hashes focus visible readable headings",
+    "pass": true
+  },
+  {
+    "name": "the tested page reports no uncaught application errors",
+    "pass": true
+  }
+]

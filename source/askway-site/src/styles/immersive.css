@@ -54,6 +54,7 @@
 .immersive-footnote>.text-link{font-size:14px;color:#fff1d7;border-color:#cfb99466;flex-shrink:0}
 .immersive-loading{display:flex;align-items:center;justify-content:center;gap:14px;position:absolute;inset:0;color:white;font-size:14px;background:#05293750}
 .immersive-loading>span{width:17px;height:17px;border:1px solid #f1d19e;border-top-color:transparent;border-radius:50%;animation:city-loading 1s linear infinite}
+html[data-presentation-motion=paused] .immersive-loading>span{animation-play-state:paused}
 @keyframes city-loading{to{transform:rotate(360deg)}}
 .immersive-stage .cinematic-city,.immersive-stage .client-scene,.immersive-stage .city-sandbox{width:100%;height:100%;padding:0;margin:0;background:transparent}
 .immersive-stage .city-sandbox__canvas{margin:0;border-radius:0;aspect-ratio:auto;min-height:0;max-height:none;height:100%;background:transparent}

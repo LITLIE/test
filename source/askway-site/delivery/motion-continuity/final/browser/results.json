@@ -1,0 +1,7668 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "build": {
+    "measuredAt": "2026-11-27T17:24:52.458Z",
+    "base": "http://127.0.0.1:4173",
+    "servedHomeSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+    "servedMatchesLocalDist": true,
+    "hashes": {
+      "package.json": "44790980abaeb72b8b8fa21eb80aca147a168c1bdc0cb99e673a1040917b22b9",
+      "dist/index.html": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+      "src/pages/Home.tsx": "586794fa60f1db50a5949ac487fba71ca29bb0bb3de6885f845e73a47ecf15cf",
+      "src/features/cinematic/StoryStage.tsx": "292d2873c3dcb444373c9822c7bf4765f99ecb87bfe31ab08c5e99889af68028",
+      "src/features/cinematic/useStoryProgress.ts": "a488b141fa2978cf161c9c0dda07b3ee81aea76820fcfa299a2ee8207c409183",
+      "src/features/cinematic/progress.ts": "6da82a9e417adf17aef95ca81ba20ed09cea30e9f26f43c48bf32f8aee0ecea4",
+      "src/features/cinematic/cinematic.css": "c54b199c28b86b7f3bbfbb10965d5c165ff0b12633c9aba0a3d6b630075591f6",
+      "src/components/SeaRouteParticles.tsx": "db4f758d9926090cb195c0a03026e91b3eb2de2a96ba61d6f21c6804af8775f4",
+      "src/motion/PresentationMotion.tsx": "a5524bb8ae06ce3e8b766a3311fcda7b3827a8f057879d0794dff150babcfca3",
+      "src/components/SiteHeader.tsx": "0d9fc2678871bbba0721e1ccbea6c0d3422089b13d7fbce1db96e129c287d49d",
+      "src/features/experience/ui/ExperiencePreview.tsx": "bf6560de22a920ba206284b55b9b31a57e8827e0c169b96c60b51cc38752193a",
+      "src/features/experience/ui/JourneyPreview.tsx": "64c581c411ac4d51e13d88eda6243e0bd522b70df1dc6a8ad40a3e4d66923450",
+      "src/features/experience/ui/JourneyPreview.css": "38fed6bdd9581908f1f426642051b28783dce188018f9ef452cab4f73fe3b350",
+      "dist/assets/index-CowwplVD.js": "2d26679762b80f0c6241b5f7be6166bd2d81ddf45cf473658300ab9c6e8129cb",
+      "dist/assets/index-CAyw3f2q.css": "632da3c1bff278345e14bcb625d0e5b6071bb271efa4c8e7189a2b80409b3fad",
+      "src/motion/seaRouteMath.ts": "ad6f4443a563aebb0aa49ba863109c81a2c598d88b49fe307ccddfa80c1a8426",
+      "src/features/cinematic/storyConfig.ts": "b271ae9d0cb5f9b3e1dc32c16d77ab86817b870f080b576d62d615d0500ebeff"
+    }
+  },
+  "input": "Playwright mouse.wheel events delivered to a real browser page; these are not physical hardware input",
+  "checks": [
+    {
+      "name": "desktop chapters have at least three and a half screens of camera travel",
+      "pass": true
+    },
+    {
+      "name": "a single wheel event produces intermediate frames and settles without overshoot",
+      "pass": true
+    },
+    {
+      "name": "a rapid reverse wheel event follows the latest destination immediately",
+      "pass": true
+    },
+    {
+      "name": "the chapter bar keeps a continuous background when the active chapter changes",
+      "pass": true
+    },
+    {
+      "name": "photographs use real CSS depth and the spatial canvas paints within its clock budget",
+      "pass": true
+    },
+    {
+      "name": "the photograph docks before the map and readable product controls enter",
+      "pass": true
+    },
+    {
+      "name": "repeating the current chapter hash immediately aligns its camera and focus",
+      "pass": true
+    },
+    {
+      "name": "pausing stops particles and active time while preserving page geometry and scroll",
+      "pass": true
+    },
+    {
+      "name": "direct product and theatre hashes focus visible readable headings",
+      "pass": true
+    },
+    {
+      "name": "the tested page reports no uncaught application errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "records": {
+    "geometry": {
+      "scroll": 1368,
+      "height": 4800,
+      "travel": 3800,
+      "screens": 3.8,
+      "value": 0.3599,
+      "target": 0.36,
+      "activeTime": 1788.6,
+      "draws": 96,
+      "phase": "route",
+      "layout": "sticky"
+    },
+    "wheel": [
+      {
+        "at": 1878.6,
+        "elapsed": 2.599999999999909,
+        "scroll": 1368,
+        "native": 0.36,
+        "target": 0.36,
+        "value": 0.3599,
+        "activeTime": 1815.9,
+        "draws": 98
+      },
+      {
+        "at": 1884.8,
+        "elapsed": 8.799999999999955,
+        "scroll": 1368,
+        "native": 0.36,
+        "target": 0.36,
+        "value": 0.3599,
+        "activeTime": 1822.1,
+        "draws": 98
+      },
+      {
+        "at": 1889.9,
+        "elapsed": 13.900000000000091,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3609,
+        "activeTime": 1827.2,
+        "draws": 98
+      },
+      {
+        "at": 1895,
+        "elapsed": 19,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3619,
+        "activeTime": 1832.3,
+        "draws": 98
+      },
+      {
+        "at": 1901.1,
+        "elapsed": 25.09999999999991,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.363,
+        "activeTime": 1838.4,
+        "draws": 99
+      },
+      {
+        "at": 1907.1,
+        "elapsed": 31.09999999999991,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.364,
+        "activeTime": 1844.4,
+        "draws": 99
+      },
+      {
+        "at": 1912.6,
+        "elapsed": 36.59999999999991,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.365,
+        "activeTime": 1849.9,
+        "draws": 99
+      },
+      {
+        "at": 1918.6,
+        "elapsed": 42.59999999999991,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3659,
+        "activeTime": 1855.9,
+        "draws": 100
+      },
+      {
+        "at": 1924.7,
+        "elapsed": 48.700000000000045,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3669,
+        "activeTime": 1862,
+        "draws": 100
+      },
+      {
+        "at": 1929.9,
+        "elapsed": 53.90000000000009,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3677,
+        "activeTime": 1867.2,
+        "draws": 100
+      },
+      {
+        "at": 1934.9,
+        "elapsed": 58.90000000000009,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3684,
+        "activeTime": 1872.2,
+        "draws": 100
+      },
+      {
+        "at": 1940,
+        "elapsed": 64,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3691,
+        "activeTime": 1877.3,
+        "draws": 101
+      },
+      {
+        "at": 1946.1,
+        "elapsed": 70.09999999999991,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.37,
+        "activeTime": 1883.4,
+        "draws": 101
+      },
+      {
+        "at": 1952,
+        "elapsed": 76,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3708,
+        "activeTime": 1889.3,
+        "draws": 101
+      },
+      {
+        "at": 1957.8,
+        "elapsed": 81.79999999999995,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3715,
+        "activeTime": 1895.1,
+        "draws": 102
+      },
+      {
+        "at": 1962.9,
+        "elapsed": 86.90000000000009,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3721,
+        "activeTime": 1900.2,
+        "draws": 102
+      },
+      {
+        "at": 1968,
+        "elapsed": 92,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3727,
+        "activeTime": 1905.3,
+        "draws": 102
+      },
+      {
+        "at": 1973.7,
+        "elapsed": 97.70000000000005,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3734,
+        "activeTime": 1911,
+        "draws": 102
+      },
+      {
+        "at": 1978.9,
+        "elapsed": 102.90000000000009,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.374,
+        "activeTime": 1916.2,
+        "draws": 103
+      },
+      {
+        "at": 1985.1,
+        "elapsed": 109.09999999999991,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3747,
+        "activeTime": 1922.4,
+        "draws": 103
+      },
+      {
+        "at": 1990.2,
+        "elapsed": 114.20000000000005,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3752,
+        "activeTime": 1927.5,
+        "draws": 103
+      },
+      {
+        "at": 1995.5,
+        "elapsed": 119.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3757,
+        "activeTime": 1932.8,
+        "draws": 103
+      },
+      {
+        "at": 2000.6,
+        "elapsed": 124.59999999999991,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3762,
+        "activeTime": 1937.9,
+        "draws": 104
+      },
+      {
+        "at": 2006.7,
+        "elapsed": 130.70000000000005,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3768,
+        "activeTime": 1944,
+        "draws": 104
+      },
+      {
+        "at": 2012.8,
+        "elapsed": 136.79999999999995,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3773,
+        "activeTime": 1950.1,
+        "draws": 104
+      },
+      {
+        "at": 2018.8,
+        "elapsed": 142.79999999999995,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3779,
+        "activeTime": 1956.1,
+        "draws": 105
+      },
+      {
+        "at": 2024.8,
+        "elapsed": 148.79999999999995,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3784,
+        "activeTime": 1962.1,
+        "draws": 105
+      },
+      {
+        "at": 2030.9,
+        "elapsed": 154.9000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3789,
+        "activeTime": 1968.2,
+        "draws": 105
+      },
+      {
+        "at": 2036,
+        "elapsed": 160,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3793,
+        "activeTime": 1973.3,
+        "draws": 106
+      },
+      {
+        "at": 2042.2,
+        "elapsed": 166.20000000000005,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3797,
+        "activeTime": 1979.5,
+        "draws": 106
+      },
+      {
+        "at": 2047.3,
+        "elapsed": 171.29999999999995,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3801,
+        "activeTime": 1984.6,
+        "draws": 106
+      },
+      {
+        "at": 2052.4,
+        "elapsed": 176.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3805,
+        "activeTime": 1989.7,
+        "draws": 106
+      },
+      {
+        "at": 2058.4,
+        "elapsed": 182.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3809,
+        "activeTime": 1995.7,
+        "draws": 107
+      },
+      {
+        "at": 2064.7,
+        "elapsed": 188.69999999999982,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3813,
+        "activeTime": 2002,
+        "draws": 107
+      },
+      {
+        "at": 2071.1,
+        "elapsed": 195.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3817,
+        "activeTime": 2008.4,
+        "draws": 107
+      },
+      {
+        "at": 2077.1,
+        "elapsed": 201.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3821,
+        "activeTime": 2014.4,
+        "draws": 108
+      },
+      {
+        "at": 2083.3,
+        "elapsed": 207.30000000000018,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3824,
+        "activeTime": 2020.6,
+        "draws": 108
+      },
+      {
+        "at": 2088.5,
+        "elapsed": 212.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3827,
+        "activeTime": 2025.8,
+        "draws": 108
+      },
+      {
+        "at": 2094.3,
+        "elapsed": 218.30000000000018,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.383,
+        "activeTime": 2031.6,
+        "draws": 109
+      },
+      {
+        "at": 2099.5,
+        "elapsed": 223.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3833,
+        "activeTime": 2036.8,
+        "draws": 109
+      },
+      {
+        "at": 2104.7,
+        "elapsed": 228.69999999999982,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3836,
+        "activeTime": 2042,
+        "draws": 109
+      },
+      {
+        "at": 2110.7,
+        "elapsed": 234.69999999999982,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3839,
+        "activeTime": 2048,
+        "draws": 109
+      },
+      {
+        "at": 2116.6,
+        "elapsed": 240.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3841,
+        "activeTime": 2053.9,
+        "draws": 110
+      },
+      {
+        "at": 2122.5,
+        "elapsed": 246.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3844,
+        "activeTime": 2059.8,
+        "draws": 110
+      },
+      {
+        "at": 2128.2,
+        "elapsed": 252.19999999999982,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3847,
+        "activeTime": 2065.5,
+        "draws": 110
+      },
+      {
+        "at": 2134.2,
+        "elapsed": 258.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3849,
+        "activeTime": 2071.5,
+        "draws": 111
+      },
+      {
+        "at": 2140.2,
+        "elapsed": 264.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3852,
+        "activeTime": 2077.5,
+        "draws": 111
+      },
+      {
+        "at": 2145.4,
+        "elapsed": 269.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3854,
+        "activeTime": 2082.7,
+        "draws": 111
+      },
+      {
+        "at": 2150.6,
+        "elapsed": 274.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3856,
+        "activeTime": 2087.9,
+        "draws": 111
+      },
+      {
+        "at": 2155.8,
+        "elapsed": 279.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3858,
+        "activeTime": 2093.1,
+        "draws": 112
+      },
+      {
+        "at": 2161,
+        "elapsed": 285,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3859,
+        "activeTime": 2098.3,
+        "draws": 112
+      },
+      {
+        "at": 2167,
+        "elapsed": 291,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3861,
+        "activeTime": 2104.3,
+        "draws": 112
+      },
+      {
+        "at": 2172.4,
+        "elapsed": 296.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3863,
+        "activeTime": 2109.7,
+        "draws": 112
+      },
+      {
+        "at": 2178.4,
+        "elapsed": 302.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3865,
+        "activeTime": 2115.7,
+        "draws": 113
+      },
+      {
+        "at": 2184.6,
+        "elapsed": 308.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3867,
+        "activeTime": 2121.9,
+        "draws": 113
+      },
+      {
+        "at": 2189.8,
+        "elapsed": 313.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3869,
+        "activeTime": 2127.1,
+        "draws": 113
+      },
+      {
+        "at": 2195.2,
+        "elapsed": 319.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.387,
+        "activeTime": 2132.5,
+        "draws": 114
+      },
+      {
+        "at": 2201.5,
+        "elapsed": 325.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3872,
+        "activeTime": 2138.8,
+        "draws": 114
+      },
+      {
+        "at": 2207.8,
+        "elapsed": 331.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3874,
+        "activeTime": 2145.1,
+        "draws": 114
+      },
+      {
+        "at": 2213.1,
+        "elapsed": 337.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3875,
+        "activeTime": 2150.4,
+        "draws": 115
+      },
+      {
+        "at": 2218.4,
+        "elapsed": 342.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3876,
+        "activeTime": 2155.7,
+        "draws": 115
+      },
+      {
+        "at": 2223.6,
+        "elapsed": 347.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3878,
+        "activeTime": 2160.9,
+        "draws": 115
+      },
+      {
+        "at": 2228.8,
+        "elapsed": 352.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3879,
+        "activeTime": 2166.1,
+        "draws": 115
+      },
+      {
+        "at": 2234.1,
+        "elapsed": 358.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.388,
+        "activeTime": 2171.4,
+        "draws": 116
+      },
+      {
+        "at": 2239.3,
+        "elapsed": 363.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3881,
+        "activeTime": 2176.6,
+        "draws": 116
+      },
+      {
+        "at": 2244.6,
+        "elapsed": 368.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3882,
+        "activeTime": 2181.9,
+        "draws": 116
+      },
+      {
+        "at": 2249.8,
+        "elapsed": 373.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3883,
+        "activeTime": 2187.1,
+        "draws": 116
+      },
+      {
+        "at": 2255.1,
+        "elapsed": 379.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3884,
+        "activeTime": 2192.4,
+        "draws": 117
+      },
+      {
+        "at": 2260.4,
+        "elapsed": 384.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3885,
+        "activeTime": 2197.7,
+        "draws": 117
+      },
+      {
+        "at": 2265.7,
+        "elapsed": 389.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3886,
+        "activeTime": 2203,
+        "draws": 117
+      },
+      {
+        "at": 2272,
+        "elapsed": 396,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3888,
+        "activeTime": 2209.3,
+        "draws": 118
+      },
+      {
+        "at": 2278,
+        "elapsed": 402,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3889,
+        "activeTime": 2215.3,
+        "draws": 118
+      },
+      {
+        "at": 2284,
+        "elapsed": 408,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.389,
+        "activeTime": 2221.3,
+        "draws": 118
+      },
+      {
+        "at": 2289.5,
+        "elapsed": 413.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3891,
+        "activeTime": 2226.8,
+        "draws": 119
+      },
+      {
+        "at": 2295.7,
+        "elapsed": 419.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3891,
+        "activeTime": 2233,
+        "draws": 119
+      },
+      {
+        "at": 2301.1,
+        "elapsed": 425.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3892,
+        "activeTime": 2238.4,
+        "draws": 119
+      },
+      {
+        "at": 2306.3,
+        "elapsed": 430.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3893,
+        "activeTime": 2243.6,
+        "draws": 120
+      },
+      {
+        "at": 2312.6,
+        "elapsed": 436.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3894,
+        "activeTime": 2249.9,
+        "draws": 120
+      },
+      {
+        "at": 2318.4,
+        "elapsed": 442.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3895,
+        "activeTime": 2255.7,
+        "draws": 120
+      },
+      {
+        "at": 2323.6,
+        "elapsed": 447.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3895,
+        "activeTime": 2260.9,
+        "draws": 121
+      },
+      {
+        "at": 2329.9,
+        "elapsed": 453.9000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3896,
+        "activeTime": 2267.2,
+        "draws": 121
+      },
+      {
+        "at": 2335.2,
+        "elapsed": 459.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3897,
+        "activeTime": 2272.5,
+        "draws": 121
+      },
+      {
+        "at": 2341.4,
+        "elapsed": 465.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3898,
+        "activeTime": 2278.7,
+        "draws": 122
+      },
+      {
+        "at": 2346.5,
+        "elapsed": 470.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3898,
+        "activeTime": 2283.8,
+        "draws": 122
+      },
+      {
+        "at": 2351.7,
+        "elapsed": 475.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3899,
+        "activeTime": 2289,
+        "draws": 122
+      },
+      {
+        "at": 2357.3,
+        "elapsed": 481.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3899,
+        "activeTime": 2294.6,
+        "draws": 122
+      },
+      {
+        "at": 2362.5,
+        "elapsed": 486.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.39,
+        "activeTime": 2299.8,
+        "draws": 123
+      },
+      {
+        "at": 2367.7,
+        "elapsed": 491.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.39,
+        "activeTime": 2305,
+        "draws": 123
+      },
+      {
+        "at": 2373.3,
+        "elapsed": 497.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3901,
+        "activeTime": 2310.6,
+        "draws": 123
+      },
+      {
+        "at": 2379.4,
+        "elapsed": 503.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3901,
+        "activeTime": 2316.7,
+        "draws": 124
+      },
+      {
+        "at": 2385.6,
+        "elapsed": 509.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3902,
+        "activeTime": 2322.9,
+        "draws": 124
+      },
+      {
+        "at": 2397.3,
+        "elapsed": 521.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3903,
+        "activeTime": 2334.6,
+        "draws": 125
+      },
+      {
+        "at": 2403.5,
+        "elapsed": 527.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3903,
+        "activeTime": 2340.8,
+        "draws": 125
+      },
+      {
+        "at": 2408.6,
+        "elapsed": 532.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3904,
+        "activeTime": 2345.9,
+        "draws": 125
+      },
+      {
+        "at": 2414.7,
+        "elapsed": 538.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3904,
+        "activeTime": 2352,
+        "draws": 126
+      },
+      {
+        "at": 2420.1,
+        "elapsed": 544.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3905,
+        "activeTime": 2357.4,
+        "draws": 126
+      },
+      {
+        "at": 2425.4,
+        "elapsed": 549.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3905,
+        "activeTime": 2362.7,
+        "draws": 126
+      },
+      {
+        "at": 2430.7,
+        "elapsed": 554.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3905,
+        "activeTime": 2368,
+        "draws": 126
+      },
+      {
+        "at": 2436.1,
+        "elapsed": 560.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3906,
+        "activeTime": 2373.4,
+        "draws": 127
+      },
+      {
+        "at": 2441.3,
+        "elapsed": 565.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3906,
+        "activeTime": 2378.6,
+        "draws": 127
+      },
+      {
+        "at": 2447.1,
+        "elapsed": 571.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3906,
+        "activeTime": 2384.4,
+        "draws": 127
+      },
+      {
+        "at": 2453.2,
+        "elapsed": 577.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3907,
+        "activeTime": 2390.5,
+        "draws": 128
+      },
+      {
+        "at": 2459.2,
+        "elapsed": 583.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3907,
+        "activeTime": 2396.5,
+        "draws": 128
+      },
+      {
+        "at": 2465.1,
+        "elapsed": 589.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3907,
+        "activeTime": 2402.4,
+        "draws": 128
+      },
+      {
+        "at": 2471.3,
+        "elapsed": 595.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3908,
+        "activeTime": 2408.6,
+        "draws": 129
+      },
+      {
+        "at": 2477,
+        "elapsed": 601,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3908,
+        "activeTime": 2414.3,
+        "draws": 129
+      },
+      {
+        "at": 2482.1,
+        "elapsed": 606.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3908,
+        "activeTime": 2419.4,
+        "draws": 129
+      },
+      {
+        "at": 2488.2,
+        "elapsed": 612.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3908,
+        "activeTime": 2425.5,
+        "draws": 130
+      },
+      {
+        "at": 2494.5,
+        "elapsed": 618.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3909,
+        "activeTime": 2431.8,
+        "draws": 130
+      },
+      {
+        "at": 2499.8,
+        "elapsed": 623.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3909,
+        "activeTime": 2437.1,
+        "draws": 130
+      },
+      {
+        "at": 2505.9,
+        "elapsed": 629.9000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3909,
+        "activeTime": 2443.2,
+        "draws": 131
+      },
+      {
+        "at": 2511.7,
+        "elapsed": 635.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3909,
+        "activeTime": 2449,
+        "draws": 131
+      },
+      {
+        "at": 2517.7,
+        "elapsed": 641.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.391,
+        "activeTime": 2455,
+        "draws": 131
+      },
+      {
+        "at": 2523.5,
+        "elapsed": 647.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.391,
+        "activeTime": 2460.8,
+        "draws": 132
+      },
+      {
+        "at": 2529.6,
+        "elapsed": 653.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.391,
+        "activeTime": 2466.9,
+        "draws": 132
+      },
+      {
+        "at": 2535.8,
+        "elapsed": 659.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.391,
+        "activeTime": 2473.1,
+        "draws": 132
+      },
+      {
+        "at": 2541.3,
+        "elapsed": 665.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3911,
+        "activeTime": 2478.6,
+        "draws": 133
+      },
+      {
+        "at": 2547.1,
+        "elapsed": 671.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3911,
+        "activeTime": 2484.4,
+        "draws": 133
+      },
+      {
+        "at": 2552.2,
+        "elapsed": 676.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3911,
+        "activeTime": 2489.5,
+        "draws": 133
+      },
+      {
+        "at": 2557.9,
+        "elapsed": 681.9000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3911,
+        "activeTime": 2495.2,
+        "draws": 133
+      },
+      {
+        "at": 2563.2,
+        "elapsed": 687.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3911,
+        "activeTime": 2500.5,
+        "draws": 134
+      },
+      {
+        "at": 2569,
+        "elapsed": 693,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3911,
+        "activeTime": 2506.3,
+        "draws": 134
+      },
+      {
+        "at": 2575.2,
+        "elapsed": 699.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3912,
+        "activeTime": 2512.5,
+        "draws": 134
+      },
+      {
+        "at": 2581.2,
+        "elapsed": 705.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3912,
+        "activeTime": 2518.5,
+        "draws": 135
+      },
+      {
+        "at": 2587.3,
+        "elapsed": 711.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3912,
+        "activeTime": 2524.6,
+        "draws": 135
+      },
+      {
+        "at": 2592.6,
+        "elapsed": 716.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3912,
+        "activeTime": 2529.9,
+        "draws": 135
+      },
+      {
+        "at": 2598.8,
+        "elapsed": 722.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3912,
+        "activeTime": 2536.1,
+        "draws": 136
+      },
+      {
+        "at": 2604,
+        "elapsed": 728,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3912,
+        "activeTime": 2541.3,
+        "draws": 136
+      },
+      {
+        "at": 2610.1,
+        "elapsed": 734.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3912,
+        "activeTime": 2547.4,
+        "draws": 136
+      },
+      {
+        "at": 2616.1,
+        "elapsed": 740.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2553.4,
+        "draws": 137
+      },
+      {
+        "at": 2622.1,
+        "elapsed": 746.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2559.4,
+        "draws": 137
+      },
+      {
+        "at": 2628,
+        "elapsed": 752,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2565.3,
+        "draws": 137
+      },
+      {
+        "at": 2634.1,
+        "elapsed": 758.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2571.4,
+        "draws": 138
+      },
+      {
+        "at": 2639.4,
+        "elapsed": 763.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2576.7,
+        "draws": 138
+      },
+      {
+        "at": 2645.6,
+        "elapsed": 769.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2582.9,
+        "draws": 138
+      },
+      {
+        "at": 2650.9,
+        "elapsed": 774.9000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2588.2,
+        "draws": 139
+      },
+      {
+        "at": 2656.4,
+        "elapsed": 780.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2593.7,
+        "draws": 139
+      },
+      {
+        "at": 2661.8,
+        "elapsed": 785.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2599.1,
+        "draws": 139
+      },
+      {
+        "at": 2667.3,
+        "elapsed": 791.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2604.6,
+        "draws": 139
+      },
+      {
+        "at": 2672.5,
+        "elapsed": 796.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3913,
+        "activeTime": 2609.8,
+        "draws": 140
+      },
+      {
+        "at": 2678,
+        "elapsed": 802,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2615.3,
+        "draws": 140
+      },
+      {
+        "at": 2684,
+        "elapsed": 808,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2621.3,
+        "draws": 140
+      },
+      {
+        "at": 2690.1,
+        "elapsed": 814.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2627.4,
+        "draws": 141
+      },
+      {
+        "at": 2696,
+        "elapsed": 820,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2633.3,
+        "draws": 141
+      },
+      {
+        "at": 2701.4,
+        "elapsed": 825.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2638.7,
+        "draws": 141
+      },
+      {
+        "at": 2706.9,
+        "elapsed": 830.9000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2644.2,
+        "draws": 142
+      },
+      {
+        "at": 2712,
+        "elapsed": 836,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2649.3,
+        "draws": 142
+      },
+      {
+        "at": 2717.4,
+        "elapsed": 841.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2654.7,
+        "draws": 142
+      },
+      {
+        "at": 2723,
+        "elapsed": 847,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2660.3,
+        "draws": 142
+      },
+      {
+        "at": 2728.3,
+        "elapsed": 852.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2665.6,
+        "draws": 143
+      },
+      {
+        "at": 2733.5,
+        "elapsed": 857.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2670.8,
+        "draws": 143
+      },
+      {
+        "at": 2739.6,
+        "elapsed": 863.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2676.9,
+        "draws": 143
+      },
+      {
+        "at": 2745.8,
+        "elapsed": 869.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2683.1,
+        "draws": 144
+      },
+      {
+        "at": 2752.1,
+        "elapsed": 876.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2689.4,
+        "draws": 144
+      },
+      {
+        "at": 2757.4,
+        "elapsed": 881.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2694.7,
+        "draws": 144
+      },
+      {
+        "at": 2762.8,
+        "elapsed": 886.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3914,
+        "activeTime": 2700.1,
+        "draws": 145
+      },
+      {
+        "at": 2768.1,
+        "elapsed": 892.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3915,
+        "activeTime": 2705.4,
+        "draws": 145
+      },
+      {
+        "at": 2773.5,
+        "elapsed": 897.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3915,
+        "activeTime": 2710.8,
+        "draws": 145
+      },
+      {
+        "at": 2779.2,
+        "elapsed": 903.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3915,
+        "activeTime": 2716.5,
+        "draws": 145
+      },
+      {
+        "at": 2784.4,
+        "elapsed": 908.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3915,
+        "activeTime": 2721.7,
+        "draws": 146
+      },
+      {
+        "at": 2790.4,
+        "elapsed": 914.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3915,
+        "activeTime": 2727.7,
+        "draws": 146
+      },
+      {
+        "at": 2795.6,
+        "elapsed": 919.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3915,
+        "activeTime": 2732.9,
+        "draws": 146
+      },
+      {
+        "at": 2801.4,
+        "elapsed": 925.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3915,
+        "activeTime": 2738.7,
+        "draws": 147
+      },
+      {
+        "at": 2807.4,
+        "elapsed": 931.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2744.7,
+        "draws": 148
+      },
+      {
+        "at": 2812.7,
+        "elapsed": 936.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2750,
+        "draws": 148
+      },
+      {
+        "at": 2817.8,
+        "elapsed": 941.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2755.1,
+        "draws": 148
+      },
+      {
+        "at": 2823.8,
+        "elapsed": 947.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2761.1,
+        "draws": 148
+      },
+      {
+        "at": 2829,
+        "elapsed": 953,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2766.3,
+        "draws": 149
+      },
+      {
+        "at": 2835.2,
+        "elapsed": 959.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2772.5,
+        "draws": 149
+      },
+      {
+        "at": 2840.4,
+        "elapsed": 964.4000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2777.7,
+        "draws": 149
+      },
+      {
+        "at": 2845.6,
+        "elapsed": 969.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2782.9,
+        "draws": 149
+      },
+      {
+        "at": 2851.6,
+        "elapsed": 975.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2788.9,
+        "draws": 150
+      },
+      {
+        "at": 2857.6,
+        "elapsed": 981.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2794.9,
+        "draws": 150
+      },
+      {
+        "at": 2863.6,
+        "elapsed": 987.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2800.9,
+        "draws": 150
+      },
+      {
+        "at": 2869.6,
+        "elapsed": 993.5999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2806.9,
+        "draws": 151
+      },
+      {
+        "at": 2875.3,
+        "elapsed": 999.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2812.6,
+        "draws": 151
+      },
+      {
+        "at": 2880.8,
+        "elapsed": 1004.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2818.1,
+        "draws": 151
+      },
+      {
+        "at": 2885.9,
+        "elapsed": 1009.9000000000001,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2823.2,
+        "draws": 151
+      },
+      {
+        "at": 2891.2,
+        "elapsed": 1015.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2828.5,
+        "draws": 152
+      },
+      {
+        "at": 2897.1,
+        "elapsed": 1021.0999999999999,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2834.4,
+        "draws": 152
+      },
+      {
+        "at": 2902.3,
+        "elapsed": 1026.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2839.6,
+        "draws": 152
+      },
+      {
+        "at": 2908.4,
+        "elapsed": 1032.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2845.7,
+        "draws": 153
+      },
+      {
+        "at": 2914.9,
+        "elapsed": 1038.9,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2852.2,
+        "draws": 153
+      },
+      {
+        "at": 2920.5,
+        "elapsed": 1044.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2857.8,
+        "draws": 153
+      },
+      {
+        "at": 2925.6,
+        "elapsed": 1049.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2862.9,
+        "draws": 154
+      },
+      {
+        "at": 2930.8,
+        "elapsed": 1054.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2868.1,
+        "draws": 154
+      },
+      {
+        "at": 2936.5,
+        "elapsed": 1060.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2873.8,
+        "draws": 154
+      },
+      {
+        "at": 2941.8,
+        "elapsed": 1065.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2879.1,
+        "draws": 154
+      },
+      {
+        "at": 2947.2,
+        "elapsed": 1071.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2884.5,
+        "draws": 155
+      },
+      {
+        "at": 2953.1,
+        "elapsed": 1077.1,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2890.4,
+        "draws": 155
+      },
+      {
+        "at": 2959.2,
+        "elapsed": 1083.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2896.5,
+        "draws": 155
+      },
+      {
+        "at": 2964.7,
+        "elapsed": 1088.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2902,
+        "draws": 156
+      },
+      {
+        "at": 2970.6,
+        "elapsed": 1094.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2907.9,
+        "draws": 156
+      },
+      {
+        "at": 2976,
+        "elapsed": 1100,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2913.3,
+        "draws": 156
+      },
+      {
+        "at": 2981.5,
+        "elapsed": 1105.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2918.8,
+        "draws": 157
+      },
+      {
+        "at": 2987.6,
+        "elapsed": 1111.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2924.9,
+        "draws": 157
+      },
+      {
+        "at": 2992.9,
+        "elapsed": 1116.9,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2930.2,
+        "draws": 157
+      },
+      {
+        "at": 2998.9,
+        "elapsed": 1122.9,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2936.2,
+        "draws": 158
+      },
+      {
+        "at": 3004.2,
+        "elapsed": 1128.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2941.5,
+        "draws": 158
+      },
+      {
+        "at": 3010,
+        "elapsed": 1134,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2947.3,
+        "draws": 158
+      },
+      {
+        "at": 3015.5,
+        "elapsed": 1139.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2952.8,
+        "draws": 158
+      },
+      {
+        "at": 3021.5,
+        "elapsed": 1145.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2958.8,
+        "draws": 159
+      },
+      {
+        "at": 3027.6,
+        "elapsed": 1151.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2964.9,
+        "draws": 159
+      },
+      {
+        "at": 3033.5,
+        "elapsed": 1157.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2970.8,
+        "draws": 159
+      },
+      {
+        "at": 3039.6,
+        "elapsed": 1163.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2976.9,
+        "draws": 160
+      },
+      {
+        "at": 3044.8,
+        "elapsed": 1168.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2982.1,
+        "draws": 160
+      },
+      {
+        "at": 3050.1,
+        "elapsed": 1174.1,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2987.4,
+        "draws": 160
+      },
+      {
+        "at": 3055.2,
+        "elapsed": 1179.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2992.5,
+        "draws": 160
+      },
+      {
+        "at": 3060.4,
+        "elapsed": 1184.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 2997.7,
+        "draws": 161
+      },
+      {
+        "at": 3065.5,
+        "elapsed": 1189.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3002.8,
+        "draws": 161
+      },
+      {
+        "at": 3071.5,
+        "elapsed": 1195.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3008.8,
+        "draws": 161
+      },
+      {
+        "at": 3077.2,
+        "elapsed": 1201.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3014.5,
+        "draws": 162
+      },
+      {
+        "at": 3082.3,
+        "elapsed": 1206.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3019.6,
+        "draws": 162
+      },
+      {
+        "at": 3087.5,
+        "elapsed": 1211.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3024.8,
+        "draws": 162
+      },
+      {
+        "at": 3093.5,
+        "elapsed": 1217.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3030.8,
+        "draws": 162
+      },
+      {
+        "at": 3098.5,
+        "elapsed": 1222.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3035.8,
+        "draws": 163
+      },
+      {
+        "at": 3104.6,
+        "elapsed": 1228.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3041.9,
+        "draws": 163
+      },
+      {
+        "at": 3109.6,
+        "elapsed": 1233.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3046.9,
+        "draws": 163
+      },
+      {
+        "at": 3115.6,
+        "elapsed": 1239.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3052.9,
+        "draws": 164
+      },
+      {
+        "at": 3121,
+        "elapsed": 1245,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3058.3,
+        "draws": 164
+      },
+      {
+        "at": 3126.5,
+        "elapsed": 1250.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3063.8,
+        "draws": 164
+      },
+      {
+        "at": 3132.6,
+        "elapsed": 1256.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3069.9,
+        "draws": 165
+      },
+      {
+        "at": 3138.5,
+        "elapsed": 1262.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3075.8,
+        "draws": 165
+      },
+      {
+        "at": 3144.6,
+        "elapsed": 1268.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3081.9,
+        "draws": 165
+      },
+      {
+        "at": 3150.6,
+        "elapsed": 1274.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3087.9,
+        "draws": 166
+      },
+      {
+        "at": 3156.3,
+        "elapsed": 1280.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3093.6,
+        "draws": 166
+      },
+      {
+        "at": 3162.4,
+        "elapsed": 1286.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3099.7,
+        "draws": 166
+      },
+      {
+        "at": 3167.6,
+        "elapsed": 1291.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3104.9,
+        "draws": 167
+      },
+      {
+        "at": 3173,
+        "elapsed": 1297,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3110.3,
+        "draws": 167
+      },
+      {
+        "at": 3178.7,
+        "elapsed": 1302.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3116,
+        "draws": 167
+      },
+      {
+        "at": 3184.1,
+        "elapsed": 1308.1,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3121.4,
+        "draws": 167
+      },
+      {
+        "at": 3190.1,
+        "elapsed": 1314.1,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3127.4,
+        "draws": 168
+      },
+      {
+        "at": 3196,
+        "elapsed": 1320,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3133.3,
+        "draws": 168
+      },
+      {
+        "at": 3201.3,
+        "elapsed": 1325.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3138.6,
+        "draws": 168
+      },
+      {
+        "at": 3206.7,
+        "elapsed": 1330.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3144,
+        "draws": 168
+      },
+      {
+        "at": 3212.2,
+        "elapsed": 1336.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3149.5,
+        "draws": 169
+      },
+      {
+        "at": 3218.4,
+        "elapsed": 1342.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3155.7,
+        "draws": 169
+      },
+      {
+        "at": 3223.6,
+        "elapsed": 1347.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3160.9,
+        "draws": 169
+      },
+      {
+        "at": 3229,
+        "elapsed": 1353,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3166.3,
+        "draws": 170
+      },
+      {
+        "at": 3234.3,
+        "elapsed": 1358.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3171.6,
+        "draws": 170
+      },
+      {
+        "at": 3239.5,
+        "elapsed": 1363.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3176.8,
+        "draws": 170
+      },
+      {
+        "at": 3245.8,
+        "elapsed": 1369.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3183.1,
+        "draws": 171
+      },
+      {
+        "at": 3251,
+        "elapsed": 1375,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3188.3,
+        "draws": 171
+      },
+      {
+        "at": 3256.2,
+        "elapsed": 1380.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3193.5,
+        "draws": 171
+      },
+      {
+        "at": 3261.5,
+        "elapsed": 1385.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3198.8,
+        "draws": 171
+      },
+      {
+        "at": 3266.8,
+        "elapsed": 1390.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3204.1,
+        "draws": 172
+      },
+      {
+        "at": 3273,
+        "elapsed": 1397,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3210.3,
+        "draws": 172
+      },
+      {
+        "at": 3278.9,
+        "elapsed": 1402.9,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3216.2,
+        "draws": 172
+      },
+      {
+        "at": 3284.2,
+        "elapsed": 1408.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3221.5,
+        "draws": 173
+      },
+      {
+        "at": 3289.6,
+        "elapsed": 1413.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3226.9,
+        "draws": 173
+      },
+      {
+        "at": 3295.4,
+        "elapsed": 1419.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3232.7,
+        "draws": 173
+      },
+      {
+        "at": 3301.7,
+        "elapsed": 1425.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3239,
+        "draws": 174
+      },
+      {
+        "at": 3307.9,
+        "elapsed": 1431.9,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3245.2,
+        "draws": 174
+      },
+      {
+        "at": 3313.1,
+        "elapsed": 1437.1,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3250.4,
+        "draws": 174
+      },
+      {
+        "at": 3319.2,
+        "elapsed": 1443.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3256.5,
+        "draws": 175
+      },
+      {
+        "at": 3325.6,
+        "elapsed": 1449.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3262.9,
+        "draws": 175
+      },
+      {
+        "at": 3330.7,
+        "elapsed": 1454.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3268,
+        "draws": 175
+      },
+      {
+        "at": 3336,
+        "elapsed": 1460,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3273.3,
+        "draws": 176
+      },
+      {
+        "at": 3342.1,
+        "elapsed": 1466.1,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3279.4,
+        "draws": 176
+      },
+      {
+        "at": 3348.2,
+        "elapsed": 1472.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3285.5,
+        "draws": 176
+      },
+      {
+        "at": 3353.4,
+        "elapsed": 1477.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3290.7,
+        "draws": 177
+      },
+      {
+        "at": 3359.3,
+        "elapsed": 1483.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3296.6,
+        "draws": 177
+      },
+      {
+        "at": 3364.5,
+        "elapsed": 1488.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3301.8,
+        "draws": 177
+      },
+      {
+        "at": 3370.2,
+        "elapsed": 1494.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3307.5,
+        "draws": 178
+      },
+      {
+        "at": 3375.7,
+        "elapsed": 1499.6999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3313,
+        "draws": 178
+      },
+      {
+        "at": 3381.5,
+        "elapsed": 1505.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3318.8,
+        "draws": 178
+      },
+      {
+        "at": 3386.6,
+        "elapsed": 1510.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3323.9,
+        "draws": 178
+      },
+      {
+        "at": 3391.8,
+        "elapsed": 1515.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3329.1,
+        "draws": 179
+      },
+      {
+        "at": 3397.2,
+        "elapsed": 1521.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3334.5,
+        "draws": 179
+      },
+      {
+        "at": 3402.4,
+        "elapsed": 1526.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3339.7,
+        "draws": 179
+      },
+      {
+        "at": 3407.8,
+        "elapsed": 1531.8000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3345.1,
+        "draws": 179
+      },
+      {
+        "at": 3412.9,
+        "elapsed": 1536.9,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3350.2,
+        "draws": 180
+      },
+      {
+        "at": 3419.2,
+        "elapsed": 1543.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3356.5,
+        "draws": 180
+      },
+      {
+        "at": 3425.2,
+        "elapsed": 1549.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3362.5,
+        "draws": 180
+      },
+      {
+        "at": 3430.4,
+        "elapsed": 1554.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3367.7,
+        "draws": 181
+      },
+      {
+        "at": 3436.6,
+        "elapsed": 1560.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3373.9,
+        "draws": 181
+      },
+      {
+        "at": 3441.9,
+        "elapsed": 1565.9,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3379.2,
+        "draws": 181
+      },
+      {
+        "at": 3447.3,
+        "elapsed": 1571.3000000000002,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3384.6,
+        "draws": 182
+      },
+      {
+        "at": 3452.5,
+        "elapsed": 1576.5,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3389.8,
+        "draws": 182
+      },
+      {
+        "at": 3458.4,
+        "elapsed": 1582.4,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3395.7,
+        "draws": 182
+      },
+      {
+        "at": 3463.6,
+        "elapsed": 1587.6,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3400.9,
+        "draws": 182
+      },
+      {
+        "at": 3469.2,
+        "elapsed": 1593.1999999999998,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3406.5,
+        "draws": 183
+      },
+      {
+        "at": 3475,
+        "elapsed": 1599,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3412.3,
+        "draws": 183
+      },
+      {
+        "at": 3481,
+        "elapsed": 1605,
+        "scroll": 1488,
+        "native": 0.391578947368421,
+        "target": 0.3916,
+        "value": 0.3916,
+        "activeTime": 3418.3,
+        "draws": 183
+      }
+    ],
+    "reverse": [
+      {
+        "at": 4362,
+        "elapsed": 3.800000011920929,
+        "scroll": 1368,
+        "native": 0.36,
+        "target": 0.36,
+        "value": 0.3601,
+        "activeTime": 4299.3,
+        "draws": 229
+      },
+      {
+        "at": 4368.1,
+        "elapsed": 9.900000011921293,
+        "scroll": 2088,
+        "native": 0.5494736842105263,
+        "target": 0.5495,
+        "value": 0.3672,
+        "activeTime": 4305.4,
+        "draws": 229
+      },
+      {
+        "at": 4374.1,
+        "elapsed": 15.900000011921293,
+        "scroll": 2088,
+        "native": 0.5494736842105263,
+        "target": 0.5495,
+        "value": 0.3739,
+        "activeTime": 4311.4,
+        "draws": 229
+      },
+      {
+        "at": 4379.3,
+        "elapsed": 21.10000001192111,
+        "scroll": 2088,
+        "native": 0.5494736842105263,
+        "target": 0.5495,
+        "value": 0.3795,
+        "activeTime": 4316.6,
+        "draws": 230
+      },
+      {
+        "at": 4384.6,
+        "elapsed": 26.400000011921293,
+        "scroll": 2088,
+        "native": 0.5494736842105263,
+        "target": 0.5495,
+        "value": 0.3851,
+        "activeTime": 4321.9,
+        "draws": 230
+      },
+      {
+        "at": 4389.9,
+        "elapsed": 31.700000011920565,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3822,
+        "activeTime": 4327.2,
+        "draws": 230
+      },
+      {
+        "at": 4395.3,
+        "elapsed": 37.10000001192111,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3794,
+        "activeTime": 4332.6,
+        "draws": 230
+      },
+      {
+        "at": 4401.5,
+        "elapsed": 43.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3762,
+        "activeTime": 4338.8,
+        "draws": 231
+      },
+      {
+        "at": 4407.5,
+        "elapsed": 49.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3733,
+        "activeTime": 4344.8,
+        "draws": 231
+      },
+      {
+        "at": 4412.5,
+        "elapsed": 54.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.371,
+        "activeTime": 4349.8,
+        "draws": 231
+      },
+      {
+        "at": 4418.6,
+        "elapsed": 60.40000001192129,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3682,
+        "activeTime": 4355.9,
+        "draws": 232
+      },
+      {
+        "at": 4423.9,
+        "elapsed": 65.70000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3659,
+        "activeTime": 4361.2,
+        "draws": 232
+      },
+      {
+        "at": 4429.2,
+        "elapsed": 71.00000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3636,
+        "activeTime": 4366.5,
+        "draws": 232
+      },
+      {
+        "at": 4434.6,
+        "elapsed": 76.40000001192129,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3614,
+        "activeTime": 4371.9,
+        "draws": 232
+      },
+      {
+        "at": 4440,
+        "elapsed": 81.80000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3593,
+        "activeTime": 4377.3,
+        "draws": 233
+      },
+      {
+        "at": 4445.3,
+        "elapsed": 87.10000001192111,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3572,
+        "activeTime": 4382.6,
+        "draws": 233
+      },
+      {
+        "at": 4450.7,
+        "elapsed": 92.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3552,
+        "activeTime": 4388,
+        "draws": 233
+      },
+      {
+        "at": 4456.1,
+        "elapsed": 97.90000001192129,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3533,
+        "activeTime": 4393.4,
+        "draws": 233
+      },
+      {
+        "at": 4461.4,
+        "elapsed": 103.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3514,
+        "activeTime": 4398.7,
+        "draws": 234
+      },
+      {
+        "at": 4466.7,
+        "elapsed": 108.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3497,
+        "activeTime": 4404,
+        "draws": 234
+      },
+      {
+        "at": 4472.8,
+        "elapsed": 114.60000001192111,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3477,
+        "activeTime": 4410.1,
+        "draws": 234
+      },
+      {
+        "at": 4478.8,
+        "elapsed": 120.60000001192111,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3458,
+        "activeTime": 4416.1,
+        "draws": 235
+      },
+      {
+        "at": 4484.2,
+        "elapsed": 126.00000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3442,
+        "activeTime": 4421.5,
+        "draws": 235
+      },
+      {
+        "at": 4490.3,
+        "elapsed": 132.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3424,
+        "activeTime": 4427.6,
+        "draws": 235
+      },
+      {
+        "at": 4495.7,
+        "elapsed": 137.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3409,
+        "activeTime": 4433,
+        "draws": 236
+      },
+      {
+        "at": 4500.9,
+        "elapsed": 142.70000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3395,
+        "activeTime": 4438.2,
+        "draws": 236
+      },
+      {
+        "at": 4506,
+        "elapsed": 147.80000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3382,
+        "activeTime": 4443.3,
+        "draws": 236
+      },
+      {
+        "at": 4511.3,
+        "elapsed": 153.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3368,
+        "activeTime": 4448.6,
+        "draws": 236
+      },
+      {
+        "at": 4516.4,
+        "elapsed": 158.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3356,
+        "activeTime": 4453.7,
+        "draws": 237
+      },
+      {
+        "at": 4522,
+        "elapsed": 163.80000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3342,
+        "activeTime": 4459.3,
+        "draws": 237
+      },
+      {
+        "at": 4527.3,
+        "elapsed": 169.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.333,
+        "activeTime": 4464.6,
+        "draws": 237
+      },
+      {
+        "at": 4533.3,
+        "elapsed": 175.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3317,
+        "activeTime": 4470.6,
+        "draws": 238
+      },
+      {
+        "at": 4539.4,
+        "elapsed": 181.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3304,
+        "activeTime": 4476.7,
+        "draws": 238
+      },
+      {
+        "at": 4544.6,
+        "elapsed": 186.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3293,
+        "activeTime": 4481.9,
+        "draws": 238
+      },
+      {
+        "at": 4549.9,
+        "elapsed": 191.70000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3282,
+        "activeTime": 4487.2,
+        "draws": 238
+      },
+      {
+        "at": 4555.1,
+        "elapsed": 196.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3272,
+        "activeTime": 4492.4,
+        "draws": 239
+      },
+      {
+        "at": 4560.3,
+        "elapsed": 202.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3263,
+        "activeTime": 4497.6,
+        "draws": 239
+      },
+      {
+        "at": 4566.4,
+        "elapsed": 208.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3252,
+        "activeTime": 4503.7,
+        "draws": 239
+      },
+      {
+        "at": 4571.5,
+        "elapsed": 213.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3243,
+        "activeTime": 4508.8,
+        "draws": 239
+      },
+      {
+        "at": 4576.7,
+        "elapsed": 218.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3234,
+        "activeTime": 4514,
+        "draws": 240
+      },
+      {
+        "at": 4583.2,
+        "elapsed": 225.00000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3223,
+        "activeTime": 4520.5,
+        "draws": 240
+      },
+      {
+        "at": 4589.4,
+        "elapsed": 231.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3214,
+        "activeTime": 4526.7,
+        "draws": 240
+      },
+      {
+        "at": 4595.2,
+        "elapsed": 237.00000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3205,
+        "activeTime": 4532.5,
+        "draws": 241
+      },
+      {
+        "at": 4601.3,
+        "elapsed": 243.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3196,
+        "activeTime": 4538.6,
+        "draws": 241
+      },
+      {
+        "at": 4607.4,
+        "elapsed": 249.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3188,
+        "activeTime": 4544.7,
+        "draws": 241
+      },
+      {
+        "at": 4612.5,
+        "elapsed": 254.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3181,
+        "activeTime": 4549.8,
+        "draws": 242
+      },
+      {
+        "at": 4618.6,
+        "elapsed": 260.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3173,
+        "activeTime": 4555.9,
+        "draws": 242
+      },
+      {
+        "at": 4624.7,
+        "elapsed": 266.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3165,
+        "activeTime": 4562,
+        "draws": 242
+      },
+      {
+        "at": 4630.7,
+        "elapsed": 272.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3158,
+        "activeTime": 4568,
+        "draws": 243
+      },
+      {
+        "at": 4636.7,
+        "elapsed": 278.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3151,
+        "activeTime": 4574,
+        "draws": 243
+      },
+      {
+        "at": 4642.7,
+        "elapsed": 284.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3144,
+        "activeTime": 4580,
+        "draws": 243
+      },
+      {
+        "at": 4648.6,
+        "elapsed": 290.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3138,
+        "activeTime": 4585.9,
+        "draws": 244
+      },
+      {
+        "at": 4654.7,
+        "elapsed": 296.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3132,
+        "activeTime": 4592,
+        "draws": 244
+      },
+      {
+        "at": 4661,
+        "elapsed": 302.80000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3125,
+        "activeTime": 4598.3,
+        "draws": 244
+      },
+      {
+        "at": 4667.2,
+        "elapsed": 309.00000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3119,
+        "activeTime": 4604.5,
+        "draws": 245
+      },
+      {
+        "at": 4673.4,
+        "elapsed": 315.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3114,
+        "activeTime": 4610.7,
+        "draws": 245
+      },
+      {
+        "at": 4678.5,
+        "elapsed": 320.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3109,
+        "activeTime": 4615.8,
+        "draws": 245
+      },
+      {
+        "at": 4683.6,
+        "elapsed": 325.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3105,
+        "activeTime": 4620.9,
+        "draws": 245
+      },
+      {
+        "at": 4688.8,
+        "elapsed": 330.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.31,
+        "activeTime": 4626.1,
+        "draws": 246
+      },
+      {
+        "at": 4694.8,
+        "elapsed": 336.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3095,
+        "activeTime": 4632.1,
+        "draws": 246
+      },
+      {
+        "at": 4700,
+        "elapsed": 341.80000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3091,
+        "activeTime": 4637.3,
+        "draws": 246
+      },
+      {
+        "at": 4706.1,
+        "elapsed": 347.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3087,
+        "activeTime": 4643.4,
+        "draws": 247
+      },
+      {
+        "at": 4712,
+        "elapsed": 353.80000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3082,
+        "activeTime": 4649.3,
+        "draws": 247
+      },
+      {
+        "at": 4717.1,
+        "elapsed": 358.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3079,
+        "activeTime": 4654.4,
+        "draws": 247
+      },
+      {
+        "at": 4722.8,
+        "elapsed": 364.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3075,
+        "activeTime": 4660.1,
+        "draws": 248
+      },
+      {
+        "at": 4728.1,
+        "elapsed": 369.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3072,
+        "activeTime": 4665.4,
+        "draws": 248
+      },
+      {
+        "at": 4733.2,
+        "elapsed": 375.00000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3068,
+        "activeTime": 4670.5,
+        "draws": 248
+      },
+      {
+        "at": 4738.3,
+        "elapsed": 380.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3065,
+        "activeTime": 4675.6,
+        "draws": 248
+      },
+      {
+        "at": 4743.4,
+        "elapsed": 385.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3062,
+        "activeTime": 4680.7,
+        "draws": 249
+      },
+      {
+        "at": 4749.5,
+        "elapsed": 391.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3059,
+        "activeTime": 4686.8,
+        "draws": 249
+      },
+      {
+        "at": 4755.6,
+        "elapsed": 397.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3055,
+        "activeTime": 4692.9,
+        "draws": 249
+      },
+      {
+        "at": 4761.6,
+        "elapsed": 403.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3052,
+        "activeTime": 4698.9,
+        "draws": 250
+      },
+      {
+        "at": 4767.6,
+        "elapsed": 409.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3049,
+        "activeTime": 4704.9,
+        "draws": 250
+      },
+      {
+        "at": 4773.7,
+        "elapsed": 415.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3046,
+        "activeTime": 4711,
+        "draws": 250
+      },
+      {
+        "at": 4778.8,
+        "elapsed": 420.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3044,
+        "activeTime": 4716.1,
+        "draws": 251
+      },
+      {
+        "at": 4785.1,
+        "elapsed": 426.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3041,
+        "activeTime": 4722.4,
+        "draws": 251
+      },
+      {
+        "at": 4790.2,
+        "elapsed": 432.00000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3038,
+        "activeTime": 4727.5,
+        "draws": 251
+      },
+      {
+        "at": 4795.3,
+        "elapsed": 437.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3036,
+        "activeTime": 4732.6,
+        "draws": 251
+      },
+      {
+        "at": 4801.4,
+        "elapsed": 443.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3034,
+        "activeTime": 4738.7,
+        "draws": 252
+      },
+      {
+        "at": 4807.4,
+        "elapsed": 449.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3031,
+        "activeTime": 4744.7,
+        "draws": 252
+      },
+      {
+        "at": 4813.4,
+        "elapsed": 455.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3029,
+        "activeTime": 4750.7,
+        "draws": 252
+      },
+      {
+        "at": 4819.5,
+        "elapsed": 461.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3027,
+        "activeTime": 4756.8,
+        "draws": 253
+      },
+      {
+        "at": 4825.7,
+        "elapsed": 467.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3024,
+        "activeTime": 4763,
+        "draws": 253
+      },
+      {
+        "at": 4830.8,
+        "elapsed": 472.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3023,
+        "activeTime": 4768.1,
+        "draws": 253
+      },
+      {
+        "at": 4836,
+        "elapsed": 477.80000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3021,
+        "activeTime": 4773.3,
+        "draws": 253
+      },
+      {
+        "at": 4842.1,
+        "elapsed": 483.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3019,
+        "activeTime": 4779.4,
+        "draws": 254
+      },
+      {
+        "at": 4847.4,
+        "elapsed": 489.20000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3017,
+        "activeTime": 4784.7,
+        "draws": 254
+      },
+      {
+        "at": 4852.5,
+        "elapsed": 494.30000001192093,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3016,
+        "activeTime": 4789.8,
+        "draws": 254
+      },
+      {
+        "at": 4857.6,
+        "elapsed": 499.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3014,
+        "activeTime": 4794.9,
+        "draws": 254
+      },
+      {
+        "at": 4862.9,
+        "elapsed": 504.70000001192057,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3013,
+        "activeTime": 4800.2,
+        "draws": 255
+      },
+      {
+        "at": 4868.7,
+        "elapsed": 510.50000001192075,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3011,
+        "activeTime": 4806,
+        "draws": 255
+      },
+      {
+        "at": 4873.8,
+        "elapsed": 515.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.301,
+        "activeTime": 4811.1,
+        "draws": 255
+      },
+      {
+        "at": 4879.7,
+        "elapsed": 521.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3008,
+        "activeTime": 4817,
+        "draws": 256
+      },
+      {
+        "at": 4885.5,
+        "elapsed": 527.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3007,
+        "activeTime": 4822.8,
+        "draws": 256
+      },
+      {
+        "at": 4891.5,
+        "elapsed": 533.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3006,
+        "activeTime": 4828.8,
+        "draws": 256
+      },
+      {
+        "at": 4897.7,
+        "elapsed": 539.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3004,
+        "activeTime": 4835,
+        "draws": 257
+      },
+      {
+        "at": 4903.8,
+        "elapsed": 545.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3003,
+        "activeTime": 4841.1,
+        "draws": 257
+      },
+      {
+        "at": 4909.8,
+        "elapsed": 551.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3002,
+        "activeTime": 4847.1,
+        "draws": 257
+      },
+      {
+        "at": 4915.8,
+        "elapsed": 557.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.3,
+        "activeTime": 4853.1,
+        "draws": 258
+      },
+      {
+        "at": 4922.2,
+        "elapsed": 564.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2999,
+        "activeTime": 4859.5,
+        "draws": 258
+      },
+      {
+        "at": 4928.2,
+        "elapsed": 570.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2998,
+        "activeTime": 4865.5,
+        "draws": 258
+      },
+      {
+        "at": 4933.7,
+        "elapsed": 575.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2997,
+        "activeTime": 4871,
+        "draws": 259
+      },
+      {
+        "at": 4939,
+        "elapsed": 580.8000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2996,
+        "activeTime": 4876.3,
+        "draws": 259
+      },
+      {
+        "at": 4944.4,
+        "elapsed": 586.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2995,
+        "activeTime": 4881.7,
+        "draws": 259
+      },
+      {
+        "at": 4950.4,
+        "elapsed": 592.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2994,
+        "activeTime": 4887.7,
+        "draws": 260
+      },
+      {
+        "at": 4955.7,
+        "elapsed": 597.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2993,
+        "activeTime": 4893,
+        "draws": 260
+      },
+      {
+        "at": 4961.3,
+        "elapsed": 603.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2992,
+        "activeTime": 4898.6,
+        "draws": 260
+      },
+      {
+        "at": 4966.6,
+        "elapsed": 608.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2992,
+        "activeTime": 4903.9,
+        "draws": 260
+      },
+      {
+        "at": 4972.6,
+        "elapsed": 614.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2991,
+        "activeTime": 4909.9,
+        "draws": 261
+      },
+      {
+        "at": 4978.6,
+        "elapsed": 620.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.299,
+        "activeTime": 4915.9,
+        "draws": 261
+      },
+      {
+        "at": 4984.5,
+        "elapsed": 626.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2989,
+        "activeTime": 4921.8,
+        "draws": 261
+      },
+      {
+        "at": 4990.5,
+        "elapsed": 632.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2988,
+        "activeTime": 4927.8,
+        "draws": 262
+      },
+      {
+        "at": 4996.5,
+        "elapsed": 638.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2988,
+        "activeTime": 4933.8,
+        "draws": 262
+      },
+      {
+        "at": 5001.6,
+        "elapsed": 643.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2987,
+        "activeTime": 4938.9,
+        "draws": 262
+      },
+      {
+        "at": 5006.7,
+        "elapsed": 648.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2986,
+        "activeTime": 4944,
+        "draws": 262
+      },
+      {
+        "at": 5012,
+        "elapsed": 653.8000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2986,
+        "activeTime": 4949.3,
+        "draws": 263
+      },
+      {
+        "at": 5017.9,
+        "elapsed": 659.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2985,
+        "activeTime": 4955.2,
+        "draws": 263
+      },
+      {
+        "at": 5023.9,
+        "elapsed": 665.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2985,
+        "activeTime": 4961.2,
+        "draws": 263
+      },
+      {
+        "at": 5030,
+        "elapsed": 671.8000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2984,
+        "activeTime": 4967.3,
+        "draws": 264
+      },
+      {
+        "at": 5036.2,
+        "elapsed": 678.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2983,
+        "activeTime": 4973.5,
+        "draws": 264
+      },
+      {
+        "at": 5041.4,
+        "elapsed": 683.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2983,
+        "activeTime": 4978.7,
+        "draws": 264
+      },
+      {
+        "at": 5047.1,
+        "elapsed": 688.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2982,
+        "activeTime": 4984.4,
+        "draws": 265
+      },
+      {
+        "at": 5052.4,
+        "elapsed": 694.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2982,
+        "activeTime": 4989.7,
+        "draws": 265
+      },
+      {
+        "at": 5057.6,
+        "elapsed": 699.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2982,
+        "activeTime": 4994.9,
+        "draws": 265
+      },
+      {
+        "at": 5062.7,
+        "elapsed": 704.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2981,
+        "activeTime": 5000,
+        "draws": 265
+      },
+      {
+        "at": 5067.9,
+        "elapsed": 709.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2981,
+        "activeTime": 5005.2,
+        "draws": 266
+      },
+      {
+        "at": 5073.1,
+        "elapsed": 714.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.298,
+        "activeTime": 5010.4,
+        "draws": 266
+      },
+      {
+        "at": 5078.4,
+        "elapsed": 720.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.298,
+        "activeTime": 5015.7,
+        "draws": 266
+      },
+      {
+        "at": 5084.8,
+        "elapsed": 726.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.298,
+        "activeTime": 5022.1,
+        "draws": 267
+      },
+      {
+        "at": 5090.8,
+        "elapsed": 732.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2979,
+        "activeTime": 5028.1,
+        "draws": 267
+      },
+      {
+        "at": 5096.1,
+        "elapsed": 737.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2979,
+        "activeTime": 5033.4,
+        "draws": 267
+      },
+      {
+        "at": 5102.3,
+        "elapsed": 744.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2978,
+        "activeTime": 5039.6,
+        "draws": 268
+      },
+      {
+        "at": 5107.4,
+        "elapsed": 749.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2978,
+        "activeTime": 5044.7,
+        "draws": 268
+      },
+      {
+        "at": 5112.7,
+        "elapsed": 754.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2978,
+        "activeTime": 5050,
+        "draws": 268
+      },
+      {
+        "at": 5118,
+        "elapsed": 759.8000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2977,
+        "activeTime": 5055.3,
+        "draws": 268
+      },
+      {
+        "at": 5123.3,
+        "elapsed": 765.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2977,
+        "activeTime": 5060.6,
+        "draws": 269
+      },
+      {
+        "at": 5129.6,
+        "elapsed": 771.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2977,
+        "activeTime": 5066.9,
+        "draws": 269
+      },
+      {
+        "at": 5134.6,
+        "elapsed": 776.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2977,
+        "activeTime": 5071.9,
+        "draws": 269
+      },
+      {
+        "at": 5139.8,
+        "elapsed": 781.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2976,
+        "activeTime": 5077.1,
+        "draws": 269
+      },
+      {
+        "at": 5145.8,
+        "elapsed": 787.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2976,
+        "activeTime": 5083.1,
+        "draws": 270
+      },
+      {
+        "at": 5151.8,
+        "elapsed": 793.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2976,
+        "activeTime": 5089.1,
+        "draws": 270
+      },
+      {
+        "at": 5157.8,
+        "elapsed": 799.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2975,
+        "activeTime": 5095.1,
+        "draws": 270
+      },
+      {
+        "at": 5163.3,
+        "elapsed": 805.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2975,
+        "activeTime": 5100.6,
+        "draws": 271
+      },
+      {
+        "at": 5169.4,
+        "elapsed": 811.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2975,
+        "activeTime": 5106.7,
+        "draws": 271
+      },
+      {
+        "at": 5174.6,
+        "elapsed": 816.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2975,
+        "activeTime": 5111.9,
+        "draws": 271
+      },
+      {
+        "at": 5179.6,
+        "elapsed": 821.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2975,
+        "activeTime": 5116.9,
+        "draws": 271
+      },
+      {
+        "at": 5184.8,
+        "elapsed": 826.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2974,
+        "activeTime": 5122.1,
+        "draws": 272
+      },
+      {
+        "at": 5190.5,
+        "elapsed": 832.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2974,
+        "activeTime": 5127.8,
+        "draws": 272
+      },
+      {
+        "at": 5196.3,
+        "elapsed": 838.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2974,
+        "activeTime": 5133.6,
+        "draws": 272
+      },
+      {
+        "at": 5201.5,
+        "elapsed": 843.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2974,
+        "activeTime": 5138.8,
+        "draws": 273
+      },
+      {
+        "at": 5207.5,
+        "elapsed": 849.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2974,
+        "activeTime": 5144.8,
+        "draws": 273
+      },
+      {
+        "at": 5212.8,
+        "elapsed": 854.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2973,
+        "activeTime": 5150.1,
+        "draws": 273
+      },
+      {
+        "at": 5218.1,
+        "elapsed": 859.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2973,
+        "activeTime": 5155.4,
+        "draws": 273
+      },
+      {
+        "at": 5223.2,
+        "elapsed": 865.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2973,
+        "activeTime": 5160.5,
+        "draws": 274
+      },
+      {
+        "at": 5228.3,
+        "elapsed": 870.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2973,
+        "activeTime": 5165.6,
+        "draws": 274
+      },
+      {
+        "at": 5233.5,
+        "elapsed": 875.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2973,
+        "activeTime": 5170.8,
+        "draws": 274
+      },
+      {
+        "at": 5238.7,
+        "elapsed": 880.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2973,
+        "activeTime": 5176,
+        "draws": 274
+      },
+      {
+        "at": 5243.9,
+        "elapsed": 885.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2973,
+        "activeTime": 5181.2,
+        "draws": 275
+      },
+      {
+        "at": 5249.1,
+        "elapsed": 890.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5186.4,
+        "draws": 275
+      },
+      {
+        "at": 5254.4,
+        "elapsed": 896.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5191.7,
+        "draws": 275
+      },
+      {
+        "at": 5259.6,
+        "elapsed": 901.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5196.9,
+        "draws": 275
+      },
+      {
+        "at": 5264.9,
+        "elapsed": 906.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5202.2,
+        "draws": 276
+      },
+      {
+        "at": 5270.1,
+        "elapsed": 911.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5207.4,
+        "draws": 276
+      },
+      {
+        "at": 5275.2,
+        "elapsed": 917.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5212.5,
+        "draws": 276
+      },
+      {
+        "at": 5281.5,
+        "elapsed": 923.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5218.8,
+        "draws": 276
+      },
+      {
+        "at": 5287.1,
+        "elapsed": 928.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2972,
+        "activeTime": 5224.4,
+        "draws": 277
+      },
+      {
+        "at": 5293.3,
+        "elapsed": 935.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5230.6,
+        "draws": 277
+      },
+      {
+        "at": 5298.4,
+        "elapsed": 940.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5235.7,
+        "draws": 277
+      },
+      {
+        "at": 5304.5,
+        "elapsed": 946.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5241.8,
+        "draws": 278
+      },
+      {
+        "at": 5310.5,
+        "elapsed": 952.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5247.8,
+        "draws": 278
+      },
+      {
+        "at": 5316.3,
+        "elapsed": 958.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5253.6,
+        "draws": 278
+      },
+      {
+        "at": 5321.6,
+        "elapsed": 963.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5258.9,
+        "draws": 279
+      },
+      {
+        "at": 5327.2,
+        "elapsed": 969.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5264.5,
+        "draws": 279
+      },
+      {
+        "at": 5332.3,
+        "elapsed": 974.1000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5269.6,
+        "draws": 279
+      },
+      {
+        "at": 5337.6,
+        "elapsed": 979.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5274.9,
+        "draws": 279
+      },
+      {
+        "at": 5343.4,
+        "elapsed": 985.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5280.7,
+        "draws": 280
+      },
+      {
+        "at": 5348.5,
+        "elapsed": 990.3000000119209,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2971,
+        "activeTime": 5285.8,
+        "draws": 280
+      },
+      {
+        "at": 5353.7,
+        "elapsed": 995.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5291,
+        "draws": 280
+      },
+      {
+        "at": 5359.2,
+        "elapsed": 1001.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5296.5,
+        "draws": 280
+      },
+      {
+        "at": 5364.8,
+        "elapsed": 1006.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5302.1,
+        "draws": 281
+      },
+      {
+        "at": 5370.1,
+        "elapsed": 1011.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5307.4,
+        "draws": 281
+      },
+      {
+        "at": 5375.8,
+        "elapsed": 1017.6000000119211,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5313.1,
+        "draws": 281
+      },
+      {
+        "at": 5381.1,
+        "elapsed": 1022.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5318.4,
+        "draws": 281
+      },
+      {
+        "at": 5386.7,
+        "elapsed": 1028.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5324,
+        "draws": 282
+      },
+      {
+        "at": 5392,
+        "elapsed": 1033.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5329.3,
+        "draws": 282
+      },
+      {
+        "at": 5397.3,
+        "elapsed": 1039.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5334.6,
+        "draws": 282
+      },
+      {
+        "at": 5402.6,
+        "elapsed": 1044.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5339.9,
+        "draws": 282
+      },
+      {
+        "at": 5407.7,
+        "elapsed": 1049.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5345,
+        "draws": 283
+      },
+      {
+        "at": 5413.3,
+        "elapsed": 1055.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5350.6,
+        "draws": 283
+      },
+      {
+        "at": 5419.5,
+        "elapsed": 1061.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5356.8,
+        "draws": 283
+      },
+      {
+        "at": 5425.2,
+        "elapsed": 1067.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5362.5,
+        "draws": 284
+      },
+      {
+        "at": 5431.4,
+        "elapsed": 1073.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5368.7,
+        "draws": 284
+      },
+      {
+        "at": 5436.6,
+        "elapsed": 1078.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5373.9,
+        "draws": 284
+      },
+      {
+        "at": 5441.7,
+        "elapsed": 1083.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5379,
+        "draws": 284
+      },
+      {
+        "at": 5446.8,
+        "elapsed": 1088.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5384.1,
+        "draws": 285
+      },
+      {
+        "at": 5452.8,
+        "elapsed": 1094.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.297,
+        "activeTime": 5390.1,
+        "draws": 285
+      },
+      {
+        "at": 5458.1,
+        "elapsed": 1099.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2969,
+        "activeTime": 5395.4,
+        "draws": 285
+      },
+      {
+        "at": 5463.2,
+        "elapsed": 1105.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2969,
+        "activeTime": 5400.5,
+        "draws": 285
+      },
+      {
+        "at": 5468.4,
+        "elapsed": 1110.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2969,
+        "activeTime": 5405.7,
+        "draws": 286
+      },
+      {
+        "at": 5474.4,
+        "elapsed": 1116.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5411.7,
+        "draws": 287
+      },
+      {
+        "at": 5480.4,
+        "elapsed": 1122.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5417.7,
+        "draws": 287
+      },
+      {
+        "at": 5485.9,
+        "elapsed": 1127.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5423.2,
+        "draws": 287
+      },
+      {
+        "at": 5491.3,
+        "elapsed": 1133.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5428.6,
+        "draws": 288
+      },
+      {
+        "at": 5496.9,
+        "elapsed": 1138.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5434.2,
+        "draws": 288
+      },
+      {
+        "at": 5503.1,
+        "elapsed": 1144.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5440.4,
+        "draws": 288
+      },
+      {
+        "at": 5509,
+        "elapsed": 1150.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5446.3,
+        "draws": 289
+      },
+      {
+        "at": 5515.1,
+        "elapsed": 1156.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5452.4,
+        "draws": 289
+      },
+      {
+        "at": 5520.3,
+        "elapsed": 1162.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5457.6,
+        "draws": 289
+      },
+      {
+        "at": 5525.9,
+        "elapsed": 1167.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5463.2,
+        "draws": 290
+      },
+      {
+        "at": 5531,
+        "elapsed": 1172.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5468.3,
+        "draws": 290
+      },
+      {
+        "at": 5536.3,
+        "elapsed": 1178.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5473.6,
+        "draws": 290
+      },
+      {
+        "at": 5541.5,
+        "elapsed": 1183.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5478.8,
+        "draws": 290
+      },
+      {
+        "at": 5547.7,
+        "elapsed": 1189.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5485,
+        "draws": 291
+      },
+      {
+        "at": 5553.1,
+        "elapsed": 1194.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5490.4,
+        "draws": 291
+      },
+      {
+        "at": 5558.3,
+        "elapsed": 1200.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5495.6,
+        "draws": 291
+      },
+      {
+        "at": 5564.5,
+        "elapsed": 1206.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5501.8,
+        "draws": 292
+      },
+      {
+        "at": 5570.7,
+        "elapsed": 1212.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5508,
+        "draws": 292
+      },
+      {
+        "at": 5576,
+        "elapsed": 1217.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5513.3,
+        "draws": 292
+      },
+      {
+        "at": 5582,
+        "elapsed": 1223.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5519.3,
+        "draws": 293
+      },
+      {
+        "at": 5587.5,
+        "elapsed": 1229.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5524.8,
+        "draws": 293
+      },
+      {
+        "at": 5593.5,
+        "elapsed": 1235.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5530.8,
+        "draws": 293
+      },
+      {
+        "at": 5598.7,
+        "elapsed": 1240.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5536,
+        "draws": 294
+      },
+      {
+        "at": 5604.8,
+        "elapsed": 1246.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5542.1,
+        "draws": 294
+      },
+      {
+        "at": 5610.1,
+        "elapsed": 1251.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5547.4,
+        "draws": 294
+      },
+      {
+        "at": 5615.8,
+        "elapsed": 1257.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5553.1,
+        "draws": 295
+      },
+      {
+        "at": 5621.3,
+        "elapsed": 1263.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5558.6,
+        "draws": 295
+      },
+      {
+        "at": 5626.5,
+        "elapsed": 1268.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5563.8,
+        "draws": 295
+      },
+      {
+        "at": 5631.9,
+        "elapsed": 1273.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5569.2,
+        "draws": 295
+      },
+      {
+        "at": 5637.7,
+        "elapsed": 1279.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5575,
+        "draws": 296
+      },
+      {
+        "at": 5643.2,
+        "elapsed": 1285.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5580.5,
+        "draws": 296
+      },
+      {
+        "at": 5648.5,
+        "elapsed": 1290.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5585.8,
+        "draws": 296
+      },
+      {
+        "at": 5654.7,
+        "elapsed": 1296.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5592,
+        "draws": 297
+      },
+      {
+        "at": 5660.5,
+        "elapsed": 1302.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5597.8,
+        "draws": 297
+      },
+      {
+        "at": 5665.6,
+        "elapsed": 1307.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5602.9,
+        "draws": 297
+      },
+      {
+        "at": 5671.6,
+        "elapsed": 1313.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5608.9,
+        "draws": 298
+      },
+      {
+        "at": 5676.7,
+        "elapsed": 1318.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5614,
+        "draws": 298
+      },
+      {
+        "at": 5682.9,
+        "elapsed": 1324.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5620.2,
+        "draws": 298
+      },
+      {
+        "at": 5688.1,
+        "elapsed": 1329.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5625.4,
+        "draws": 298
+      },
+      {
+        "at": 5693.4,
+        "elapsed": 1335.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5630.7,
+        "draws": 299
+      },
+      {
+        "at": 5698.7,
+        "elapsed": 1340.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5636,
+        "draws": 299
+      },
+      {
+        "at": 5704.9,
+        "elapsed": 1346.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5642.2,
+        "draws": 299
+      },
+      {
+        "at": 5710.7,
+        "elapsed": 1352.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5648,
+        "draws": 300
+      },
+      {
+        "at": 5716.7,
+        "elapsed": 1358.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5654,
+        "draws": 300
+      },
+      {
+        "at": 5721.8,
+        "elapsed": 1363.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5659.1,
+        "draws": 300
+      },
+      {
+        "at": 5727.2,
+        "elapsed": 1369.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5664.5,
+        "draws": 300
+      },
+      {
+        "at": 5732.4,
+        "elapsed": 1374.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5669.7,
+        "draws": 301
+      },
+      {
+        "at": 5738.4,
+        "elapsed": 1380.2000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5675.7,
+        "draws": 301
+      },
+      {
+        "at": 5743.7,
+        "elapsed": 1385.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5681,
+        "draws": 301
+      },
+      {
+        "at": 5750,
+        "elapsed": 1391.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5687.3,
+        "draws": 302
+      },
+      {
+        "at": 5756.2,
+        "elapsed": 1398.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5693.5,
+        "draws": 302
+      },
+      {
+        "at": 5761.8,
+        "elapsed": 1403.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5699.1,
+        "draws": 302
+      },
+      {
+        "at": 5767.7,
+        "elapsed": 1409.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5705,
+        "draws": 303
+      },
+      {
+        "at": 5773.7,
+        "elapsed": 1415.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5711,
+        "draws": 303
+      },
+      {
+        "at": 5779.7,
+        "elapsed": 1421.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5717,
+        "draws": 303
+      },
+      {
+        "at": 5785.8,
+        "elapsed": 1427.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5723.1,
+        "draws": 304
+      },
+      {
+        "at": 5791.6,
+        "elapsed": 1433.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5728.9,
+        "draws": 304
+      },
+      {
+        "at": 5796.8,
+        "elapsed": 1438.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5734.1,
+        "draws": 304
+      },
+      {
+        "at": 5803,
+        "elapsed": 1444.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5740.3,
+        "draws": 305
+      },
+      {
+        "at": 5808.1,
+        "elapsed": 1449.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5745.4,
+        "draws": 305
+      },
+      {
+        "at": 5814.1,
+        "elapsed": 1455.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5751.4,
+        "draws": 305
+      },
+      {
+        "at": 5820.2,
+        "elapsed": 1462.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5757.5,
+        "draws": 306
+      },
+      {
+        "at": 5826.2,
+        "elapsed": 1468.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5763.5,
+        "draws": 306
+      },
+      {
+        "at": 5832.2,
+        "elapsed": 1474.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5769.5,
+        "draws": 306
+      },
+      {
+        "at": 5837.8,
+        "elapsed": 1479.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5775.1,
+        "draws": 307
+      },
+      {
+        "at": 5843.2,
+        "elapsed": 1485.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5780.5,
+        "draws": 307
+      },
+      {
+        "at": 5848.7,
+        "elapsed": 1490.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5786,
+        "draws": 307
+      },
+      {
+        "at": 5854.2,
+        "elapsed": 1496.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5791.5,
+        "draws": 307
+      },
+      {
+        "at": 5859.7,
+        "elapsed": 1501.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5797,
+        "draws": 308
+      },
+      {
+        "at": 5865.6,
+        "elapsed": 1507.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5802.9,
+        "draws": 308
+      },
+      {
+        "at": 5870.9,
+        "elapsed": 1512.7000000119206,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5808.2,
+        "draws": 308
+      },
+      {
+        "at": 5876.2,
+        "elapsed": 1518.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5813.5,
+        "draws": 308
+      },
+      {
+        "at": 5881.6,
+        "elapsed": 1523.4000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5818.9,
+        "draws": 309
+      },
+      {
+        "at": 5886.8,
+        "elapsed": 1528.600000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5824.1,
+        "draws": 309
+      },
+      {
+        "at": 5892.3,
+        "elapsed": 1534.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5829.6,
+        "draws": 309
+      },
+      {
+        "at": 5897.5,
+        "elapsed": 1539.300000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5834.8,
+        "draws": 309
+      },
+      {
+        "at": 5902.7,
+        "elapsed": 1544.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5840,
+        "draws": 310
+      },
+      {
+        "at": 5909.2,
+        "elapsed": 1551.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5846.5,
+        "draws": 310
+      },
+      {
+        "at": 5914.3,
+        "elapsed": 1556.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5851.6,
+        "draws": 310
+      },
+      {
+        "at": 5919.7,
+        "elapsed": 1561.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5857,
+        "draws": 311
+      },
+      {
+        "at": 5925.1,
+        "elapsed": 1566.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5862.4,
+        "draws": 311
+      },
+      {
+        "at": 5931.3,
+        "elapsed": 1573.100000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5868.6,
+        "draws": 311
+      },
+      {
+        "at": 5937.1,
+        "elapsed": 1578.9000000119213,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5874.4,
+        "draws": 312
+      },
+      {
+        "at": 5943.2,
+        "elapsed": 1585.0000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5880.5,
+        "draws": 312
+      },
+      {
+        "at": 5949,
+        "elapsed": 1590.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5886.3,
+        "draws": 312
+      },
+      {
+        "at": 5954,
+        "elapsed": 1595.800000011921,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5891.3,
+        "draws": 313
+      },
+      {
+        "at": 5960.7,
+        "elapsed": 1602.5000000119207,
+        "scroll": 1128,
+        "native": 0.2968421052631579,
+        "target": 0.2968,
+        "value": 0.2968,
+        "activeTime": 5898,
+        "draws": 313
+      }
+    ],
+    "reverseIssuedAt": 4376.800000011921,
+    "navigation": [
+      {
+        "boundary": 0.24,
+        "pair": [
+          {
+            "progress": 0.2396,
+            "background": "rgb(250, 249, 246)",
+            "image": "none"
+          },
+          {
+            "progress": 0.2404,
+            "background": "rgb(250, 249, 246)",
+            "image": "none"
+          }
+        ]
+      },
+      {
+        "boundary": 0.56,
+        "pair": [
+          {
+            "progress": 0.5594,
+            "background": "rgb(250, 249, 246)",
+            "image": "none"
+          },
+          {
+            "progress": 0.5604,
+            "background": "rgb(250, 249, 246)",
+            "image": "none"
+          }
+        ]
+      },
+      {
+        "boundary": 0.9,
+        "pair": [
+          {
+            "progress": 0.8994,
+            "background": "rgb(250, 249, 246)",
+            "image": "none"
+          },
+          {
+            "progress": 0.9004,
+            "background": "rgb(250, 249, 246)",
+            "image": "none"
+          }
+        ]
+      }
+    ],
+    "depth": {
+      "perspective": "1400px",
+      "transform": "matrix3d(1.01835, -9.38833e-06, 0.00161118, 0, 0, 1.01833, 0.0059338, 0, -0.00158218, -0.00582688, 0.999982, 0, -6.51919, -4.45144, 52.3599, 1)",
+      "is2D": false
+    },
+    "canvas": {
+      "space": "perspective-3d",
+      "nonempty": 17006,
+      "width": 1440,
+      "height": 1000
+    },
+    "clockBudget": [
+      {
+        "at": 12876.2,
+        "elapsed": -3.9000000238411303,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12813.5,
+        "draws": 529
+      },
+      {
+        "at": 12881.3,
+        "elapsed": 1.1999999761574145,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12818.6,
+        "draws": 530
+      },
+      {
+        "at": 12887.4,
+        "elapsed": 7.299999976157778,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12824.7,
+        "draws": 530
+      },
+      {
+        "at": 12892.6,
+        "elapsed": 12.499999976158506,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12829.9,
+        "draws": 530
+      },
+      {
+        "at": 12898.3,
+        "elapsed": 18.199999976157414,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12835.6,
+        "draws": 531
+      },
+      {
+        "at": 12903.6,
+        "elapsed": 23.499999976158506,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12840.9,
+        "draws": 531
+      },
+      {
+        "at": 12908.8,
+        "elapsed": 28.699999976157414,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12846.1,
+        "draws": 531
+      },
+      {
+        "at": 12914.7,
+        "elapsed": 34.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1001,
+        "activeTime": 12852,
+        "draws": 531
+      },
+      {
+        "at": 12920.3,
+        "elapsed": 40.199999976157414,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12857.6,
+        "draws": 532
+      },
+      {
+        "at": 12926.2,
+        "elapsed": 46.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12863.5,
+        "draws": 532
+      },
+      {
+        "at": 12932.3,
+        "elapsed": 52.199999976157414,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12869.6,
+        "draws": 532
+      },
+      {
+        "at": 12937.5,
+        "elapsed": 57.39999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12874.8,
+        "draws": 533
+      },
+      {
+        "at": 12942.6,
+        "elapsed": 62.499999976158506,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12879.9,
+        "draws": 533
+      },
+      {
+        "at": 12947.9,
+        "elapsed": 67.79999997615778,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12885.2,
+        "draws": 533
+      },
+      {
+        "at": 12954,
+        "elapsed": 73.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12891.3,
+        "draws": 533
+      },
+      {
+        "at": 12961.6,
+        "elapsed": 81.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12898.9,
+        "draws": 534
+      },
+      {
+        "at": 12967.5,
+        "elapsed": 87.39999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12904.8,
+        "draws": 534
+      },
+      {
+        "at": 12974.2,
+        "elapsed": 94.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12911.5,
+        "draws": 534
+      },
+      {
+        "at": 12980.2,
+        "elapsed": 100.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12917.5,
+        "draws": 535
+      },
+      {
+        "at": 12985.8,
+        "elapsed": 105.69999997615741,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12923.1,
+        "draws": 535
+      },
+      {
+        "at": 12992,
+        "elapsed": 111.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12929.3,
+        "draws": 535
+      },
+      {
+        "at": 12997.1,
+        "elapsed": 116.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12934.4,
+        "draws": 536
+      },
+      {
+        "at": 13003.2,
+        "elapsed": 123.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12940.5,
+        "draws": 536
+      },
+      {
+        "at": 13008.2,
+        "elapsed": 128.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12945.5,
+        "draws": 536
+      },
+      {
+        "at": 13014.3,
+        "elapsed": 134.19999997615741,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12951.6,
+        "draws": 537
+      },
+      {
+        "at": 13019.7,
+        "elapsed": 139.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12957,
+        "draws": 537
+      },
+      {
+        "at": 13025.7,
+        "elapsed": 145.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12963,
+        "draws": 537
+      },
+      {
+        "at": 13031.8,
+        "elapsed": 151.69999997615741,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12969.1,
+        "draws": 538
+      },
+      {
+        "at": 13037.6,
+        "elapsed": 157.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12974.9,
+        "draws": 538
+      },
+      {
+        "at": 13043.7,
+        "elapsed": 163.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12981,
+        "draws": 538
+      },
+      {
+        "at": 13049.9,
+        "elapsed": 169.79999997615778,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12987.2,
+        "draws": 539
+      },
+      {
+        "at": 13055.2,
+        "elapsed": 175.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12992.5,
+        "draws": 539
+      },
+      {
+        "at": 13060.4,
+        "elapsed": 180.29999997615778,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 12997.7,
+        "draws": 539
+      },
+      {
+        "at": 13066,
+        "elapsed": 185.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13003.3,
+        "draws": 539
+      },
+      {
+        "at": 13071.2,
+        "elapsed": 191.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13008.5,
+        "draws": 540
+      },
+      {
+        "at": 13077.4,
+        "elapsed": 197.29999997615778,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13014.7,
+        "draws": 540
+      },
+      {
+        "at": 13083.7,
+        "elapsed": 203.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13021,
+        "draws": 540
+      },
+      {
+        "at": 13089.6,
+        "elapsed": 209.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13026.9,
+        "draws": 541
+      },
+      {
+        "at": 13095.7,
+        "elapsed": 215.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13033,
+        "draws": 541
+      },
+      {
+        "at": 13102,
+        "elapsed": 221.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13039.3,
+        "draws": 541
+      },
+      {
+        "at": 13107.6,
+        "elapsed": 227.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13044.9,
+        "draws": 542
+      },
+      {
+        "at": 13113.4,
+        "elapsed": 233.29999997615778,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13050.7,
+        "draws": 542
+      },
+      {
+        "at": 13119.1,
+        "elapsed": 238.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13056.4,
+        "draws": 542
+      },
+      {
+        "at": 13124.3,
+        "elapsed": 244.19999997615741,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13061.6,
+        "draws": 543
+      },
+      {
+        "at": 13129.5,
+        "elapsed": 249.39999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13066.8,
+        "draws": 543
+      },
+      {
+        "at": 13135.5,
+        "elapsed": 255.39999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13072.8,
+        "draws": 543
+      },
+      {
+        "at": 13141.5,
+        "elapsed": 261.39999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13078.8,
+        "draws": 544
+      },
+      {
+        "at": 13147.6,
+        "elapsed": 267.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13084.9,
+        "draws": 544
+      },
+      {
+        "at": 13152.8,
+        "elapsed": 272.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13090.1,
+        "draws": 544
+      },
+      {
+        "at": 13158.1,
+        "elapsed": 277.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13095.4,
+        "draws": 544
+      },
+      {
+        "at": 13163.6,
+        "elapsed": 283.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13100.9,
+        "draws": 545
+      },
+      {
+        "at": 13168.8,
+        "elapsed": 288.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13106.1,
+        "draws": 545
+      },
+      {
+        "at": 13174.7,
+        "elapsed": 294.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13112,
+        "draws": 545
+      },
+      {
+        "at": 13180.4,
+        "elapsed": 300.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13117.7,
+        "draws": 546
+      },
+      {
+        "at": 13186.1,
+        "elapsed": 305.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13123.4,
+        "draws": 546
+      },
+      {
+        "at": 13192.8,
+        "elapsed": 312.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13130.1,
+        "draws": 546
+      },
+      {
+        "at": 13198.3,
+        "elapsed": 318.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13135.6,
+        "draws": 547
+      },
+      {
+        "at": 13204,
+        "elapsed": 323.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13141.3,
+        "draws": 547
+      },
+      {
+        "at": 13209.4,
+        "elapsed": 329.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13146.7,
+        "draws": 547
+      },
+      {
+        "at": 13215.4,
+        "elapsed": 335.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13152.7,
+        "draws": 548
+      },
+      {
+        "at": 13220.7,
+        "elapsed": 340.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13158,
+        "draws": 548
+      },
+      {
+        "at": 13226.8,
+        "elapsed": 346.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13164.1,
+        "draws": 548
+      },
+      {
+        "at": 13232,
+        "elapsed": 351.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13169.3,
+        "draws": 548
+      },
+      {
+        "at": 13237.2,
+        "elapsed": 357.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13174.5,
+        "draws": 549
+      },
+      {
+        "at": 13243,
+        "elapsed": 362.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13180.3,
+        "draws": 549
+      },
+      {
+        "at": 13249.1,
+        "elapsed": 368.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13186.4,
+        "draws": 549
+      },
+      {
+        "at": 13255.1,
+        "elapsed": 374.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13192.4,
+        "draws": 550
+      },
+      {
+        "at": 13261.1,
+        "elapsed": 380.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13198.4,
+        "draws": 550
+      },
+      {
+        "at": 13267.2,
+        "elapsed": 387.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13204.5,
+        "draws": 550
+      },
+      {
+        "at": 13273.6,
+        "elapsed": 393.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13210.9,
+        "draws": 551
+      },
+      {
+        "at": 13279.8,
+        "elapsed": 399.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13217.1,
+        "draws": 551
+      },
+      {
+        "at": 13285.1,
+        "elapsed": 404.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13222.4,
+        "draws": 551
+      },
+      {
+        "at": 13291.4,
+        "elapsed": 411.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13228.7,
+        "draws": 552
+      },
+      {
+        "at": 13297.5,
+        "elapsed": 417.39999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13234.8,
+        "draws": 552
+      },
+      {
+        "at": 13303.7,
+        "elapsed": 423.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13241,
+        "draws": 552
+      },
+      {
+        "at": 13309.9,
+        "elapsed": 429.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13247.2,
+        "draws": 553
+      },
+      {
+        "at": 13316,
+        "elapsed": 435.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13253.3,
+        "draws": 553
+      },
+      {
+        "at": 13321.7,
+        "elapsed": 441.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13259,
+        "draws": 553
+      },
+      {
+        "at": 13326.9,
+        "elapsed": 446.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13264.2,
+        "draws": 554
+      },
+      {
+        "at": 13332.1,
+        "elapsed": 451.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13269.4,
+        "draws": 554
+      },
+      {
+        "at": 13337.2,
+        "elapsed": 457.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13274.5,
+        "draws": 554
+      },
+      {
+        "at": 13343.3,
+        "elapsed": 463.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13280.6,
+        "draws": 554
+      },
+      {
+        "at": 13349.2,
+        "elapsed": 469.09999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13286.5,
+        "draws": 555
+      },
+      {
+        "at": 13354.4,
+        "elapsed": 474.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13291.7,
+        "draws": 555
+      },
+      {
+        "at": 13359.7,
+        "elapsed": 479.59999997615887,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13297,
+        "draws": 555
+      },
+      {
+        "at": 13364.9,
+        "elapsed": 484.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13302.2,
+        "draws": 555
+      },
+      {
+        "at": 13371,
+        "elapsed": 490.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13308.3,
+        "draws": 556
+      },
+      {
+        "at": 13376.6,
+        "elapsed": 496.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13313.9,
+        "draws": 556
+      },
+      {
+        "at": 13382.8,
+        "elapsed": 502.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13320.1,
+        "draws": 556
+      },
+      {
+        "at": 13388,
+        "elapsed": 507.89999997615814,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13325.3,
+        "draws": 557
+      },
+      {
+        "at": 13393.2,
+        "elapsed": 513.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13330.5,
+        "draws": 557
+      },
+      {
+        "at": 13398.5,
+        "elapsed": 518.3999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13335.8,
+        "draws": 557
+      },
+      {
+        "at": 13404.8,
+        "elapsed": 524.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13342.1,
+        "draws": 558
+      },
+      {
+        "at": 13410.9,
+        "elapsed": 530.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13348.2,
+        "draws": 558
+      },
+      {
+        "at": 13416.1,
+        "elapsed": 535.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13353.4,
+        "draws": 558
+      },
+      {
+        "at": 13421.9,
+        "elapsed": 541.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13359.2,
+        "draws": 559
+      },
+      {
+        "at": 13427.9,
+        "elapsed": 547.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13365.2,
+        "draws": 559
+      },
+      {
+        "at": 13434,
+        "elapsed": 553.8999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13371.3,
+        "draws": 559
+      },
+      {
+        "at": 13439.2,
+        "elapsed": 559.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13376.5,
+        "draws": 560
+      },
+      {
+        "at": 13445.1,
+        "elapsed": 564.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13382.4,
+        "draws": 560
+      },
+      {
+        "at": 13450.3,
+        "elapsed": 570.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13387.6,
+        "draws": 560
+      },
+      {
+        "at": 13456.3,
+        "elapsed": 576.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13393.6,
+        "draws": 561
+      },
+      {
+        "at": 13462.6,
+        "elapsed": 582.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13399.9,
+        "draws": 561
+      },
+      {
+        "at": 13467.9,
+        "elapsed": 587.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13405.2,
+        "draws": 561
+      },
+      {
+        "at": 13473.8,
+        "elapsed": 593.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13411.1,
+        "draws": 562
+      },
+      {
+        "at": 13479.8,
+        "elapsed": 599.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13417.1,
+        "draws": 562
+      },
+      {
+        "at": 13485.7,
+        "elapsed": 605.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13423,
+        "draws": 562
+      },
+      {
+        "at": 13491.7,
+        "elapsed": 611.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13429,
+        "draws": 563
+      },
+      {
+        "at": 13497.7,
+        "elapsed": 617.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13435,
+        "draws": 563
+      },
+      {
+        "at": 13503.3,
+        "elapsed": 623.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13440.6,
+        "draws": 563
+      },
+      {
+        "at": 13509.4,
+        "elapsed": 629.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13446.7,
+        "draws": 564
+      },
+      {
+        "at": 13514.6,
+        "elapsed": 634.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13451.9,
+        "draws": 564
+      },
+      {
+        "at": 13520.4,
+        "elapsed": 640.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13457.7,
+        "draws": 564
+      },
+      {
+        "at": 13526.4,
+        "elapsed": 646.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13463.7,
+        "draws": 565
+      },
+      {
+        "at": 13532.3,
+        "elapsed": 652.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13469.6,
+        "draws": 565
+      },
+      {
+        "at": 13537.7,
+        "elapsed": 657.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13475,
+        "draws": 565
+      },
+      {
+        "at": 13543.1,
+        "elapsed": 662.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13480.4,
+        "draws": 566
+      },
+      {
+        "at": 13548.9,
+        "elapsed": 668.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13486.2,
+        "draws": 566
+      },
+      {
+        "at": 13555,
+        "elapsed": 674.8999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13492.3,
+        "draws": 566
+      },
+      {
+        "at": 13560.8,
+        "elapsed": 680.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13498.1,
+        "draws": 567
+      },
+      {
+        "at": 13566,
+        "elapsed": 685.8999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13503.3,
+        "draws": 567
+      },
+      {
+        "at": 13571.2,
+        "elapsed": 691.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13508.5,
+        "draws": 567
+      },
+      {
+        "at": 13577.1,
+        "elapsed": 696.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13514.4,
+        "draws": 567
+      },
+      {
+        "at": 13582.3,
+        "elapsed": 702.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13519.6,
+        "draws": 568
+      },
+      {
+        "at": 13587.7,
+        "elapsed": 707.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13525,
+        "draws": 568
+      },
+      {
+        "at": 13593.8,
+        "elapsed": 713.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13531.1,
+        "draws": 568
+      },
+      {
+        "at": 13599.7,
+        "elapsed": 719.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13537,
+        "draws": 569
+      },
+      {
+        "at": 13605.9,
+        "elapsed": 725.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13543.2,
+        "draws": 569
+      },
+      {
+        "at": 13612.1,
+        "elapsed": 731.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13549.4,
+        "draws": 569
+      },
+      {
+        "at": 13617.1,
+        "elapsed": 736.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13554.4,
+        "draws": 570
+      },
+      {
+        "at": 13622.6,
+        "elapsed": 742.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13559.9,
+        "draws": 570
+      },
+      {
+        "at": 13627.6,
+        "elapsed": 747.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13564.9,
+        "draws": 570
+      },
+      {
+        "at": 13633.7,
+        "elapsed": 753.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13571,
+        "draws": 570
+      },
+      {
+        "at": 13639.8,
+        "elapsed": 759.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13577.1,
+        "draws": 571
+      },
+      {
+        "at": 13645,
+        "elapsed": 764.8999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13582.3,
+        "draws": 571
+      },
+      {
+        "at": 13650.2,
+        "elapsed": 770.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13587.5,
+        "draws": 571
+      },
+      {
+        "at": 13656.4,
+        "elapsed": 776.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13593.7,
+        "draws": 571
+      },
+      {
+        "at": 13662.2,
+        "elapsed": 782.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13599.5,
+        "draws": 572
+      },
+      {
+        "at": 13667.6,
+        "elapsed": 787.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13604.9,
+        "draws": 572
+      },
+      {
+        "at": 13672.9,
+        "elapsed": 792.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13610.2,
+        "draws": 572
+      },
+      {
+        "at": 13678.2,
+        "elapsed": 798.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13615.5,
+        "draws": 572
+      },
+      {
+        "at": 13683.3,
+        "elapsed": 803.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13620.6,
+        "draws": 573
+      },
+      {
+        "at": 13688.5,
+        "elapsed": 808.3999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13625.8,
+        "draws": 573
+      },
+      {
+        "at": 13693.7,
+        "elapsed": 813.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13631,
+        "draws": 573
+      },
+      {
+        "at": 13698.9,
+        "elapsed": 818.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13636.2,
+        "draws": 573
+      },
+      {
+        "at": 13704.9,
+        "elapsed": 824.7999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13642.2,
+        "draws": 574
+      },
+      {
+        "at": 13710.6,
+        "elapsed": 830.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13647.9,
+        "draws": 574
+      },
+      {
+        "at": 13716.7,
+        "elapsed": 836.5999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13654,
+        "draws": 574
+      },
+      {
+        "at": 13721.8,
+        "elapsed": 841.6999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13659.1,
+        "draws": 575
+      },
+      {
+        "at": 13727,
+        "elapsed": 846.8999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13664.3,
+        "draws": 575
+      },
+      {
+        "at": 13733,
+        "elapsed": 852.8999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13670.3,
+        "draws": 575
+      },
+      {
+        "at": 13738.1,
+        "elapsed": 857.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13675.4,
+        "draws": 575
+      },
+      {
+        "at": 13744.4,
+        "elapsed": 864.2999999761578,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13681.7,
+        "draws": 576
+      },
+      {
+        "at": 13750.1,
+        "elapsed": 869.9999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13687.4,
+        "draws": 576
+      },
+      {
+        "at": 13756.3,
+        "elapsed": 876.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13693.6,
+        "draws": 576
+      },
+      {
+        "at": 13762.2,
+        "elapsed": 882.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13699.5,
+        "draws": 577
+      },
+      {
+        "at": 13768.3,
+        "elapsed": 888.1999999761574,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13705.6,
+        "draws": 577
+      },
+      {
+        "at": 13774.2,
+        "elapsed": 894.0999999761589,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13711.5,
+        "draws": 577
+      },
+      {
+        "at": 13779.5,
+        "elapsed": 899.3999999761581,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13716.8,
+        "draws": 578
+      },
+      {
+        "at": 13784.6,
+        "elapsed": 904.4999999761585,
+        "scroll": 380,
+        "native": 0.1,
+        "target": 0.1,
+        "value": 0.1,
+        "activeTime": 13721.9,
+        "draws": 578
+      }
+    ],
+    "handoff": [
+      {
+        "progress": 0.7799,
+        "clip": "inset(0%)",
+        "clipRect": {
+          "top": 0,
+          "right": 1440,
+          "bottom": 1000,
+          "left": 0
+        },
+        "mapRect": {
+          "top": 319.890625,
+          "right": 1328.984375,
+          "bottom": 569.890625,
+          "left": 747.5,
+          "width": 581.484375,
+          "height": 250
+        },
+        "near": {
+          "opacity": 5.40704e-8,
+          "inert": true
+        },
+        "map": {
+          "opacity": 0,
+          "inert": true
+        },
+        "card": {
+          "opacity": 0,
+          "inert": true
+        },
+        "copy": {
+          "opacity": 0,
+          "inert": true
+        }
+      },
+      {
+        "progress": 0.9399,
+        "clip": "inset(31.9891% 7.70942% 43.0109% 51.9097%)",
+        "clipRect": {
+          "top": 319.891,
+          "right": 1328.984352,
+          "bottom": 569.8910000000001,
+          "left": 747.49968
+        },
+        "mapRect": {
+          "top": 319.890625,
+          "right": 1328.984375,
+          "bottom": 569.890625,
+          "left": 747.5,
+          "width": 581.484375,
+          "height": 250
+        },
+        "near": {
+          "opacity": 0,
+          "inert": true
+        },
+        "map": {
+          "opacity": 0,
+          "inert": true
+        },
+        "card": {
+          "opacity": 1,
+          "inert": true
+        },
+        "copy": {
+          "opacity": 0,
+          "inert": true
+        }
+      },
+      {
+        "progress": 0.9549,
+        "clip": "inset(31.9891% 7.70942% 43.0109% 51.9097%)",
+        "clipRect": {
+          "top": 319.891,
+          "right": 1328.984352,
+          "bottom": 569.8910000000001,
+          "left": 747.49968
+        },
+        "mapRect": {
+          "top": 319.890625,
+          "right": 1328.984375,
+          "bottom": 569.890625,
+          "left": 747.5,
+          "width": 581.484375,
+          "height": 250
+        },
+        "near": {
+          "opacity": 0,
+          "inert": true
+        },
+        "map": {
+          "opacity": 0.360246,
+          "inert": true
+        },
+        "card": {
+          "opacity": 1,
+          "inert": true
+        },
+        "copy": {
+          "opacity": 0,
+          "inert": true
+        }
+      },
+      {
+        "progress": 0.9849,
+        "clip": "inset(31.9891% 7.70942% 43.0109% 51.9097%)",
+        "clipRect": {
+          "top": 319.891,
+          "right": 1328.984352,
+          "bottom": 569.8910000000001,
+          "left": 747.49968
+        },
+        "mapRect": {
+          "top": 319.890625,
+          "right": 1328.984375,
+          "bottom": 569.890625,
+          "left": 747.5,
+          "width": 581.484375,
+          "height": 250
+        },
+        "near": {
+          "opacity": 0,
+          "inert": true
+        },
+        "map": {
+          "opacity": 1,
+          "inert": false
+        },
+        "card": {
+          "opacity": 1,
+          "inert": false
+        },
+        "copy": {
+          "opacity": 0.999998,
+          "inert": false
+        }
+      }
+    ],
+    "repeatedHash": {
+      "progress": 0.66,
+      "target": 0.66
+    },
+    "pause": {
+      "before": {
+        "scroll": 1368,
+        "height": 4800,
+        "travel": 3800,
+        "screens": 3.8,
+        "value": 0.3601,
+        "target": 0.36,
+        "activeTime": 20303.2,
+        "draws": 716,
+        "phase": "route",
+        "layout": "sticky"
+      },
+      "paused": {
+        "scroll": 1368,
+        "height": 4800,
+        "travel": 0,
+        "screens": 0,
+        "value": 0.36,
+        "target": 0.36,
+        "activeTime": 20319.6,
+        "draws": 717,
+        "phase": "route",
+        "layout": "static"
+      },
+      "after": {
+        "scroll": 1368,
+        "height": 4800,
+        "travel": 0,
+        "screens": 0,
+        "value": 0.36,
+        "target": 0.36,
+        "activeTime": 20319.6,
+        "draws": 717,
+        "phase": "route",
+        "layout": "static"
+      },
+      "resumed": {
+        "scroll": 1368,
+        "height": 4800,
+        "travel": 3800,
+        "screens": 3.8,
+        "value": 0.36,
+        "target": 0.36,
+        "activeTime": 20325.7,
+        "draws": 719,
+        "phase": "route",
+        "layout": "sticky"
+      }
+    },
+    "anchors": [
+      {
+        "hash": "product-intro",
+        "focused": true,
+        "inert": false,
+        "opacity": 1,
+        "top": 300.875,
+        "bottom": 449.9375,
+        "viewport": 1000,
+        "phase": "product"
+      },
+      {
+        "hash": "city-detail",
+        "focused": true,
+        "inert": false,
+        "opacity": 1,
+        "top": 372.46875,
+        "bottom": 530.15625,
+        "viewport": 1000,
+        "phase": "theatre"
+      }
+    ]
+  },
+  "passed": 10,
+  "total": 10,
+  "environment": "Local headless Edge at a simulated 1440x1000 CSS viewport; synthetic wheel input and real DOM/canvas measurements"
+}

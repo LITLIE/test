@@ -1,0 +1,14 @@
+{
+  "destination": "D:\\AAA大三上\\软件工程\\askway-web",
+  "entries": 14,
+  "homepageSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+  "build": {
+    "siteVersion": "3.2.0",
+    "catalogVersion": "zhuhai-public-reference-2026-11-24-v1",
+    "mode": "curated",
+    "scene": "coastal-realism-v3",
+    "presentation": "city-story-photographic-prototype-v1",
+    "builtAt": "2026-11-27T15:11:04.689Z",
+    "base": "/"
+  }
+}

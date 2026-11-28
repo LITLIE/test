@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "measuredAt": "2026-11-27T17:29:40.603Z",
+    "baseUrl": "http://127.0.0.1:4173",
+    "siteVersion": "3.2.1",
+    "homeDocumentSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+    "entryScripts": [
+      "/assets/index-CowwplVD.js"
+    ],
+    "nodeVersion": "v22.23.1",
+    "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "outputDirectory": "delivery/motion-continuity/final/performance/run-1",
+    "writesConfinedToProject": true,
+    "packageLifecycleScriptsInvoked": false
+  },
+  "limitations": [
+    "axe-core scans automatically test applicable WCAG 2.2 A/AA rules; zero violations does not establish full WCAG conformance.",
+    "Incomplete axe results need manual review. Keyboard usability, meaningful reading order, zoom, screen readers, and real touch use require separate review.",
+    "Screenshots use local headless Edge screen simulation at 390×844 and 1440×1000 CSS pixels; they are not real-device tests.",
+    "44×44 CSS pixels is a touch-usability recommendation; the WCAG 2.2 AA target-size minimum is 24×24 with specified exceptions.",
+    "Lighthouse performance uses a local build and simulated mobile CPU/network throttling. LCP/CLS/TBT are lab results, not field Core Web Vitals or measured real-device INP.",
+    "The current build is measured directly. Historical baseline scores are not used as current results."
+  ],
+  "accessibility": null,
+  "lighthouse": {
+    "metadata": {
+      "measuredAt": "2026-11-27T17:29:40.603Z",
+      "baseUrl": "http://127.0.0.1:4173",
+      "siteVersion": "3.2.1",
+      "homeDocumentSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+      "entryScripts": [
+        "/assets/index-CowwplVD.js"
+      ],
+      "nodeVersion": "v22.23.1",
+      "browserPath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+      "outputDirectory": "delivery/motion-continuity/final/performance/run-1",
+      "writesConfinedToProject": true,
+      "packageLifecycleScriptsInvoked": false
+    },
+    "limitations": [
+      "axe-core scans automatically test applicable WCAG 2.2 A/AA rules; zero violations does not establish full WCAG conformance.",
+      "Incomplete axe results need manual review. Keyboard usability, meaningful reading order, zoom, screen readers, and real touch use require separate review.",
+      "Screenshots use local headless Edge screen simulation at 390×844 and 1440×1000 CSS pixels; they are not real-device tests.",
+      "44×44 CSS pixels is a touch-usability recommendation; the WCAG 2.2 AA target-size minimum is 24×24 with specified exceptions.",
+      "Lighthouse performance uses a local build and simulated mobile CPU/network throttling. LCP/CLS/TBT are lab results, not field Core Web Vitals or measured real-device INP.",
+      "The current build is measured directly. Historical baseline scores are not used as current results."
+    ],
+    "runs": [
+      {
+        "route": "/",
+        "measuredAt": "2026-11-27T17:29:43.163Z",
+        "lighthouseVersion": "13.6.0",
+        "reportJson": "lighthouse-home-mobile.json",
+        "reportHtml": "lighthouse-home-mobile.html",
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "lcp": {
+            "numericValue": 1801.5073,
+            "displayValue": "1.8 秒",
+            "score": 0.98
+          },
+          "cls": {
+            "numericValue": 0,
+            "displayValue": "0",
+            "score": 1
+          },
+          "tbt": {
+            "numericValue": 0,
+            "displayValue": "0 毫秒",
+            "score": 1
+          },
+          "fcp": {
+            "numericValue": 1801.5073,
+            "displayValue": "1.8 秒",
+            "score": 0.89
+          },
+          "speedIndex": {
+            "numericValue": 1992.2258299948521,
+            "displayValue": "2.0 秒",
+            "score": 0.99
+          }
+        },
+        "settings": {
+          "output": [
+            "json",
+            "html"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 390,
+            "height": 844,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "node",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "zh",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": [
+            "performance",
+            "accessibility",
+            "best-practices",
+            "seo"
+          ],
+          "skipAudits": null
+        },
+        "environment": {
+          "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+          "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+          "benchmarkIndex": 4811.5,
+          "credits": {
+            "axe-core": "4.14.0"
+          }
+        },
+        "runtimeError": null,
+        "runWarnings": [],
+        "failedAudits": [
+          {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "score": 0.89,
+            "displayValue": "1.8 秒",
+            "description": "First Contentful Paint 标记了绘制出首个文本或首张图片的时间。[详细了解 First Contentful Paint 指标](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)。"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.98,
+            "displayValue": "1.8 秒",
+            "description": "Largest Contentful Paint 标记了绘制出最大文本或图片的时间。[详细了解 Largest Contentful Paint 指标](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)"
+          },
+          {
+            "id": "speed-index",
+            "title": "Speed Index",
+            "score": 0.99,
+            "displayValue": "2.0 秒",
+            "description": "Speed Index 表明了网页内容的可见填充速度。[详细了解 Speed Index 指标](https://developer.chrome.com/docs/lighthouse/performance/speed-index/)。"
+          },
+          {
+            "id": "unused-css-rules",
+            "title": "减少未使用的 CSS",
+            "score": 0,
+            "displayValue": "预计节省 145 KiB",
+            "description": "请从样式表中减少未使用的规则，并延迟加载首屏内容未用到的 CSS，以减少网络活动耗用的字节数。[了解如何减少未使用的 CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)。"
+          },
+          {
+            "id": "unused-javascript",
+            "title": "减少未使用的 JavaScript",
+            "score": 0.5,
+            "displayValue": "预计节省 187 KiB",
+            "description": "请减少未使用的 JavaScript，并等到需要使用时再加载脚本，以减少网络活动耗用的字节数。[了解如何减少未使用的 JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)。"
+          },
+          {
+            "id": "document-latency-insight",
+            "title": "文档请求延迟",
+            "score": 0.5,
+            "displayValue": "预计节省 28 KiB",
+            "description": "您的第一个网络请求最为重要。您可通过避免重定向、确保服务器快速响应以及启用文本压缩来[缩短其延迟时间](https://developer.chrome.com/docs/performance/insights/document-latency)。"
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "改进图片传送",
+            "score": 0.5,
+            "displayValue": "预计节省 168 KiB",
+            "description": "缩短图片下载时间可优化网页的感知加载时间和 LCP。[详细了解图片大小优化](https://developer.chrome.com/docs/performance/insights/image-delivery)。"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "网络依赖关系树",
+            "score": 0,
+            "description": "[避免链接关键请求](https://developer.chrome.com/docs/performance/insights/network-dependency-tree)，方法是缩短链长、缩减资源的下载文件大小，或者推迟下载不必要的资源，从而提高网页加载速度"
+          },
+          {
+            "id": "render-blocking-insight",
+            "title": "渲染阻塞请求",
+            "score": 0,
+            "displayValue": "预计缩短 870 毫秒",
+            "description": "请求正在屏蔽网页的初始渲染，这可能会延迟 LCP。[延迟或内嵌](https://developer.chrome.com/docs/performance/insights/render-blocking)可以将这些网络请求移出关键路径。"
+          }
+        ],
+        "browserProcessRelease": {
+          "pid": 41152,
+          "closed": true,
+          "exitCode": 1,
+          "signal": null
+        }
+      },
+      {
+        "route": "/experience/",
+        "measuredAt": "2026-11-27T17:29:54.912Z",
+        "lighthouseVersion": "13.6.0",
+        "reportJson": "lighthouse-experience-mobile.json",
+        "reportHtml": "lighthouse-experience-mobile.html",
+        "scores": {
+          "performance": 96,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "lcp": {
+            "numericValue": 2251.6897,
+            "displayValue": "2.3 秒",
+            "score": 0.94
+          },
+          "cls": {
+            "numericValue": 0,
+            "displayValue": "0",
+            "score": 1
+          },
+          "tbt": {
+            "numericValue": 3.5,
+            "displayValue": "0 毫秒",
+            "score": 1
+          },
+          "fcp": {
+            "numericValue": 2251.6897,
+            "displayValue": "2.3 秒",
+            "score": 0.76
+          },
+          "speedIndex": {
+            "numericValue": 2251.6897,
+            "displayValue": "2.3 秒",
+            "score": 0.99
+          }
+        },
+        "settings": {
+          "output": [
+            "json",
+            "html"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 390,
+            "height": 844,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "node",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "zh",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": [
+            "performance",
+            "accessibility",
+            "best-practices",
+            "seo"
+          ],
+          "skipAudits": null
+        },
+        "environment": {
+          "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Mobile Safari/537.36",
+          "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+          "benchmarkIndex": 4920.5,
+          "credits": {
+            "axe-core": "4.14.0"
+          }
+        },
+        "runtimeError": null,
+        "runWarnings": [],
+        "failedAudits": [
+          {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "score": 0.76,
+            "displayValue": "2.3 秒",
+            "description": "First Contentful Paint 标记了绘制出首个文本或首张图片的时间。[详细了解 First Contentful Paint 指标](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)。"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.94,
+            "displayValue": "2.3 秒",
+            "description": "Largest Contentful Paint 标记了绘制出最大文本或图片的时间。[详细了解 Largest Contentful Paint 指标](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)"
+          },
+          {
+            "id": "speed-index",
+            "title": "Speed Index",
+            "score": 0.99,
+            "displayValue": "2.3 秒",
+            "description": "Speed Index 表明了网页内容的可见填充速度。[详细了解 Speed Index 指标](https://developer.chrome.com/docs/lighthouse/performance/speed-index/)。"
+          },
+          {
+            "id": "interactive",
+            "title": "Time to Interactive",
+            "score": 0.9,
+            "displayValue": "3.7 秒",
+            "description": "“Time to Interactive”是指网页需要多长时间才能提供完整的交互功能。[详细了解“Time to Interactive”指标](https://developer.chrome.com/docs/lighthouse/performance/interactive/)。"
+          },
+          {
+            "id": "unused-css-rules",
+            "title": "减少未使用的 CSS",
+            "score": 0,
+            "displayValue": "预计节省 178 KiB",
+            "description": "请从样式表中减少未使用的规则，并延迟加载首屏内容未用到的 CSS，以减少网络活动耗用的字节数。[了解如何减少未使用的 CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)。"
+          },
+          {
+            "id": "unused-javascript",
+            "title": "减少未使用的 JavaScript",
+            "score": 0.5,
+            "displayValue": "预计节省 197 KiB",
+            "description": "请减少未使用的 JavaScript，并等到需要使用时再加载脚本，以减少网络活动耗用的字节数。[了解如何减少未使用的 JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)。"
+          },
+          {
+            "id": "document-latency-insight",
+            "title": "文档请求延迟",
+            "score": 0.5,
+            "displayValue": "预计节省 71 KiB",
+            "description": "您的第一个网络请求最为重要。您可通过避免重定向、确保服务器快速响应以及启用文本压缩来[缩短其延迟时间](https://developer.chrome.com/docs/performance/insights/document-latency)。"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "网络依赖关系树",
+            "score": 0,
+            "description": "[避免链接关键请求](https://developer.chrome.com/docs/performance/insights/network-dependency-tree)，方法是缩短链长、缩减资源的下载文件大小，或者推迟下载不必要的资源，从而提高网页加载速度"
+          },
+          {
+            "id": "render-blocking-insight",
+            "title": "渲染阻塞请求",
+            "score": 0,
+            "displayValue": "预计缩短 910 毫秒",
+            "description": "请求正在屏蔽网页的初始渲染，这可能会延迟 LCP。[延迟或内嵌](https://developer.chrome.com/docs/performance/insights/render-blocking)可以将这些网络请求移出关键路径。"
+          }
+        ],
+        "browserProcessRelease": {
+          "pid": 36880,
+          "closed": true,
+          "exitCode": 1,
+          "signal": null
+        }
+      }
+    ],
+    "errors": []
+  },
+  "stageStatus": {
+    "accessibility": "not_measured",
+    "lighthouse": "available"
+  }
+}

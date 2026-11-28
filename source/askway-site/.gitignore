@@ -8,3 +8,27 @@ dist/
 delivery/experience/
 delivery/realism-v3/
 delivery/visual-refresh/
+
+# Large local QA copies and rollback archives are not part of the public site.
+delivery/cinematic-refresh/review/
+delivery/motion-continuity/baseline/static/
+delivery/cinematic-refresh/**/*.png
+delivery/cinematic-refresh/**/*.jpg
+delivery/cinematic-refresh/**/*.zip
+delivery/motion-continuity/**/*.png
+delivery/motion-continuity/**/*.jpg
+
+# Publish current storyboards and representative responsive compositions.
+!delivery/cinematic-refresh/final/story/*.jpg
+!delivery/motion-continuity/final/story/*.jpg
+!delivery/motion-continuity/final/layouts/desktop-route-composition.png
+!delivery/motion-continuity/final/layouts/desktop-theatre-composition.png
+!delivery/motion-continuity/final/layouts/desktop-product-composition.png
+!delivery/motion-continuity/final/layouts/mobile-city.png
+!delivery/motion-continuity/final/layouts/mobile-route-composition.png
+!delivery/motion-continuity/final/layouts/mobile-theatre-composition.png
+!delivery/motion-continuity/final/layouts/mobile-product-composition.png
+!delivery/motion-continuity/final/layouts/narrow-city.png
+!delivery/motion-continuity/final/layouts/narrow-product-composition.png
+!delivery/motion-continuity/final/layouts/landscape-city.png
+!delivery/motion-continuity/final/layouts/landscape-product-composition.png

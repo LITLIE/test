@@ -4,6 +4,7 @@
 .site-header .desktop-nav a.active{font-weight:400;color:var(--blue)}
 .header-clear .desktop-nav a.active{color:#fff}
 .header-clear{border-bottom-color:#ffffff24;background:linear-gradient(180deg,#07233435,transparent)}
+.site-header.header-clear{transition:color .2s,border-color .2s}
 .header-clear .header-cta{border-color:#ffffff65}
 .site-header.header-solid{background:var(--paper);transition:color .2s,border-color .2s}
 .brand-name>span{font-size:12px;letter-spacing:.17em}

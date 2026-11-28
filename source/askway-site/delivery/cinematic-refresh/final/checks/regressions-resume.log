@@ -1,0 +1,46 @@
+[
+  {
+    "name": "editing demo inputs invalidates prior validity and remaining-time claims",
+    "pass": true
+  },
+  {
+    "name": "result map names only the stops in the generated itinerary",
+    "pass": true
+  },
+  {
+    "name": "same-path contact navigation closes the mobile menu",
+    "pass": true
+  },
+  {
+    "name": "resizing to desktop releases mobile scroll lock and inert content",
+    "pass": true
+  },
+  {
+    "name": "declared story tabs retain ArrowLeft, ArrowRight, Home and End navigation",
+    "pass": true
+  },
+  {
+    "name": "editing organization cannot leave a mismatched email draft",
+    "pass": true
+  },
+  {
+    "name": "choosing a direction card also invalidates the previous cooperation draft",
+    "pass": true
+  },
+  {
+    "name": "SPA navigation updates canonical metadata to the destination route",
+    "pass": true
+  },
+  {
+    "name": "cinematic geometry initializes when an open mobile page is resized to desktop",
+    "pass": true
+  },
+  {
+    "name": "enabling reduced motion live stops actual drawing and preserves manual concept selection",
+    "pass": true
+  },
+  {
+    "name": "draft can be copied when the modern clipboard API is unavailable",
+    "pass": true
+  }
+]

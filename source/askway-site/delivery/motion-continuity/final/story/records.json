@@ -1,0 +1,2308 @@
+{
+  "mode": "timestamped-still-sequence",
+  "identity": {
+    "previewUrl": "http://127.0.0.1:4173",
+    "servedHomepageSha256": "6e40284d6c6e10aa98019f93a9683fc7c4da69c12c9b8f10df0d85ac6d523632",
+    "servedDocumentBytes": 42126,
+    "projectRoot": "D:\\AAA大三上\\软件工程\\askway-web\\source\\askway-site",
+    "capturedAt": "2026-11-27T17:27:09.145Z",
+    "localFiles": {
+      "dist/build-info.json": "03224fd35a5db91d0d96cd9ab46159cf008a622712b961f483bec027ade256c8",
+      "public/assets/cinematic/manifest.json": "0e675d88e78a2ea26af60bdb9939c54cafdcd4e6f69b7d4a6ee30e8b792b52ed",
+      "src/features/cinematic/StoryStage.tsx": "292d2873c3dcb444373c9822c7bf4765f99ecb87bfe31ab08c5e99889af68028",
+      "src/features/cinematic/progress.ts": "6da82a9e417adf17aef95ca81ba20ed09cea30e9f26f43c48bf32f8aee0ecea4",
+      "src/features/cinematic/useStoryProgress.ts": "a488b141fa2978cf161c9c0dda07b3ee81aea76820fcfa299a2ee8207c409183",
+      "src/features/cinematic/cinematic.css": "c54b199c28b86b7f3bbfbb10965d5c165ff0b12633c9aba0a3d6b630075591f6"
+    },
+    "buildInfo": {
+      "siteVersion": "3.2.1",
+      "catalogVersion": "zhuhai-public-reference-2026-11-24-v1",
+      "mode": "curated",
+      "scene": "coastal-realism-v3",
+      "presentation": "city-story-spatial-photo-v2",
+      "builtAt": "2026-11-27T17:24:41.822Z",
+      "base": "/"
+    }
+  },
+  "records": [
+    {
+      "viewportName": "desktop",
+      "direction": "forward",
+      "requestedPhase": "city",
+      "requestedProgress": 0.08,
+      "targetScrollY": 304,
+      "capturedAt": "2026-11-27T17:27:11.727Z",
+      "browserTimeMs": 2042.199999988079,
+      "scrollY": 304,
+      "progress": 0.08,
+      "phase": "city",
+      "layout": "sticky",
+      "drawCount": 100,
+      "activeTime": 1800,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "1",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.000276680804863",
+        "--story-theatre-scale": "1.05",
+        "--story-card-top": "37.470312500000006%",
+        "--story-card-right": "13.571419270833331%",
+        "--story-card-bottom": "62.529687499999994%",
+        "--story-card-left": "86.42858072916667%",
+        "--story-route-reveal": "0"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.00028, -5.43354e-08, 0.00159305, 0, 0, 1.00028, 3.41172e-05, 0, -0.00159261, -3.41077e-05, 0.999999, 0, -0.134801, -0.0260564, 6.27776, 1)",
+          "bounds": {
+            "x": -0.333100289106369,
+            "y": -0.16443760693073273,
+            "width": 1440.3966064453125,
+            "height": 1000.2767333984375
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.00028, -5.43354e-08, 0.00159305, 0, 0, 1.00028, 3.41172e-05, 0, -0.00159261, -3.41077e-05, 0.999999, 0, -0.134801, -0.0260564, 6.27776, 1)",
+          "bounds": {
+            "x": -0.333100289106369,
+            "y": -0.16443760693073273,
+            "width": 1440.3966064453125,
+            "height": 1000.2767333984375
+          }
+        },
+        {
+          "src": null,
+          "loaded": false,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": null,
+          "loaded": false,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-forward-city.jpg",
+      "bytes": 228213,
+      "sha256": "399193f41004ff1b93d72dba13c772f9450037348fab039ade9e8a8e8dc39e28"
+    },
+    {
+      "viewportName": "desktop",
+      "direction": "forward",
+      "requestedPhase": "route",
+      "requestedProgress": 0.36,
+      "targetScrollY": 1368,
+      "capturedAt": "2026-11-27T17:27:13.456Z",
+      "browserTimeMs": 3770.800000011921,
+      "scrollY": 1368,
+      "progress": 0.36,
+      "phase": "route",
+      "layout": "sticky",
+      "drawCount": 195,
+      "activeTime": 3529.5,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "1",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.010803305601129",
+        "--story-theatre-scale": "1.05",
+        "--story-card-top": "37.470312500000006%",
+        "--story-card-right": "13.571419270833331%",
+        "--story-card-bottom": "62.529687499999994%",
+        "--story-card-left": "86.42858072916667%",
+        "--story-route-reveal": "0.5"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.01063, -0.000124892, 0.0186065, 0, 0, 1.01078, 0.00678466, 0, -0.0184081, -0.006711, 0.999808, 0, -24.314, -5.12774, 88.0665, 1)",
+          "bounds": {
+            "x": -31.969058990478516,
+            "y": -10.607945442199707,
+            "width": 1455.3101806640625,
+            "height": 1010.96044921875
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.01063, -0.000124892, 0.0186065, 0, 0, 1.01078, 0.00678466, 0, -0.0184081, -0.006711, 0.999808, 0, -24.314, -5.12774, 88.0665, 1)",
+          "bounds": {
+            "x": -31.969058990478516,
+            "y": -10.607945442199707,
+            "width": 1455.3101806640625,
+            "height": 1010.96044921875
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": false,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "transform": "matrix3d(0, 0, 0, 0, 0, 0, 0, 0, -0.0184081, -0.006711, 0.999808, 0, 524.572, -125.297, 36.8884, 1)",
+          "bounds": {
+            "x": 1258.7674560546875,
+            "y": 371.3123474121094,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 985.579833984375,
+            "y": 218.5109100341797,
+            "width": 349.6441650390625,
+            "height": 474.2962646484375
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-forward-route.jpg",
+      "bytes": 113837,
+      "sha256": "b2e5f11826d616b1313ae1c86144ac32aa9ae197f44dd97cba3eca2fe059db0d"
+    },
+    {
+      "viewportName": "desktop",
+      "direction": "forward",
+      "requestedPhase": "theatre",
+      "requestedProgress": 0.66,
+      "targetScrollY": 2508,
+      "capturedAt": "2026-11-27T17:27:15.222Z",
+      "browserTimeMs": 5536.699999988079,
+      "scrollY": 2508,
+      "progress": 0.66,
+      "phase": "theatre",
+      "layout": "sticky",
+      "drawCount": 233,
+      "activeTime": 5222.5,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "1",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.018",
+        "--story-theatre-scale": "1.0183941214969954",
+        "--story-card-top": "0%",
+        "--story-card-right": "0%",
+        "--story-card-bottom": "0%",
+        "--story-card-left": "0%",
+        "--story-route-reveal": "1"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, -9.44849e-06, 0.00161977, 0, 0, 1.01798, 0.00593814, 0, -0.00159115, -0.00583314, 0.999982, 0, -6.54062, -4.45622, 82.0977, 1)",
+          "bounds": {
+            "x": -19.499696731567383,
+            "y": -13.454366683959961,
+            "width": 1465.918212890625,
+            "height": 1017.9962768554688
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, -9.44849e-06, 0.00161977, 0, 0, 1.01798, 0.00593814, 0, -0.00159115, -0.00583314, 0.999982, 0, -6.54062, -4.45622, 82.0977, 1)",
+          "bounds": {
+            "x": -19.499696731567383,
+            "y": -13.454366683959961,
+            "width": 1465.918212890625,
+            "height": 1017.9962768554688
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 851,
+          "transform": "matrix3d(1.01839, -9.45215e-06, 0.00162039, 0, 0, 1.01838, 0.00594044, 0, -0.00159115, -0.00583314, 0.999982, 0, -6.54062, -4.45622, 52.3801, 1)",
+          "bounds": {
+            "x": -49.56773376464844,
+            "y": -32.90314865112305,
+            "width": 1526.840576171875,
+            "height": 1058.861083984375
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 981.7552490234375,
+            "y": 213.53402709960938,
+            "width": 356.561767578125,
+            "height": 482.6651916503906
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-forward-theatre.jpg",
+      "bytes": 196006,
+      "sha256": "f8b72ab59726dd673bdf4d95b89264f4cd0fd2eeba700cb4e90b2c86c4b9f0c3"
+    },
+    {
+      "viewportName": "desktop",
+      "direction": "forward",
+      "requestedPhase": "product",
+      "requestedProgress": 0.985,
+      "targetScrollY": 3743,
+      "capturedAt": "2026-11-27T17:27:17.005Z",
+      "browserTimeMs": 7319.899999976158,
+      "scrollY": 3743,
+      "progress": 0.985,
+      "phase": "product",
+      "layout": "sticky",
+      "drawCount": 233,
+      "activeTime": 6879.9,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "1",
+        "--story-photo-scale": "1.018",
+        "--story-theatre-scale": "1",
+        "--story-card-top": "31.9890625%",
+        "--story-card-right": "7.709418402777778%",
+        "--story-card-bottom": "43.010937500000004%",
+        "--story-card-left": "51.90972222222222%",
+        "--story-route-reveal": "1"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, 1.24716e-12, -2.70219e-05, 0, 0, 1.018, 4.69844e-08, 0, 2.65441e-05, -4.61536e-08, 1, 0, 0.0490367, -3.52588e-05, 0.23093, 1)",
+          "bounds": {
+            "x": -12.910967826843262,
+            "y": -9.000038146972656,
+            "width": 1465.9200439453125,
+            "height": 1018
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, 1.24716e-12, -2.70219e-05, 0, 0, 1.018, 4.69844e-08, 0, 2.65441e-05, -4.61536e-08, 1, 0, 0.0490367, -3.52588e-05, 0.23093, 1)",
+          "bounds": {
+            "x": -12.910967826843262,
+            "y": -9.000038146972656,
+            "width": 1465.9200439453125,
+            "height": 1018
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 851,
+          "transform": "matrix(0.403809, 0, 0, 0.403809, 318.242, -55.1094)",
+          "bounds": {
+            "x": 747.5,
+            "y": 242.986328125,
+            "width": 581.484375,
+            "height": 403.80859375
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 990.9690551757812,
+            "y": 227.9033203125,
+            "width": 338.06072998046875,
+            "height": 458.0838623046875
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-forward-product.jpg",
+      "bytes": 103785,
+      "sha256": "8a252200868f77ce10ba5b8a255e114b7d5ed36ff1daa58c09dedda68fc73b6d"
+    },
+    {
+      "viewportName": "desktop",
+      "direction": "reverse",
+      "requestedPhase": "product",
+      "requestedProgress": 0.985,
+      "targetScrollY": 3743,
+      "capturedAt": "2026-11-27T17:27:17.099Z",
+      "browserTimeMs": 7414,
+      "scrollY": 3743,
+      "progress": 0.985,
+      "phase": "product",
+      "layout": "sticky",
+      "drawCount": 233,
+      "activeTime": 6879.9,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "1",
+        "--story-photo-scale": "1.018",
+        "--story-theatre-scale": "1",
+        "--story-card-top": "31.9890625%",
+        "--story-card-right": "7.709418402777778%",
+        "--story-card-bottom": "43.010937500000004%",
+        "--story-card-left": "51.90972222222222%",
+        "--story-route-reveal": "1"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, 1.24716e-12, -2.70219e-05, 0, 0, 1.018, 4.69844e-08, 0, 2.65441e-05, -4.61536e-08, 1, 0, 0.0490367, -3.52588e-05, 0.23093, 1)",
+          "bounds": {
+            "x": -12.910967826843262,
+            "y": -9.000038146972656,
+            "width": 1465.9200439453125,
+            "height": 1018
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, 1.24716e-12, -2.70219e-05, 0, 0, 1.018, 4.69844e-08, 0, 2.65441e-05, -4.61536e-08, 1, 0, 0.0490367, -3.52588e-05, 0.23093, 1)",
+          "bounds": {
+            "x": -12.910967826843262,
+            "y": -9.000038146972656,
+            "width": 1465.9200439453125,
+            "height": 1018
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 851,
+          "transform": "matrix(0.403809, 0, 0, 0.403809, 318.242, -55.1094)",
+          "bounds": {
+            "x": 747.5,
+            "y": 242.986328125,
+            "width": 581.484375,
+            "height": 403.80859375
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 990.9690551757812,
+            "y": 227.9033203125,
+            "width": 338.06072998046875,
+            "height": 458.0838623046875
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-reverse-product.jpg",
+      "bytes": 103785,
+      "sha256": "8a252200868f77ce10ba5b8a255e114b7d5ed36ff1daa58c09dedda68fc73b6d"
+    },
+    {
+      "viewportName": "desktop",
+      "direction": "reverse",
+      "requestedPhase": "theatre",
+      "requestedProgress": 0.66,
+      "targetScrollY": 2508,
+      "capturedAt": "2026-11-27T17:27:18.863Z",
+      "browserTimeMs": 9177.800000011921,
+      "scrollY": 2508,
+      "progress": 0.66,
+      "phase": "theatre",
+      "layout": "sticky",
+      "drawCount": 233,
+      "activeTime": 8534.2,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "1",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.018",
+        "--story-theatre-scale": "1.0183941214969954",
+        "--story-card-top": "0%",
+        "--story-card-right": "0%",
+        "--story-card-bottom": "0%",
+        "--story-card-left": "0%",
+        "--story-route-reveal": "1"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, -9.44849e-06, 0.00161977, 0, 0, 1.01798, 0.00593814, 0, -0.00159115, -0.00583314, 0.999982, 0, -6.54062, -4.45622, 82.0977, 1)",
+          "bounds": {
+            "x": -19.499696731567383,
+            "y": -13.454366683959961,
+            "width": 1465.918212890625,
+            "height": 1017.9962768554688
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.018, -9.44849e-06, 0.00161977, 0, 0, 1.01798, 0.00593814, 0, -0.00159115, -0.00583314, 0.999982, 0, -6.54062, -4.45622, 82.0977, 1)",
+          "bounds": {
+            "x": -19.499696731567383,
+            "y": -13.454366683959961,
+            "width": 1465.918212890625,
+            "height": 1017.9962768554688
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 851,
+          "transform": "matrix3d(1.01839, -9.45215e-06, 0.00162039, 0, 0, 1.01838, 0.00594044, 0, -0.00159115, -0.00583314, 0.999982, 0, -6.54062, -4.45622, 52.3801, 1)",
+          "bounds": {
+            "x": -49.56773376464844,
+            "y": -32.90314865112305,
+            "width": 1526.840576171875,
+            "height": 1058.861083984375
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 981.7552490234375,
+            "y": 213.53402709960938,
+            "width": 356.561767578125,
+            "height": 482.6651916503906
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-reverse-theatre.jpg",
+      "bytes": 203152,
+      "sha256": "354c082e800e477ffce7dbb5e06b680cd17d30a91920858a0eda8c468847611f"
+    },
+    {
+      "viewportName": "desktop",
+      "direction": "reverse",
+      "requestedPhase": "route",
+      "requestedProgress": 0.36,
+      "targetScrollY": 1368,
+      "capturedAt": "2026-11-27T17:27:20.626Z",
+      "browserTimeMs": 10941.5,
+      "scrollY": 1368,
+      "progress": 0.36,
+      "phase": "route",
+      "layout": "sticky",
+      "drawCount": 315,
+      "activeTime": 10242.4,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "1",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.010803305601129",
+        "--story-theatre-scale": "1.05",
+        "--story-card-top": "37.470312500000006%",
+        "--story-card-right": "13.571419270833331%",
+        "--story-card-bottom": "62.529687499999994%",
+        "--story-card-left": "86.42858072916667%",
+        "--story-route-reveal": "0.5"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.01063, -0.000124892, 0.0186065, 0, 0, 1.01078, 0.00678466, 0, -0.0184081, -0.006711, 0.999808, 0, -24.314, -5.12774, 88.0665, 1)",
+          "bounds": {
+            "x": -31.969058990478516,
+            "y": -10.607945442199707,
+            "width": 1455.3101806640625,
+            "height": 1010.96044921875
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.01063, -0.000124892, 0.0186065, 0, 0, 1.01078, 0.00678466, 0, -0.0184081, -0.006711, 0.999808, 0, -24.314, -5.12774, 88.0665, 1)",
+          "bounds": {
+            "x": -31.969058990478516,
+            "y": -10.607945442199707,
+            "width": 1455.3101806640625,
+            "height": 1010.96044921875
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 851,
+          "transform": "matrix3d(0, 0, 0, 0, 0, 0, 0, 0, -0.0184081, -0.006711, 0.999808, 0, 524.572, -125.297, 36.8884, 1)",
+          "bounds": {
+            "x": 1258.7674560546875,
+            "y": 371.3123474121094,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 985.579833984375,
+            "y": 218.5109100341797,
+            "width": 349.6441650390625,
+            "height": 474.2962646484375
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-reverse-route.jpg",
+      "bytes": 113913,
+      "sha256": "75286a1c6646350f10aaaddd97b8678d3b3b793de5564d60992a9811a00b8e85"
+    },
+    {
+      "viewportName": "desktop",
+      "direction": "reverse",
+      "requestedPhase": "city",
+      "requestedProgress": 0.08,
+      "targetScrollY": 304,
+      "capturedAt": "2026-11-27T17:27:22.297Z",
+      "browserTimeMs": 12612.5,
+      "scrollY": 304,
+      "progress": 0.08,
+      "phase": "city",
+      "layout": "sticky",
+      "drawCount": 406,
+      "activeTime": 11918,
+      "geometry": {
+        "start": 0,
+        "height": 4800,
+        "viewportHeight": 1000,
+        "travel": 3800
+      },
+      "css": {
+        "--story-city-opacity": "1",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.000276680804863",
+        "--story-theatre-scale": "1.05",
+        "--story-card-top": "37.470312500000006%",
+        "--story-card-right": "13.571419270833331%",
+        "--story-card-bottom": "62.529687499999994%",
+        "--story-card-left": "86.42858072916667%",
+        "--story-route-reveal": "0"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "0",
+          "inert": true,
+          "ariaHidden": "true",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.00028, -5.43354e-08, 0.00159305, 0, 0, 1.00028, 3.41172e-05, 0, -0.00159261, -3.41077e-05, 0.999999, 0, -0.134801, -0.0260564, 6.27776, 1)",
+          "bounds": {
+            "x": -0.333100289106369,
+            "y": -0.16443760693073273,
+            "width": 1440.3966064453125,
+            "height": 1000.2767333984375
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/hero.webp",
+          "loaded": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900,
+          "transform": "matrix3d(1.00028, -5.43354e-08, 0.00159305, 0, 0, 1.00028, 3.41172e-05, 0, -0.00159261, -3.41077e-05, 0.999999, 0, -0.134801, -0.0260564, 6.27776, 1)",
+          "bounds": {
+            "x": -0.333100289106369,
+            "y": -0.16443760693073273,
+            "width": 1440.3966064453125,
+            "height": 1000.2767333984375
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 851,
+          "transform": "matrix3d(0, 0, 0, 0, 0, 0, 0, 0, -0.00159261, -3.41077e-05, 0.999999, 0, 524.572, -125.297, 1.75516, 1)",
+          "bounds": {
+            "x": 1245.22998046875,
+            "y": 374.54583740234375,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 990.8135986328125,
+            "y": 227.5509033203125,
+            "width": 338.4378662109375,
+            "height": 458.67919921875
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "desktop-reverse-city.jpg",
+      "bytes": 228228,
+      "sha256": "16c33c319d5c1ba15ba8e45ae9b191343d0688a12a632073927ad921aaf75887"
+    },
+    {
+      "viewportName": "mobile",
+      "direction": "reading",
+      "requestedPhase": "city",
+      "requestedProgress": null,
+      "targetScrollY": 0,
+      "capturedAt": "2026-11-27T17:27:23.771Z",
+      "browserTimeMs": 932.6000000238419,
+      "scrollY": 0,
+      "progress": 0,
+      "phase": "city",
+      "layout": "static",
+      "drawCount": 21,
+      "activeTime": 737.9,
+      "geometry": {
+        "start": 0,
+        "height": 3691.640625,
+        "viewportHeight": 3691.640625,
+        "travel": 1
+      },
+      "css": {
+        "--story-city-opacity": "1",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1",
+        "--story-theatre-scale": "1.05",
+        "--story-card-top": "36%",
+        "--story-card-right": "14%",
+        "--story-card-bottom": "64%",
+        "--story-card-left": "86%",
+        "--story-route-reveal": "0"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 844,
+            "width": 390,
+            "height": 866.640625
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 1710.640625,
+            "width": 390,
+            "height": 888.71875
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 2599.359375,
+            "width": 390,
+            "height": 1092.28125
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/cinematic/hero-mobile.webp",
+          "loaded": true,
+          "naturalWidth": 720,
+          "naturalHeight": 1280,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": false,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 21,
+            "y": 1756.640625,
+            "width": 348,
+            "height": 368
+          }
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "mobile-reading-city.jpg",
+      "bytes": 73731,
+      "sha256": "fcea3f28e735378c3ac065809f90de5ad44181dcfff02e0abd597b04c1d2ffd8",
+      "sectionFile": "mobile-section-city.jpg",
+      "sectionBytes": 73737,
+      "sectionSha256": "d776b3fa9e2577562a175252be1a76bdfc10f2b4be68764c352d559357e22f37",
+      "note": "Static mobile layout: requestedPhase identifies the visible HTML section, not the root normalized progress. Element screenshot can adjust capture scroll and is excluded from scheduling measurement."
+    },
+    {
+      "viewportName": "mobile",
+      "direction": "reading",
+      "requestedPhase": "route",
+      "requestedProgress": null,
+      "targetScrollY": 756,
+      "capturedAt": "2026-11-27T17:27:24.409Z",
+      "browserTimeMs": 1570.1000000238419,
+      "scrollY": 756,
+      "progress": 0.2654,
+      "phase": "route",
+      "layout": "static",
+      "drawCount": 40,
+      "activeTime": 1376.2,
+      "geometry": {
+        "start": 0,
+        "height": 3691.640625,
+        "viewportHeight": 3691.640625,
+        "travel": 1
+      },
+      "css": {
+        "--story-city-opacity": "0.10015881609469979",
+        "--story-route-opacity": "0.8408613520853049",
+        "--story-theatre-opacity": "0",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.0059764631073858",
+        "--story-theatre-scale": "1.05",
+        "--story-card-top": "36%",
+        "--story-card-right": "14%",
+        "--story-card-bottom": "64%",
+        "--story-card-left": "86%",
+        "--story-route-reveal": "0.09063561615680528"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": -756,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 88,
+            "width": 390,
+            "height": 866.640625
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 954.640625,
+            "width": 390,
+            "height": 888.71875
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 1843.359375,
+            "width": 390,
+            "height": 1092.28125
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/cinematic/hero-mobile.webp",
+          "loaded": true,
+          "naturalWidth": 720,
+          "naturalHeight": 1280,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": -756,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": false,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 21,
+            "y": 1000.640625,
+            "width": 348,
+            "height": 368
+          }
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "mobile-reading-route.jpg",
+      "bytes": 46422,
+      "sha256": "0f139db477ecf7c4270e5c2a56ea9e7d6dbff91b2d446897b8998718358fd2f7",
+      "sectionFile": "mobile-section-route.jpg",
+      "sectionBytes": 47515,
+      "sectionSha256": "5c035ea3f61cd61869beb942f84189206c9781bbcb5c64b0902c80772d9e2e7d",
+      "note": "Static mobile layout: requestedPhase identifies the visible HTML section, not the root normalized progress. Element screenshot can adjust capture scroll and is excluded from scheduling measurement."
+    },
+    {
+      "viewportName": "mobile",
+      "direction": "reading",
+      "requestedPhase": "theatre",
+      "requestedProgress": null,
+      "targetScrollY": 1622.640625,
+      "capturedAt": "2026-11-27T17:27:25.032Z",
+      "browserTimeMs": 2193.199999988079,
+      "scrollY": 1623,
+      "progress": 0.5699,
+      "phase": "theatre",
+      "layout": "static",
+      "drawCount": 59,
+      "activeTime": 1990.4,
+      "geometry": {
+        "start": 0,
+        "height": 3691.640625,
+        "viewportHeight": 3691.640625,
+        "travel": 1
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "0.2361515253484462",
+        "--story-theatre-opacity": "0.6814672910683909",
+        "--story-product-opacity": "0",
+        "--story-photo-scale": "1.0177220942719876",
+        "--story-theatre-scale": "1.0448479967346043",
+        "--story-card-top": "11.467177521537929%",
+        "--story-card-right": "4.4594579250425275%",
+        "--story-card-bottom": "20.386093371622984%",
+        "--story-card-left": "27.393812968118386%",
+        "--story-route-reveal": "1"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": -1623,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": -779,
+            "width": 390,
+            "height": 866.640625
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 87.640625,
+            "width": 390,
+            "height": 888.71875
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 976.359375,
+            "width": 390,
+            "height": 1092.28125
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/cinematic/hero-mobile.webp",
+          "loaded": true,
+          "naturalWidth": 720,
+          "naturalHeight": 1280,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": -1623,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": false,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 21,
+            "y": 133.640625,
+            "width": 348,
+            "height": 368
+          }
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "mobile-reading-theatre.jpg",
+      "bytes": 77087,
+      "sha256": "ebbec6fc1f8a1e376eb040ca31860c7e36324ad82bb309b1c0d1ee3ae944ef6f",
+      "sectionFile": "mobile-section-theatre.jpg",
+      "sectionBytes": 77044,
+      "sectionSha256": "f1ca414a21b57dd69d04a1559bb4e7f53ab2b5d5d8a6c818e6c1e945021c6f2f",
+      "note": "Static mobile layout: requestedPhase identifies the visible HTML section, not the root normalized progress. Element screenshot can adjust capture scroll and is excluded from scheduling measurement."
+    },
+    {
+      "viewportName": "mobile",
+      "direction": "reading",
+      "requestedPhase": "product",
+      "requestedProgress": null,
+      "targetScrollY": 2511.359375,
+      "capturedAt": "2026-11-27T17:27:25.627Z",
+      "browserTimeMs": 2788.199999988079,
+      "scrollY": 2511,
+      "progress": 0.8817,
+      "phase": "theatre",
+      "layout": "static",
+      "drawCount": 63,
+      "activeTime": 2065.8,
+      "geometry": {
+        "start": 0,
+        "height": 3691.640625,
+        "viewportHeight": 3691.640625,
+        "travel": 1
+      },
+      "css": {
+        "--story-city-opacity": "0",
+        "--story-route-opacity": "0",
+        "--story-theatre-opacity": "0.3465601415701859",
+        "--story-product-opacity": "0.8036851875314995",
+        "--story-photo-scale": "1.018",
+        "--story-theatre-scale": "1",
+        "--story-card-top": "11.868967113070143%",
+        "--story-card-right": "4.117047967346206%",
+        "--story-card-bottom": "11.868967113070143%",
+        "--story-card-left": "39.686858784328294%",
+        "--story-route-reveal": "1"
+      },
+      "panels": [
+        {
+          "phase": "city",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": -2511,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "phase": "route",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": -1667,
+            "width": 390,
+            "height": 866.640625
+          }
+        },
+        {
+          "phase": "theatre",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": -800.359375,
+            "width": 390,
+            "height": 888.71875
+          }
+        },
+        {
+          "phase": "product",
+          "opacity": "1",
+          "inert": false,
+          "ariaHidden": null,
+          "bounds": {
+            "x": 0,
+            "y": 88.359375,
+            "width": 390,
+            "height": 1092.28125
+          }
+        }
+      ],
+      "media": [
+        {
+          "src": "http://127.0.0.1:4173/assets/cinematic/hero-mobile.webp",
+          "loaded": true,
+          "naturalWidth": 720,
+          "naturalHeight": 1280,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": -2511,
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/theatre.webp",
+          "loaded": false,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "transform": "none",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/architecture.webp",
+          "loaded": true,
+          "naturalWidth": 850,
+          "naturalHeight": 1133,
+          "transform": "none",
+          "bounds": {
+            "x": 21,
+            "y": -754.359375,
+            "width": 348,
+            "height": 368
+          }
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "visibilityState": "visible",
+      "presentationMotion": "running",
+      "horizontalOverflow": false,
+      "file": "mobile-reading-product.jpg",
+      "bytes": 50822,
+      "sha256": "10ad729a335b977b60573e695dbf32eef7e202bc646a0800525dda10cb107beb",
+      "sectionFile": "mobile-section-product.jpg",
+      "sectionBytes": 69631,
+      "sectionSha256": "72bb7428e9f26df93a57f121f8bc7bff56c17cb86963daa883cd92a87c825f6a",
+      "note": "Static mobile layout: requestedPhase identifies the visible HTML section, not the root normalized progress. Element screenshot can adjust capture scroll and is excluded from scheduling measurement."
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "city",
+      "forwardProgress": 0.08,
+      "reverseProgress": 0.08,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    },
+    {
+      "phase": "route",
+      "forwardProgress": 0.36,
+      "reverseProgress": 0.36,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    },
+    {
+      "phase": "theatre",
+      "forwardProgress": 0.66,
+      "reverseProgress": 0.66,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    },
+    {
+      "phase": "product",
+      "forwardProgress": 0.985,
+      "reverseProgress": 0.985,
+      "progressDifference": 0,
+      "exactCssMatch": true,
+      "differences": [],
+      "note": "Compare geometry-derived CSS at the recorded positions. Particle activeTime and image pixels may differ with time; this is not a pixel-identical animation assertion."
+    }
+  ],
+  "inputLog": [
+    {
+      "at": "2026-11-27T17:27:10.523Z",
+      "elapsedMs": 0.9825000000000728,
+      "scrollYBefore": 0,
+      "targetScrollY": 304,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:10.616Z",
+      "elapsedMs": 94.68520000000012,
+      "scrollYBefore": 180,
+      "targetScrollY": 304,
+      "deltaY": 124,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:11.784Z",
+      "elapsedMs": 0.7145000000000437,
+      "scrollYBefore": 304,
+      "targetScrollY": 1368,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:11.868Z",
+      "elapsedMs": 84.79830000000038,
+      "scrollYBefore": 484,
+      "targetScrollY": 1368,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:11.961Z",
+      "elapsedMs": 177.73960000000034,
+      "scrollYBefore": 664,
+      "targetScrollY": 1368,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:12.057Z",
+      "elapsedMs": 272.94370000000026,
+      "scrollYBefore": 844,
+      "targetScrollY": 1368,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:12.182Z",
+      "elapsedMs": 398.1314000000002,
+      "scrollYBefore": 1024,
+      "targetScrollY": 1368,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:12.275Z",
+      "elapsedMs": 491.02400000000034,
+      "scrollYBefore": 1204,
+      "targetScrollY": 1368,
+      "deltaY": 164,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:13.486Z",
+      "elapsedMs": 0.5051000000003114,
+      "scrollYBefore": 1368,
+      "targetScrollY": 2508,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:13.582Z",
+      "elapsedMs": 96.08479999999963,
+      "scrollYBefore": 1548,
+      "targetScrollY": 2508,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:13.693Z",
+      "elapsedMs": 207.34739999999965,
+      "scrollYBefore": 1728,
+      "targetScrollY": 2508,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:13.783Z",
+      "elapsedMs": 297.70920000000024,
+      "scrollYBefore": 1908,
+      "targetScrollY": 2508,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:13.879Z",
+      "elapsedMs": 393.65650000000005,
+      "scrollYBefore": 2088,
+      "targetScrollY": 2508,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:13.989Z",
+      "elapsedMs": 503.40390000000025,
+      "scrollYBefore": 2268,
+      "targetScrollY": 2508,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:14.083Z",
+      "elapsedMs": 597.1300000000001,
+      "scrollYBefore": 2448,
+      "targetScrollY": 2508,
+      "deltaY": 60,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:15.260Z",
+      "elapsedMs": 0.5091999999995096,
+      "scrollYBefore": 2508,
+      "targetScrollY": 3743,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:15.348Z",
+      "elapsedMs": 88.0676999999996,
+      "scrollYBefore": 2688,
+      "targetScrollY": 3743,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:15.440Z",
+      "elapsedMs": 180.10729999999967,
+      "scrollYBefore": 2868,
+      "targetScrollY": 3743,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:15.533Z",
+      "elapsedMs": 273.04439999999977,
+      "scrollYBefore": 3048,
+      "targetScrollY": 3743,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:15.626Z",
+      "elapsedMs": 366.34850000000006,
+      "scrollYBefore": 3228,
+      "targetScrollY": 3743,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:15.720Z",
+      "elapsedMs": 460.4371999999994,
+      "scrollYBefore": 3408,
+      "targetScrollY": 3743,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:15.812Z",
+      "elapsedMs": 552.4879000000001,
+      "scrollYBefore": 3588,
+      "targetScrollY": 3743,
+      "deltaY": 155,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:17.125Z",
+      "elapsedMs": 0.5685999999996056,
+      "scrollYBefore": 3743,
+      "targetScrollY": 2508,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:17.208Z",
+      "elapsedMs": 83.34479999999985,
+      "scrollYBefore": 3563,
+      "targetScrollY": 2508,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:17.301Z",
+      "elapsedMs": 176.71019999999953,
+      "scrollYBefore": 3383,
+      "targetScrollY": 2508,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:17.393Z",
+      "elapsedMs": 268.5080999999991,
+      "scrollYBefore": 3203,
+      "targetScrollY": 2508,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:17.488Z",
+      "elapsedMs": 363.2115999999987,
+      "scrollYBefore": 3023,
+      "targetScrollY": 2508,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:17.581Z",
+      "elapsedMs": 456.33820000000014,
+      "scrollYBefore": 2843,
+      "targetScrollY": 2508,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:17.675Z",
+      "elapsedMs": 550.4975999999988,
+      "scrollYBefore": 2663,
+      "targetScrollY": 2508,
+      "deltaY": -155,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:18.902Z",
+      "elapsedMs": 0.6295000000009168,
+      "scrollYBefore": 2508,
+      "targetScrollY": 1368,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:18.986Z",
+      "elapsedMs": 85.04190000000017,
+      "scrollYBefore": 2328,
+      "targetScrollY": 1368,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:19.080Z",
+      "elapsedMs": 179.13080000000082,
+      "scrollYBefore": 2148,
+      "targetScrollY": 1368,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:19.203Z",
+      "elapsedMs": 301.7378000000008,
+      "scrollYBefore": 1968,
+      "targetScrollY": 1368,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:19.298Z",
+      "elapsedMs": 396.97220000000016,
+      "scrollYBefore": 1788,
+      "targetScrollY": 1368,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:19.390Z",
+      "elapsedMs": 488.7019,
+      "scrollYBefore": 1608,
+      "targetScrollY": 1368,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:19.481Z",
+      "elapsedMs": 580.2985000000008,
+      "scrollYBefore": 1428,
+      "targetScrollY": 1368,
+      "deltaY": -60,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:20.655Z",
+      "elapsedMs": 0.6997000000010303,
+      "scrollYBefore": 1368,
+      "targetScrollY": 304,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:20.736Z",
+      "elapsedMs": 80.87089999999989,
+      "scrollYBefore": 1188,
+      "targetScrollY": 304,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:20.829Z",
+      "elapsedMs": 173.79960000000028,
+      "scrollYBefore": 1008,
+      "targetScrollY": 304,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:20.925Z",
+      "elapsedMs": 270.0028000000002,
+      "scrollYBefore": 828,
+      "targetScrollY": 304,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:21.016Z",
+      "elapsedMs": 361.7303000000011,
+      "scrollYBefore": 648,
+      "targetScrollY": 304,
+      "deltaY": -180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:21.114Z",
+      "elapsedMs": 459.39609999999993,
+      "scrollYBefore": 468,
+      "targetScrollY": 304,
+      "deltaY": -164,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:23.846Z",
+      "elapsedMs": 0.5671000000002095,
+      "scrollYBefore": 0,
+      "targetScrollY": 756,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:23.941Z",
+      "elapsedMs": 95.33610000000044,
+      "scrollYBefore": 180,
+      "targetScrollY": 756,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.050Z",
+      "elapsedMs": 204.1952000000001,
+      "scrollYBefore": 360,
+      "targetScrollY": 756,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.144Z",
+      "elapsedMs": 298.5594000000001,
+      "scrollYBefore": 540,
+      "targetScrollY": 756,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.238Z",
+      "elapsedMs": 392.177099999999,
+      "scrollYBefore": 720,
+      "targetScrollY": 756,
+      "deltaY": 36,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.503Z",
+      "elapsedMs": 0.525099999998929,
+      "scrollYBefore": 756,
+      "targetScrollY": 1622.640625,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.596Z",
+      "elapsedMs": 93.51039999999921,
+      "scrollYBefore": 936,
+      "targetScrollY": 1622.640625,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.688Z",
+      "elapsedMs": 185.92389999999978,
+      "scrollYBefore": 1116,
+      "targetScrollY": 1622.640625,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.783Z",
+      "elapsedMs": 280.3936999999987,
+      "scrollYBefore": 1296,
+      "targetScrollY": 1622.640625,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:24.876Z",
+      "elapsedMs": 373.17149999999856,
+      "scrollYBefore": 1476,
+      "targetScrollY": 1622.640625,
+      "deltaY": 146.640625,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:25.096Z",
+      "elapsedMs": 0.6858000000011089,
+      "scrollYBefore": 1623,
+      "targetScrollY": 2511.359375,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:25.189Z",
+      "elapsedMs": 94.6148000000012,
+      "scrollYBefore": 1803,
+      "targetScrollY": 2511.359375,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:25.281Z",
+      "elapsedMs": 186.40459999999985,
+      "scrollYBefore": 1983,
+      "targetScrollY": 2511.359375,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:25.376Z",
+      "elapsedMs": 281.21410000000105,
+      "scrollYBefore": 2163,
+      "targetScrollY": 2511.359375,
+      "deltaY": 180,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    },
+    {
+      "at": "2026-11-27T17:27:25.473Z",
+      "elapsedMs": 377.7552999999989,
+      "scrollYBefore": 2343,
+      "targetScrollY": 2511.359375,
+      "deltaY": 168.359375,
+      "source": "Playwright page.mouse.wheel / browser protocol input"
+    }
+  ],
+  "sessions": [
+    {
+      "viewportName": "desktop",
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "viewportName": "mobile",
+      "errors": [],
+      "failedRequests": []
+    }
+  ],
+  "limitations": [
+    "Desktop Edge headless viewport simulation, not a real phone.",
+    "Wheel input is sent through Playwright browser protocol; no human touch or physical wheel was tested.",
+    "Screenshots/decoding waits add overhead; capture is not used for performance conclusions.",
+    "No video or animated file is generated. review.html uses the saved still images.",
+    "CSS comparison excludes time-dependent particles and does not prove pixel-identical output."
+  ]
+}

@@ -1,0 +1,474 @@
+{
+  "capturedAt": "2026-11-27T15:16:22.190Z",
+  "homepageSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+  "variants": [
+    {
+      "variant": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "initial": {
+        "policy": "running",
+        "resources": [
+          {
+            "path": "/assets/index-CkT8MVk5.js",
+            "initiatorType": "script",
+            "transferSize": 372279,
+            "encodedBodySize": 371979,
+            "decodedBodySize": 371979
+          },
+          {
+            "path": "/assets/index-DQLgXoNL.css",
+            "initiatorType": "link",
+            "transferSize": 204894,
+            "encodedBodySize": 204594,
+            "decodedBodySize": 204594
+          },
+          {
+            "path": "/assets/hero.webp",
+            "initiatorType": "link",
+            "transferSize": 222662,
+            "encodedBodySize": 222362,
+            "decodedBodySize": 222362
+          },
+          {
+            "path": "/assets/heading.ttf",
+            "initiatorType": "css",
+            "transferSize": 38700,
+            "encodedBodySize": 38400,
+            "decodedBodySize": 38400
+          },
+          {
+            "path": "/assets/gsap-BqEcbG5D.js",
+            "initiatorType": "script",
+            "transferSize": 71563,
+            "encodedBodySize": 71263,
+            "decodedBodySize": 71263
+          },
+          {
+            "path": "/assets/ScrollTrigger-CyD2wTOc.js",
+            "initiatorType": "script",
+            "transferSize": 44387,
+            "encodedBodySize": 44087,
+            "decodedBodySize": 44087
+          },
+          {
+            "path": "/assets/favicon.svg",
+            "initiatorType": "other",
+            "transferSize": 644,
+            "encodedBodySize": 344,
+            "decodedBodySize": 344
+          },
+          {
+            "path": "/assets/SeaRouteParticles-TPqJoUJv.js",
+            "initiatorType": "script",
+            "transferSize": 4223,
+            "encodedBodySize": 3923,
+            "decodedBodySize": 3923
+          }
+        ],
+        "navigationTransferBytes": 42347,
+        "totalTransferredBytes": 1001699,
+        "totalEncodedBodyBytes": 998999,
+        "hero": "/assets/hero.webp",
+        "loadedImages": [
+          {
+            "path": "/assets/hero.webp",
+            "width": 1600,
+            "height": 900,
+            "estimatedRgbaBytes": 5760000
+          }
+        ],
+        "estimatedLoadedImageRgbaBytes": 5760000,
+        "canvasBuffers": [
+          {
+            "width": 1440,
+            "height": 1000,
+            "estimatedRgbaBytes": 5760000
+          }
+        ],
+        "jsHeapBytes": 5746327
+      },
+      "completeReading": {
+        "policy": "paused",
+        "resources": [
+          {
+            "path": "/assets/index-CkT8MVk5.js",
+            "initiatorType": "script",
+            "transferSize": 372279,
+            "encodedBodySize": 371979,
+            "decodedBodySize": 371979
+          },
+          {
+            "path": "/assets/index-DQLgXoNL.css",
+            "initiatorType": "link",
+            "transferSize": 204894,
+            "encodedBodySize": 204594,
+            "decodedBodySize": 204594
+          },
+          {
+            "path": "/assets/hero.webp",
+            "initiatorType": "link",
+            "transferSize": 222662,
+            "encodedBodySize": 222362,
+            "decodedBodySize": 222362
+          },
+          {
+            "path": "/assets/heading.ttf",
+            "initiatorType": "css",
+            "transferSize": 38700,
+            "encodedBodySize": 38400,
+            "decodedBodySize": 38400
+          },
+          {
+            "path": "/assets/gsap-BqEcbG5D.js",
+            "initiatorType": "script",
+            "transferSize": 71563,
+            "encodedBodySize": 71263,
+            "decodedBodySize": 71263
+          },
+          {
+            "path": "/assets/ScrollTrigger-CyD2wTOc.js",
+            "initiatorType": "script",
+            "transferSize": 44387,
+            "encodedBodySize": 44087,
+            "decodedBodySize": 44087
+          },
+          {
+            "path": "/assets/favicon.svg",
+            "initiatorType": "other",
+            "transferSize": 644,
+            "encodedBodySize": 344,
+            "decodedBodySize": 344
+          },
+          {
+            "path": "/assets/SeaRouteParticles-TPqJoUJv.js",
+            "initiatorType": "script",
+            "transferSize": 4223,
+            "encodedBodySize": 3923,
+            "decodedBodySize": 3923
+          },
+          {
+            "path": "/assets/theatre.webp",
+            "initiatorType": "img",
+            "transferSize": 109954,
+            "encodedBodySize": 109654,
+            "decodedBodySize": 109654
+          },
+          {
+            "path": "/assets/architecture.webp",
+            "initiatorType": "img",
+            "transferSize": 159416,
+            "encodedBodySize": 159116,
+            "decodedBodySize": 159116
+          },
+          {
+            "path": "/assets/realism/theatre-dusk.webp",
+            "initiatorType": "img",
+            "transferSize": 160124,
+            "encodedBodySize": 159824,
+            "decodedBodySize": 159824
+          },
+          {
+            "path": "/assets/realism/coastal-overview.webp",
+            "initiatorType": "img",
+            "transferSize": 147698,
+            "encodedBodySize": 147398,
+            "decodedBodySize": 147398
+          },
+          {
+            "path": "/assets/realism/route-landmarks.webp",
+            "initiatorType": "img",
+            "transferSize": 173902,
+            "encodedBodySize": 173602,
+            "decodedBodySize": 173602
+          }
+        ],
+        "navigationTransferBytes": 42347,
+        "totalTransferredBytes": 1752793,
+        "totalEncodedBodyBytes": 1748593,
+        "hero": "/assets/hero.webp",
+        "loadedImages": [
+          {
+            "path": "/assets/hero.webp",
+            "width": 1600,
+            "height": 900,
+            "estimatedRgbaBytes": 5760000
+          },
+          {
+            "path": "/assets/theatre.webp",
+            "width": 1200,
+            "height": 851,
+            "estimatedRgbaBytes": 4084800
+          },
+          {
+            "path": "/assets/architecture.webp",
+            "width": 850,
+            "height": 1133,
+            "estimatedRgbaBytes": 3852200
+          },
+          {
+            "path": "/assets/realism/theatre-dusk.webp",
+            "width": 1920,
+            "height": 1080,
+            "estimatedRgbaBytes": 8294400
+          },
+          {
+            "path": "/assets/realism/coastal-overview.webp",
+            "width": 1920,
+            "height": 1080,
+            "estimatedRgbaBytes": 8294400
+          },
+          {
+            "path": "/assets/realism/route-landmarks.webp",
+            "width": 1920,
+            "height": 1080,
+            "estimatedRgbaBytes": 8294400
+          }
+        ],
+        "estimatedLoadedImageRgbaBytes": 38580200,
+        "canvasBuffers": [],
+        "jsHeapBytes": 8935399
+      },
+      "errors": []
+    },
+    {
+      "variant": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "initial": {
+        "policy": "running",
+        "resources": [
+          {
+            "path": "/assets/index-CkT8MVk5.js",
+            "initiatorType": "script",
+            "transferSize": 372279,
+            "encodedBodySize": 371979,
+            "decodedBodySize": 371979
+          },
+          {
+            "path": "/assets/index-DQLgXoNL.css",
+            "initiatorType": "link",
+            "transferSize": 204894,
+            "encodedBodySize": 204594,
+            "decodedBodySize": 204594
+          },
+          {
+            "path": "/assets/cinematic/hero-mobile.webp",
+            "initiatorType": "link",
+            "transferSize": 85622,
+            "encodedBodySize": 85322,
+            "decodedBodySize": 85322
+          },
+          {
+            "path": "/assets/heading.ttf",
+            "initiatorType": "css",
+            "transferSize": 38700,
+            "encodedBodySize": 38400,
+            "decodedBodySize": 38400
+          },
+          {
+            "path": "/assets/ScrollTrigger-CyD2wTOc.js",
+            "initiatorType": "script",
+            "transferSize": 44387,
+            "encodedBodySize": 44087,
+            "decodedBodySize": 44087
+          },
+          {
+            "path": "/assets/gsap-BqEcbG5D.js",
+            "initiatorType": "script",
+            "transferSize": 71563,
+            "encodedBodySize": 71263,
+            "decodedBodySize": 71263
+          },
+          {
+            "path": "/assets/favicon.svg",
+            "initiatorType": "other",
+            "transferSize": 644,
+            "encodedBodySize": 344,
+            "decodedBodySize": 344
+          },
+          {
+            "path": "/assets/architecture.webp",
+            "initiatorType": "img",
+            "transferSize": 159416,
+            "encodedBodySize": 159116,
+            "decodedBodySize": 159116
+          },
+          {
+            "path": "/assets/SeaRouteParticles-TPqJoUJv.js",
+            "initiatorType": "script",
+            "transferSize": 4223,
+            "encodedBodySize": 3923,
+            "decodedBodySize": 3923
+          }
+        ],
+        "navigationTransferBytes": 42347,
+        "totalTransferredBytes": 1024075,
+        "totalEncodedBodyBytes": 1021075,
+        "hero": "/assets/cinematic/hero-mobile.webp",
+        "loadedImages": [
+          {
+            "path": "/assets/cinematic/hero-mobile.webp",
+            "width": 720,
+            "height": 1280,
+            "estimatedRgbaBytes": 3686400
+          },
+          {
+            "path": "/assets/architecture.webp",
+            "width": 850,
+            "height": 1133,
+            "estimatedRgbaBytes": 3852200
+          }
+        ],
+        "estimatedLoadedImageRgbaBytes": 7538600,
+        "canvasBuffers": [
+          {
+            "width": 390,
+            "height": 3692,
+            "estimatedRgbaBytes": 5759520
+          }
+        ],
+        "jsHeapBytes": 6148290
+      },
+      "completeReading": {
+        "policy": "paused",
+        "resources": [
+          {
+            "path": "/assets/index-CkT8MVk5.js",
+            "initiatorType": "script",
+            "transferSize": 372279,
+            "encodedBodySize": 371979,
+            "decodedBodySize": 371979
+          },
+          {
+            "path": "/assets/index-DQLgXoNL.css",
+            "initiatorType": "link",
+            "transferSize": 204894,
+            "encodedBodySize": 204594,
+            "decodedBodySize": 204594
+          },
+          {
+            "path": "/assets/cinematic/hero-mobile.webp",
+            "initiatorType": "link",
+            "transferSize": 85622,
+            "encodedBodySize": 85322,
+            "decodedBodySize": 85322
+          },
+          {
+            "path": "/assets/heading.ttf",
+            "initiatorType": "css",
+            "transferSize": 38700,
+            "encodedBodySize": 38400,
+            "decodedBodySize": 38400
+          },
+          {
+            "path": "/assets/ScrollTrigger-CyD2wTOc.js",
+            "initiatorType": "script",
+            "transferSize": 44387,
+            "encodedBodySize": 44087,
+            "decodedBodySize": 44087
+          },
+          {
+            "path": "/assets/gsap-BqEcbG5D.js",
+            "initiatorType": "script",
+            "transferSize": 71563,
+            "encodedBodySize": 71263,
+            "decodedBodySize": 71263
+          },
+          {
+            "path": "/assets/favicon.svg",
+            "initiatorType": "other",
+            "transferSize": 644,
+            "encodedBodySize": 344,
+            "decodedBodySize": 344
+          },
+          {
+            "path": "/assets/architecture.webp",
+            "initiatorType": "img",
+            "transferSize": 159416,
+            "encodedBodySize": 159116,
+            "decodedBodySize": 159116
+          },
+          {
+            "path": "/assets/SeaRouteParticles-TPqJoUJv.js",
+            "initiatorType": "script",
+            "transferSize": 4223,
+            "encodedBodySize": 3923,
+            "decodedBodySize": 3923
+          },
+          {
+            "path": "/assets/realism/theatre-dusk.webp",
+            "initiatorType": "img",
+            "transferSize": 160124,
+            "encodedBodySize": 159824,
+            "decodedBodySize": 159824
+          },
+          {
+            "path": "/assets/realism/coastal-overview.webp",
+            "initiatorType": "img",
+            "transferSize": 147698,
+            "encodedBodySize": 147398,
+            "decodedBodySize": 147398
+          },
+          {
+            "path": "/assets/realism/route-landmarks.webp",
+            "initiatorType": "img",
+            "transferSize": 173902,
+            "encodedBodySize": 173602,
+            "decodedBodySize": 173602
+          }
+        ],
+        "navigationTransferBytes": 42347,
+        "totalTransferredBytes": 1505799,
+        "totalEncodedBodyBytes": 1501899,
+        "hero": "/assets/cinematic/hero-mobile.webp",
+        "loadedImages": [
+          {
+            "path": "/assets/cinematic/hero-mobile.webp",
+            "width": 720,
+            "height": 1280,
+            "estimatedRgbaBytes": 3686400
+          },
+          {
+            "path": "/assets/architecture.webp",
+            "width": 850,
+            "height": 1133,
+            "estimatedRgbaBytes": 3852200
+          },
+          {
+            "path": "/assets/realism/theatre-dusk.webp",
+            "width": 1920,
+            "height": 1080,
+            "estimatedRgbaBytes": 8294400
+          },
+          {
+            "path": "/assets/realism/coastal-overview.webp",
+            "width": 1920,
+            "height": 1080,
+            "estimatedRgbaBytes": 8294400
+          },
+          {
+            "path": "/assets/realism/route-landmarks.webp",
+            "width": 1920,
+            "height": 1080,
+            "estimatedRgbaBytes": 8294400
+          }
+        ],
+        "estimatedLoadedImageRgbaBytes": 32421800,
+        "canvasBuffers": [],
+        "jsHeapBytes": 8465515
+      },
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "Fresh headless Edge profiles with local uncompressed HTTP responses; these byte counts do not predict CDN compression or field loading time.",
+    "Initial mode uses the normal motion policy. Complete reading is explicitly user-paused, so this measures all HTML/photos without automatically starting the optional WebGL showcase.",
+    "Image RGBA bytes are conservative estimates from loaded natural dimensions, not measured decoded cache/GPU peak memory. Repeated URLs are counted once.",
+    "There is no application-owned frame-sequence cache in this photographic prototype; normal browser image/cache allocations are separate."
+  ]
+}

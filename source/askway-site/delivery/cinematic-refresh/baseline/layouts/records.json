@@ -1,0 +1,62 @@
+{
+  "capturedAt": "2026-11-27T09:36:35.802Z",
+  "mode": "baseline",
+  "homeDocumentSha256": "50956941b9a2451de1f2deffeed4fe2af2038e44a597d0eec04b42c24050922f",
+  "records": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 9228,
+      "documentWidth": 1440,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 11126,
+      "documentWidth": 390,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 11763,
+      "documentWidth": 320,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    },
+    {
+      "name": "zoom-css-equivalent",
+      "width": 720,
+      "height": 9817,
+      "documentWidth": 720,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Equivalent CSS viewport only; not an actual browser 200% zoom test."
+    },
+    {
+      "name": "landscape",
+      "width": 844,
+      "height": 9613,
+      "documentWidth": 844,
+      "h1Count": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "dpr": 1,
+      "actualBrowserZoom": false,
+      "note": "Desktop Edge viewport simulation; not a real phone."
+    }
+  ]
+}

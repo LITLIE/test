@@ -1,0 +1,154 @@
+{
+  "capturedAt": "2026-11-27T15:16:19.698Z",
+  "base": "http://127.0.0.1:4191/askway-check",
+  "sourceMatches": [
+    {
+      "file": "src/features/cinematic/StoryStage.tsx",
+      "sha256": "a38c268981f20755d3b64cc78c23fd5077dd93c084629e3283c71bdeea13ebf4"
+    },
+    {
+      "file": "src/features/cinematic/progress.ts",
+      "sha256": "a7cfb4a31204d6578e11f715f6cdc137f275515c41f2d640a80128751941e5a2"
+    },
+    {
+      "file": "src/features/cinematic/cinematic.css",
+      "sha256": "1c4fbf0b1402dfd90acde4329ecb5b2de6e5932822ca50017c07241bc99550c7"
+    },
+    {
+      "file": "src/features/experience/map/RouteMap2D.tsx",
+      "sha256": "946b5c55eb2a47d5c8c9742d4181030dd3e880e2c45ad48092a4be41deea7b1e"
+    },
+    {
+      "file": "src/styles/immersive.css",
+      "sha256": "3449ef9c25a3f6bcde37a74d638c5e5c55eef76ee8b01105c92952bd5b276341"
+    },
+    {
+      "file": "src/motion/PresentationMotion.tsx",
+      "sha256": "a5524bb8ae06ce3e8b766a3311fcda7b3827a8f057879d0794dff150babcfca3"
+    },
+    {
+      "file": "public/assets/cinematic/manifest.json",
+      "sha256": "bc08786cbb4fa06befdbfea9fd73d5cdc9d3692c82a4a38b84aeaf0780b1dc89"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway-check/",
+      "sha256": "124e099b8a6e010ad69f4b7012f25b6655078c3c53b34fc52de00ecf2035f137"
+    },
+    {
+      "path": "/product/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway-check/product/",
+      "sha256": "a17a19ed8d47271dca4f1ddc13eb36788a885cc809e566e7107e586fe62a7e51"
+    },
+    {
+      "path": "/experience/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway-check/experience/",
+      "sha256": "f485811331d0b4c9e9a4f6e64966c8b285351b701d78ea1a0cc9c21fb34e9bb1"
+    },
+    {
+      "path": "/cooperation/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway-check/cooperation/",
+      "sha256": "b761ccdf177cd00334fe1001197c81ec730d9a1a7da433b96e3154cd4550995d"
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "canonical": "http://litlie.zh.kg/askway-check/about/",
+      "sha256": "6f6f25565673301f895855d0c72963145f8b0bef02925ab7f2d6942ed57ba40b"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/askway-check/assets/index-CwR6h2Mg.js",
+      "mime": "text/javascript; charset=utf-8",
+      "bytes": 372044,
+      "sha256": "5b73ad310112ad9cacf299e296d38b04b8b059b49fc91e0b4aafb8f299e8f3e0"
+    },
+    {
+      "path": "/askway-check/assets/index-D7mRoG1R.css",
+      "mime": "text/css; charset=utf-8",
+      "bytes": 204607,
+      "sha256": "c886dbfa5d71e2ef1dac3d4d4762e8e7675da99b8212a9a407f08f5ac3e4d6a0"
+    },
+    {
+      "path": "/askway-check/assets/hero.webp",
+      "mime": "image/webp",
+      "bytes": 222362,
+      "sha256": "3504f8eac73cb0568c1ba32dd2d8060be015bfcf2feb44d661af93e3554d039b"
+    },
+    {
+      "path": "/askway-check/assets/cinematic/hero-mobile.webp",
+      "mime": "image/webp",
+      "bytes": 85322,
+      "sha256": "df1075fd287e26528942e77ab2dda88abda25f8f2eb669181fadad6400aa4b30"
+    },
+    {
+      "path": "/askway-check/assets/theatre.webp",
+      "mime": "image/webp",
+      "bytes": 109654,
+      "sha256": "654b537927bf5b12f9df2564dc46685338c7578d110b31f7099eb32ba487d15c"
+    },
+    {
+      "path": "/askway-check/assets/architecture.webp",
+      "mime": "image/webp",
+      "bytes": 159116,
+      "sha256": "a47ff66f7c411cd81150f1bf8b73ece871ffd35473b2b3448ca8a25cf0d37ddc"
+    },
+    {
+      "path": "/askway-check/assets/realism/theatre-dusk.webp",
+      "mime": "image/webp",
+      "bytes": 159824,
+      "sha256": "d11f84c95d0f460b17d1503fdf2bb98fc414bc20fa2138ca3bb9b3161cd7fd60"
+    },
+    {
+      "path": "/askway-check/assets/realism/coastal-overview.webp",
+      "mime": "image/webp",
+      "bytes": 147398,
+      "sha256": "7601f6ef28f0b7bcee5989e6f92905069499a3e4213c84a220e3d799758861e1"
+    },
+    {
+      "path": "/askway-check/assets/realism/route-landmarks.webp",
+      "mime": "image/webp",
+      "bytes": 173602,
+      "sha256": "014d4c9b161176f8d5a2d2b6580b441dec67516596a46239db0c68375bcf938f"
+    }
+  ],
+  "browser": {
+    "hydratedNavigation": true,
+    "experienceMap": true,
+    "historyBack": true,
+    "errors": []
+  },
+  "staticChecks": {
+    "records": [
+      {
+        "name": "all five routes have their own pre-rendered body and canonical",
+        "pass": true
+      },
+      {
+        "name": "public catalog has only attributed reference points and unknown operational facts",
+        "pass": true
+      },
+      {
+        "name": "404 is a real missing-route response with noindex",
+        "pass": true
+      },
+      {
+        "name": "sitemap includes the independent experience route and correct base",
+        "pass": true
+      },
+      {
+        "name": "all five pages remain readable and navigable without JavaScript",
+        "pass": true
+      }
+    ],
+    "passed": 5,
+    "total": 5
+  }
+}

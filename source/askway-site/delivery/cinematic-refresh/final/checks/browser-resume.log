@@ -1,0 +1,74 @@
+[
+  {
+    "name": "home hydrates without losing static heading",
+    "pass": true
+  },
+  {
+    "name": "all four manual story stages update the visible panel",
+    "pass": true
+  },
+  {
+    "name": "city selection updates its heading and highlighted map",
+    "pass": true
+  },
+  {
+    "name": "desktop product navigation works",
+    "pass": true
+  },
+  {
+    "name": "impossible mandatory stops are explained",
+    "pass": true
+  },
+  {
+    "name": "a sufficient time budget keeps all mandatory stops",
+    "pass": true
+  },
+  {
+    "name": "cooperation form focuses and reports missing organization",
+    "pass": true
+  },
+  {
+    "name": "cooperation produces a real draft and a correctly addressed email link",
+    "pass": true
+  },
+  {
+    "name": "draft copy provides feedback and contains the submitted request",
+    "pass": true
+  },
+  {
+    "name": "about route loads with a single heading",
+    "pass": true
+  },
+  {
+    "name": "desktop pages have no horizontal overflow",
+    "pass": true
+  },
+  {
+    "name": "mobile menu opens, traps focus and Escape returns focus",
+    "pass": true
+  },
+  {
+    "name": "mobile navigation reaches the about page and closes the menu",
+    "pass": true
+  },
+  {
+    "name": "all mobile pages at 360 and 390 pixels remain within the viewport",
+    "pass": true
+  },
+  {
+    "name": "reduced motion keeps cinematic and expandable concept story content readable",
+    "pass": true
+  },
+  {
+    "name": "native desktop scrolling advances and reverses the cinematic story",
+    "pass": true
+  },
+  {
+    "name": "no browser runtime errors were emitted",
+    "pass": true
+  },
+  {
+    "name": "four pages remain readable without JavaScript",
+    "pass": true
+  }
+]

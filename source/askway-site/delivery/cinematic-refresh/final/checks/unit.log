@@ -1,0 +1,17 @@
+✔ a cooperation brief retains the submitted organization, contact and request (0.7312ms)
+✔ missing details produce field errors rather than an apparently complete proposal (0.1644ms)
+✔ unrecognized cooperation direction is rejected (0.0683ms)
+✔ oversized text is rejected rather than silently cutting a user proposal (0.0757ms)
+✔ optional contact can be absent while a useful local draft is produced (0.0853ms)
+✔ the journey progresses through all four stages and clamps scrollbar overshoot (0.1482ms)
+✔ a time-bounded demo plan preserves the mandatory landmark (0.231ms)
+✔ an impossible combination explains the conflict instead of violating the time limit (0.0777ms)
+✔ a longer demo plan can include all requested stops with time left (0.1771ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 68.193

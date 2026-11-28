@@ -1,0 +1,337 @@
+{
+  "capturedAt": "2026-11-27T16:44:40.217Z",
+  "homepageSha256": "da5966f2246aca56ca4f0d1819e082033b50fc4d524e25a5d83048e90bfb8b40",
+  "screenshotsAreDiagnostics": true,
+  "states": [
+    {
+      "scrollY": 272,
+      "value": 0.17,
+      "target": 0.17,
+      "phase": "city",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(8, 45, 61)",
+        "colour": "rgb(245, 204, 142)"
+      },
+      "cityOpacity": "0.784",
+      "nearOpacity": "0",
+      "productCopyOpacity": "0",
+      "photographTransform": "matrix(1.04227, 0, 0, 1.04227, 0, 0)",
+      "requestedProgress": 0.17
+    },
+    {
+      "scrollY": 288,
+      "value": 0.18,
+      "target": 0.18,
+      "phase": "route",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(250, 249, 246)",
+        "colour": "rgb(82, 100, 109)"
+      },
+      "cityOpacity": "0.648",
+      "nearOpacity": "0",
+      "productCopyOpacity": "0",
+      "photographTransform": "matrix(1.04374, 0, 0, 1.04374, 0, 0)",
+      "requestedProgress": 0.18
+    },
+    {
+      "scrollY": 784,
+      "value": 0.49,
+      "target": 0.49,
+      "phase": "route",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(250, 249, 246)",
+        "colour": "rgb(82, 100, 109)"
+      },
+      "cityOpacity": "0",
+      "nearOpacity": "0.216",
+      "productCopyOpacity": "0",
+      "photographTransform": "matrix(1.045, 0, 0, 1.045, 0, 0)",
+      "requestedProgress": 0.49
+    },
+    {
+      "scrollY": 800,
+      "value": 0.5,
+      "target": 0.5,
+      "phase": "theatre",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(8, 45, 61)",
+        "colour": "rgb(244, 239, 228)"
+      },
+      "cityOpacity": "0",
+      "nearOpacity": "0.352",
+      "productCopyOpacity": "0",
+      "photographTransform": "matrix(1.045, 0, 0, 1.045, 0, 0)",
+      "requestedProgress": 0.5
+    },
+    {
+      "scrollY": 1264,
+      "value": 0.79,
+      "target": 0.79,
+      "phase": "theatre",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(8, 45, 61)",
+        "colour": "rgb(244, 239, 228)"
+      },
+      "cityOpacity": "0",
+      "nearOpacity": "1",
+      "productCopyOpacity": "0",
+      "photographTransform": "matrix(1.045, 0, 0, 1.045, 0, 0)",
+      "requestedProgress": 0.79
+    },
+    {
+      "scrollY": 1280,
+      "value": 0.8,
+      "target": 0.8,
+      "phase": "product",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(250, 249, 246)",
+        "colour": "rgb(82, 100, 109)"
+      },
+      "cityOpacity": "0",
+      "nearOpacity": "1",
+      "productCopyOpacity": "0",
+      "photographTransform": "matrix(1.045, 0, 0, 1.045, 0, 0)",
+      "requestedProgress": 0.8
+    },
+    {
+      "scrollY": 1440,
+      "value": 0.9,
+      "target": 0.9,
+      "phase": "product",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(250, 249, 246)",
+        "colour": "rgb(82, 100, 109)"
+      },
+      "cityOpacity": "0",
+      "nearOpacity": "1",
+      "productCopyOpacity": "0",
+      "photographTransform": "matrix(1.045, 0, 0, 1.045, 0, 0)",
+      "requestedProgress": 0.9
+    },
+    {
+      "scrollY": 1504,
+      "value": 0.94,
+      "target": 0.94,
+      "phase": "product",
+      "geometry": {
+        "start": 0,
+        "height": 2600,
+        "viewport": 1000,
+        "travel": 1600
+      },
+      "nav": {
+        "background": "rgb(250, 249, 246)",
+        "colour": "rgb(82, 100, 109)"
+      },
+      "cityOpacity": "0",
+      "nearOpacity": "0",
+      "productCopyOpacity": "1",
+      "photographTransform": "matrix(1.045, 0, 0, 1.045, 0, 0)",
+      "requestedProgress": 0.94
+    }
+  ],
+  "wheelSamples": [
+    {
+      "time": 1080.4,
+      "scrollY": 0,
+      "value": 0
+    },
+    {
+      "time": 1085.7,
+      "scrollY": 0,
+      "value": 0
+    },
+    {
+      "time": 1090.8,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1096.9,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1102.8,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1108.8,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1114.9,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1120.1,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1125.7,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1131.1,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1136.6,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1141.8,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1147.5,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1152.6,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1158.7,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1164.7,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1171.2,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1177.3,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1182.5,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1188.6,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1194.8,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1200.4,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1206.6,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1211.9,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1217.4,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1222.8,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1228.7,
+      "scrollY": 120,
+      "value": 0.075
+    },
+    {
+      "time": 1234.1,
+      "scrollY": 120,
+      "value": 0.075
+    }
+  ],
+  "afterOneWheel": {
+    "scrollY": 120,
+    "value": 0.075,
+    "target": 0.075,
+    "phase": "city",
+    "geometry": {
+      "start": 0,
+      "height": 2600,
+      "viewport": 1000,
+      "travel": 1600
+    },
+    "nav": {
+      "background": "rgb(8, 45, 61)",
+      "colour": "rgb(245, 204, 142)"
+    },
+    "cityOpacity": "1",
+    "nearOpacity": "0",
+    "productCopyOpacity": "0",
+    "photographTransform": "matrix(1.01424, 0, 0, 1.01424, 0, 0)"
+  }
+}
